@@ -6,7 +6,7 @@ match the PS2 compiler and conflict with the real headers under GCC."""
 import os, re, subprocess, sys
 from concurrent.futures import ThreadPoolExecutor
 ref, out = sys.argv[1], sys.argv[2]; os.makedirs(out, exist_ok=True)
-FLAGS = ["sh-elf-gcc", "-m2", "-mb", "-O2", "-c", "-w", "-fno-builtin", "-fno-inline", "-fno-optimize-sibling-calls", "-fno-jump-tables",
+FLAGS = ["sh-elf-gcc", "-m2", "-mb", "-O2", "-c", "-w", "-fno-builtin", "-fno-inline", "-fno-optimize-sibling-calls", "-fno-jump-tables", "-fno-store-merging", "-fno-ipa-icf",
          "-DTARGET_PS2", "-DM2CTX", "-D__int128=long long", "-x", "c", "-"]
 INC = [f"-I{ref}/{d}" for d in ("include", "src/anniversary", "include/sdk", "include/cri", "include/cri/ee", "zlib")]
 PROTO = re.compile(r"^\s*[\w\s\*]+\([^;{}]*\);\s*$")

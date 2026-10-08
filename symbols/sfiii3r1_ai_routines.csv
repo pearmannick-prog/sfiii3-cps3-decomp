@@ -1,29 +1,29 @@
 arcade_addr,name,grade,status,detail
 06016E9C,Passive00_0001,exact,identical,
-06016EC4,Passive00_0002,high,identical,
+06016EC4,Passive00_0002,events,identical,
 06016F2E,Passive00_0003,exact,identical,
-06016F84,Passive00_0004,high,identical,
+06016F84,Passive00_0004,events,identical,
 06016FC6,Passive00_0005,exact,identical,
 06016FE4,Passive00_0006,exact,identical,
-06017028,Passive00_0007,high,identical,
-0601705A,Passive00_0008,high,identical,
-060170CA,Passive00_0009,high,identical,
+06017028,Passive00_0007,events,identical,
+0601705A,Passive00_0008,events,identical,
+060170CA,Passive00_0009,events,identical,
 06017118,Passive00_0010,exact,identical,
-0601714A,Passive00_0011,high,identical,
+0601714A,Passive00_0011,events,identical,
 0601717C,Passive00_0012,exact,identical,
 060171C6,Passive00_0013,exact,remap-only,case 3: Normal_Attack arg2 0x200 -> 0x100
 06017246,Passive00_0014,exact,remap-only,case 0: Normal_Attack arg2 0x200 -> 0x100
 06017266,Passive00_0015,exact,identical,
 06017286,Passive00_0016,exact,remap-only,case 3: Normal_Attack arg2 0x202 -> 0x102
-060172CA,Passive00_0017,high,identical,
+060172CA,Passive00_0017,events,identical,
 06017348,Passive00_0018,exact,identical,
 0601738C,Passive00_0019,exact,identical,
 060173AC,Passive00_0020,exact,identical,
-060173CC,Passive00_0021,high,identical,
+060173CC,Passive00_0021,events,identical,
 0601741E,Passive00_0022,exact,remap-only,case 4: Normal_Attack arg2 0x400 -> 0x200
-060174BE,Passive00_0023,high,remap-only,case 3: Normal_Attack arg2 0x200 -> 0x100
+060174BE,Passive00_0023,events,remap-only,case 3: Normal_Attack arg2 0x200 -> 0x100
 0601752A,Passive00_0024,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
-06017556,Passive00_0025,high,identical,
+06017556,Passive00_0025,events,identical,
 060175D4,Passive00_0026,exact,identical,
 060175F4,Passive00_0027,exact,identical,
 06017648,Passive00_0028,exact,remap-only,case 0: Normal_Attack arg2 0x220 -> 0x120
@@ -34,7 +34,7 @@ arcade_addr,name,grade,status,detail
 0601775C,Passive00_0033,exact,remap-only,case 1: Lever_Attack arg3 0x110 -> 0x90
 0601778A,Passive00_0034,exact,remap-only,case 0: Normal_Attack arg2 0x400 -> 0x200
 060177D4,Passive00_0035,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x202 -> 0x102; case 2: Normal_Attack arg2 0x402 -> 0x202
-0601781A,Passive00_0036,high,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x202 -> 0x102
+0601781A,Passive00_0036,events,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x202 -> 0x102
 06017894,Passive00_0037,exact,remap-only,case 2: Lever_Attack arg3 0x110 -> 0x90
 0601790C,Passive00_0038,exact,remap-only,case 1: Normal_Attack arg2 0x110 -> 0x90
 06017950,Passive00_0039,exact,identical,
@@ -42,8 +42,8 @@ arcade_addr,name,grade,status,detail
 06017A2A,Passive00_0041,exact,remap-only,case 1: Normal_Attack arg2 0x100 -> 0x80
 06017A78,Passive00_0042,exact,identical,
 06017AE8,Passive00_0043,exact,remap-only,case 2: Normal_Attack arg2 0x400 -> 0x200
-06017B3C,Passive00_0044,high,identical,
-06017B8A,Passive00_0045,high,identical,
+06017B3C,Passive00_0044,events,identical,
+06017B8A,Passive00_0045,events,identical,
 06017C0E,Passive00_0046,exact,identical,
 06017C2E,Passive00_0047,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x402 -> 0x202
 06017C58,Passive00_0048,exact,identical,
@@ -51,69 +51,69 @@ arcade_addr,name,grade,status,detail
 06017CC2,Passive00_0050,exact,identical,
 06017D12,Passive00_0051,exact,remap-only,case 0: Normal_Attack arg2 0x220 -> 0x120; case 2: Normal_Attack arg2 0x402 -> 0x202
 06017D58,Passive00_0052,exact,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
-06017D78,Passive00_0053,high,identical,
+06017D78,Passive00_0053,events,identical,
 06017DAA,Passive00_0054,exact,identical,
 06017DF4,Passive00_0055,exact,identical,
-06017E16,Passive00_0056,high,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x100 -> 0x80
-06017E58,Passive00_0057,high,identical,
+06017E16,Passive00_0056,events,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x100 -> 0x80
+06017E58,Passive00_0057,events,identical,
 06017E9A,Passive00_0058,exact,identical,
 06017EBA,Passive00_0059,exact,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
 06017F10,Passive00_0060,exact,identical,
-06017F2E,Passive00_0061,high,identical,
+06017F2E,Passive00_0061,events,identical,
 06017F70,Passive00_0062,high,different,cases 3 -> 2
-06017F90,Passive00_0063,high,identical,
+06017F90,Passive00_0063,events,identical,
 06017FC2,Passive00_0064,exact,identical,
 06017FE4,Passive00_0065,exact,remap-only,case 1: Lever_Attack arg3 0x110 -> 0x90
-06018038,Passive00_0066,high,identical,
-0601807A,Passive00_0067,high,identical,
+06018038,Passive00_0066,events,identical,
+0601807A,Passive00_0067,events,identical,
 060180AC,Passive00_0068,exact,identical,
-060180EA,Passive00_0069,high,identical,
+060180EA,Passive00_0069,events,identical,
 06018162,Passive00_0070,exact,remap-only,case 1: Lever_Attack arg3 0x110 -> 0x90
 06018190,Passive00_0071,exact,remap-only,case 1: Normal_Attack arg2 0x220 -> 0x120; case 3: Normal_Attack arg2 0x402 -> 0x202
-060181E6,Passive00_0072,high,remap-only,case 2: Normal_Attack arg2 0x400 -> 0x200
+060181E6,Passive00_0072,events,remap-only,case 2: Normal_Attack arg2 0x400 -> 0x200
 06018258,Passive00_0073,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x400 -> 0x200
 060182B2,Passive00_0074,exact,remap-only,case 2: Normal_Attack arg2 0x400 -> 0x200
-060182F8,Passive00_0075,high,identical,
-06018360,Passive00_0076,high,remap-only,case 1: Jump_Attack_Term arg4 0x400 -> 0x200
+060182F8,Passive00_0075,events,identical,
+06018360,Passive00_0076,events,remap-only,case 1: Jump_Attack_Term arg4 0x400 -> 0x200
 060183E4,Passive00_0077,exact,remap-only,case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x400 -> 0x200
 0601845C,Passive00_0078,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 1: Normal_Attack arg2 0x100 -> 0x80; case 3: Normal_Attack arg2 0x400 -> 0x200
-060184C8,Passive00_0079,high,identical,
+060184C8,Passive00_0079,events,identical,
 0601851A,Passive00_0080,exact,remap-only,case 0: Hi_Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x200 -> 0x100
 06018592,Passive00_0081,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x400 -> 0x200; case 2: Normal_Attack arg2 0x200 -> 0x100
-060185EC,Passive00_0082,high,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
-06018660,Passive00_0083,high,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x400 -> 0x200
-060186D4,Passive00_0084,high,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Hi_Jump_Attack_Term arg8 0x200 -> 0x100
-0601876C,Passive00_0085,high,identical,
-060187AA,Passive00_0086,high,identical,
-06018832,Passive00_0087,high,identical,
-060188D2,Passive00_0088,high,remap-only,case 2: Jump_Attack_Term arg4 0x400 -> 0x200; case 2: Jump_Attack_Term arg8 0x200 -> 0x100
-060189AC,Passive00_0089,high,identical,
-060189DE,Passive00_0090,high,identical,
-06018A10,Passive00_0091,high,identical,
-06018A70,Passive00_0092,high,identical,
+060185EC,Passive00_0082,events,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
+06018660,Passive00_0083,events,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x400 -> 0x200
+060186D4,Passive00_0084,events,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Hi_Jump_Attack_Term arg8 0x200 -> 0x100
+0601876C,Passive00_0085,events,identical,
+060187AA,Passive00_0086,events,identical,
+06018832,Passive00_0087,events,identical,
+060188D2,Passive00_0088,events,remap-only,case 2: Jump_Attack_Term arg4 0x400 -> 0x200; case 2: Jump_Attack_Term arg8 0x200 -> 0x100
+060189AC,Passive00_0089,events,identical,
+060189DE,Passive00_0090,events,identical,
+06018A10,Passive00_0091,events,identical,
+06018A70,Passive00_0092,events,identical,
 06018ABE,Passive00_0093,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x102 -> 0x82
 06018AE2,Passive00_0094,exact,identical,
 06018B1C,Passive00_0095,exact,identical,
 06018B90,Passive00_0096,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 06018BD4,Passive00_0097,exact,remap-only,case 2: Lever_Attack arg3 0x110 -> 0x90
-06018C28,Passive00_0098,high,remap-only,case 2: Normal_Attack arg2 0x100 -> 0x80
-06018CD4,Passive00_0099,high,identical,
-06018D1E,Passive00_0100,high,identical,
+06018C28,Passive00_0098,events,remap-only,case 2: Normal_Attack arg2 0x100 -> 0x80
+06018CD4,Passive00_0099,events,identical,
+06018D1E,Passive00_0100,events,identical,
 06018D6C,Passive00_0101,exact,identical,
 06018DD6,Passive00_0102,exact,identical,
 06018E24,Passive00_0103,exact,identical,
 06018E60,Passive00_0104,exact,identical,
-06018E80,Passive00_0105,high,identical,
+06018E80,Passive00_0105,events,identical,
 06018EDA,Passive00_0106,exact,identical,
 06018F16,Passive00_0107,exact,identical,
 06018F6C,Passive00_0108,exact,identical,
-06018FBE,Passive00_0109,high,remap-only,case 3: Lever_Attack arg3 0x200 -> 0x100
-0601902A,Passive00_0110,high,identical,
+06018FBE,Passive00_0109,events,remap-only,case 3: Lever_Attack arg3 0x200 -> 0x100
+0601902A,Passive00_0110,events,identical,
 0601905C,Passive00_0111,exact,identical,
-060190DE,Passive00_0112,high,identical,
-06019148,Passive00_0113,high,identical,
-060191CA,Passive00_0114,high,identical,
-06019228,Passive00_0115,high,identical,
+060190DE,Passive00_0112,events,identical,
+06019148,Passive00_0113,events,identical,
+060191CA,Passive00_0114,events,identical,
+06019228,Passive00_0115,events,identical,
 060192A8,Passive00_0116,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Jump_Attack_Term arg8 0x400 -> 0x200
 06019312,Passive00_0117,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100
 06019354,Passive00_0118,exact,identical,
@@ -128,9 +128,9 @@ arcade_addr,name,grade,status,detail
 060195F2,Passive00_0127,exact,identical,
 0601962E,Passive00_0128,exact,identical,
 06019696,Passive00_0129,exact,identical,
-060196D4,Passive00_0130,high,identical,
+060196D4,Passive00_0130,events,identical,
 06019746,Passive00_0131,exact,remap-only,case 1: Normal_Attack arg2 0x100 -> 0x80; case 2: Normal_Attack arg2 0x400 -> 0x200
-060197A6,Passive00_0132,high,identical,
+060197A6,Passive00_0132,events,identical,
 060197EE,Passive00_0133,exact,identical,
 0601980C,Passive00_0134,exact,identical,
 0601982C,Passive00_0135,exact,identical,
@@ -140,7 +140,7 @@ arcade_addr,name,grade,status,detail
 060198E2,Passive00_0139,exact,identical,
 0601990A,Passive00_0140,exact,identical,
 0601994C,Passive00_0141,exact,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
-060199CC,Passive00_0142,high,remap-only,case 1: Normal_Attack arg2 0x202 -> 0x102
+060199CC,Passive00_0142,events,remap-only,case 1: Normal_Attack arg2 0x202 -> 0x102
 06019A34,Passive00_0143,exact,identical,
 06019A52,Passive00_0144,exact,identical,
 06019A96,Passive00_0145,exact,identical,
@@ -153,22 +153,22 @@ arcade_addr,name,grade,status,detail
 06019CA0,Passive00_0152,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
 06019CCC,Passive00_0153,exact,identical,
 06019D22,Passive00_0154,exact,identical,
-06019D5C,Passive00_0155,high,identical,
-06019D8E,Passive00_0156,high,identical,
-06019DCC,Passive00_0157,high,identical,
+06019D5C,Passive00_0155,events,identical,
+06019D8E,Passive00_0156,events,identical,
+06019DCC,Passive00_0157,events,identical,
 06019E80,Passive01_0001,exact,identical,
-06019EA8,Passive01_0002,high,identical,
+06019EA8,Passive01_0002,events,identical,
 06019F12,Passive01_0003,exact,identical,
-06019F68,Passive01_0004,high,identical,
+06019F68,Passive01_0004,events,identical,
 06019FAA,Passive01_0005,exact,identical,
 06019FC8,Passive01_0006,exact,identical,
-0601A00C,Passive01_0007,high,identical,
-0601A06C,Passive01_0008,high,identical,
-0601A0BE,Passive01_0009,high,identical,
+0601A00C,Passive01_0007,events,identical,
+0601A06C,Passive01_0008,events,identical,
+0601A0BE,Passive01_0009,events,identical,
 0601A0F0,Passive01_0010,exact,identical,
 0601A122,Passive01_0011,exact,identical,
 0601A164,Passive01_0012,exact,remap-only,case 0: Normal_Attack arg2 0x400 -> 0x200
-0601A1A6,Passive01_0013,high,identical,
+0601A1A6,Passive01_0013,events,identical,
 0601A1E8,Passive01_0014,exact,identical,
 0601A22A,Passive01_0015,exact,identical,
 0601A24A,Passive01_0016,exact,identical,
@@ -176,61 +176,61 @@ arcade_addr,name,grade,status,detail
 0601A32A,Passive01_0018,exact,identical,
 0601A3C8,Passive01_0019,exact,identical,
 0601A3E8,Passive01_0020,exact,identical,
-0601A408,Passive01_0021,high,identical,
+0601A408,Passive01_0021,events,identical,
 0601A448,Passive01_0022,exact,remap-only,case 1: Jump_Attack_Term arg4 0x100 -> 0x80; case 1: Jump_Attack_Term arg8 0x200 -> 0x100; case 4: Normal_Attack arg2 0x200 -> 0x100
 0601A4E0,Passive01_0023,exact,remap-only,case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 2: Normal_Attack arg2 0x200 -> 0x100
 0601A540,Passive01_0024,exact,remap-only,case 4: Normal_Attack arg2 0x200 -> 0x100
 0601A5BC,Passive01_0025,exact,remap-only,case 6: Normal_Attack arg2 0x200 -> 0x100
 0601A636,Passive01_0026,exact,identical,
-0601A67A,Passive01_0027,high,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
+0601A67A,Passive01_0027,events,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 0601A6E4,Passive01_0028,exact,remap-only,case 0: Jump_Attack arg3 0x400 -> 0x200
 0601A716,Passive01_0029,exact,identical,
 0601A74E,Passive01_0030,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
 0601A794,Passive01_0031,exact,identical,
-0601A7DC,Passive01_0032,high,identical,
+0601A7DC,Passive01_0032,events,identical,
 0601A824,Passive01_0033,exact,identical,
-0601A85C,Passive01_0034,high,identical,
+0601A85C,Passive01_0034,events,identical,
 0601A89C,Passive01_0035,exact,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x200 -> 0x100
-0601A8FC,Passive01_0036,high,identical,
+0601A8FC,Passive01_0036,events,identical,
 0601A94A,Passive01_0037,exact,identical,
-0601A99C,Passive01_0038,high,identical,
-0601AA22,Passive01_0039,high,identical,
+0601A99C,Passive01_0038,events,identical,
+0601AA22,Passive01_0039,events,identical,
 0601AA70,Passive01_0040,exact,remap-only,case 1: Normal_Attack arg2 0x100 -> 0x80; case 2: Normal_Attack arg2 0x100 -> 0x80; case 3: Normal_Attack arg2 0x200 -> 0x100
 0601AAC8,Passive01_0041,exact,identical,
 0601AB42,Passive01_0042,exact,identical,
-0601AB74,Passive01_0043,high,identical,
-0601ABC2,Passive01_0044,high,identical,
+0601AB74,Passive01_0043,events,identical,
+0601ABC2,Passive01_0044,events,identical,
 0601AC20,Passive01_0045,exact,identical,
 0601AC68,Passive01_0046,exact,identical,
-0601AC88,Passive01_0047,high,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82
+0601AC88,Passive01_0047,events,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82
 0601ACF8,Passive01_0048,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x402 -> 0x202
 0601AD22,Passive01_0049,exact,identical,
 0601AD66,Passive01_0050,exact,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
 0601ADAA,Passive01_0051,exact,remap-only,case 0: Normal_Attack arg2 0x220 -> 0x120; case 1: Normal_Attack arg2 0x102 -> 0x82
 0601ADF8,Passive01_0052,exact,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
-0601AE18,Passive01_0053,high,identical,
+0601AE18,Passive01_0053,events,identical,
 0601AE4A,Passive01_0054,exact,identical,
-0601AE7E,Passive01_0055,high,identical,
+0601AE7E,Passive01_0055,events,identical,
 0601AEB0,Passive01_0056,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100
 0601AF1C,Passive01_0057,exact,identical,
 0601AF5E,Passive01_0058,exact,identical,
-0601AF7E,Passive01_0059,high,identical,
+0601AF7E,Passive01_0059,events,identical,
 0601AFB0,Passive01_0060,exact,identical,
-0601AFCE,Passive01_0061,high,identical,
+0601AFCE,Passive01_0061,events,identical,
 0601B048,Passive01_0062,exact,remap-only,case 2: Lever_Attack arg3 0x110 -> 0x90
 0601B0B0,Passive01_0063,exact,identical,
 0601B0EC,Passive01_0064,exact,remap-only,case 0: Normal_Attack arg2 0x400 -> 0x200
-0601B10C,Passive01_0065,high,identical,
-0601B19C,Passive01_0066,high,identical,
+0601B10C,Passive01_0065,events,identical,
+0601B19C,Passive01_0066,events,identical,
 0601B1DC,Passive01_0067,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 0601B208,Passive01_0068,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Jump_Attack_Term arg8 0x400 -> 0x200
 0601B24A,Passive01_0069,exact,identical,
 0601B2A8,Passive01_0070,exact,identical,
 0601B2D6,Passive01_0071,exact,identical,
-0601B31C,Passive01_0072,high,identical,
+0601B31C,Passive01_0072,events,identical,
 0601B3A0,Passive01_0073,exact,identical,
-0601B3F0,Passive01_0074,high,identical,
-0601B446,Passive01_0075,high,identical,
+0601B3F0,Passive01_0074,events,identical,
+0601B446,Passive01_0075,events,identical,
 0601B4DE,Passive01_0076,exact,identical,
 0601B534,Passive01_0077,exact,remap-only,case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x200 -> 0x100
 0601B5B0,Passive01_0078,exact,remap-only,case 0: Jump_Attack_Term arg4 0x100 -> 0x80; case 2: Normal_Attack arg2 0x200 -> 0x100
@@ -241,35 +241,35 @@ arcade_addr,name,grade,status,detail
 0601B77C,Passive01_0083,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x200 -> 0x100; case 1: Normal_Attack arg2 0x100 -> 0x80; case 2: Normal_Attack arg2 0x100 -> 0x80; case 3: Normal_Attack arg2 0x200 -> 0x100
 0601B7FE,Passive01_0084,exact,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x102 -> 0x82; case 3: Normal_Attack arg2 0x200 -> 0x100
 0601B852,Passive01_0085,exact,identical,
-0601B896,Passive01_0086,high,identical,
-0601B932,Passive01_0087,high,identical,
+0601B896,Passive01_0086,events,identical,
+0601B932,Passive01_0087,events,identical,
 0601B9B0,Passive01_0088,exact,identical,
-0601BA16,Passive01_0089,high,identical,
-0601BA48,Passive01_0090,high,identical,
-0601BA7A,Passive01_0091,high,identical,
+0601BA16,Passive01_0089,events,identical,
+0601BA48,Passive01_0090,events,identical,
+0601BA7A,Passive01_0091,events,identical,
 0601BAAC,Passive01_0092,exact,identical,
 0601BB32,Passive01_0093,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82
 0601BB5C,Passive01_0094,exact,identical,
 0601BB7E,Passive01_0095,exact,identical,
 0601BBEC,Passive01_0096,exact,remap-only,case 2: Normal_Attack arg2 0x402 -> 0x202
 0601BC40,Passive01_0097,exact,identical,
-0601BCA0,Passive01_0098,high,identical,
+0601BCA0,Passive01_0098,events,identical,
 0601BD42,Passive01_0099,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Hi_Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x100 -> 0x80
-0601BDA2,Passive01_0100,high,identical,
+0601BDA2,Passive01_0100,events,identical,
 0601BE40,Passive01_0101,exact,remap-only,case 0: Normal_Attack arg2 0x100 -> 0x80
 0601BE98,Passive01_0102,exact,identical,
 0601BEDE,Passive01_0103,exact,identical,
-0601BEFE,Passive01_0104,high,identical,
-0601BF58,Passive01_0105,high,identical,
-0601BF8A,Passive01_0106,high,identical,
+0601BEFE,Passive01_0104,events,identical,
+0601BF58,Passive01_0105,events,identical,
+0601BF8A,Passive01_0106,events,identical,
 0601BFBC,Passive01_0107,exact,identical,
 0601BFF8,Passive01_0108,exact,identical,
-0601C018,Passive01_0109,high,identical,
+0601C018,Passive01_0109,events,identical,
 0601C072,Passive01_0110,exact,identical,
 0601C0AE,Passive01_0111,exact,identical,
 0601C110,Passive01_0112,exact,identical,
 0601C132,Passive01_0113,exact,identical,
-0601C1B2,Passive01_0114,high,identical,
+0601C1B2,Passive01_0114,events,identical,
 0601C200,Passive01_0115,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x200 -> 0x100
 0601C242,Passive01_0116,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200
 0601C284,Passive01_0117,exact,remap-only,case 0: Jump_Attack arg3 0x100 -> 0x80
@@ -284,9 +284,9 @@ arcade_addr,name,grade,status,detail
 0601C53A,Passive01_0126,exact,identical,
 0601C57E,Passive01_0127,exact,identical,
 0601C59E,Passive01_0128,exact,remap-only,case 1: J_Command_Attack arg4 0x700 -> 0x380
-0601C5DE,Passive01_0129,high,identical,
+0601C5DE,Passive01_0129,events,identical,
 0601C634,Passive01_0130,medium,identical,
-0601C666,Passive01_0131,high,identical,
+0601C666,Passive01_0131,events,identical,
 0601C698,Passive01_0132,exact,identical,
 0601C6CE,Passive01_0133,exact,remap-only,case 1: Command_Attack arg4 0x700 -> 0x380
 0601C70E,Passive01_0134,exact,identical,
@@ -301,7 +301,7 @@ arcade_addr,name,grade,status,detail
 0601C93C,Passive01_0143,exact,identical,
 0601C9AC,Passive01_0144,exact,identical,
 0601CA0A,Passive01_0145,exact,identical,
-0601CA88,Passive01_0146,high,identical,
+0601CA88,Passive01_0146,events,identical,
 0601CAF6,Passive01_0147,exact,remap-only,case 1: J_Command_Attack arg4 0x700 -> 0x380
 0601CB36,Passive01_0148,exact,identical,
 0601CB5E,Passive01_0149,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Jump_Attack_Term arg8 0x200 -> 0x100
@@ -321,16 +321,16 @@ arcade_addr,name,grade,status,detail
 0601CFA8,Passive01_0163,exact,identical,
 0601CFCA,Passive01_0164,exact,identical,
 0601D010,Passive01_0165,exact,identical,
-0601D068,Passive01_0166,high,identical,
-0601D09A,Passive01_0167,high,identical,
-0601D0CC,Passive01_0168,high,identical,
-0601D0FE,Passive01_0169,high,identical,
-0601D168,Passive01_0170,high,identical,
+0601D068,Passive01_0166,events,identical,
+0601D09A,Passive01_0167,events,identical,
+0601D0CC,Passive01_0168,events,identical,
+0601D0FE,Passive01_0169,events,identical,
+0601D168,Passive01_0170,events,identical,
 0601D1B6,Passive01_0171,exact,remap-only,case 0: Normal_Attack arg2 0x402 -> 0x202
-0601D1D6,Passive01_0172,high,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
-0601D216,Passive01_0173,high,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x100 -> 0x80; case 0: Hi_Jump_Attack_Term arg8 0x400 -> 0x200
+0601D1D6,Passive01_0172,events,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
+0601D216,Passive01_0173,events,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x100 -> 0x80; case 0: Hi_Jump_Attack_Term arg8 0x400 -> 0x200
 0601D2A0,Passive01_0174,exact,identical,
-0601D2F2,Passive01_0175,high,identical,
+0601D2F2,Passive01_0175,events,identical,
 0601D3CC,Passive02_0001,exact,identical,
 0601D424,Passive02_0002,exact,identical,
 0601D456,Passive02_0003,exact,identical,
@@ -464,49 +464,49 @@ arcade_addr,name,grade,status,detail
 0601FCD0,Passive02_0131,exact,identical,
 0601FD34,Passive02_0132,exact,remap-only,case 3: Normal_Attack arg2 0x402 -> 0x202
 0601FE08,Passive03_0001,exact,identical,
-0601FE30,Passive03_0002,high,identical,
+0601FE30,Passive03_0002,events,identical,
 0601FE9A,Passive03_0003,exact,identical,
-0601FEF0,Passive03_0004,high,identical,
+0601FEF0,Passive03_0004,events,identical,
 0601FF32,Passive03_0005,exact,identical,
 0601FF50,Passive03_0006,exact,identical,
-0601FF94,Passive03_0007,high,identical,
-0601FFF4,Passive03_0008,high,identical,
-06020046,Passive03_0009,high,identical,
+0601FF94,Passive03_0007,events,identical,
+0601FFF4,Passive03_0008,events,identical,
+06020046,Passive03_0009,events,identical,
 06020094,Passive03_0010,exact,identical,
 060200E4,Passive03_0011,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x8400 -> 0x8200; case 0: Hi_Jump_Attack_Term arg8 0x8400 -> 0x8200
 06020126,Passive03_0012,exact,identical,
 06020170,Passive03_0013,exact,identical,
 0602024E,Passive03_0014,exact,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
 06020292,Passive03_0015,exact,identical,
-060202B2,Passive03_0016,high,identical,
-06020350,Passive03_0017,high,remap-only,case 4: Normal_Attack arg2 0x100 -> 0x80
+060202B2,Passive03_0016,events,identical,
+06020350,Passive03_0017,events,remap-only,case 4: Normal_Attack arg2 0x100 -> 0x80
 060203EA,Passive03_0018,exact,remap-only,case 2: Normal_Attack arg2 0x102 -> 0x82; case 3: Normal_Attack arg2 0x202 -> 0x102; case 4: Normal_Attack arg2 0x402 -> 0x202
 0602047A,Passive03_0019,exact,identical,
 0602049A,Passive03_0020,exact,identical,
-060204BA,Passive03_0021,high,identical,
-060204FA,Passive03_0022,high,remap-only,case 1: Jump_Attack_Term arg4 0x100 -> 0x80
-06020590,Passive03_0023,high,remap-only,case 1: Jump_Attack_Term arg4 0x8100 -> 0x8080
+060204BA,Passive03_0021,events,identical,
+060204FA,Passive03_0022,events,remap-only,case 1: Jump_Attack_Term arg4 0x100 -> 0x80
+06020590,Passive03_0023,events,remap-only,case 1: Jump_Attack_Term arg4 0x8100 -> 0x8080
 0602060A,Passive03_0024,exact,remap-only,case 4: Normal_Attack arg2 0x400 -> 0x200
-06020684,Passive03_0025,high,identical,
+06020684,Passive03_0025,events,identical,
 060206EC,Passive03_0026,exact,identical,
-06020730,Passive03_0027,high,identical,
+06020730,Passive03_0027,events,identical,
 06020790,Passive03_0028,exact,remap-only,case 0: Jump_Attack_Term arg4 0x8400 -> 0x8200; case 0: Jump_Attack_Term arg8 0x400 -> 0x200
 060207D2,Passive03_0029,exact,identical,
 0602080A,Passive03_0030,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
 0602084E,Passive03_0031,exact,identical,
-06020898,Passive03_0032,high,identical,
+06020898,Passive03_0032,events,identical,
 060208F8,Passive03_0033,exact,remap-only,case 0: Lever_Attack arg3 0x110 -> 0x90
-0602091A,Passive03_0034,high,identical,
+0602091A,Passive03_0034,events,identical,
 0602095A,Passive03_0035,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x202 -> 0x102; case 2: Normal_Attack arg2 0x402 -> 0x202
-060209BA,Passive03_0036,high,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x202 -> 0x102
+060209BA,Passive03_0036,events,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x202 -> 0x102
 06020A04,Passive03_0037,exact,remap-only,case 1: Lever_Attack arg3 0x110 -> 0x90
 06020A4A,Passive03_0038,exact,remap-only,case 1: Normal_Attack arg2 0x110 -> 0x90
 06020AB6,Passive03_0039,exact,identical,
 06020AFC,Passive03_0040,exact,remap-only,case 1: Normal_Attack arg2 0x100 -> 0x80; case 2: Normal_Attack arg2 0x100 -> 0x80; case 3: Normal_Attack arg2 0x400 -> 0x200
 06020B5E,Passive03_0041,exact,remap-only,case 1: Lever_Attack arg3 0x200 -> 0x100
 06020BDE,Passive03_0042,exact,remap-only,case 0: Jump_Attack_Term arg4 0x8400 -> 0x8200; case 0: Jump_Attack_Term arg8 -0x7C00 -> -0x7E00
-06020C20,Passive03_0043,high,identical,
-06020C6E,Passive03_0044,high,identical,
+06020C20,Passive03_0043,events,identical,
+06020C6E,Passive03_0044,events,identical,
 06020CCC,Passive03_0045,exact,identical,
 06020D1A,Passive03_0046,exact,identical,
 06020D3A,Passive03_0047,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82
@@ -517,7 +517,7 @@ arcade_addr,name,grade,status,detail
 06020E48,Passive03_0052,exact,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
 06020E84,Passive03_0053,exact,remap-only,case 0: Jump_Attack_Term arg4 0x8400 -> 0x8200; case 0: Jump_Attack_Term arg8 -0x7C00 -> -0x7E00
 06020EC6,Passive03_0054,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x8400 -> 0x8200; case 0: Hi_Jump_Attack_Term arg8 0x8400 -> 0x8200
-06020F08,Passive03_0055,high,identical,
+06020F08,Passive03_0055,events,identical,
 06020F3A,Passive03_0056,exact,identical,
 06020F7C,Passive03_0057,exact,identical,
 06020FBE,Passive03_0058,exact,identical,
@@ -525,68 +525,68 @@ arcade_addr,name,grade,status,detail
 0602100A,Passive03_0060,exact,identical,
 06021028,Passive03_0061,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
 0602109A,Passive03_0062,exact,remap-only,case 1: Lever_Attack arg3 0x110 -> 0x90
-060210C8,Passive03_0063,high,identical,
+060210C8,Passive03_0063,events,identical,
 06021108,Passive03_0064,exact,remap-only,case 0: Lever_Attack arg3 0x200 -> 0x100
-0602112A,Passive03_0065,high,remap-only,case 1: Normal_Attack arg2 0x100 -> 0x80
+0602112A,Passive03_0065,events,remap-only,case 1: Normal_Attack arg2 0x100 -> 0x80
 06021198,Passive03_0066,exact,identical,
-060211DE,Passive03_0067,high,identical,
+060211DE,Passive03_0067,events,identical,
 06021210,Passive03_0068,exact,identical,
-06021252,Passive03_0069,high,identical,
-0602129C,Passive03_0070,high,identical,
-060212EE,Passive03_0071,high,identical,
-06021344,Passive03_0072,high,identical,
-060213C0,Passive03_0073,high,remap-only,case 1: Hi_Jump_Attack_Term arg4 0x8400 -> 0x8200
+06021252,Passive03_0069,events,identical,
+0602129C,Passive03_0070,events,identical,
+060212EE,Passive03_0071,events,identical,
+06021344,Passive03_0072,events,identical,
+060213C0,Passive03_0073,events,remap-only,case 1: Hi_Jump_Attack_Term arg4 0x8400 -> 0x8200
 0602142A,Passive03_0074,exact,identical,
 060214CC,Passive03_0075,exact,identical,
 06021568,Passive03_0076,exact,remap-only,case 2: Hi_Jump_Attack_Term arg4 0x8400 -> 0x8200
 06021632,Passive03_0077,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
-06021682,Passive03_0078,high,remap-only,case 0: Jump_Attack_Term arg4 0x8400 -> 0x8200
-06021728,Passive03_0079,high,identical,
+06021682,Passive03_0078,events,remap-only,case 0: Jump_Attack_Term arg4 0x8400 -> 0x8200
+06021728,Passive03_0079,events,identical,
 0602177C,Passive03_0080,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
 060217CC,Passive03_0081,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x8200 -> 0x8100; case 2: Lever_Attack arg3 0x200 -> 0x100
-06021850,Passive03_0082,high,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
-060218A4,Passive03_0083,high,identical,
+06021850,Passive03_0082,events,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
+060218A4,Passive03_0083,events,identical,
 0602194C,Passive03_0084,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x8400 -> 0x8200
-060219D4,Passive03_0085,high,identical,
+060219D4,Passive03_0085,events,identical,
 06021A12,Passive03_0086,exact,identical,
 06021AA0,Passive03_0087,exact,identical,
 06021B76,Passive03_0088,exact,identical,
-06021C08,Passive03_0089,high,identical,
-06021C3A,Passive03_0090,high,identical,
-06021C6C,Passive03_0091,high,identical,
+06021C08,Passive03_0089,events,identical,
+06021C3A,Passive03_0090,events,identical,
+06021C6C,Passive03_0091,events,identical,
 06021C9E,Passive03_0092,exact,identical,
 06021CEC,Passive03_0093,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x102 -> 0x82
 06021D3A,Passive03_0094,exact,identical,
 06021D70,Passive03_0095,exact,identical,
 06021DB4,Passive03_0096,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 06021DF8,Passive03_0097,exact,remap-only,case 2: Lever_Attack arg3 0x110 -> 0x90
-06021E72,Passive03_0098,high,identical,
+06021E72,Passive03_0098,events,identical,
 06021EFE,Passive03_0099,exact,identical,
-06021F88,Passive03_0100,high,identical,
+06021F88,Passive03_0100,events,identical,
 06021FD8,Passive03_0101,exact,identical,
-0602201C,Passive03_0102,high,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
+0602201C,Passive03_0102,events,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
 060220A0,Passive03_0103,exact,identical,
 060220DC,Passive03_0104,exact,identical,
-060220FC,Passive03_0105,high,identical,
+060220FC,Passive03_0105,events,identical,
 0602217C,Passive03_0106,exact,identical,
 060221B8,Passive03_0107,exact,identical,
 06022206,Passive03_0108,exact,identical,
 06022226,Passive03_0109,exact,identical,
 06022298,Passive03_0110,exact,identical,
 060222F4,Passive03_0111,exact,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
-06022338,Passive03_0112,high,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
-060223BA,Passive03_0113,high,identical,
+06022338,Passive03_0112,events,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
+060223BA,Passive03_0113,events,identical,
 06022408,Passive03_0114,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Jump_Attack_Term arg8 0x400 -> 0x200
-0602244A,Passive03_0115,high,remap-only,case 0: Normal_Attack arg2 0x220 -> 0x120; case 1: Normal_Attack arg2 0x102 -> 0x82
+0602244A,Passive03_0115,events,remap-only,case 0: Normal_Attack arg2 0x220 -> 0x120; case 1: Normal_Attack arg2 0x102 -> 0x82
 06022494,Passive03_0116,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Jump_Attack_Term arg8 0x400 -> 0x200
 060224FA,Passive03_0117,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Jump_Attack_Term arg8 0x200 -> 0x100
 0602253C,Passive03_0118,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Jump_Attack_Term arg8 0x200 -> 0x100
 0602257E,Passive03_0119,exact,remap-only,case 0: Normal_Attack arg2 0x400 -> 0x200
 0602259E,Passive03_0120,exact,remap-only,case 0: Normal_Attack arg2 0x100 -> 0x80
 060225BE,Passive03_0121,exact,identical,
-0602260A,Passive03_0122,high,identical,
-0602263C,Passive03_0123,high,identical,
-0602266E,Passive03_0124,high,identical,
+0602260A,Passive03_0122,events,identical,
+0602263C,Passive03_0123,events,identical,
+0602266E,Passive03_0124,events,identical,
 060226A0,Passive03_0125,exact,identical,
 060226D2,Passive03_0126,exact,identical,
 060226F0,Passive03_0127,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
@@ -740,33 +740,33 @@ arcade_addr,name,grade,status,detail
 060250F0,Passive04_0140,exact,remap-only,case 1: Hi_Jump_Attack_Term arg4 0x400 -> 0x200; case 2: Normal_Attack arg2 0x400 -> 0x200
 0602514E,Passive04_0141,exact,remap-only,case 1: Hi_Jump_Attack_Term arg4 0x400 -> 0x200
 06025250,Passive05_0001,exact,identical,
-0602526E,Passive05_0002,high,identical,
-060252A0,Passive05_0003,high,identical,
+0602526E,Passive05_0002,events,identical,
+060252A0,Passive05_0003,events,identical,
 060252D2,Passive05_0004,exact,identical,
-06025304,Passive05_0005,high,identical,
+06025304,Passive05_0005,events,identical,
 06025336,Passive05_0006,exact,identical,
 0602535E,Passive05_0007,high,different,case 1: J_Command_Attack arg3 9 -> 8
-060253E2,Passive05_0008,high,identical,
-06025430,Passive05_0009,high,identical,
+060253E2,Passive05_0008,events,identical,
+06025430,Passive05_0009,events,identical,
 06025494,Passive05_0010,exact,identical,
 060254F6,Passive05_0011,exact,identical,
 0602553C,Passive05_0012,exact,remap-only,case 1: Lever_Attack arg3 0x400 -> 0x200
-06025588,Passive05_0013,high,identical,
+06025588,Passive05_0013,events,identical,
 060255F4,Passive05_0014,exact,identical,
 06025612,Passive05_0015,exact,identical,
 06025632,Passive05_0016,exact,remap-only,case 2: Lever_Attack arg3 0x110 -> 0x90
 0602566C,Passive05_0017,exact,remap-only,case 2: Normal_Attack arg2 0x202 -> 0x102
-060256A4,Passive05_0018,high,identical,
+060256A4,Passive05_0018,events,identical,
 06025714,Passive05_0019,exact,identical,
 06025734,Passive05_0020,exact,identical,
-06025754,Passive05_0021,high,identical,
+06025754,Passive05_0021,events,identical,
 060257A2,Passive05_0022,exact,remap-only,case 1: Jump_Attack_Term arg4 0x402 -> 0x202
 06025814,Passive05_0023,exact,identical,
 06025866,Passive05_0024,exact,remap-only,case 2: Lever_Attack arg3 0x400 -> 0x200
-060258A0,Passive05_0025,high,identical,
+060258A0,Passive05_0025,events,identical,
 0602591C,Passive05_0026,exact,identical,
-06025960,Passive05_0027,high,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
-060259A0,Passive05_0028,high,identical,
+06025960,Passive05_0027,events,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
+060259A0,Passive05_0028,events,identical,
 060259EE,Passive05_0029,exact,identical,
 06025A34,Passive05_0030,exact,remap-only,case 0: Normal_Attack arg2 0x400 -> 0x200
 06025A54,Passive05_0031,exact,identical,
@@ -778,10 +778,10 @@ arcade_addr,name,grade,status,detail
 06025B3C,Passive05_0037,exact,remap-only,case 1: Lever_Attack arg3 0x110 -> 0x90
 06025B82,Passive05_0038,exact,remap-only,case 1: Lever_Attack arg3 0x110 -> 0x90
 06025BC8,Passive05_0039,exact,identical,
-06025C0E,Passive05_0040,high,identical,
-06025C76,Passive05_0041,high,identical,
+06025C0E,Passive05_0040,events,identical,
+06025C76,Passive05_0041,events,identical,
 06025CB6,Passive05_0042,exact,identical,
-06025CDE,Passive05_0043,high,identical,
+06025CDE,Passive05_0043,events,identical,
 06025D50,Passive05_0044,exact,remap-only,case 2: Lever_Attack arg3 0x110 -> 0x90
 06025DA4,Passive05_0045,exact,remap-only,case 0: Normal_Attack arg2 0x400 -> 0x200
 06025DC4,Passive05_0046,exact,identical,
@@ -791,54 +791,54 @@ arcade_addr,name,grade,status,detail
 06025E92,Passive05_0050,exact,remap-only,case 0: Normal_Attack arg2 0x200 -> 0x100
 06025EB2,Passive05_0051,exact,identical,
 06025ED6,Passive05_0052,exact,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
-06025EF6,Passive05_0053,high,identical,
+06025EF6,Passive05_0053,events,identical,
 06025F28,Passive05_0054,exact,identical,
-06025F8E,Passive05_0055,high,identical,
+06025F8E,Passive05_0055,events,identical,
 06025FC0,Passive05_0056,exact,remap-only,case 1: Command_Attack arg4 0x700 -> 0x380
 0602600C,Passive05_0057,exact,remap-only,case 0: Jump_Attack_Term arg4 0x402 -> 0x202
 0602604E,Passive05_0058,exact,identical,
-06026098,Passive05_0059,high,identical,
+06026098,Passive05_0059,events,identical,
 060260F2,Passive05_0060,exact,identical,
 06026110,Passive05_0061,exact,identical,
 06026130,Passive05_0062,exact,remap-only,case 0: Normal_Attack arg2 0x200 -> 0x100
 06026190,Passive05_0063,exact,identical,
 060261C2,Passive05_0064,exact,identical,
-06026210,Passive05_0065,high,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
+06026210,Passive05_0065,events,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
 0602625E,Passive05_0066,exact,identical,
 060262BA,Passive05_0067,exact,identical,
 060262DA,Passive05_0068,exact,identical,
 060262FA,Passive05_0069,exact,identical,
 06026348,Passive05_0070,exact,remap-only,case 4: Normal_Attack arg2 0x202 -> 0x102
-060263CA,Passive05_0071,high,identical,
+060263CA,Passive05_0071,events,identical,
 0602642E,Passive05_0072,exact,identical,
 060264AC,Passive05_0073,exact,remap-only,case 3: Normal_Attack arg2 0x202 -> 0x102; case 4: Normal_Attack arg2 0x200 -> 0x100
-0602651E,Passive05_0074,high,identical,
-060265AC,Passive05_0075,high,identical,
+0602651E,Passive05_0074,events,identical,
+060265AC,Passive05_0075,events,identical,
 06026610,Passive05_0076,exact,identical,
 06026656,Passive05_0077,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 060266B0,Passive05_0078,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 060266DC,Passive05_0079,exact,identical,
-060266FA,Passive05_0080,high,not-lifted,selector
-0602670E,Passive05_0081,high,remap-only,case 0: Jump_Attack_Term arg8 0x400 -> 0x200
-060267C0,Passive05_0082,high,remap-only,case 2: Normal_Attack arg2 0x200 -> 0x100
+060266FA,Passive05_0080,events,not-lifted,selector
+0602670E,Passive05_0081,events,remap-only,case 0: Jump_Attack_Term arg8 0x400 -> 0x200
+060267C0,Passive05_0082,events,remap-only,case 2: Normal_Attack arg2 0x200 -> 0x100
 06026844,Passive05_0083,exact,identical,
 06026862,Passive05_0084,exact,remap-only,case 0: Jump_Attack_Term arg4 0x202 -> 0x102
 060268D8,Passive05_0085,exact,remap-only,case 1: Normal_Attack arg2 0x100 -> 0x80
-0602691E,Passive05_0086,high,identical,
+0602691E,Passive05_0086,events,identical,
 06026980,Passive05_0087,exact,identical,
-060269A0,Passive05_0088,high,identical,
+060269A0,Passive05_0088,events,identical,
 06026A12,Passive05_0089,exact,remap-only,case 0: Normal_Attack arg2 0x220 -> 0x120
-06026A32,Passive05_0090,high,identical,
+06026A32,Passive05_0090,events,identical,
 06026A7A,Passive05_0091,exact,identical,
 06026AD2,Passive05_0092,exact,remap-only,case 0: Jump_Attack_Term arg4 0x202 -> 0x102
 06026B36,Passive05_0093,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200
 06026B78,Passive05_0094,exact,identical,
-06026BBC,Passive05_0095,high,identical,
+06026BBC,Passive05_0095,events,identical,
 06026C34,Passive05_0096,exact,identical,
 06026C7C,Passive05_0097,exact,identical,
-06026C9C,Passive05_0098,high,identical,
+06026C9C,Passive05_0098,events,identical,
 06026CCE,Passive05_0099,exact,identical,
-06026CEC,Passive05_0100,high,identical,
+06026CEC,Passive05_0100,events,identical,
 06026D5A,Passive05_0101,exact,identical,
 06026DD8,Passive06_0001,exact,identical,
 06026E00,Passive06_0002,exact,identical,
@@ -1013,7 +1013,7 @@ arcade_addr,name,grade,status,detail
 0602A50C,Passive07_0025,exact,identical,
 0602A574,Passive07_0026,exact,identical,
 0602A5BA,Passive07_0027,exact,identical,
-0602A612,Passive07_0028,high,not-lifted,selector
+0602A612,Passive07_0028,events,not-lifted,selector
 0602A626,Passive07_0029,exact,identical,
 0602A678,Passive07_0030,exact,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82
 0602A6D0,Passive07_0031,exact,remap-only,case 2: Lever_Attack arg3 0x400 -> 0x200; case 3: Normal_Attack arg2 0x402 -> 0x202
@@ -1142,7 +1142,7 @@ arcade_addr,name,grade,status,detail
 0602D126,Passive07_0154,exact,identical,
 0602D180,Passive07_0155,exact,identical,
 0602D1AC,Passive07_0156,exact,identical,
-0602D1FA,Passive07_0157,high,not-lifted,insn 4308
+0602D1FA,Passive07_0157,events,not-lifted,insn 4308
 0602D2C4,Passive07_0158,exact,remap-only,case 2: Jump_Attack_Term arg4 0x200 -> 0x100; case 5: Normal_Attack arg2 0x402 -> 0x202
 0602D388,Passive07_0159,exact,identical,
 0602D3EC,Passive07_0160,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 1: Normal_Attack arg2 0x202 -> 0x102
@@ -1355,7 +1355,7 @@ arcade_addr,name,grade,status,detail
 06031A04,Passive08_0154,exact,identical,
 06031A30,Passive08_0155,exact,identical,
 06031A84,Passive08_0156,exact,identical,
-06031AD2,Passive08_0157,high,not-lifted,insn 4308
+06031AD2,Passive08_0157,events,not-lifted,insn 4308
 06031BA8,Passive08_0158,exact,remap-only,case 2: Jump_Attack_Term arg4 0x200 -> 0x100; case 5: Normal_Attack arg2 0x402 -> 0x202
 06031C42,Passive08_0159,exact,remap-only,case 4: Normal_Attack arg2 0x402 -> 0x202
 06031D1A,Passive08_0160,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 1: Normal_Attack arg2 0x202 -> 0x102
@@ -1413,18 +1413,18 @@ arcade_addr,name,grade,status,detail
 0603304C,Passive08_0212,exact,identical,
 0603307E,Passive08_0213,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100
 0603313C,Passive09_0001,exact,identical,
-060331A8,Passive09_0002,high,identical,
-060331F4,Passive09_0003,high,identical,
+060331A8,Passive09_0002,events,identical,
+060331F4,Passive09_0003,events,identical,
 06033236,Passive09_0004,exact,remap-only,case 1: J_Command_Attack arg4 0x700 -> 0x380
-060332AE,Passive09_0005,high,identical,
+060332AE,Passive09_0005,events,identical,
 060332F0,Passive09_0006,exact,identical,
-0603330E,Passive09_0007,high,identical,
-060333A0,Passive09_0008,high,identical,
-0603340C,Passive09_0009,high,identical,
+0603330E,Passive09_0007,events,identical,
+060333A0,Passive09_0008,events,identical,
+0603340C,Passive09_0009,events,identical,
 06033478,Passive09_0010,exact,identical,
 060334BE,Passive09_0011,exact,identical,
 06033502,Passive09_0012,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
-06033576,Passive09_0013,high,identical,
+06033576,Passive09_0013,events,identical,
 060335B8,Passive09_0014,exact,identical,
 060335D6,Passive09_0015,exact,identical,
 06033620,Passive09_0016,exact,remap-only,case 2: Normal_Attack arg2 0x110 -> 0x90
@@ -1432,13 +1432,13 @@ arcade_addr,name,grade,status,detail
 060336B6,Passive09_0018,exact,identical,
 06033718,Passive09_0019,exact,identical,
 06033738,Passive09_0020,exact,identical,
-0603377C,Passive09_0021,high,identical,
+0603377C,Passive09_0021,events,identical,
 060337C2,Passive09_0022,exact,remap-only,case 1: Jump_Attack_Term arg4 0x200 -> 0x100; case 1: Jump_Attack_Term arg8 0x400 -> 0x200
 06033814,Passive09_0023,exact,identical,
-06033890,Passive09_0024,high,identical,
-060338DE,Passive09_0025,high,identical,
+06033890,Passive09_0024,events,identical,
+060338DE,Passive09_0025,events,identical,
 0603393C,Passive09_0026,exact,identical,
-0603399C,Passive09_0027,high,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
+0603399C,Passive09_0027,events,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
 060339DC,Passive09_0028,exact,remap-only,case 0: Normal_Attack arg2 0x402 -> 0x202
 060339FC,Passive09_0029,exact,identical,
 06033A34,Passive09_0030,exact,remap-only,case 0: Normal_Attack arg2 0x400 -> 0x200
@@ -1451,12 +1451,12 @@ arcade_addr,name,grade,status,detail
 06033B40,Passive09_0037,exact,remap-only,case 1: Normal_Attack arg2 0x110 -> 0x90
 06033BAC,Passive09_0038,exact,remap-only,case 1: Lever_Attack arg3 0x110 -> 0x90
 06033BF2,Passive09_0039,exact,identical,
-06033C4C,Passive09_0040,high,remap-only,case 1: Normal_Attack arg2 0x100 -> 0x80; case 2: Normal_Attack arg2 0x200 -> 0x100
-06033CDE,Passive09_0041,high,identical,
+06033C4C,Passive09_0040,events,remap-only,case 1: Normal_Attack arg2 0x100 -> 0x80; case 2: Normal_Attack arg2 0x200 -> 0x100
+06033CDE,Passive09_0041,events,identical,
 06033D66,Passive09_0042,exact,identical,
-06033D84,Passive09_0043,high,identical,
+06033D84,Passive09_0043,events,identical,
 06033DFC,Passive09_0044,exact,remap-only,case 2: Normal_Attack arg2 0x110 -> 0x90
-06033E86,Passive09_0045,high,identical,
+06033E86,Passive09_0045,events,identical,
 06033ED2,Passive09_0046,exact,identical,
 06033F18,Passive09_0047,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Jump_Attack_Term arg8 0x400 -> 0x200
 06033F84,Passive09_0048,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x402 -> 0x202
@@ -1464,68 +1464,68 @@ arcade_addr,name,grade,status,detail
 06034002,Passive09_0050,exact,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
 06034046,Passive09_0051,exact,identical,
 0603408C,Passive09_0052,exact,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
-060340AC,Passive09_0053,high,identical,
-060340F8,Passive09_0054,high,identical,
-0603412A,Passive09_0055,high,identical,
+060340AC,Passive09_0053,events,identical,
+060340F8,Passive09_0054,events,identical,
+0603412A,Passive09_0055,events,identical,
 06034194,Passive09_0056,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Jump_Attack_Term arg8 0x400 -> 0x200
 060341D8,Passive09_0057,exact,remap-only,case 0: Jump_Attack_Term arg4 0x100 -> 0x80
 0603421C,Passive09_0058,exact,identical,
-0603423C,Passive09_0059,high,identical,
+0603423C,Passive09_0059,events,identical,
 060342DA,Passive09_0060,exact,identical,
 060342F8,Passive09_0061,exact,identical,
-06034318,Passive09_0062,high,remap-only,case 0: Normal_Attack arg2 0x200 -> 0x100
-06034368,Passive09_0063,high,identical,
+06034318,Passive09_0062,events,remap-only,case 0: Normal_Attack arg2 0x200 -> 0x100
+06034368,Passive09_0063,events,identical,
 060343EE,Passive09_0064,exact,identical,
-06034430,Passive09_0065,high,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
+06034430,Passive09_0065,events,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
 0603447E,Passive09_0066,exact,identical,
 06034502,Passive09_0067,exact,identical,
 06034522,Passive09_0068,exact,identical,
 0603456E,Passive09_0069,exact,identical,
 060345E6,Passive09_0070,exact,identical,
-06034626,Passive09_0071,high,identical,
+06034626,Passive09_0071,events,identical,
 0603466E,Passive09_0072,exact,identical,
 060346CC,Passive09_0073,exact,remap-only,case 0: Normal_Attack arg2 0x100 -> 0x80
 06034736,Passive09_0074,exact,identical,
-06034768,Passive09_0075,high,identical,
+06034768,Passive09_0075,events,identical,
 060347E0,Passive09_0076,exact,identical,
-0603485E,Passive09_0077,high,remap-only,case 2: Normal_Attack arg2 0x200 -> 0x100
+0603485E,Passive09_0077,events,remap-only,case 2: Normal_Attack arg2 0x200 -> 0x100
 060348C8,Passive09_0078,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Jump_Attack_Term arg8 0x400 -> 0x200
 0603490C,Passive09_0079,exact,identical,
-06034968,Passive09_0080,high,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Jump_Attack_Term arg8 0x400 -> 0x200
-060349D0,Passive09_0081,high,remap-only,case 0: Jump_Attack_Term arg8 0x400 -> 0x200; case 1: Normal_Attack arg2 0x200 -> 0x100
-06034A60,Passive09_0082,high,remap-only,case 2: Normal_Attack arg2 0x200 -> 0x100
+06034968,Passive09_0080,events,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Jump_Attack_Term arg8 0x400 -> 0x200
+060349D0,Passive09_0081,events,remap-only,case 0: Jump_Attack_Term arg8 0x400 -> 0x200; case 1: Normal_Attack arg2 0x200 -> 0x100
+06034A60,Passive09_0082,events,remap-only,case 2: Normal_Attack arg2 0x200 -> 0x100
 06034ACE,Passive09_0083,exact,identical,
 06034AEC,Passive09_0084,exact,remap-only,case 0: Jump_Attack_Term arg4 0x100 -> 0x80; case 0: Jump_Attack_Term arg8 0x400 -> 0x200
-06034B60,Passive09_0085,medium,remap-only,case 0: Normal_Attack arg2 0x220 -> 0x120; case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x202 -> 0x102
+06034B60,Passive09_0085,events,remap-only,case 0: Normal_Attack arg2 0x220 -> 0x120; case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x202 -> 0x102
 06034BBC,Passive09_0086,exact,identical,
 06034BE8,Passive09_0087,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Jump_Attack_Term arg8 0x400 -> 0x200; case 1: Normal_Attack arg2 0x400 -> 0x200
-06034C68,Passive09_0088,high,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 2: Normal_Attack arg2 0x102 -> 0x82; case 3: Normal_Attack arg2 0x202 -> 0x102
-06034D06,Passive09_0089,high,identical,
-06034D90,Passive09_0090,high,identical,
-06034DC2,Passive09_0091,high,identical,
+06034C68,Passive09_0088,events,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 2: Normal_Attack arg2 0x102 -> 0x82; case 3: Normal_Attack arg2 0x202 -> 0x102
+06034D06,Passive09_0089,events,identical,
+06034D90,Passive09_0090,events,identical,
+06034DC2,Passive09_0091,events,identical,
 06034E32,Passive09_0092,exact,identical,
-06034E6C,Passive09_0093,high,remap-only,case 0: Jump_Attack_Term arg8 0x400 -> 0x200; case 1: Normal_Attack arg2 0x202 -> 0x102
+06034E6C,Passive09_0093,events,remap-only,case 0: Jump_Attack_Term arg8 0x400 -> 0x200; case 1: Normal_Attack arg2 0x202 -> 0x102
 06034F00,Passive09_0094,exact,identical,
 06034F32,Passive09_0095,exact,identical,
 06034F64,Passive09_0096,exact,identical,
 06034F96,Passive09_0097,exact,identical,
-06034FF0,Passive09_0098,high,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
+06034FF0,Passive09_0098,events,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
 0603504A,Passive09_0099,exact,identical,
-060350A2,Passive09_0100,high,identical,
-060350FC,Passive09_0101,high,identical,
-06035142,Passive09_0102,high,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x202 -> 0x102
-0603519A,Passive09_0103,high,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x202 -> 0x102
-06035216,Passive09_0104,high,identical,
-06035262,Passive09_0105,high,identical,
-060352AE,Passive09_0106,high,identical,
+060350A2,Passive09_0100,events,identical,
+060350FC,Passive09_0101,events,identical,
+06035142,Passive09_0102,events,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x202 -> 0x102
+0603519A,Passive09_0103,events,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x202 -> 0x102
+06035216,Passive09_0104,events,identical,
+06035262,Passive09_0105,events,identical,
+060352AE,Passive09_0106,events,identical,
 0603530C,Passive09_0107,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
 06035372,Passive09_0108,exact,identical,
 060353B8,Passive09_0109,exact,identical,
 060353FE,Passive09_0110,exact,identical,
 06035444,Passive09_0111,exact,identical,
-06035482,Passive09_0112,high,remap-only,case 0: ORO_JCA_Term arg12 0x400 -> 0x200
-060354D4,Passive09_0113,high,remap-only,case 0: ORO_HJCA_Term arg12 0x400 -> 0x200
-06035526,Passive09_0114,high,remap-only,case 0: ORO_HJCA_Term arg12 0x400 -> 0x200
+06035482,Passive09_0112,events,remap-only,case 0: ORO_JCA_Term arg12 0x400 -> 0x200
+060354D4,Passive09_0113,events,remap-only,case 0: ORO_HJCA_Term arg12 0x400 -> 0x200
+06035526,Passive09_0114,events,remap-only,case 0: ORO_HJCA_Term arg12 0x400 -> 0x200
 06035578,Passive09_0115,exact,remap-only,case 0: Jump_Attack_Term arg4 0x110 -> 0x90
 060355DA,Passive09_0116,exact,identical,
 06035624,Passive09_0117,exact,identical,
@@ -1536,57 +1536,57 @@ arcade_addr,name,grade,status,detail
 060357A4,Passive09_0122,exact,remap-only,case 0: ORO_JA_Term arg10 0x400 -> 0x200
 06035808,Passive09_0123,exact,identical,
 06035842,Passive09_0124,exact,identical,
-0603587A,Passive09_0125,high,remap-only,case 0: Jump_Attack_Term arg4 0x110 -> 0x90
-060358BC,Passive09_0126,high,identical,
-060358EE,Passive09_0127,high,identical,
+0603587A,Passive09_0125,events,remap-only,case 0: Jump_Attack_Term arg4 0x110 -> 0x90
+060358BC,Passive09_0126,events,identical,
+060358EE,Passive09_0127,events,identical,
 0603593A,Passive09_0128,exact,remap-only,case 0: Jump_Attack_Term arg4 0x100 -> 0x80
 0603597C,Passive09_0129,exact,identical,
 060359BE,Passive09_0130,exact,remap-only,case 0: Jump_Attack_Term arg4 0x100 -> 0x80
-06035A0E,Passive09_0131,high,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
+06035A0E,Passive09_0131,events,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
 06035AF4,Passive10_0001,exact,identical,
-06035B1C,Passive10_0002,high,identical,
+06035B1C,Passive10_0002,events,identical,
 06035B86,Passive10_0003,exact,identical,
-06035BDC,Passive10_0004,high,identical,
+06035BDC,Passive10_0004,events,identical,
 06035C1E,Passive10_0005,exact,identical,
 06035C3C,Passive10_0006,exact,identical,
-06035C80,Passive10_0007,high,identical,
-06035CE0,Passive10_0008,high,identical,
-06035D32,Passive10_0009,high,identical,
+06035C80,Passive10_0007,events,identical,
+06035CE0,Passive10_0008,events,identical,
+06035D32,Passive10_0009,events,identical,
 06035D80,Passive10_0010,exact,identical,
 06035DD0,Passive10_0011,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x8400 -> 0x8200; case 0: Hi_Jump_Attack_Term arg8 0x8400 -> 0x8200
 06035E12,Passive10_0012,exact,identical,
 06035E5C,Passive10_0013,exact,identical,
 06035F3A,Passive10_0014,exact,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
 06035F7E,Passive10_0015,exact,identical,
-06035F9E,Passive10_0016,high,identical,
-0603603C,Passive10_0017,high,remap-only,case 4: Normal_Attack arg2 0x100 -> 0x80
+06035F9E,Passive10_0016,events,identical,
+0603603C,Passive10_0017,events,remap-only,case 4: Normal_Attack arg2 0x100 -> 0x80
 060360D6,Passive10_0018,exact,remap-only,case 2: Normal_Attack arg2 0x102 -> 0x82; case 3: Normal_Attack arg2 0x202 -> 0x102; case 4: Normal_Attack arg2 0x402 -> 0x202
 06036166,Passive10_0019,exact,identical,
 06036186,Passive10_0020,exact,identical,
-060361A6,Passive10_0021,high,identical,
-060361E6,Passive10_0022,high,remap-only,case 1: Jump_Attack_Term arg4 0x100 -> 0x80
-0603627C,Passive10_0023,high,remap-only,case 1: Jump_Attack_Term arg4 0x8100 -> 0x8080
+060361A6,Passive10_0021,events,identical,
+060361E6,Passive10_0022,events,remap-only,case 1: Jump_Attack_Term arg4 0x100 -> 0x80
+0603627C,Passive10_0023,events,remap-only,case 1: Jump_Attack_Term arg4 0x8100 -> 0x8080
 060362F6,Passive10_0024,exact,remap-only,case 4: Normal_Attack arg2 0x400 -> 0x200
-06036370,Passive10_0025,high,identical,
+06036370,Passive10_0025,events,identical,
 060363D8,Passive10_0026,exact,identical,
-0603641C,Passive10_0027,high,identical,
+0603641C,Passive10_0027,events,identical,
 0603647C,Passive10_0028,exact,remap-only,case 0: Jump_Attack_Term arg4 0x8400 -> 0x8200; case 0: Jump_Attack_Term arg8 0x400 -> 0x200
 060364BE,Passive10_0029,exact,identical,
 060364F6,Passive10_0030,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
 0603653A,Passive10_0031,exact,identical,
-06036584,Passive10_0032,high,identical,
+06036584,Passive10_0032,events,identical,
 060365E4,Passive10_0033,exact,remap-only,case 0: Lever_Attack arg3 0x110 -> 0x90
-06036606,Passive10_0034,high,identical,
+06036606,Passive10_0034,events,identical,
 06036646,Passive10_0035,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x202 -> 0x102; case 2: Normal_Attack arg2 0x402 -> 0x202
-060366AA,Passive10_0036,high,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x202 -> 0x102
+060366AA,Passive10_0036,events,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x202 -> 0x102
 060366F4,Passive10_0037,exact,remap-only,case 1: Lever_Attack arg3 0x110 -> 0x90
 0603673A,Passive10_0038,exact,remap-only,case 1: Normal_Attack arg2 0x110 -> 0x90
 060367A6,Passive10_0039,exact,identical,
 060367EC,Passive10_0040,exact,remap-only,case 1: Normal_Attack arg2 0x100 -> 0x80; case 2: Normal_Attack arg2 0x100 -> 0x80; case 3: Normal_Attack arg2 0x400 -> 0x200
 0603684E,Passive10_0041,exact,remap-only,case 1: Lever_Attack arg3 0x200 -> 0x100
 060368CE,Passive10_0042,exact,remap-only,case 0: Jump_Attack_Term arg4 0x8400 -> 0x8200; case 0: Jump_Attack_Term arg8 -0x7C00 -> -0x7E00
-06036910,Passive10_0043,high,identical,
-0603695E,Passive10_0044,high,identical,
+06036910,Passive10_0043,events,identical,
+0603695E,Passive10_0044,events,identical,
 060369BC,Passive10_0045,exact,identical,
 06036A0A,Passive10_0046,exact,identical,
 06036A2A,Passive10_0047,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82
@@ -1597,7 +1597,7 @@ arcade_addr,name,grade,status,detail
 06036B38,Passive10_0052,exact,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
 06036B74,Passive10_0053,exact,remap-only,case 0: Jump_Attack_Term arg4 0x8400 -> 0x8200; case 0: Jump_Attack_Term arg8 -0x7C00 -> -0x7E00
 06036BB6,Passive10_0054,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x8400 -> 0x8200; case 0: Hi_Jump_Attack_Term arg8 0x8400 -> 0x8200
-06036BF8,Passive10_0055,high,identical,
+06036BF8,Passive10_0055,events,identical,
 06036C2A,Passive10_0056,exact,identical,
 06036C6C,Passive10_0057,exact,identical,
 06036CAE,Passive10_0058,exact,identical,
@@ -1605,80 +1605,80 @@ arcade_addr,name,grade,status,detail
 06036CFA,Passive10_0060,exact,identical,
 06036D18,Passive10_0061,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
 06036D8A,Passive10_0062,exact,remap-only,case 1: Normal_Attack arg2 0x110 -> 0x90
-06036DB6,Passive10_0063,high,identical,
+06036DB6,Passive10_0063,events,identical,
 06036DF6,Passive10_0064,exact,remap-only,case 0: Lever_Attack arg3 0x200 -> 0x100
-06036E18,Passive10_0065,high,remap-only,case 1: Normal_Attack arg2 0x100 -> 0x80
+06036E18,Passive10_0065,events,remap-only,case 1: Normal_Attack arg2 0x100 -> 0x80
 06036E88,Passive10_0066,exact,identical,
-06036ECE,Passive10_0067,high,identical,
+06036ECE,Passive10_0067,events,identical,
 06036F00,Passive10_0068,exact,identical,
-06036F42,Passive10_0069,high,identical,
-06036F8C,Passive10_0070,high,identical,
-06036FDE,Passive10_0071,high,identical,
-06037034,Passive10_0072,high,identical,
-060370B0,Passive10_0073,high,remap-only,case 1: Hi_Jump_Attack_Term arg4 0x8400 -> 0x8200
+06036F42,Passive10_0069,events,identical,
+06036F8C,Passive10_0070,events,identical,
+06036FDE,Passive10_0071,events,identical,
+06037034,Passive10_0072,events,identical,
+060370B0,Passive10_0073,events,remap-only,case 1: Hi_Jump_Attack_Term arg4 0x8400 -> 0x8200
 0603711A,Passive10_0074,exact,identical,
 060371BC,Passive10_0075,exact,identical,
 06037258,Passive10_0076,exact,remap-only,case 2: Hi_Jump_Attack_Term arg4 0x8400 -> 0x8200
 06037322,Passive10_0077,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
-06037372,Passive10_0078,high,remap-only,case 0: Jump_Attack_Term arg4 0x8400 -> 0x8200
-06037418,Passive10_0079,high,identical,
+06037372,Passive10_0078,events,remap-only,case 0: Jump_Attack_Term arg4 0x8400 -> 0x8200
+06037418,Passive10_0079,events,identical,
 0603746C,Passive10_0080,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
 060374BC,Passive10_0081,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x8200 -> 0x8100; case 2: Lever_Attack arg3 0x200 -> 0x100
-06037540,Passive10_0082,high,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
-06037594,Passive10_0083,high,identical,
+06037540,Passive10_0082,events,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
+06037594,Passive10_0083,events,identical,
 0603763C,Passive10_0084,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x8400 -> 0x8200
-060376C4,Passive10_0085,high,identical,
+060376C4,Passive10_0085,events,identical,
 06037702,Passive10_0086,exact,identical,
 06037790,Passive10_0087,exact,identical,
 06037866,Passive10_0088,exact,identical,
-060378F8,Passive10_0089,high,identical,
-0603792A,Passive10_0090,high,identical,
-0603795C,Passive10_0091,high,identical,
+060378F8,Passive10_0089,events,identical,
+0603792A,Passive10_0090,events,identical,
+0603795C,Passive10_0091,events,identical,
 0603798E,Passive10_0092,exact,identical,
 060379DC,Passive10_0093,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x102 -> 0x82
 06037A2A,Passive10_0094,exact,identical,
 06037A60,Passive10_0095,exact,identical,
 06037AA4,Passive10_0096,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 06037AE8,Passive10_0097,exact,remap-only,case 2: Lever_Attack arg3 0x110 -> 0x90
-06037B62,Passive10_0098,high,identical,
+06037B62,Passive10_0098,events,identical,
 06037BEE,Passive10_0099,exact,identical,
-06037C78,Passive10_0100,high,identical,
+06037C78,Passive10_0100,events,identical,
 06037CC8,Passive10_0101,exact,identical,
-06037D0C,Passive10_0102,high,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
+06037D0C,Passive10_0102,events,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
 06037D90,Passive10_0103,exact,identical,
 06037DCC,Passive10_0104,exact,identical,
-06037DEC,Passive10_0105,high,identical,
+06037DEC,Passive10_0105,events,identical,
 06037E6C,Passive10_0106,exact,identical,
 06037EA8,Passive10_0107,exact,identical,
 06037EF6,Passive10_0108,exact,identical,
 06037F16,Passive10_0109,exact,identical,
 06037F88,Passive10_0110,exact,identical,
 06037FE4,Passive10_0111,exact,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
-06038028,Passive10_0112,high,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
-060380AA,Passive10_0113,high,identical,
+06038028,Passive10_0112,events,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
+060380AA,Passive10_0113,events,identical,
 060380F8,Passive10_0114,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Jump_Attack_Term arg8 0x400 -> 0x200
-0603813A,Passive10_0115,high,remap-only,case 0: Normal_Attack arg2 0x220 -> 0x120; case 1: Normal_Attack arg2 0x102 -> 0x82
+0603813A,Passive10_0115,events,remap-only,case 0: Normal_Attack arg2 0x220 -> 0x120; case 1: Normal_Attack arg2 0x102 -> 0x82
 06038184,Passive10_0116,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Jump_Attack_Term arg8 0x400 -> 0x200
 060381EA,Passive10_0117,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Jump_Attack_Term arg8 0x200 -> 0x100
 0603822C,Passive10_0118,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Jump_Attack_Term arg8 0x200 -> 0x100
 0603826E,Passive10_0119,exact,remap-only,case 0: Normal_Attack arg2 0x400 -> 0x200
-0603828E,Passive10_0120,high,identical,
-060382FE,Passive10_0121,high,identical,
-0603836C,Passive10_0122,medium,identical,
+0603828E,Passive10_0120,events,identical,
+060382FE,Passive10_0121,events,identical,
+0603836C,Passive10_0122,events,identical,
 060383D4,Passive10_0123,exact,identical,
 060383F2,Passive10_0124,exact,remap-only,case 0: Normal_Attack arg2 0x100 -> 0x80
-0603842A,Passive10_0125,high,identical,
-0603848C,Passive10_0126,medium,identical,
+0603842A,Passive10_0125,events,identical,
+0603848C,Passive10_0126,events,identical,
 060384DE,Passive10_0127,exact,remap-only,case 0: J_Command_Attack arg4 0x700 -> 0x380
 06038530,Passive10_0128,low,not-lifted,selector
-060385D0,Passive10_0129,high,identical,
+060385D0,Passive10_0129,events,identical,
 06038642,Passive10_0130,exact,remap-only,case 2: Hi_Jump_Attack_Term arg4 0x8400 -> 0x8200
 06038712,Passive10_0131,exact,remap-only,case 2: J_Command_Attack arg4 0x700 -> 0x380
 06038790,Passive10_0132,low,not-lifted,selector
 06038830,Passive10_0133,exact,identical,
 06038870,Passive10_0134,low,not-lifted,selector
 06038910,Passive10_0135,exact,identical,
-0603892E,Passive10_0136,high,identical,
+0603892E,Passive10_0136,events,identical,
 06038970,Passive10_0137,exact,identical,
 060389F4,Passive11_0001,exact,identical,
 06038A1C,Passive11_0002,exact,identical,
@@ -1840,7 +1840,7 @@ arcade_addr,name,grade,status,detail
 0603BD22,Passive11_0158,exact,remap-only,case 0: Normal_Attack arg2 0x100 -> 0x80; case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x102 -> 0x82
 0603BDB2,Passive11_0159,exact,identical,
 0603BE16,Passive11_0160,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 1: Normal_Attack arg2 0x202 -> 0x102
-0603BEB4,Passive11_0161,high,not-lifted,insn 4308
+0603BEB4,Passive11_0161,events,not-lifted,insn 4308
 0603BF3E,Passive11_0162,exact,identical,
 0603BF7E,Passive11_0163,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 2: Normal_Attack arg2 0x102 -> 0x82; case 3: Normal_Attack arg2 0x202 -> 0x102
 0603C046,Passive11_0164,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x402 -> 0x202
@@ -2090,7 +2090,7 @@ arcade_addr,name,grade,status,detail
 06041316,Passive12_0154,exact,identical,
 06041370,Passive12_0155,exact,identical,
 0604139C,Passive12_0156,exact,identical,
-060413EA,Passive12_0157,high,not-lifted,insn 4308
+060413EA,Passive12_0157,events,not-lifted,insn 4308
 060414B4,Passive12_0158,exact,remap-only,case 2: Jump_Attack_Term arg4 0x200 -> 0x100; case 5: Normal_Attack arg2 0x402 -> 0x202
 06041578,Passive12_0159,exact,identical,
 060415DC,Passive12_0160,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 1: Normal_Attack arg2 0x202 -> 0x102
@@ -2165,32 +2165,32 @@ arcade_addr,name,grade,status,detail
 06042E9C,Passive12_0229,exact,remap-only,case 3: Normal_Attack arg2 0x402 -> 0x202
 06042F2E,Passive12_0230,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100
 06042FD0,Passive13_0001,exact,identical,
-06042FF8,Passive13_0002,high,identical,
+06042FF8,Passive13_0002,events,identical,
 06043062,Passive13_0003,exact,identical,
-060430B8,Passive13_0004,high,identical,
+060430B8,Passive13_0004,events,identical,
 060430FA,Passive13_0005,exact,identical,
 06043118,Passive13_0006,exact,identical,
-0604315C,Passive13_0007,high,identical,
-0604318E,Passive13_0008,high,remap-only,case 2: Command_Attack arg4 0x700 -> 0x380
-060431FE,Passive13_0009,high,identical,
+0604315C,Passive13_0007,events,identical,
+0604318E,Passive13_0008,events,remap-only,case 2: Command_Attack arg4 0x700 -> 0x380
+060431FE,Passive13_0009,events,identical,
 0604325C,Passive13_0010,exact,identical,
-0604328E,Passive13_0011,high,identical,
+0604328E,Passive13_0011,events,identical,
 060432E4,Passive13_0012,exact,identical,
-0604332E,Passive13_0013,high,identical,
+0604332E,Passive13_0013,events,identical,
 06043378,Passive13_0014,exact,remap-only,case 0: Normal_Attack arg2 0x200 -> 0x100
 06043398,Passive13_0015,exact,identical,
 060433D8,Passive13_0016,exact,remap-only,case 3: Normal_Attack arg2 0x202 -> 0x102
-0604341C,Passive13_0017,high,identical,
+0604341C,Passive13_0017,events,identical,
 06043482,Passive13_0018,exact,remap-only,case 3: Normal_Attack arg2 0x400 -> 0x200
 060434E2,Passive13_0019,exact,identical,
 06043502,Passive13_0020,exact,identical,
-06043522,Passive13_0021,high,identical,
+06043522,Passive13_0021,events,identical,
 06043562,Passive13_0022,exact,remap-only,case 3: Normal_Attack arg2 0x400 -> 0x200
 060435F2,Passive13_0023,exact,remap-only,case 1: Jump_Attack_Term arg4 0x400 -> 0x200; case 1: Jump_Attack_Term arg8 0x200 -> 0x100
 0604365A,Passive13_0024,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
-06043686,Passive13_0025,high,identical,
+06043686,Passive13_0025,events,identical,
 0604370C,Passive13_0026,exact,identical,
-0604372C,Passive13_0027,high,identical,
+0604372C,Passive13_0027,events,identical,
 0604375E,Passive13_0028,exact,remap-only,case 0: Normal_Attack arg2 0x220 -> 0x120
 0604377E,Passive13_0029,exact,identical,
 060437B6,Passive13_0030,exact,identical,
@@ -2207,78 +2207,78 @@ arcade_addr,name,grade,status,detail
 06043B20,Passive13_0041,exact,remap-only,case 1: Normal_Attack arg2 0x100 -> 0x80
 06043B6E,Passive13_0042,exact,identical,
 06043BB0,Passive13_0043,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
-06043C26,Passive13_0044,high,identical,
-06043C74,Passive13_0045,high,identical,
+06043C26,Passive13_0044,events,identical,
+06043C74,Passive13_0045,events,identical,
 06043CC2,Passive13_0046,exact,identical,
 06043CE2,Passive13_0047,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x402 -> 0x202
 06043D36,Passive13_0048,exact,identical,
 06043D80,Passive13_0049,exact,identical,
 06043DA0,Passive13_0050,exact,identical,
-06043DCC,Passive13_0051,high,remap-only,case 2: Normal_Attack arg2 0x402 -> 0x202
+06043DCC,Passive13_0051,events,remap-only,case 2: Normal_Attack arg2 0x402 -> 0x202
 06043E34,Passive13_0052,exact,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
-06043E54,Passive13_0053,high,identical,
-06043E86,Passive13_0054,high,identical,
-06043EC6,Passive13_0055,high,remap-only,case 2: Normal_Attack arg2 0x402 -> 0x202
+06043E54,Passive13_0053,events,identical,
+06043E86,Passive13_0054,events,identical,
+06043EC6,Passive13_0055,events,remap-only,case 2: Normal_Attack arg2 0x402 -> 0x202
 06043F14,Passive13_0056,exact,remap-only,case 0: Jump_Attack_Term arg8 0x400 -> 0x200
 06043F6E,Passive13_0057,exact,identical,
 06043FB0,Passive13_0058,exact,identical,
 06043FD0,Passive13_0059,exact,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
 06043FFE,Passive13_0060,exact,identical,
-0604401C,Passive13_0061,high,identical,
+0604401C,Passive13_0061,events,identical,
 0604407A,Passive13_0062,exact,remap-only,case 1: Normal_Attack arg2 0x110 -> 0x90
-060440C0,Passive13_0063,high,identical,
+060440C0,Passive13_0063,events,identical,
 060440F2,Passive13_0064,exact,identical,
 06044114,Passive13_0065,exact,remap-only,case 1: Lever_Attack arg3 0x110 -> 0x90
-06044164,Passive13_0066,high,identical,
-060441A6,Passive13_0067,high,identical,
+06044164,Passive13_0066,events,identical,
+060441A6,Passive13_0067,events,identical,
 060441D8,Passive13_0068,exact,identical,
-06044216,Passive13_0069,high,identical,
+06044216,Passive13_0069,events,identical,
 06044268,Passive13_0070,exact,remap-only,case 1: Normal_Attack arg2 0x110 -> 0x90
-060442B6,Passive13_0071,high,remap-only,case 3: Normal_Attack arg2 0x402 -> 0x202
-0604430E,Passive13_0072,high,remap-only,case 2: Normal_Attack arg2 0x400 -> 0x200
+060442B6,Passive13_0071,events,remap-only,case 3: Normal_Attack arg2 0x402 -> 0x202
+0604430E,Passive13_0072,events,remap-only,case 2: Normal_Attack arg2 0x400 -> 0x200
 06044358,Passive13_0073,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x400 -> 0x200
 060443D6,Passive13_0074,exact,remap-only,case 2: Normal_Attack arg2 0x400 -> 0x200
-0604441C,Passive13_0075,high,identical,
-06044488,Passive13_0076,high,remap-only,case 1: Jump_Attack_Term arg4 0x400 -> 0x200
+0604441C,Passive13_0075,events,identical,
+06044488,Passive13_0076,events,remap-only,case 1: Jump_Attack_Term arg4 0x400 -> 0x200
 0604450C,Passive13_0077,exact,remap-only,case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x400 -> 0x200
 0604458C,Passive13_0078,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 1: Normal_Attack arg2 0x100 -> 0x80; case 3: Normal_Attack arg2 0x400 -> 0x200
-060445F8,Passive13_0079,high,identical,
+060445F8,Passive13_0079,events,identical,
 0604464A,Passive13_0080,exact,remap-only,case 0: Hi_Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x200 -> 0x100
 060446C6,Passive13_0081,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x400 -> 0x200; case 2: Normal_Attack arg2 0x200 -> 0x100
-06044720,Passive13_0082,high,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
-06044798,Passive13_0083,high,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x400 -> 0x200
-0604480C,Passive13_0084,high,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Hi_Jump_Attack_Term arg8 0x200 -> 0x100
-060448A8,Passive13_0085,high,identical,
-060448E6,Passive13_0086,high,identical,
-0604495E,Passive13_0087,high,identical,
-060449EE,Passive13_0088,high,remap-only,case 2: Jump_Attack_Term arg4 0x400 -> 0x200; case 2: Jump_Attack_Term arg8 0x200 -> 0x100
-06044AC4,Passive13_0089,high,identical,
-06044AF6,Passive13_0090,high,identical,
-06044B28,Passive13_0091,high,identical,
-06044B8C,Passive13_0092,high,identical,
+06044720,Passive13_0082,events,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
+06044798,Passive13_0083,events,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x400 -> 0x200
+0604480C,Passive13_0084,events,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Hi_Jump_Attack_Term arg8 0x200 -> 0x100
+060448A8,Passive13_0085,events,identical,
+060448E6,Passive13_0086,events,identical,
+0604495E,Passive13_0087,events,identical,
+060449EE,Passive13_0088,events,remap-only,case 2: Jump_Attack_Term arg4 0x400 -> 0x200; case 2: Jump_Attack_Term arg8 0x200 -> 0x100
+06044AC4,Passive13_0089,events,identical,
+06044AF6,Passive13_0090,events,identical,
+06044B28,Passive13_0091,events,identical,
+06044B8C,Passive13_0092,events,identical,
 06044BDA,Passive13_0093,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x102 -> 0x82
 06044BFE,Passive13_0094,exact,identical,
 06044C38,Passive13_0095,exact,identical,
 06044CAC,Passive13_0096,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 06044CF0,Passive13_0097,exact,remap-only,case 2: Lever_Attack arg3 0x110 -> 0x90
-06044D44,Passive13_0098,high,remap-only,case 2: Normal_Attack arg2 0x100 -> 0x80
-06044DE2,Passive13_0099,high,identical,
-06044E2C,Passive13_0100,high,identical,
+06044D44,Passive13_0098,events,remap-only,case 2: Normal_Attack arg2 0x100 -> 0x80
+06044DE2,Passive13_0099,events,identical,
+06044E2C,Passive13_0100,events,identical,
 06044E6C,Passive13_0101,exact,identical,
 06044EB4,Passive13_0102,exact,identical,
 06044F02,Passive13_0103,exact,identical,
 06044F3E,Passive13_0104,exact,identical,
-06044F5E,Passive13_0105,high,identical,
+06044F5E,Passive13_0105,events,identical,
 06044FE4,Passive13_0106,exact,identical,
 06045020,Passive13_0107,exact,identical,
 06045076,Passive13_0108,exact,identical,
-06045096,Passive13_0109,high,identical,
-0604512C,Passive13_0110,high,identical,
+06045096,Passive13_0109,events,identical,
+0604512C,Passive13_0110,events,identical,
 0604518A,Passive13_0111,exact,identical,
-060451DC,Passive13_0112,high,identical,
-06045246,Passive13_0113,high,identical,
-06045320,Passive13_0114,high,identical,
-0604538A,Passive13_0115,high,identical,
+060451DC,Passive13_0112,events,identical,
+06045246,Passive13_0113,events,identical,
+06045320,Passive13_0114,events,identical,
+0604538A,Passive13_0115,events,identical,
 06045416,Passive13_0116,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Jump_Attack_Term arg8 0x400 -> 0x200
 0604547A,Passive13_0117,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100
 060454BC,Passive13_0118,exact,identical,
@@ -2293,16 +2293,16 @@ arcade_addr,name,grade,status,detail
 06045780,Passive13_0127,exact,identical,
 060457BC,Passive13_0128,exact,identical,
 06045806,Passive13_0129,exact,identical,
-06045828,Passive13_0130,high,identical,
+06045828,Passive13_0130,events,identical,
 0604589A,Passive13_0131,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
-060458EE,Passive13_0132,high,identical,
+060458EE,Passive13_0132,events,identical,
 06045938,Passive13_0133,exact,remap-only,case 2: Command_Attack arg4 0x700 -> 0x380
-06045990,Passive13_0134,high,identical,
+06045990,Passive13_0134,events,identical,
 060459F8,Passive13_0135,exact,identical,
 06045A16,Passive13_0136,exact,identical,
-06045A6A,Passive13_0137,medium,identical,
-06045AF8,Passive13_0138,medium,identical,
-06045B5E,Passive13_0139,high,identical,
+06045A6A,Passive13_0137,events,identical,
+06045AF8,Passive13_0138,events,identical,
+06045B5E,Passive13_0139,events,identical,
 06045BD2,Passive13_0140,exact,identical,
 06045C22,Passive13_0141,exact,remap-only,case 0: Command_Attack arg4 0x700 -> 0x380
 06045C54,Passive13_0142,exact,remap-only,case 0: Command_Attack arg4 0x700 -> 0x380
@@ -2312,12 +2312,12 @@ arcade_addr,name,grade,status,detail
 06045D3E,Passive13_0146,exact,remap-only,case 0: Command_Attack arg4 0x700 -> 0x380
 06045D70,Passive13_0147,exact,remap-only,case 0: Command_Attack arg4 0x700 -> 0x380
 06045DA2,Passive13_0148,exact,identical,
-06045DC0,Passive13_0149,high,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100
+06045DC0,Passive13_0149,events,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100
 06045E02,Passive13_0150,exact,identical,
 06045E48,Passive13_0151,exact,identical,
 06045E8A,Passive13_0152,exact,identical,
-06045EE2,Passive13_0153,high,remap-only,case 1: Jump_Attack_Term arg4 0x400 -> 0x200; case 2: Command_Attack arg4 0x700 -> 0x380
-06045F78,Passive13_0154,high,identical,
+06045EE2,Passive13_0153,events,remap-only,case 1: Jump_Attack_Term arg4 0x400 -> 0x200; case 2: Command_Attack arg4 0x700 -> 0x380
+06045F78,Passive13_0154,events,identical,
 06046008,Passive13_0155,exact,identical,
 0604604E,Passive13_0156,exact,identical,
 060460D4,Passive13_0157,exact,remap-only,case 0: Lever_Attack arg3 0x200 -> 0x100
@@ -2580,18 +2580,18 @@ arcade_addr,name,grade,status,detail
 0604CAF2,Passive14_0251,exact,identical,
 0604CB60,Passive14_0252,exact,identical,
 060534AC,Passive15_0001,exact,identical,
-060534D4,Passive15_0002,high,identical,
+060534D4,Passive15_0002,events,identical,
 0605353E,Passive15_0003,exact,identical,
-06053594,Passive15_0004,high,identical,
+06053594,Passive15_0004,events,identical,
 060535D6,Passive15_0005,exact,identical,
 060535F4,Passive15_0006,exact,identical,
-06053638,Passive15_0007,high,identical,
-06053678,Passive15_0008,high,identical,
-060536CA,Passive15_0009,high,identical,
+06053638,Passive15_0007,events,identical,
+06053678,Passive15_0008,events,identical,
+060536CA,Passive15_0009,events,identical,
 060536FC,Passive15_0010,exact,identical,
 0605372E,Passive15_0011,exact,identical,
 06053770,Passive15_0012,exact,remap-only,case 0: Normal_Attack arg2 0x400 -> 0x200
-06053790,Passive15_0013,high,identical,
+06053790,Passive15_0013,events,identical,
 060537F6,Passive15_0014,exact,identical,
 0605382C,Passive15_0015,exact,identical,
 0605384C,Passive15_0016,exact,identical,
@@ -2599,62 +2599,62 @@ arcade_addr,name,grade,status,detail
 06053926,Passive15_0018,exact,identical,
 0605399E,Passive15_0019,exact,identical,
 060539E6,Passive15_0020,exact,identical,
-06053A06,Passive15_0021,high,identical,
+06053A06,Passive15_0021,events,identical,
 06053A46,Passive15_0022,exact,remap-only,case 1: Jump_Attack_Term arg4 0x100 -> 0x80; case 1: Jump_Attack_Term arg8 0x200 -> 0x100; case 3: Normal_Attack arg2 0x200 -> 0x100
 06053AD4,Passive15_0023,exact,remap-only,case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 2: Normal_Attack arg2 0x200 -> 0x100
 06053B34,Passive15_0024,exact,remap-only,case 4: Normal_Attack arg2 0x200 -> 0x100
 06053BB0,Passive15_0025,exact,remap-only,case 5: Normal_Attack arg2 0x200 -> 0x100
 06053C08,Passive15_0026,exact,identical,
-06053C4C,Passive15_0027,high,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
+06053C4C,Passive15_0027,events,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 06053CBC,Passive15_0028,exact,remap-only,case 0: Jump_Attack arg3 0x400 -> 0x200
 06053CEE,Passive15_0029,exact,identical,
 06053D16,Passive15_0030,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
 06053D5C,Passive15_0031,exact,identical,
 06053D8C,Passive15_0032,exact,identical,
 06053DFE,Passive15_0033,exact,identical,
-06053E36,Passive15_0034,high,identical,
+06053E36,Passive15_0034,events,identical,
 06053E76,Passive15_0035,exact,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x200 -> 0x100
-06053ED8,Passive15_0036,high,identical,
+06053ED8,Passive15_0036,events,identical,
 06053F26,Passive15_0037,exact,identical,
-06053F78,Passive15_0038,high,remap-only,case 1: Rapid_Command_Attack arg3 0x400 -> 0x200
-06053FEC,Passive15_0039,high,identical,
+06053F78,Passive15_0038,events,remap-only,case 1: Rapid_Command_Attack arg3 0x400 -> 0x200
+06053FEC,Passive15_0039,events,identical,
 0605403A,Passive15_0040,exact,remap-only,case 1: Normal_Attack arg2 0x100 -> 0x80; case 2: Normal_Attack arg2 0x100 -> 0x80; case 3: Normal_Attack arg2 0x200 -> 0x100
 0605409A,Passive15_0041,exact,identical,
 06054106,Passive15_0042,exact,remap-only,case 0: Jump_Attack arg3 0x202 -> 0x102
-06054138,Passive15_0043,high,identical,
-06054186,Passive15_0044,high,identical,
+06054138,Passive15_0043,events,identical,
+06054186,Passive15_0044,events,identical,
 060541E4,Passive15_0045,exact,remap-only,case 1: Jump_Attack arg3 0x202 -> 0x102
 06054256,Passive15_0046,exact,identical,
-06054276,Passive15_0047,high,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82
+06054276,Passive15_0047,events,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82
 060542B6,Passive15_0048,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x402 -> 0x202
 060542E0,Passive15_0049,exact,identical,
 0605434E,Passive15_0050,exact,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
 06054392,Passive15_0051,exact,remap-only,case 0: Normal_Attack arg2 0x220 -> 0x120; case 1: Normal_Attack arg2 0x102 -> 0x82
 060543BE,Passive15_0052,exact,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
 060543DE,Passive15_0053,exact,remap-only,case 0: Lever_Attack arg3 0x402 -> 0x202
-06054400,Passive15_0054,high,identical,
+06054400,Passive15_0054,events,identical,
 0605445E,Passive15_0055,exact,remap-only,case 0: Jump_Attack arg3 0x202 -> 0x102
 06054490,Passive15_0056,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100
 060544D2,Passive15_0057,exact,identical,
 06054514,Passive15_0058,exact,identical,
-06054534,Passive15_0059,high,identical,
+06054534,Passive15_0059,events,identical,
 0605458A,Passive15_0060,exact,identical,
-060545A8,Passive15_0061,high,identical,
+060545A8,Passive15_0061,events,identical,
 060545F0,Passive15_0062,exact,remap-only,case 2: Lever_Attack arg3 0x110 -> 0x90
 0605462C,Passive15_0063,exact,remap-only,case 2: Lever_Attack arg3 0x402 -> 0x202
 06054690,Passive15_0064,exact,remap-only,case 0: Normal_Attack arg2 0x400 -> 0x200
-060546B0,Passive15_0065,high,identical,
-0605471C,Passive15_0066,high,identical,
+060546B0,Passive15_0065,events,identical,
+0605471C,Passive15_0066,events,identical,
 060547AA,Passive15_0067,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 060547D6,Passive15_0068,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Jump_Attack_Term arg8 0x400 -> 0x200
 06054818,Passive15_0069,exact,identical,
 0605484A,Passive15_0070,exact,identical,
 06054878,Passive15_0071,exact,identical,
-060548E8,Passive15_0072,high,identical,
+060548E8,Passive15_0072,events,identical,
 06054948,Passive15_0073,exact,identical,
 06054998,Passive15_0074,exact,identical,
-06054A0E,Passive15_0075,high,identical,
-06054A7A,Passive15_0076,high,identical,
+06054A0E,Passive15_0075,events,identical,
+06054A7A,Passive15_0076,events,identical,
 06054B2C,Passive15_0077,exact,remap-only,case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x200 -> 0x100
 06054B7C,Passive15_0078,exact,remap-only,case 0: Jump_Attack_Term arg4 0x100 -> 0x80; case 2: Normal_Attack arg2 0x200 -> 0x100
 06054C00,Passive15_0079,exact,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
@@ -2663,36 +2663,36 @@ arcade_addr,name,grade,status,detail
 06054D20,Passive15_0082,exact,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
 06054D70,Passive15_0083,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x200 -> 0x100; case 1: Normal_Attack arg2 0x100 -> 0x80; case 2: Normal_Attack arg2 0x100 -> 0x80; case 3: Normal_Attack arg2 0x200 -> 0x100
 06054DD4,Passive15_0084,exact,remap-only,case 0: Jump_Attack arg3 0x202 -> 0x102; case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x102 -> 0x82; case 3: Normal_Attack arg2 0x200 -> 0x100
-06054E44,Passive15_0085,high,identical,
-06054E82,Passive15_0086,high,identical,
-06054F4A,Passive15_0087,high,identical,
-06054FE2,Passive15_0088,high,identical,
-0605507A,Passive15_0089,high,identical,
-060550AC,Passive15_0090,high,identical,
-060550DE,Passive15_0091,high,identical,
+06054E44,Passive15_0085,events,identical,
+06054E82,Passive15_0086,events,identical,
+06054F4A,Passive15_0087,events,identical,
+06054FE2,Passive15_0088,events,identical,
+0605507A,Passive15_0089,events,identical,
+060550AC,Passive15_0090,events,identical,
+060550DE,Passive15_0091,events,identical,
 06055110,Passive15_0092,exact,identical,
 06055188,Passive15_0093,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82
 060551B2,Passive15_0094,exact,identical,
 060551D4,Passive15_0095,exact,identical,
 0605521C,Passive15_0096,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 06055286,Passive15_0097,exact,identical,
-060552E6,Passive15_0098,high,identical,
+060552E6,Passive15_0098,events,identical,
 0605538A,Passive15_0099,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Hi_Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x100 -> 0x80
 060553EA,Passive15_0100,exact,identical,
-06055454,Passive15_0101,high,remap-only,case 0: Normal_Attack arg2 0x100 -> 0x80
+06055454,Passive15_0101,events,remap-only,case 0: Normal_Attack arg2 0x100 -> 0x80
 060554DA,Passive15_0102,exact,identical,
 06055520,Passive15_0103,exact,remap-only,case 0: Normal_Attack arg2 0x402 -> 0x202
-06055540,Passive15_0104,high,identical,
-06055572,Passive15_0105,high,identical,
-060555C8,Passive15_0106,high,identical,
+06055540,Passive15_0104,events,identical,
+06055572,Passive15_0105,events,identical,
+060555C8,Passive15_0106,events,identical,
 060555FA,Passive15_0107,exact,identical,
 06055636,Passive15_0108,exact,identical,
-06055656,Passive15_0109,high,identical,
+06055656,Passive15_0109,events,identical,
 060556B0,Passive15_0110,exact,identical,
 060556EC,Passive15_0111,exact,identical,
 0605574E,Passive15_0112,exact,remap-only,case 0: Lever_Attack arg3 0x402 -> 0x202
 060557A0,Passive15_0113,exact,remap-only,case 0: Normal_Attack arg2 0x200 -> 0x100
-060557E8,Passive15_0114,high,identical,
+060557E8,Passive15_0114,events,identical,
 06055836,Passive15_0115,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x200 -> 0x100
 06055878,Passive15_0116,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200
 060558E6,Passive15_0117,exact,remap-only,case 0: Jump_Attack arg3 0x100 -> 0x80
@@ -2707,9 +2707,9 @@ arcade_addr,name,grade,status,detail
 06055B76,Passive15_0126,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 06055BBA,Passive15_0127,exact,identical,
 06055BDA,Passive15_0128,exact,remap-only,case 1: Command_Attack arg4 0x700 -> 0x380
-06055C3C,Passive15_0129,high,identical,
-06055C6E,Passive15_0130,high,identical,
-06055CA0,Passive15_0131,high,identical,
+06055C3C,Passive15_0129,events,identical,
+06055C6E,Passive15_0130,events,identical,
+06055CA0,Passive15_0131,events,identical,
 06055CD2,Passive15_0132,exact,identical,
 06055D08,Passive15_0133,exact,remap-only,case 1: Command_Attack arg4 0x700 -> 0x380
 06055D68,Passive15_0134,exact,identical,
@@ -2724,7 +2724,7 @@ arcade_addr,name,grade,status,detail
 06055FA2,Passive15_0143,exact,identical,
 06055FEA,Passive15_0144,exact,identical,
 06056048,Passive15_0145,exact,identical,
-060560E4,Passive15_0146,high,identical,
+060560E4,Passive15_0146,events,identical,
 06056154,Passive15_0147,exact,remap-only,case 1: J_Command_Attack arg4 0x700 -> 0x380
 060561C8,Passive15_0148,exact,identical,
 060561F0,Passive15_0149,exact,identical,
@@ -2743,81 +2743,81 @@ arcade_addr,name,grade,status,detail
 060565A0,Passive15_0162,exact,identical,
 0605660C,Passive15_0163,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Jump_Attack_Term arg8 0x400 -> 0x200
 060566BC,Passive16_0001,exact,identical,
-060566E4,Passive16_0002,high,identical,
+060566E4,Passive16_0002,events,identical,
 0605674E,Passive16_0003,exact,identical,
-060567A4,Passive16_0004,high,identical,
+060567A4,Passive16_0004,events,identical,
 060567E6,Passive16_0005,exact,identical,
 06056804,Passive16_0006,exact,identical,
-06056848,Passive16_0007,high,identical,
-060568A8,Passive16_0008,high,identical,
-060568FA,Passive16_0009,high,identical,
+06056848,Passive16_0007,events,identical,
+060568A8,Passive16_0008,events,identical,
+060568FA,Passive16_0009,events,identical,
 0605692C,Passive16_0010,exact,identical,
 0605695E,Passive16_0011,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100
 060569C4,Passive16_0012,exact,remap-only,case 0: Normal_Attack arg2 0x400 -> 0x200
-060569E4,Passive16_0013,high,identical,
+060569E4,Passive16_0013,events,identical,
 06056A26,Passive16_0014,exact,identical,
 06056A68,Passive16_0015,exact,identical,
 06056AAC,Passive16_0016,exact,identical,
 06056B18,Passive16_0017,exact,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x102 -> 0x82; case 3: Normal_Attack arg2 0x200 -> 0x100
-06056B8C,Passive16_0018,high,identical,
+06056B8C,Passive16_0018,events,identical,
 06056C02,Passive16_0019,exact,identical,
 06056C22,Passive16_0020,exact,identical,
-06056C42,Passive16_0021,high,identical,
+06056C42,Passive16_0021,events,identical,
 06056CA4,Passive16_0022,exact,remap-only,case 1: Jump_Attack_Term arg4 0x100 -> 0x80; case 1: Jump_Attack_Term arg8 0x200 -> 0x100; case 4: Normal_Attack arg2 0x200 -> 0x100
 06056D18,Passive16_0023,exact,remap-only,case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 2: Normal_Attack arg2 0x200 -> 0x100
 06056D98,Passive16_0024,exact,remap-only,case 4: Normal_Attack arg2 0x200 -> 0x100
 06056DE8,Passive16_0025,exact,remap-only,case 6: Normal_Attack arg2 0x200 -> 0x100
 06056E84,Passive16_0026,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
-06056EC8,Passive16_0027,high,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
+06056EC8,Passive16_0027,events,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 06056F08,Passive16_0028,exact,remap-only,case 0: Jump_Attack arg3 0x200 -> 0x100
 06056F3A,Passive16_0029,exact,identical,
 06056F94,Passive16_0030,exact,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
 06056FDA,Passive16_0031,exact,identical,
-06056FFC,Passive16_0032,high,identical,
+06056FFC,Passive16_0032,events,identical,
 06057062,Passive16_0033,exact,identical,
-060570C8,Passive16_0034,high,identical,
+060570C8,Passive16_0034,events,identical,
 06057126,Passive16_0035,exact,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x200 -> 0x100
-06057168,Passive16_0036,high,identical,
+06057168,Passive16_0036,events,identical,
 060571D2,Passive16_0037,exact,identical,
-06057226,Passive16_0038,high,identical,
-060572A2,Passive16_0039,high,identical,
+06057226,Passive16_0038,events,identical,
+060572A2,Passive16_0039,events,identical,
 06057312,Passive16_0040,exact,remap-only,case 1: Normal_Attack arg2 0x100 -> 0x80; case 2: Normal_Attack arg2 0x100 -> 0x80; case 3: Normal_Attack arg2 0x200 -> 0x100
 0605736A,Passive16_0041,exact,identical,
 060573B0,Passive16_0042,exact,identical,
-0605740C,Passive16_0043,high,identical,
-0605745A,Passive16_0044,high,identical,
+0605740C,Passive16_0043,events,identical,
+0605745A,Passive16_0044,events,identical,
 060574D6,Passive16_0045,exact,identical,
 0605752C,Passive16_0046,exact,identical,
-0605754C,Passive16_0047,high,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82
+0605754C,Passive16_0047,events,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82
 060575B8,Passive16_0048,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x402 -> 0x202
 060575E2,Passive16_0049,exact,identical,
 06057626,Passive16_0050,exact,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
 0605766A,Passive16_0051,exact,remap-only,case 0: Normal_Attack arg2 0x220 -> 0x120; case 1: Normal_Attack arg2 0x102 -> 0x82
 060576BA,Passive16_0052,exact,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
-060576DA,Passive16_0053,high,identical,
+060576DA,Passive16_0053,events,identical,
 0605770C,Passive16_0054,exact,identical,
-06057742,Passive16_0055,high,identical,
+06057742,Passive16_0055,events,identical,
 06057774,Passive16_0056,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100
 060577E0,Passive16_0057,exact,identical,
 06057822,Passive16_0058,exact,identical,
-06057842,Passive16_0059,high,identical,
+06057842,Passive16_0059,events,identical,
 06057874,Passive16_0060,exact,identical,
-06057892,Passive16_0061,high,identical,
+06057892,Passive16_0061,events,identical,
 0605791C,Passive16_0062,exact,identical,
 060579A6,Passive16_0063,exact,identical,
 060579F2,Passive16_0064,exact,remap-only,case 0: Lever_Attack arg3 0x400 -> 0x200
-06057A14,Passive16_0065,high,identical,
-06057AA6,Passive16_0066,high,identical,
+06057A14,Passive16_0065,events,identical,
+06057AA6,Passive16_0066,events,identical,
 06057B04,Passive16_0067,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 06057B30,Passive16_0068,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Jump_Attack_Term arg8 0x400 -> 0x200
 06057B72,Passive16_0069,exact,identical,
 06057BD2,Passive16_0070,exact,remap-only,case 1: Lever_Attack arg3 0x400 -> 0x200
 06057C00,Passive16_0071,exact,identical,
-06057C48,Passive16_0072,high,identical,
+06057C48,Passive16_0072,events,identical,
 06057CEA,Passive16_0073,exact,identical,
-06057D2E,Passive16_0074,high,identical,
-06057DA2,Passive16_0075,high,identical,
-06057E4A,Passive16_0076,high,identical,
+06057D2E,Passive16_0074,events,identical,
+06057DA2,Passive16_0075,events,identical,
+06057E4A,Passive16_0076,events,identical,
 06057E92,Passive16_0077,exact,remap-only,case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x200 -> 0x100
 06057F0C,Passive16_0078,exact,remap-only,case 0: Jump_Attack_Term arg4 0x100 -> 0x80; case 2: Normal_Attack arg2 0x200 -> 0x100
 06057F66,Passive16_0079,exact,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
@@ -2827,30 +2827,30 @@ arcade_addr,name,grade,status,detail
 060580D8,Passive16_0083,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x200 -> 0x100; case 1: Normal_Attack arg2 0x100 -> 0x80; case 2: Normal_Attack arg2 0x100 -> 0x80; case 3: Normal_Attack arg2 0x200 -> 0x100
 0605815A,Passive16_0084,exact,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x102 -> 0x82; case 3: Normal_Attack arg2 0x200 -> 0x100
 060581AE,Passive16_0085,exact,identical,
-060581F0,Passive16_0086,high,identical,
-060582A2,Passive16_0087,high,identical,
-06058334,Passive16_0088,high,identical,
-060583C6,Passive16_0089,high,identical,
-060583F8,Passive16_0090,high,identical,
-0605842A,Passive16_0091,high,identical,
+060581F0,Passive16_0086,events,identical,
+060582A2,Passive16_0087,events,identical,
+06058334,Passive16_0088,events,identical,
+060583C6,Passive16_0089,events,identical,
+060583F8,Passive16_0090,events,identical,
+0605842A,Passive16_0091,events,identical,
 06058480,Passive16_0092,exact,identical,
 060584D2,Passive16_0093,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82
 060584FC,Passive16_0094,exact,identical,
 0605851E,Passive16_0095,exact,identical,
 06058584,Passive16_0096,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 060585CA,Passive16_0097,exact,identical,
-0605862C,Passive16_0098,high,identical,
+0605862C,Passive16_0098,events,identical,
 060586D4,Passive16_0099,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Hi_Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x100 -> 0x80
-06058734,Passive16_0100,high,identical,
-060587E6,Passive16_0101,high,remap-only,case 0: Normal_Attack arg2 0x100 -> 0x80
+06058734,Passive16_0100,events,identical,
+060587E6,Passive16_0101,events,remap-only,case 0: Normal_Attack arg2 0x100 -> 0x80
 0605883C,Passive16_0102,exact,identical,
 06058882,Passive16_0103,exact,remap-only,case 0: Normal_Attack arg2 0x402 -> 0x202
-060588A2,Passive16_0104,high,remap-only,case 0: Jump_Command_Attack_Term arg10 0x400 -> 0x200
-06058914,Passive16_0105,high,remap-only,case 0: Jump_Command_Attack_Term arg10 0x400 -> 0x200
-0605895C,Passive16_0106,high,remap-only,case 0: Jump_Command_Attack_Term arg10 0x400 -> 0x200
+060588A2,Passive16_0104,events,remap-only,case 0: Jump_Command_Attack_Term arg10 0x400 -> 0x200
+06058914,Passive16_0105,events,remap-only,case 0: Jump_Command_Attack_Term arg10 0x400 -> 0x200
+0605895C,Passive16_0106,events,remap-only,case 0: Jump_Command_Attack_Term arg10 0x400 -> 0x200
 060589A4,Passive16_0107,exact,identical,
 06058A04,Passive16_0108,exact,identical,
-06058A24,Passive16_0109,high,identical,
+06058A24,Passive16_0109,events,identical,
 06058A7E,Passive16_0110,exact,identical,
 06058ABA,Passive16_0111,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 06058B44,Passive16_0112,exact,identical,
@@ -2870,9 +2870,9 @@ arcade_addr,name,grade,status,detail
 06058F3A,Passive16_0126,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 06058F98,Passive16_0127,exact,identical,
 06058FDC,Passive16_0128,exact,remap-only,case 1: Jump_Command_Attack_Term arg4 0x700 -> 0x380; case 1: Jump_Command_Attack_Term arg10 0x400 -> 0x200
-06059034,Passive16_0129,high,identical,
-06059066,Passive16_0130,high,identical,
-060590BC,Passive16_0131,high,identical,
+06059034,Passive16_0129,events,identical,
+06059066,Passive16_0130,events,identical,
+060590BC,Passive16_0131,events,identical,
 060590EE,Passive16_0132,exact,identical,
 06059124,Passive16_0133,exact,identical,
 06059164,Passive16_0134,exact,identical,
@@ -2887,7 +2887,7 @@ arcade_addr,name,grade,status,detail
 06059424,Passive16_0143,exact,identical,
 0605946C,Passive16_0144,exact,identical,
 060594CA,Passive16_0145,exact,identical,
-06059542,Passive16_0146,high,identical,
+06059542,Passive16_0146,events,identical,
 060595CE,Passive16_0147,exact,remap-only,case 1: Jump_Command_Attack_Term arg4 0x700 -> 0x380; case 1: Jump_Command_Attack_Term arg10 0x400 -> 0x200
 06059654,Passive16_0148,exact,identical,
 0605967C,Passive16_0149,exact,identical,
@@ -2905,85 +2905,85 @@ arcade_addr,name,grade,status,detail
 060599F2,Passive16_0161,exact,identical,
 06059A60,Passive16_0162,exact,identical,
 06059ACC,Passive16_0163,exact,identical,
-06059AEC,Passive16_0164,high,identical,
+06059AEC,Passive16_0164,events,identical,
 06059B28,Passive16_0165,exact,remap-only,case 0: Normal_Attack arg2 0x402 -> 0x202
 06059B6A,Passive16_0166,exact,identical,
 06059C10,Passive17_0001,exact,identical,
-06059C38,Passive17_0002,high,identical,
+06059C38,Passive17_0002,events,identical,
 06059CA2,Passive17_0003,exact,identical,
-06059CF8,Passive17_0004,high,identical,
+06059CF8,Passive17_0004,events,identical,
 06059D3A,Passive17_0005,exact,identical,
 06059D58,Passive17_0006,exact,identical,
-06059D9C,Passive17_0007,high,identical,
-06059DFC,Passive17_0008,high,identical,
-06059E4E,Passive17_0009,high,identical,
+06059D9C,Passive17_0007,events,identical,
+06059DFC,Passive17_0008,events,identical,
+06059E4E,Passive17_0009,events,identical,
 06059E80,Passive17_0010,exact,identical,
 06059EB2,Passive17_0011,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Jump_Attack_Term arg8 0x200 -> 0x100
 06059F18,Passive17_0012,exact,remap-only,case 0: Normal_Attack arg2 0x400 -> 0x200
-06059F38,Passive17_0013,high,identical,
-06059F7A,Passive17_0014,high,identical,
+06059F38,Passive17_0013,events,identical,
+06059F7A,Passive17_0014,events,identical,
 06059FB8,Passive17_0015,exact,identical,
 06059FF8,Passive17_0016,exact,identical,
 0605A064,Passive17_0017,exact,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x102 -> 0x82; case 3: Normal_Attack arg2 0x200 -> 0x100
 0605A0D8,Passive17_0018,exact,identical,
 0605A152,Passive17_0019,exact,identical,
 0605A172,Passive17_0020,exact,identical,
-0605A192,Passive17_0021,high,identical,
+0605A192,Passive17_0021,events,identical,
 0605A1F6,Passive17_0022,exact,remap-only,case 1: Jump_Attack_Term arg4 0x100 -> 0x80; case 1: Jump_Attack_Term arg8 0x200 -> 0x100; case 4: Normal_Attack arg2 0x200 -> 0x100
 0605A26A,Passive17_0023,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 2: Normal_Attack arg2 0x200 -> 0x100
 0605A2F4,Passive17_0024,exact,remap-only,case 4: Normal_Attack arg2 0x200 -> 0x100
 0605A344,Passive17_0025,exact,remap-only,case 6: Normal_Attack arg2 0x200 -> 0x100
 0605A3E0,Passive17_0026,exact,identical,
-0605A424,Passive17_0027,high,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
+0605A424,Passive17_0027,events,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 0605A464,Passive17_0028,exact,remap-only,case 0: Jump_Attack arg3 0x400 -> 0x200
 0605A496,Passive17_0029,exact,identical,
 0605A4F0,Passive17_0030,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
 0605A536,Passive17_0031,exact,identical,
-0605A558,Passive17_0032,high,identical,
+0605A558,Passive17_0032,events,identical,
 0605A5A0,Passive17_0033,exact,identical,
-0605A604,Passive17_0034,high,identical,
+0605A604,Passive17_0034,events,identical,
 0605A644,Passive17_0035,exact,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x200 -> 0x100
-0605A686,Passive17_0036,high,identical,
+0605A686,Passive17_0036,events,identical,
 0605A6D4,Passive17_0037,exact,identical,
-0605A740,Passive17_0038,high,identical,
-0605A79E,Passive17_0039,high,identical,
+0605A740,Passive17_0038,events,identical,
+0605A79E,Passive17_0039,events,identical,
 0605A810,Passive17_0040,exact,remap-only,case 1: Normal_Attack arg2 0x100 -> 0x80; case 2: Normal_Attack arg2 0x100 -> 0x80; case 3: Normal_Attack arg2 0x200 -> 0x100
 0605A868,Passive17_0041,exact,identical,
 0605A8AE,Passive17_0042,exact,remap-only,case 0: Jump_Attack arg3 0x400 -> 0x200
-0605A8E0,Passive17_0043,high,identical,
-0605A952,Passive17_0044,high,identical,
+0605A8E0,Passive17_0043,events,identical,
+0605A952,Passive17_0044,events,identical,
 0605A9B0,Passive17_0045,exact,identical,
 0605A9F6,Passive17_0046,exact,identical,
-0605AA16,Passive17_0047,high,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82
+0605AA16,Passive17_0047,events,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82
 0605AA80,Passive17_0048,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x402 -> 0x202
 0605AAAA,Passive17_0049,exact,identical,
 0605AAEE,Passive17_0050,exact,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
 0605AB32,Passive17_0051,exact,remap-only,case 0: Normal_Attack arg2 0x220 -> 0x120; case 1: Normal_Attack arg2 0x102 -> 0x82
 0605AB82,Passive17_0052,exact,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
-0605ABA2,Passive17_0053,high,identical,
+0605ABA2,Passive17_0053,events,identical,
 0605ABD4,Passive17_0054,exact,identical,
-0605AC0A,Passive17_0055,high,identical,
+0605AC0A,Passive17_0055,events,identical,
 0605AC3C,Passive17_0056,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100
 0605AC9C,Passive17_0057,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100
 0605ACE0,Passive17_0058,exact,identical,
-0605AD00,Passive17_0059,high,identical,
+0605AD00,Passive17_0059,events,identical,
 0605AD32,Passive17_0060,exact,identical,
-0605AD74,Passive17_0061,high,identical,
+0605AD74,Passive17_0061,events,identical,
 0605ADE0,Passive17_0062,exact,identical,
 0605AE38,Passive17_0063,exact,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x400 -> 0x200
 0605AE92,Passive17_0064,exact,remap-only,case 0: Normal_Attack arg2 0x400 -> 0x200
-0605AEB2,Passive17_0065,high,identical,
-0605AF0E,Passive17_0066,high,identical,
+0605AEB2,Passive17_0065,events,identical,
+0605AF0E,Passive17_0066,events,identical,
 0605AF4E,Passive17_0067,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 0605AF96,Passive17_0068,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Jump_Attack_Term arg8 0x200 -> 0x100
 0605AFDA,Passive17_0069,exact,identical,
 0605B00C,Passive17_0070,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 0605B038,Passive17_0071,exact,identical,
-0605B0AC,Passive17_0072,high,identical,
+0605B0AC,Passive17_0072,events,identical,
 0605B10C,Passive17_0073,exact,identical,
-0605B15E,Passive17_0074,high,identical,
-0605B1CA,Passive17_0075,high,identical,
-0605B244,Passive17_0076,high,identical,
+0605B15E,Passive17_0074,events,identical,
+0605B1CA,Passive17_0075,events,identical,
+0605B244,Passive17_0076,events,identical,
 0605B2B0,Passive17_0077,exact,remap-only,case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x200 -> 0x100
 0605B314,Passive17_0078,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 2: Normal_Attack arg2 0x200 -> 0x100
 0605B36E,Passive17_0079,exact,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
@@ -2992,36 +2992,36 @@ arcade_addr,name,grade,status,detail
 0605B494,Passive17_0082,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x400 -> 0x200; case 1: Normal_Attack arg2 0x200 -> 0x100
 0605B502,Passive17_0083,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x200 -> 0x100; case 1: Normal_Attack arg2 0x100 -> 0x80; case 2: Normal_Attack arg2 0x100 -> 0x80; case 3: Normal_Attack arg2 0x200 -> 0x100
 0605B566,Passive17_0084,exact,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x102 -> 0x82; case 3: Normal_Attack arg2 0x200 -> 0x100
-0605B5BA,Passive17_0085,high,remap-only,case 1: Hi_Jump_Attack arg3 0x400 -> 0x200
-0605B61E,Passive17_0086,high,identical,
-0605B694,Passive17_0087,high,identical,
-0605B72A,Passive17_0088,high,identical,
-0605B7A0,Passive17_0089,high,identical,
-0605B7D2,Passive17_0090,high,identical,
-0605B804,Passive17_0091,high,identical,
+0605B5BA,Passive17_0085,events,remap-only,case 1: Hi_Jump_Attack arg3 0x400 -> 0x200
+0605B61E,Passive17_0086,events,identical,
+0605B694,Passive17_0087,events,identical,
+0605B72A,Passive17_0088,events,identical,
+0605B7A0,Passive17_0089,events,identical,
+0605B7D2,Passive17_0090,events,identical,
+0605B804,Passive17_0091,events,identical,
 0605B836,Passive17_0092,exact,identical,
 0605B886,Passive17_0093,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82
 0605B8D0,Passive17_0094,exact,identical,
 0605B8F2,Passive17_0095,exact,identical,
 0605B93A,Passive17_0096,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 0605B980,Passive17_0097,exact,identical,
-0605BA0C,Passive17_0098,high,identical,
+0605BA0C,Passive17_0098,events,identical,
 0605BA86,Passive17_0099,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Hi_Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x100 -> 0x80
-0605BB20,Passive17_0100,high,identical,
+0605BB20,Passive17_0100,events,identical,
 0605BB84,Passive17_0101,exact,identical,
 0605BBDE,Passive17_0102,exact,identical,
 0605BC4E,Passive17_0103,exact,identical,
-0605BC6E,Passive17_0104,high,identical,
-0605BCA0,Passive17_0105,high,identical,
-0605BCD2,Passive17_0106,high,identical,
+0605BC6E,Passive17_0104,events,identical,
+0605BCA0,Passive17_0105,events,identical,
+0605BCD2,Passive17_0106,events,identical,
 0605BD28,Passive17_0107,exact,identical,
 0605BD64,Passive17_0108,exact,identical,
-0605BD84,Passive17_0109,high,identical,
+0605BD84,Passive17_0109,events,identical,
 0605BDDE,Passive17_0110,exact,identical,
 0605BE1A,Passive17_0111,exact,identical,
 0605BE7C,Passive17_0112,exact,identical,
 0605BE9C,Passive17_0113,exact,identical,
-0605BEE4,Passive17_0114,high,identical,
+0605BEE4,Passive17_0114,events,identical,
 0605BF62,Passive17_0115,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x200 -> 0x100
 0605BFA4,Passive17_0116,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200
 0605BFE6,Passive17_0117,exact,remap-only,case 0: Jump_Attack arg3 0x100 -> 0x80
@@ -3036,9 +3036,9 @@ arcade_addr,name,grade,status,detail
 0605C230,Passive17_0126,exact,identical,
 0605C274,Passive17_0127,exact,identical,
 0605C294,Passive17_0128,exact,remap-only,case 1: J_Command_Attack arg4 0x700 -> 0x380
-0605C2EE,Passive17_0129,high,identical,
-0605C320,Passive17_0130,high,identical,
-0605C352,Passive17_0131,high,identical,
+0605C2EE,Passive17_0129,events,identical,
+0605C320,Passive17_0130,events,identical,
+0605C352,Passive17_0131,events,identical,
 0605C384,Passive17_0132,exact,identical,
 0605C3BA,Passive17_0133,exact,remap-only,case 1: Command_Attack arg4 0x700 -> 0x380
 0605C418,Passive17_0134,exact,identical,
@@ -3053,7 +3053,7 @@ arcade_addr,name,grade,status,detail
 0605C62E,Passive17_0143,exact,identical,
 0605C676,Passive17_0144,exact,identical,
 0605C6D4,Passive17_0145,exact,identical,
-0605C752,Passive17_0146,high,identical,
+0605C752,Passive17_0146,events,identical,
 0605C7C0,Passive17_0147,exact,remap-only,case 1: J_Command_Attack arg4 0x700 -> 0x380
 0605C800,Passive17_0148,exact,identical,
 0605C85A,Passive17_0149,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100
@@ -3070,99 +3070,99 @@ arcade_addr,name,grade,status,detail
 0605CB38,Passive17_0160,exact,identical,
 0605CBB2,Passive17_0161,exact,identical,
 0605CC04,Passive17_0162,exact,identical,
-0605CC70,Passive17_0163,high,identical,
-0605CCB0,Passive17_0164,high,identical,
-0605CD2C,Passive17_0165,high,identical,
-0605CD78,Passive17_0166,high,identical,
+0605CC70,Passive17_0163,events,identical,
+0605CCB0,Passive17_0164,events,identical,
+0605CD2C,Passive17_0165,events,identical,
+0605CD78,Passive17_0166,events,identical,
 0605CDE2,Passive17_0167,exact,identical,
 0605CE32,Passive17_0168,exact,identical,
-0605CE94,Passive17_0169,high,remap-only,case 4: Normal_Attack arg2 0x400 -> 0x200
-0605CF2A,Passive17_0170,high,identical,
-0605CFBC,Passive17_0171,high,identical,
-0605D040,Passive17_0172,high,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x202 -> 0x102
-0605D098,Passive17_0173,high,remap-only,case 2: Lever_Attack arg3 0x402 -> 0x202
-0605D0F2,Passive17_0174,high,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x202 -> 0x102
-0605D16C,Passive17_0175,high,identical,
-0605D1BE,Passive17_0176,high,remap-only,case 1: Hi_Jump_Attack_Term arg4 0x400 -> 0x200; case 1: Hi_Jump_Attack_Term arg8 0x200 -> 0x100
-0605D272,Passive17_0177,high,remap-only,case 1: Hi_Jump_Attack_Term arg4 0x400 -> 0x200; case 1: Hi_Jump_Attack_Term arg8 0x200 -> 0x100
-0605D300,Passive17_0178,high,remap-only,case 1: Hi_Jump_Attack_Term arg4 0x400 -> 0x200; case 1: Hi_Jump_Attack_Term arg8 0x200 -> 0x100; case 3: Lever_Attack arg3 0x402 -> 0x202
-0605D3AC,Passive17_0179,high,identical,
-0605D3EC,Passive17_0180,high,identical,
-0605D436,Passive17_0181,high,identical,
+0605CE94,Passive17_0169,events,remap-only,case 4: Normal_Attack arg2 0x400 -> 0x200
+0605CF2A,Passive17_0170,events,identical,
+0605CFBC,Passive17_0171,events,identical,
+0605D040,Passive17_0172,events,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x202 -> 0x102
+0605D098,Passive17_0173,events,remap-only,case 2: Lever_Attack arg3 0x402 -> 0x202
+0605D0F2,Passive17_0174,events,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x202 -> 0x102
+0605D16C,Passive17_0175,events,identical,
+0605D1BE,Passive17_0176,events,remap-only,case 1: Hi_Jump_Attack_Term arg4 0x400 -> 0x200; case 1: Hi_Jump_Attack_Term arg8 0x200 -> 0x100
+0605D272,Passive17_0177,events,remap-only,case 1: Hi_Jump_Attack_Term arg4 0x400 -> 0x200; case 1: Hi_Jump_Attack_Term arg8 0x200 -> 0x100
+0605D300,Passive17_0178,events,remap-only,case 1: Hi_Jump_Attack_Term arg4 0x400 -> 0x200; case 1: Hi_Jump_Attack_Term arg8 0x200 -> 0x100; case 3: Lever_Attack arg3 0x402 -> 0x202
+0605D3AC,Passive17_0179,events,identical,
+0605D3EC,Passive17_0180,events,identical,
+0605D436,Passive17_0181,events,identical,
 0605D4E4,Passive18_0001,exact,identical,
-0605D50C,Passive18_0002,high,identical,
+0605D50C,Passive18_0002,events,identical,
 0605D556,Passive18_0003,exact,identical,
-0605D574,Passive18_0004,high,identical,
+0605D574,Passive18_0004,events,identical,
 0605D5B6,Passive18_0005,exact,identical,
 0605D5D4,Passive18_0006,exact,identical,
-0605D656,Passive18_0007,high,identical,
-0605D696,Passive18_0008,high,identical,
+0605D656,Passive18_0007,events,identical,
+0605D696,Passive18_0008,events,identical,
 0605D6E8,Passive18_0009,exact,identical,
 0605D71E,Passive18_0010,exact,identical,
 0605D76E,Passive18_0011,exact,identical,
 0605D7B0,Passive18_0012,exact,remap-only,case 0: Normal_Attack arg2 0x400 -> 0x200
-0605D7D0,Passive18_0013,high,identical,
-0605D812,Passive18_0014,high,identical,
+0605D7D0,Passive18_0013,events,identical,
+0605D812,Passive18_0014,events,identical,
 0605D87C,Passive18_0015,exact,identical,
 0605D89C,Passive18_0016,exact,identical,
 0605D906,Passive18_0017,exact,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x102 -> 0x82; case 3: Normal_Attack arg2 0x400 -> 0x200
 0605D97C,Passive18_0018,exact,identical,
 0605D9F6,Passive18_0019,exact,identical,
 0605DA16,Passive18_0020,exact,identical,
-0605DA36,Passive18_0021,high,identical,
+0605DA36,Passive18_0021,events,identical,
 0605DA9A,Passive18_0022,exact,remap-only,case 1: Jump_Attack_Term arg4 0x400 -> 0x200; case 1: Jump_Attack_Term arg8 0x200 -> 0x100
 0605DB0E,Passive18_0023,exact,remap-only,case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 2: Normal_Attack arg2 0x400 -> 0x200
 0605DB94,Passive18_0024,exact,remap-only,case 4: Normal_Attack arg2 0x400 -> 0x200
 0605DBE4,Passive18_0025,exact,remap-only,case 6: Normal_Attack arg2 0x400 -> 0x200
 0605DC80,Passive18_0026,exact,identical,
-0605DCC4,Passive18_0027,high,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
+0605DCC4,Passive18_0027,events,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 0605DD04,Passive18_0028,exact,remap-only,case 0: Jump_Attack arg3 0x400 -> 0x200
 0605DD36,Passive18_0029,exact,identical,
 0605DD90,Passive18_0030,exact,remap-only,case 2: Normal_Attack arg2 0x400 -> 0x200
 0605DDE4,Passive18_0031,exact,identical,
-0605DE06,Passive18_0032,high,identical,
+0605DE06,Passive18_0032,events,identical,
 0605DE4E,Passive18_0033,exact,identical,
-0605DEB8,Passive18_0034,high,remap-only,case 1: Jump_Command_Attack_Term arg10 0x400 -> 0x200
+0605DEB8,Passive18_0034,events,remap-only,case 1: Jump_Command_Attack_Term arg10 0x400 -> 0x200
 0605DF12,Passive18_0035,exact,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x400 -> 0x200
-0605DF54,Passive18_0036,high,identical,
+0605DF54,Passive18_0036,events,identical,
 0605DFC4,Passive18_0037,exact,identical,
-0605E026,Passive18_0038,high,remap-only,case 1: Jump_Command_Attack_Term arg10 0x400 -> 0x200
+0605E026,Passive18_0038,events,remap-only,case 1: Jump_Command_Attack_Term arg10 0x400 -> 0x200
 0605E088,Passive18_0039,exact,identical,
 0605E110,Passive18_0040,exact,remap-only,case 1: Normal_Attack arg2 0x100 -> 0x80; case 2: Normal_Attack arg2 0x100 -> 0x80; case 3: Normal_Attack arg2 0x400 -> 0x200
 0605E168,Passive18_0041,exact,identical,
 0605E1E8,Passive18_0042,exact,identical,
-0605E21A,Passive18_0043,high,remap-only,case 1: Jump_Command_Attack_Term arg10 0x400 -> 0x200
-0605E27E,Passive18_0044,high,identical,
+0605E21A,Passive18_0043,events,remap-only,case 1: Jump_Command_Attack_Term arg10 0x400 -> 0x200
+0605E27E,Passive18_0044,events,identical,
 0605E304,Passive18_0045,exact,identical,
 0605E34C,Passive18_0046,exact,identical,
-0605E36C,Passive18_0047,high,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82
+0605E36C,Passive18_0047,events,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82
 0605E3AC,Passive18_0048,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x402 -> 0x202
 0605E3FC,Passive18_0049,exact,identical,
 0605E450,Passive18_0050,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
 0605E494,Passive18_0051,exact,remap-only,case 0: Normal_Attack arg2 0x420 -> 0x220; case 1: Normal_Attack arg2 0x102 -> 0x82
 0605E4C0,Passive18_0052,exact,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
-0605E508,Passive18_0053,high,identical,
+0605E508,Passive18_0053,events,identical,
 0605E53A,Passive18_0054,exact,identical,
-0605E570,Passive18_0055,high,identical,
+0605E570,Passive18_0055,events,identical,
 0605E5A2,Passive18_0056,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100
 0605E5E4,Passive18_0057,exact,identical,
 0605E646,Passive18_0058,exact,identical,
-0605E666,Passive18_0059,high,identical,
+0605E666,Passive18_0059,events,identical,
 0605E698,Passive18_0060,exact,identical,
 0605E6B6,Passive18_0061,exact,identical,
 0605E702,Passive18_0062,exact,remap-only,case 2: Lever_Attack arg3 0x110 -> 0x90
 0605E770,Passive18_0063,exact,identical,
 0605E7AC,Passive18_0064,exact,remap-only,case 0: Normal_Attack arg2 0x400 -> 0x200
-0605E7CC,Passive18_0065,high,identical,
-0605E838,Passive18_0066,high,remap-only,case 0: Jump_Command_Attack_Term arg10 0x400 -> 0x200
+0605E7CC,Passive18_0065,events,identical,
+0605E838,Passive18_0066,events,remap-only,case 0: Jump_Command_Attack_Term arg10 0x400 -> 0x200
 0605E8A8,Passive18_0067,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 0605E8D4,Passive18_0068,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Jump_Attack_Term arg8 0x400 -> 0x200
 0605E916,Passive18_0069,exact,identical,
 0605E948,Passive18_0070,exact,remap-only,case 1: Lever_Attack arg3 0x402 -> 0x202
 0605E9AC,Passive18_0071,exact,identical,
-0605E9F4,Passive18_0072,high,remap-only,case 2: Jump_Command_Attack_Term arg10 0x400 -> 0x200
+0605E9F4,Passive18_0072,events,remap-only,case 2: Jump_Command_Attack_Term arg10 0x400 -> 0x200
 0605EA5E,Passive18_0073,exact,identical,
-0605EAE2,Passive18_0074,high,identical,
+0605EAE2,Passive18_0074,events,identical,
 0605EB2A,Passive18_0075,exact,identical,
 0605EB76,Passive18_0076,exact,identical,
 0605EBC2,Passive18_0077,exact,remap-only,case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x400 -> 0x200
@@ -3172,37 +3172,37 @@ arcade_addr,name,grade,status,detail
 0605ED48,Passive18_0081,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x100 -> 0x80; case 0: Hi_Jump_Attack_Term arg8 0x400 -> 0x200; case 2: Normal_Attack arg2 0x400 -> 0x200
 0605EDA0,Passive18_0082,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
 0605EE10,Passive18_0083,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x200 -> 0x100; case 1: Normal_Attack arg2 0x100 -> 0x80; case 2: Normal_Attack arg2 0x100 -> 0x80; case 3: Normal_Attack arg2 0x400 -> 0x200
-0605EE74,Passive18_0084,medium,remap-only,case 0: Hi_Jump_Attack arg3 0x400 -> 0x200; case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x102 -> 0x82; case 3: Normal_Attack arg2 0x400 -> 0x200
-0605EEC8,Passive18_0085,high,remap-only,case 1: Jump_Command_Attack_Term arg10 0x400 -> 0x200
-0605EF44,Passive18_0086,high,identical,
-0605F000,Passive18_0087,high,identical,
-0605F086,Passive18_0088,high,identical,
-0605F10C,Passive18_0089,high,remap-only,case 0: Jump_Command_Attack_Term arg10 0x400 -> 0x200
-0605F174,Passive18_0090,high,remap-only,case 0: Jump_Command_Attack_Term arg10 0x400 -> 0x200
-0605F1BE,Passive18_0091,high,remap-only,case 0: Jump_Command_Attack_Term arg10 0x400 -> 0x200
+0605EE74,Passive18_0084,events,remap-only,case 0: Hi_Jump_Attack arg3 0x400 -> 0x200; case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x102 -> 0x82; case 3: Normal_Attack arg2 0x400 -> 0x200
+0605EEC8,Passive18_0085,events,remap-only,case 1: Jump_Command_Attack_Term arg10 0x400 -> 0x200
+0605EF44,Passive18_0086,events,identical,
+0605F000,Passive18_0087,events,identical,
+0605F086,Passive18_0088,events,identical,
+0605F10C,Passive18_0089,events,remap-only,case 0: Jump_Command_Attack_Term arg10 0x400 -> 0x200
+0605F174,Passive18_0090,events,remap-only,case 0: Jump_Command_Attack_Term arg10 0x400 -> 0x200
+0605F1BE,Passive18_0091,events,remap-only,case 0: Jump_Command_Attack_Term arg10 0x400 -> 0x200
 0605F208,Passive18_0092,exact,identical,
 0605F278,Passive18_0093,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82
 0605F2A2,Passive18_0094,exact,identical,
 0605F2C4,Passive18_0095,exact,identical,
 0605F30A,Passive18_0096,exact,remap-only,case 2: Normal_Attack arg2 0x402 -> 0x202
 0605F384,Passive18_0097,exact,identical,
-0605F3E6,Passive18_0098,high,identical,
+0605F3E6,Passive18_0098,events,identical,
 0605F48C,Passive18_0099,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Hi_Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x100 -> 0x80
 0605F4EC,Passive18_0100,exact,identical,
 0605F544,Passive18_0101,exact,remap-only,case 0: Normal_Attack arg2 0x100 -> 0x80
 0605F5C4,Passive18_0102,exact,identical,
 0605F60A,Passive18_0103,exact,identical,
-0605F62A,Passive18_0104,high,identical,
-0605F65C,Passive18_0105,high,identical,
-0605F68E,Passive18_0106,high,identical,
+0605F62A,Passive18_0104,events,identical,
+0605F65C,Passive18_0105,events,identical,
+0605F68E,Passive18_0106,events,identical,
 0605F6C0,Passive18_0107,exact,identical,
 0605F6FC,Passive18_0108,exact,identical,
-0605F71C,Passive18_0109,high,identical,
+0605F71C,Passive18_0109,events,identical,
 0605F776,Passive18_0110,exact,identical,
 0605F7E8,Passive18_0111,exact,identical,
 0605F84A,Passive18_0112,exact,identical,
 0605F86A,Passive18_0113,exact,identical,
-0605F8B2,Passive18_0114,high,identical,
+0605F8B2,Passive18_0114,events,identical,
 0605F900,Passive18_0115,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x200 -> 0x100
 0605F95E,Passive18_0116,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200
 0605F9A0,Passive18_0117,exact,remap-only,case 0: Jump_Attack arg3 0x100 -> 0x80
@@ -3217,11 +3217,11 @@ arcade_addr,name,grade,status,detail
 0605FC36,Passive18_0126,exact,identical,
 0605FC7A,Passive18_0127,exact,identical,
 0605FCB0,Passive18_0128,exact,remap-only,case 1: Command_Attack arg4 0x700 -> 0x380
-0605FCF0,Passive18_0129,high,identical,
-0605FD36,Passive18_0130,high,identical,
-0605FD7C,Passive18_0131,high,identical,
+0605FCF0,Passive18_0129,events,identical,
+0605FD36,Passive18_0130,events,identical,
+0605FD7C,Passive18_0131,events,identical,
 0605FDDC,Passive18_0132,exact,identical,
-0605FE12,Passive18_0133,high,remap-only,case 1: Jump_Command_Attack_Term arg10 0x400 -> 0x200
+0605FE12,Passive18_0133,events,remap-only,case 1: Jump_Command_Attack_Term arg10 0x400 -> 0x200
 0605FE6C,Passive18_0134,exact,identical,
 0605FE9E,Passive18_0135,exact,remap-only,case 1: Command_Attack arg4 0x700 -> 0x380
 0605FF08,Passive18_0136,exact,remap-only,case 1: Command_Attack arg4 0x700 -> 0x380
@@ -3234,7 +3234,7 @@ arcade_addr,name,grade,status,detail
 060600A4,Passive18_0143,exact,identical,
 060600EC,Passive18_0144,exact,identical,
 0606016E,Passive18_0145,exact,identical,
-060601CC,Passive18_0146,high,remap-only,case 3: Command_Attack arg4 0x700 -> 0x380
+060601CC,Passive18_0146,events,remap-only,case 3: Command_Attack arg4 0x700 -> 0x380
 06060250,Passive18_0147,exact,remap-only,case 1: Command_Attack arg4 0x700 -> 0x380
 06060290,Passive18_0148,exact,identical,
 060602B8,Passive18_0149,exact,identical,
@@ -3258,17 +3258,17 @@ arcade_addr,name,grade,status,detail
 0606080A,Passive18_0167,exact,identical,
 06060854,Passive18_0168,exact,identical,
 060608C0,Passive18_0169,exact,identical,
-06060902,Passive18_0170,high,identical,
-06060934,Passive18_0171,high,identical,
-0606097E,Passive18_0172,high,identical,
+06060902,Passive18_0170,events,identical,
+06060934,Passive18_0171,events,identical,
+0606097E,Passive18_0172,events,identical,
 060609C8,Passive18_0173,exact,identical,
 060609F4,Passive18_0174,exact,identical,
 06060A14,Passive18_0175,exact,identical,
-06060A34,Passive18_0176,high,remap-only,case 0: Normal_Attack arg2 0x100 -> 0x80
+06060A34,Passive18_0176,events,remap-only,case 0: Normal_Attack arg2 0x100 -> 0x80
 06060A94,Passive18_0177,exact,identical,
-06060ADA,Passive18_0178,high,remap-only,case 0: Normal_Attack arg2 0x200 -> 0x100
-06060B1A,Passive18_0179,high,identical,
-06060B5A,Passive18_0180,high,identical,
+06060ADA,Passive18_0178,events,remap-only,case 0: Normal_Attack arg2 0x200 -> 0x100
+06060B1A,Passive18_0179,events,identical,
+06060B5A,Passive18_0180,events,identical,
 06060BB4,Passive18_0181,exact,identical,
 06060BF4,Passive18_0182,exact,identical,
 06060C34,Passive18_0183,exact,remap-only,case 0: Normal_Attack arg2 0x100 -> 0x80
@@ -3276,98 +3276,98 @@ arcade_addr,name,grade,status,detail
 06060CC8,Passive18_0185,exact,identical,
 06060D08,Passive18_0186,exact,identical,
 06060D48,Passive18_0187,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x402 -> 0x202
-06060DA2,Passive18_0188,medium,identical,
-06060DF2,Passive18_0189,medium,identical,
+06060DA2,Passive18_0188,events,identical,
+06060DF2,Passive18_0189,events,identical,
 06060E50,Passive18_0190,exact,identical,
 06060EB2,Passive18_0191,exact,identical,
-06060EEC,Passive18_0192,high,identical,
-06060F34,Passive18_0193,high,identical,
+06060EEC,Passive18_0192,events,identical,
+06060F34,Passive18_0193,events,identical,
 06060F86,Passive18_0194,exact,identical,
 06060FA6,Passive18_0195,exact,identical,
 06060FEC,Passive18_0196,exact,identical,
-06061046,Passive18_0197,high,identical,
-06061078,Passive18_0198,high,remap-only,case 0: Jump_Command_Attack_Term arg10 0x400 -> 0x200
+06061046,Passive18_0197,events,identical,
+06061078,Passive18_0198,events,remap-only,case 0: Jump_Command_Attack_Term arg10 0x400 -> 0x200
 060610C2,Passive18_0199,exact,identical,
 060610FC,Passive18_0200,exact,identical,
 06061172,Passive18_0201,exact,identical,
-060611AC,Passive18_0202,high,identical,
-06061216,Passive18_0203,high,identical,
+060611AC,Passive18_0202,events,identical,
+06061216,Passive18_0203,events,identical,
 060612E8,Passive19_0001,exact,identical,
-06061310,Passive19_0002,high,identical,
+06061310,Passive19_0002,events,identical,
 0606137A,Passive19_0003,exact,identical,
-060613D0,Passive19_0004,high,identical,
+060613D0,Passive19_0004,events,identical,
 06061412,Passive19_0005,exact,identical,
 06061430,Passive19_0006,exact,identical,
-06061474,Passive19_0007,high,identical,
-060614A6,Passive19_0008,high,identical,
-060614F8,Passive19_0009,high,identical,
+06061474,Passive19_0007,events,identical,
+060614A6,Passive19_0008,events,identical,
+060614F8,Passive19_0009,events,identical,
 0606152A,Passive19_0010,exact,identical,
 0606155C,Passive19_0011,exact,identical,
 0606159E,Passive19_0012,exact,remap-only,case 0: Normal_Attack arg2 0x400 -> 0x200
-060615BE,Passive19_0013,high,identical,
-06061626,Passive19_0014,high,identical,
+060615BE,Passive19_0013,events,identical,
+06061626,Passive19_0014,events,identical,
 06061658,Passive19_0015,exact,identical,
 06061678,Passive19_0016,exact,identical,
 06061708,Passive19_0017,exact,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x102 -> 0x82; case 3: Normal_Attack arg2 0x200 -> 0x100
 06061756,Passive19_0018,exact,identical,
 060617CE,Passive19_0019,exact,identical,
 06061816,Passive19_0020,exact,identical,
-06061836,Passive19_0021,high,identical,
+06061836,Passive19_0021,events,identical,
 06061876,Passive19_0022,exact,remap-only,case 1: Jump_Attack_Term arg4 0x100 -> 0x80; case 1: Jump_Attack_Term arg8 0x200 -> 0x100; case 4: Normal_Attack arg2 0x200 -> 0x100
 06061910,Passive19_0023,exact,remap-only,case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 2: Normal_Attack arg2 0x200 -> 0x100
 06061970,Passive19_0024,exact,remap-only,case 4: Normal_Attack arg2 0x200 -> 0x100
 060619EC,Passive19_0025,exact,remap-only,case 6: Normal_Attack arg2 0x200 -> 0x100
 06061A66,Passive19_0026,exact,identical,
-06061AAA,Passive19_0027,high,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
+06061AAA,Passive19_0027,events,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 06061B14,Passive19_0028,exact,remap-only,case 0: Jump_Attack arg3 0x400 -> 0x200
 06061B46,Passive19_0029,exact,identical,
 06061B7E,Passive19_0030,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
 06061BC4,Passive19_0031,exact,identical,
 06061C0C,Passive19_0032,exact,identical,
 06061C5C,Passive19_0033,exact,identical,
-06061C96,Passive19_0034,high,identical,
+06061C96,Passive19_0034,events,identical,
 06061CD6,Passive19_0035,exact,remap-only,case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x200 -> 0x100
-06061D38,Passive19_0036,high,identical,
+06061D38,Passive19_0036,events,identical,
 06061D86,Passive19_0037,exact,identical,
 06061DDA,Passive19_0038,exact,identical,
 06061E52,Passive19_0039,exact,identical,
 06061EA4,Passive19_0040,exact,identical,
 06061EF6,Passive19_0041,exact,identical,
 06061F4A,Passive19_0042,exact,remap-only,case 0: Jump_Attack arg3 0x400 -> 0x200
-06061F9E,Passive19_0043,high,identical,
-06061FEA,Passive19_0044,high,identical,
+06061F9E,Passive19_0043,events,identical,
+06061FEA,Passive19_0044,events,identical,
 06062048,Passive19_0045,exact,identical,
 060620B6,Passive19_0046,exact,identical,
-060620D6,Passive19_0047,high,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82
+060620D6,Passive19_0047,events,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82
 06062116,Passive19_0048,exact,identical,
 0606213E,Passive19_0049,exact,identical,
 060621A4,Passive19_0050,exact,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
 060621E8,Passive19_0051,exact,remap-only,case 0: Normal_Attack arg2 0x220 -> 0x120; case 1: Normal_Attack arg2 0x102 -> 0x82
 06062214,Passive19_0052,exact,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
-06062234,Passive19_0053,high,identical,
+06062234,Passive19_0053,events,identical,
 06062266,Passive19_0054,exact,identical,
-060622C0,Passive19_0055,high,identical,
+060622C0,Passive19_0055,events,identical,
 060622F2,Passive19_0056,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100
 06062334,Passive19_0057,exact,identical,
 06062376,Passive19_0058,exact,identical,
-06062396,Passive19_0059,high,identical,
+06062396,Passive19_0059,events,identical,
 060623E8,Passive19_0060,exact,identical,
-06062406,Passive19_0061,high,identical,
+06062406,Passive19_0061,events,identical,
 0606244E,Passive19_0062,exact,identical,
 060624A6,Passive19_0063,exact,identical,
 06062526,Passive19_0064,exact,remap-only,case 0: Normal_Attack arg2 0x400 -> 0x200
-06062546,Passive19_0065,high,identical,
-060625B8,Passive19_0066,high,identical,
+06062546,Passive19_0065,events,identical,
+060625B8,Passive19_0066,events,identical,
 0606261C,Passive19_0067,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 06062648,Passive19_0068,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Jump_Attack_Term arg8 0x400 -> 0x200
 0606268A,Passive19_0069,exact,remap-only,case 0: Jump_Attack arg3 0x400 -> 0x200
 060626BC,Passive19_0070,exact,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 060626E8,Passive19_0071,exact,identical,
-06062756,Passive19_0072,high,identical,
+06062756,Passive19_0072,events,identical,
 060627A8,Passive19_0073,exact,identical,
 060627FA,Passive19_0074,exact,identical,
-0606287A,Passive19_0075,high,identical,
-060628C2,Passive19_0076,high,identical,
+0606287A,Passive19_0075,events,identical,
+060628C2,Passive19_0076,events,identical,
 0606292E,Passive19_0077,exact,remap-only,case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x200 -> 0x100
 0606299C,Passive19_0078,exact,remap-only,case 2: Normal_Attack arg2 0x200 -> 0x100
 060629F6,Passive19_0079,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 1: Normal_Attack arg2 0x200 -> 0x100
@@ -3375,37 +3375,37 @@ arcade_addr,name,grade,status,detail
 06062AB8,Passive19_0081,exact,remap-only,case 0: Hi_Jump_Attack_Term arg8 0x400 -> 0x200; case 2: Normal_Attack arg2 0x200 -> 0x100
 06062B10,Passive19_0082,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x400 -> 0x200; case 1: Normal_Attack arg2 0x200 -> 0x100
 06062B7C,Passive19_0083,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x200 -> 0x100; case 1: Normal_Attack arg2 0x100 -> 0x80; case 2: Normal_Attack arg2 0x100 -> 0x80; case 3: Normal_Attack arg2 0x200 -> 0x100
-06062BE0,Passive19_0084,medium,remap-only,case 0: Hi_Jump_Attack arg3 0x402 -> 0x202; case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x102 -> 0x82; case 3: Normal_Attack arg2 0x200 -> 0x100
+06062BE0,Passive19_0084,events,remap-only,case 0: Hi_Jump_Attack arg3 0x402 -> 0x202; case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x102 -> 0x82; case 3: Normal_Attack arg2 0x200 -> 0x100
 06062C34,Passive19_0085,exact,identical,
-06062C9E,Passive19_0086,high,identical,
-06062D24,Passive19_0087,high,identical,
-06062DAA,Passive19_0088,high,identical,
-06062E30,Passive19_0089,high,identical,
-06062E62,Passive19_0090,high,identical,
-06062EBA,Passive19_0091,high,identical,
+06062C9E,Passive19_0086,events,identical,
+06062D24,Passive19_0087,events,identical,
+06062DAA,Passive19_0088,events,identical,
+06062E30,Passive19_0089,events,identical,
+06062E62,Passive19_0090,events,identical,
+06062EBA,Passive19_0091,events,identical,
 06062EEC,Passive19_0092,exact,identical,
 06062F3A,Passive19_0093,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82
 06062F64,Passive19_0094,exact,identical,
 06062FA8,Passive19_0095,exact,identical,
 06062FF0,Passive19_0096,exact,remap-only,case 2: Normal_Attack arg2 0x402 -> 0x202
 06063044,Passive19_0097,exact,identical,
-060630D4,Passive19_0098,high,identical,
+060630D4,Passive19_0098,events,identical,
 0606314E,Passive19_0099,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Hi_Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x100 -> 0x80
-060631E0,Passive19_0100,high,identical,
+060631E0,Passive19_0100,events,identical,
 06063244,Passive19_0101,exact,remap-only,case 0: Normal_Attack arg2 0x100 -> 0x80
 0606329C,Passive19_0102,exact,identical,
 0606330C,Passive19_0103,exact,identical,
-0606332C,Passive19_0104,high,identical,
-0606335E,Passive19_0105,high,identical,
-06063390,Passive19_0106,high,identical,
+0606332C,Passive19_0104,events,identical,
+0606335E,Passive19_0105,events,identical,
+06063390,Passive19_0106,events,identical,
 060633C2,Passive19_0107,exact,identical,
 060633FE,Passive19_0108,exact,identical,
-0606341E,Passive19_0109,high,identical,
+0606341E,Passive19_0109,events,identical,
 06063478,Passive19_0110,exact,identical,
 060634B4,Passive19_0111,exact,remap-only,case 1: Normal_Attack arg2 0x400 -> 0x200
 0606354C,Passive19_0112,exact,remap-only,case 0: Lever_Attack arg3 0x400 -> 0x200
 0606356E,Passive19_0113,exact,remap-only,case 0: Normal_Attack arg2 0x400 -> 0x200
-060635B6,Passive19_0114,high,identical,
+060635B6,Passive19_0114,events,identical,
 06063604,Passive19_0115,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x200 -> 0x100
 0606366A,Passive19_0116,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200
 060636AC,Passive19_0117,exact,remap-only,case 0: Jump_Attack arg3 0x100 -> 0x80
@@ -3420,9 +3420,9 @@ arcade_addr,name,grade,status,detail
 06063942,Passive19_0126,exact,identical,
 06063986,Passive19_0127,exact,identical,
 060639BC,Passive19_0128,exact,remap-only,case 1: J_Command_Attack arg4 0x700 -> 0x380
-060639FC,Passive19_0129,high,identical,
-06063A2E,Passive19_0130,high,identical,
-06063A60,Passive19_0131,high,identical,
+060639FC,Passive19_0129,events,identical,
+06063A2E,Passive19_0130,events,identical,
+06063A60,Passive19_0131,events,identical,
 06063A92,Passive19_0132,exact,identical,
 06063AE8,Passive19_0133,exact,remap-only,case 1: Command_Attack arg4 0x700 -> 0x380
 06063B28,Passive19_0134,exact,identical,
@@ -3437,7 +3437,7 @@ arcade_addr,name,grade,status,detail
 06063D5A,Passive19_0143,exact,identical,
 06063DA2,Passive19_0144,exact,identical,
 06063E24,Passive19_0145,exact,identical,
-06063EA6,Passive19_0146,high,identical,
+06063EA6,Passive19_0146,events,identical,
 06063F2C,Passive19_0147,exact,remap-only,case 1: J_Command_Attack arg4 0x700 -> 0x380
 06063F6C,Passive19_0148,exact,identical,
 06063F94,Passive19_0149,exact,identical,
@@ -3455,23 +3455,23 @@ arcade_addr,name,grade,status,detail
 060642FE,Passive19_0161,exact,identical,
 0606436C,Passive19_0162,exact,identical,
 060643D8,Passive19_0163,exact,remap-only,case 0: Lever_Attack arg3 0x200 -> 0x100
-060643FA,Passive19_0164,high,identical,
-0606442C,Passive19_0165,high,identical,
-0606447C,Passive19_0166,high,identical,
-060644E0,Passive19_0167,high,identical,
+060643FA,Passive19_0164,events,identical,
+0606442C,Passive19_0165,events,identical,
+0606447C,Passive19_0166,events,identical,
+060644E0,Passive19_0167,events,identical,
 06064528,Passive19_0168,high,identical,
-0606457A,Passive19_0169,high,identical,
-060645CC,Passive19_0170,high,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x102 -> 0x82
-0606462C,Passive19_0171,high,remap-only,case 0: Jump_Attack_Term arg4 0x402 -> 0x202; case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x102 -> 0x82
+0606457A,Passive19_0169,events,identical,
+060645CC,Passive19_0170,events,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x102 -> 0x82
+0606462C,Passive19_0171,events,remap-only,case 0: Jump_Attack_Term arg4 0x402 -> 0x202; case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x102 -> 0x82
 0606469A,Passive19_0172,exact,identical,
 060646B8,Passive19_0173,exact,identical,
 060646D6,Passive19_0174,exact,identical,
 06064718,Passive19_0175,exact,identical,
 0606475C,Pattern00_0000,exact,identical,
 06064784,Pattern00_0001,exact,identical,
-060647B0,Pattern00_0002,high,identical,
+060647B0,Pattern00_0002,events,identical,
 060647E2,Pattern00_0003,exact,identical,
-0606480E,Pattern00_0004,high,identical,
+0606480E,Pattern00_0004,events,identical,
 06064840,Pattern00_0005,exact,remap-only,case 1: Lever_Attack arg3 0x110 -> 0x90
 06064898,Pattern00_0006,exact,identical,
 060648B6,Pattern00_0007,exact,remap-only,case 0: Normal_Attack arg2 0x400 -> 0x200
@@ -3484,65 +3484,65 @@ arcade_addr,name,grade,status,detail
 060649EC,Pattern00_0014,exact,identical,
 06064A2E,Pattern00_0015,exact,identical,
 06064A50,Pattern00_0016,exact,identical,
-06064AA2,Pattern00_0017,high,identical,
-06064AD4,Pattern00_0018,high,identical,
-06064B06,Pattern00_0019,high,identical,
+06064AA2,Pattern00_0017,events,identical,
+06064AD4,Pattern00_0018,events,identical,
+06064B06,Pattern00_0019,events,identical,
 06064B48,Pattern00_0020,exact,identical,
 06064BB0,Pattern00_0021,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Jump_Attack_Term arg8 0x200 -> 0x100
-06064BF2,Pattern00_0022,high,identical,
+06064BF2,Pattern00_0022,events,identical,
 06064C54,Pattern00_0023,exact,identical,
 06064C74,Pattern00_0024,exact,identical,
 06064CC8,Pattern00_0025,exact,identical,
-06064CF8,Pattern00_0026,high,identical,
+06064CF8,Pattern00_0026,events,identical,
 06064D36,Pattern00_0027,exact,identical,
 06064D78,Pattern00_0028,exact,identical,
 06064DC4,Pattern00_0029,exact,remap-only,case 0: Adjust_Attack arg2 0x100 -> 0x80; case 1: Adjust_Attack arg2 0x100 -> 0x80; case 2: Adjust_Attack arg2 0x200 -> 0x100
 06064E04,Pattern00_0030,exact,identical,
-06064E48,Pattern00_0031,high,identical,
+06064E48,Pattern00_0031,events,identical,
 06064E88,Pattern00_0032,exact,identical,
 06064ED0,Pattern00_0033,exact,remap-only,case 1: Normal_Attack arg2 0x110 -> 0x90
-06064EFC,Pattern00_0034,high,remap-only,case 0: Adjust_Attack arg2 0x100 -> 0x80
+06064EFC,Pattern00_0034,events,remap-only,case 0: Adjust_Attack arg2 0x100 -> 0x80
 06064F4C,Pattern00_0035,exact,identical,
 06064F6C,Pattern00_0036,exact,identical,
 06064F8C,Pattern00_0037,exact,identical,
-06064FDC,Pattern00_0038,high,remap-only,case 1: Normal_Attack arg2 0x202 -> 0x102
-0606502A,Pattern00_0039,high,remap-only,case 0: Normal_Attack arg2 0x200 -> 0x100
-0606506A,Pattern00_0040,high,identical,
-060650D0,Pattern00_0041,high,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
+06064FDC,Pattern00_0038,events,remap-only,case 1: Normal_Attack arg2 0x202 -> 0x102
+0606502A,Pattern00_0039,events,remap-only,case 0: Normal_Attack arg2 0x200 -> 0x100
+0606506A,Pattern00_0040,events,identical,
+060650D0,Pattern00_0041,events,remap-only,case 1: Normal_Attack arg2 0x402 -> 0x202
 06065110,Pattern00_0042,exact,remap-only,case 2: Normal_Attack arg2 0x402 -> 0x202
-06065150,Pattern00_0043,high,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200
-06065192,Pattern00_0044,high,identical,
-060651F2,Pattern00_0045,high,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x400 -> 0x200
+06065150,Pattern00_0043,events,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200
+06065192,Pattern00_0044,events,identical,
+060651F2,Pattern00_0045,events,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x400 -> 0x200
 06065234,Pattern00_0046,exact,identical,
 0606526C,Pattern00_0047,exact,identical,
 060652A4,Pattern00_0048,exact,identical,
-060652DC,Pattern00_0049,high,identical,
+060652DC,Pattern00_0049,events,identical,
 06065328,Pattern00_0050,high,identical,
-0606535A,Pattern00_0051,high,identical,
+0606535A,Pattern00_0051,events,identical,
 0606538C,Pattern00_0052,exact,identical,
 060653DC,Pattern00_0053,exact,identical,
 06065416,Pattern00_0054,exact,identical,
 06065466,Pattern00_0055,exact,remap-only,case 1: Normal_Attack arg2 0x110 -> 0x90
 06065492,Pattern00_0056,exact,remap-only,case 1: Jump_Attack_Term arg4 0x400 -> 0x200; case 1: Jump_Attack_Term arg8 0x200 -> 0x100
-060654E4,Pattern00_0057,high,identical,
+060654E4,Pattern00_0057,events,identical,
 0606555C,Pattern00_0058,exact,identical,
-06065584,Pattern00_0059,high,identical,
+06065584,Pattern00_0059,events,identical,
 060655B6,Pattern00_0060,exact,remap-only,case 0: Lever_Attack arg3 0x200 -> 0x100
 060655D8,Pattern00_0061,exact,identical,
 06065604,Pattern00_0062,exact,identical,
 06065624,Pattern00_0063,exact,identical,
 06065664,Pattern00_0064,exact,identical,
-06065682,Pattern00_0065,high,identical,
-060656C2,Pattern00_0066,high,identical,
-06065704,Pattern00_0067,high,identical,
+06065682,Pattern00_0065,events,identical,
+060656C2,Pattern00_0066,events,identical,
+06065704,Pattern00_0067,events,identical,
 060657AC,Pattern01_0000,exact,identical,
 060657D4,Pattern01_0001,exact,identical,
-060657F8,Pattern01_0002,high,identical,
+060657F8,Pattern01_0002,events,identical,
 06065838,Pattern01_0003,exact,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
-06065864,Pattern01_0004,high,identical,
+06065864,Pattern01_0004,events,identical,
 060658C2,Pattern01_0005,exact,identical,
 06065908,Pattern01_0006,exact,identical,
-06065926,Pattern01_0007,high,identical,
+06065926,Pattern01_0007,events,identical,
 06065972,Pattern01_0008,exact,remap-only,case 0: Normal_Attack arg2 0x200 -> 0x100
 060659B8,Pattern01_0009,exact,identical,
 060659EE,Pattern01_0010,exact,remap-only,case 0: Normal_Attack arg2 0x402 -> 0x202
@@ -3552,56 +3552,56 @@ arcade_addr,name,grade,status,detail
 06065A70,Pattern01_0014,exact,identical,
 06065AD2,Pattern01_0015,exact,identical,
 06065AF4,Pattern01_0016,exact,identical,
-06065B16,Pattern01_0017,high,identical,
+06065B16,Pattern01_0017,events,identical,
 06065B48,Pattern01_0018,exact,identical,
 06065B7A,Pattern01_0019,exact,remap-only,case 0: Lever_Attack arg3 0x400 -> 0x200
-06065BC4,Pattern01_0020,high,identical,
+06065BC4,Pattern01_0020,events,identical,
 06065C0C,Pattern01_0021,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Jump_Attack_Term arg8 0x200 -> 0x100
 06065C4E,Pattern01_0022,exact,identical,
 06065C80,Pattern01_0023,exact,identical,
 06065CA0,Pattern01_0024,exact,identical,
 06065CE8,Pattern01_0025,exact,identical,
-06065D0A,Pattern01_0026,high,identical,
+06065D0A,Pattern01_0026,events,identical,
 06065D48,Pattern01_0027,exact,identical,
 06065D66,Pattern01_0028,exact,identical,
 06065D86,Pattern01_0029,exact,remap-only,case 0: Adjust_Attack arg2 0x100 -> 0x80; case 1: Adjust_Attack arg2 0x200 -> 0x100; case 2: Adjust_Attack arg2 0x400 -> 0x200
 06065DF4,Pattern01_0030,exact,remap-only,case 0: Adjust_Attack arg2 0x100 -> 0x80; case 1: Adjust_Attack arg2 0x402 -> 0x202
 06065E20,Pattern01_0031,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x200 -> 0x100
-06065E70,Pattern01_0032,high,identical,
-06065EB0,Pattern01_0033,high,identical,
+06065E70,Pattern01_0032,events,identical,
+06065EB0,Pattern01_0033,events,identical,
 06065F14,Pattern01_0034,exact,remap-only,case 0: Adjust_Attack arg2 0x102 -> 0x82; case 1: Adjust_Attack arg2 0x102 -> 0x82; case 2: Adjust_Attack arg2 0x200 -> 0x100
 06065F52,Pattern01_0035,exact,identical,
 06065F72,Pattern01_0036,exact,identical,
-06065F92,Pattern01_0037,high,identical,
+06065F92,Pattern01_0037,events,identical,
 06065FD4,Pattern01_0038,exact,remap-only,case 1: Normal_Attack arg2 0x202 -> 0x102
-0606602C,Pattern01_0039,high,identical,
-06066074,Pattern01_0040,high,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
-060660B4,Pattern01_0041,high,identical,
+0606602C,Pattern01_0039,events,identical,
+06066074,Pattern01_0040,events,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
+060660B4,Pattern01_0041,events,identical,
 06066110,Pattern01_0042,exact,remap-only,case 2: Normal_Attack arg2 0x402 -> 0x202
 0606614C,Pattern01_0043,exact,identical,
 060661E0,Pattern01_0044,exact,identical,
 06066232,Pattern01_0045,exact,identical,
-0606629E,Pattern01_0046,high,identical,
-060662D0,Pattern01_0047,high,identical,
+0606629E,Pattern01_0046,events,identical,
+060662D0,Pattern01_0047,events,identical,
 06066302,Pattern01_0048,exact,identical,
-06066338,Pattern01_0049,high,identical,
-0606636A,Pattern01_0050,high,identical,
-0606639C,Pattern01_0051,high,identical,
-060663FC,Pattern01_0052,high,identical,
-06066468,Pattern01_0053,high,identical,
+06066338,Pattern01_0049,events,identical,
+0606636A,Pattern01_0050,events,identical,
+0606639C,Pattern01_0051,events,identical,
+060663FC,Pattern01_0052,events,identical,
+06066468,Pattern01_0053,events,identical,
 060664D4,Pattern01_0054,exact,identical,
 06066540,Pattern01_0055,exact,identical,
-06066568,Pattern01_0056,high,identical,
-0606659A,Pattern01_0057,high,identical,
-060665CC,Pattern01_0058,high,identical,
+06066568,Pattern01_0056,events,identical,
+0606659A,Pattern01_0057,events,identical,
+060665CC,Pattern01_0058,events,identical,
 060665FE,Pattern01_0059,exact,remap-only,case 0: Command_Attack arg4 0x700 -> 0x380
 0606664E,Pattern01_0060,exact,identical,
 06066680,Pattern01_0061,exact,remap-only,case 0: Command_Attack arg4 0x700 -> 0x380
 060666B2,Pattern01_0062,exact,remap-only,case 0: Lever_Attack arg3 0x110 -> 0x90
 060666D4,Pattern01_0063,exact,remap-only,case 0: Lever_Attack arg3 0x110 -> 0x90
-060666F6,Pattern01_0064,high,identical,
-06066740,Pattern01_0065,high,identical,
-06066772,Pattern01_0066,high,identical,
+060666F6,Pattern01_0064,events,identical,
+06066740,Pattern01_0065,events,identical,
+06066772,Pattern01_0066,events,identical,
 060667A4,Pattern01_0067,exact,identical,
 060667C6,Pattern01_0068,exact,identical,
 060667FC,Pattern01_0069,exact,remap-only,case 0: Jump_Attack_Term arg8 0x200 -> 0x100
@@ -3666,7 +3666,7 @@ arcade_addr,name,grade,status,detail
 060676F4,Pattern02_0058,exact,identical,
 06067732,Pattern02_0059,exact,identical,
 06067770,Pattern02_0060,exact,identical,
-060677D4,Pattern02_0061,high,not-lifted,selector
+060677D4,Pattern02_0061,events,not-lifted,selector
 060677E8,Pattern02_0062,exact,identical,
 06067830,Pattern02_0063,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Jump_Attack_Term arg8 0x400 -> 0x200
 06067874,Pattern02_0064,exact,remap-only,case 0: Jump_Attack_Term arg8 0x400 -> 0x200; case 1: Normal_Attack arg2 0x202 -> 0x102
@@ -3867,8 +3867,8 @@ arcade_addr,name,grade,status,detail
 0606AB94,Pattern05_0045,exact,identical,
 0606AC10,Pattern05_0046,exact,identical,
 0606AC5C,Pattern05_0047,exact,remap-only,case 0: Hi_Jump_Command_Attack_Term arg10 0x400 -> 0x200
-0606ACA2,Pattern05_0048,high,not-lifted,selector
-0606ACB6,Pattern05_0049,high,not-lifted,selector
+0606ACA2,Pattern05_0048,events,not-lifted,selector
+0606ACB6,Pattern05_0049,events,not-lifted,selector
 0606ACCA,Pattern05_0050,exact,remap-only,case 0: Hi_Jump_Attack arg3 0x400 -> 0x200
 0606AD16,Pattern05_0051,exact,identical,
 0606AD58,Pattern05_0052,exact,identical,
@@ -3996,7 +3996,7 @@ arcade_addr,name,grade,status,detail
 0606CE1E,Pattern07_0043,exact,identical,
 0606CE62,Pattern07_0044,exact,remap-only,case 0: Jump_Attack_Term arg8 0x400 -> 0x200
 0606CEA6,Pattern07_0045,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200
-0606CF0A,Pattern07_0046,high,not-lifted,selector
+0606CF0A,Pattern07_0046,events,not-lifted,selector
 0606CF1E,Pattern07_0047,exact,remap-only,case 0: Hi_Jump_Command_Attack_Term arg10 0x400 -> 0x200
 0606CF66,Pattern07_0048,exact,remap-only,case 1: Lever_Attack arg3 0x100 -> 0x80
 0606CFF8,Pattern07_0049,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Hi_Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Lever_Attack arg3 0x100 -> 0x80; case 2: Lever_Attack arg3 0x100 -> 0x80; case 3: Normal_Attack arg2 0x200 -> 0x100
@@ -4086,10 +4086,10 @@ arcade_addr,name,grade,status,detail
 0606E8CC,Pattern08_0057,exact,identical,
 0606E8FE,Pattern08_0058,exact,identical,
 0606E960,Pattern08_0059,exact,identical,
-0606E992,Pattern08_0060,high,not-lifted,selector
+0606E992,Pattern08_0060,events,not-lifted,selector
 0606E9A6,Pattern08_0061,exact,identical,
 0606E9EE,Pattern08_0062,exact,identical,
-0606EA20,Pattern08_0063,high,not-lifted,selector
+0606EA20,Pattern08_0063,events,not-lifted,selector
 0606EA34,Pattern08_0064,exact,identical,
 0606EA66,Pattern08_0065,exact,identical,
 0606EA98,Pattern08_0066,exact,identical,
@@ -4680,10 +4680,10 @@ arcade_addr,name,grade,status,detail
 0607D748,Pattern15_0001,exact,identical,
 0607D770,Pattern15_0002,exact,identical,
 0607D7A6,Pattern15_0003,exact,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
-0607D7D2,Pattern15_0004,high,identical,
+0607D7D2,Pattern15_0004,events,identical,
 0607D830,Pattern15_0005,exact,identical,
 0607D876,Pattern15_0006,exact,identical,
-0607D894,Pattern15_0007,high,identical,
+0607D894,Pattern15_0007,events,identical,
 0607D8E0,Pattern15_0008,exact,remap-only,case 0: Normal_Attack arg2 0x200 -> 0x100
 0607D928,Pattern15_0009,exact,identical,
 0607D95E,Pattern15_0010,exact,remap-only,case 0: Normal_Attack arg2 0x402 -> 0x202
@@ -4693,16 +4693,16 @@ arcade_addr,name,grade,status,detail
 0607D9DE,Pattern15_0014,exact,identical,
 0607DA48,Pattern15_0015,exact,identical,
 0607DA6A,Pattern15_0016,exact,identical,
-0607DA9A,Pattern15_0017,high,identical,
+0607DA9A,Pattern15_0017,events,identical,
 0607DACC,Pattern15_0018,exact,remap-only,case 0: Jump_Attack arg3 0x202 -> 0x102
 0607DAFE,Pattern15_0019,exact,remap-only,case 0: Lever_Attack arg3 0x400 -> 0x200
-0607DB40,Pattern15_0020,high,remap-only,case 1: Jump_Attack arg3 0x202 -> 0x102
+0607DB40,Pattern15_0020,events,remap-only,case 1: Jump_Attack arg3 0x202 -> 0x102
 0607DB88,Pattern15_0021,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Jump_Attack_Term arg8 0x200 -> 0x100
 0607DBCA,Pattern15_0022,exact,identical,
 0607DBFC,Pattern15_0023,exact,identical,
 0607DC1C,Pattern15_0024,exact,identical,
 0607DC64,Pattern15_0025,exact,identical,
-0607DC94,Pattern15_0026,high,identical,
+0607DC94,Pattern15_0026,events,identical,
 0607DCD2,Pattern15_0027,exact,identical,
 0607DCF0,Pattern15_0028,exact,identical,
 0607DD10,Pattern15_0029,exact,remap-only,case 0: Adjust_Attack arg2 0x100 -> 0x80; case 1: Adjust_Attack arg2 0x200 -> 0x100; case 2: Adjust_Attack arg2 0x400 -> 0x200
@@ -4713,46 +4713,46 @@ arcade_addr,name,grade,status,detail
 0607DEAA,Pattern15_0034,exact,remap-only,case 0: Adjust_Attack arg2 0x102 -> 0x82; case 1: Adjust_Attack arg2 0x102 -> 0x82; case 2: Adjust_Attack arg2 0x200 -> 0x100
 0607DEE8,Pattern15_0035,exact,identical,
 0607DF08,Pattern15_0036,exact,identical,
-0607DF28,Pattern15_0037,high,identical,
+0607DF28,Pattern15_0037,events,identical,
 0607DF84,Pattern15_0038,exact,remap-only,case 1: Normal_Attack arg2 0x202 -> 0x102
-0607DFBE,Pattern15_0039,high,identical,
-0607E006,Pattern15_0040,high,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
-0607E046,Pattern15_0041,high,identical,
+0607DFBE,Pattern15_0039,events,identical,
+0607E006,Pattern15_0040,events,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
+0607E046,Pattern15_0041,events,identical,
 0607E0A2,Pattern15_0042,exact,remap-only,case 2: Normal_Attack arg2 0x402 -> 0x202
 0607E0E2,Pattern15_0043,exact,identical,
 0607E17C,Pattern15_0044,exact,identical,
 0607E1CE,Pattern15_0045,exact,identical,
-0607E23A,Pattern15_0046,high,identical,
-0607E26C,Pattern15_0047,high,identical,
-0607E29E,Pattern15_0048,high,identical,
-0607E2D0,Pattern15_0049,high,identical,
-0607E302,Pattern15_0050,high,identical,
-0607E334,Pattern15_0051,high,identical,
+0607E23A,Pattern15_0046,events,identical,
+0607E26C,Pattern15_0047,events,identical,
+0607E29E,Pattern15_0048,events,identical,
+0607E2D0,Pattern15_0049,events,identical,
+0607E302,Pattern15_0050,events,identical,
+0607E334,Pattern15_0051,events,identical,
 0607E38C,Pattern15_0052,exact,identical,
-0607E3DA,Pattern15_0053,high,identical,
-0607E422,Pattern15_0054,high,identical,
+0607E3DA,Pattern15_0053,events,identical,
+0607E422,Pattern15_0054,events,identical,
 0607E4A8,Pattern15_0055,exact,identical,
 0607E4D0,Pattern15_0056,exact,remap-only,case 0: Command_Attack arg4 0x700 -> 0x380
-0607E502,Pattern15_0057,high,identical,
-0607E534,Pattern15_0058,high,identical,
-0607E566,Pattern15_0059,high,identical,
+0607E502,Pattern15_0057,events,identical,
+0607E534,Pattern15_0058,events,identical,
+0607E566,Pattern15_0059,events,identical,
 0607E5B0,Pattern15_0060,exact,identical,
 0607E5E2,Pattern15_0061,exact,remap-only,case 1: Command_Attack arg4 0x700 -> 0x380
 0607E622,Pattern15_0062,exact,remap-only,case 0: Lever_Attack arg3 0x110 -> 0x90
 0607E644,Pattern15_0063,exact,remap-only,case 0: Lever_Attack arg3 0x110 -> 0x90
-0607E666,Pattern15_0064,high,identical,
-0607E6B0,Pattern15_0065,high,remap-only,case 0: Rapid_Command_Attack arg3 0x100 -> 0x80
-0607E6E2,Pattern15_0066,high,remap-only,case 0: Rapid_Command_Attack arg3 0x400 -> 0x200
-0607E714,Pattern15_0067,high,remap-only,case 0: Normal_Attack_SP arg2 0x200 -> 0x100
-0607E736,Pattern15_0068,high,remap-only,case 0: Rapid_Command_Attack arg3 0x100 -> 0x80
+0607E666,Pattern15_0064,events,identical,
+0607E6B0,Pattern15_0065,events,remap-only,case 0: Rapid_Command_Attack arg3 0x100 -> 0x80
+0607E6E2,Pattern15_0066,events,remap-only,case 0: Rapid_Command_Attack arg3 0x400 -> 0x200
+0607E714,Pattern15_0067,events,remap-only,case 0: Normal_Attack_SP arg2 0x200 -> 0x100
+0607E736,Pattern15_0068,events,remap-only,case 0: Rapid_Command_Attack arg3 0x100 -> 0x80
 0607E798,Pattern16_0000,exact,identical,
 0607E7C0,Pattern16_0001,exact,identical,
-0607E7E4,Pattern16_0002,high,identical,
+0607E7E4,Pattern16_0002,events,identical,
 0607E824,Pattern16_0003,exact,remap-only,case 0: Adjust_Attack arg2 0x100 -> 0x80; case 1: Normal_Attack arg2 0x200 -> 0x100
-0607E850,Pattern16_0004,high,identical,
+0607E850,Pattern16_0004,events,identical,
 0607E8AE,Pattern16_0005,exact,identical,
 0607E8F6,Pattern16_0006,exact,identical,
-0607E914,Pattern16_0007,high,identical,
+0607E914,Pattern16_0007,events,identical,
 0607E960,Pattern16_0008,exact,remap-only,case 0: Normal_Attack arg2 0x200 -> 0x100
 0607E9A8,Pattern16_0009,exact,identical,
 0607E9DE,Pattern16_0010,exact,remap-only,case 0: Normal_Attack arg2 0x402 -> 0x202
@@ -4762,8 +4762,8 @@ arcade_addr,name,grade,status,detail
 0607EA60,Pattern16_0014,exact,identical,
 0607EAC6,Pattern16_0015,exact,identical,
 0607EAE8,Pattern16_0016,exact,identical,
-0607EB0A,Pattern16_0017,high,identical,
-0607EB3C,Pattern16_0018,high,remap-only,case 0: Jump_Command_Attack_Term arg10 0x400 -> 0x200
+0607EB0A,Pattern16_0017,events,identical,
+0607EB3C,Pattern16_0018,events,remap-only,case 0: Jump_Command_Attack_Term arg10 0x400 -> 0x200
 0607EB84,Pattern16_0019,exact,remap-only,case 0: Lever_Attack arg3 0x400 -> 0x200
 0607EBCC,Pattern16_0020,exact,identical,
 0607EC10,Pattern16_0021,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Jump_Attack_Term arg8 0x200 -> 0x100
@@ -4771,39 +4771,39 @@ arcade_addr,name,grade,status,detail
 0607EC84,Pattern16_0023,exact,identical,
 0607ECA4,Pattern16_0024,exact,identical,
 0607ECEC,Pattern16_0025,exact,identical,
-0607ED0E,Pattern16_0026,high,identical,
+0607ED0E,Pattern16_0026,events,identical,
 0607ED4C,Pattern16_0027,exact,identical,
 0607ED6A,Pattern16_0028,exact,identical,
 0607ED8A,Pattern16_0029,exact,remap-only,case 0: Adjust_Attack arg2 0x100 -> 0x80; case 1: Adjust_Attack arg2 0x200 -> 0x100; case 2: Lever_Attack arg3 0x400 -> 0x200
 0607EDF0,Pattern16_0030,exact,remap-only,case 0: Adjust_Attack arg2 0x100 -> 0x80
 0607EE1C,Pattern16_0031,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x200 -> 0x100
-0607EE70,Pattern16_0032,high,identical,
-0607EEB0,Pattern16_0033,high,identical,
+0607EE70,Pattern16_0032,events,identical,
+0607EEB0,Pattern16_0033,events,identical,
 0607EF12,Pattern16_0034,exact,remap-only,case 0: Adjust_Attack arg2 0x102 -> 0x82; case 1: Adjust_Attack arg2 0x102 -> 0x82; case 2: Adjust_Attack arg2 0x200 -> 0x100
 0607EF50,Pattern16_0035,exact,identical,
 0607EF70,Pattern16_0036,exact,identical,
-0607EF90,Pattern16_0037,high,identical,
+0607EF90,Pattern16_0037,events,identical,
 0607EFF0,Pattern16_0038,exact,remap-only,case 1: Normal_Attack arg2 0x202 -> 0x102
-0607F02A,Pattern16_0039,high,identical,
-0607F080,Pattern16_0040,high,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
-0607F0C0,Pattern16_0041,high,identical,
+0607F02A,Pattern16_0039,events,identical,
+0607F080,Pattern16_0040,events,remap-only,case 0: Normal_Attack arg2 0x202 -> 0x102
+0607F0C0,Pattern16_0041,events,identical,
 0607F11C,Pattern16_0042,exact,identical,
 0607F158,Pattern16_0043,exact,identical,
 0607F1D2,Pattern16_0044,exact,identical,
 0607F224,Pattern16_0045,exact,identical,
-0607F290,Pattern16_0046,high,identical,
+0607F290,Pattern16_0046,events,identical,
 0607F2E4,Pattern16_0047,exact,identical,
-0607F348,Pattern16_0048,high,identical,
-0607F388,Pattern16_0049,high,identical,
-0607F3BA,Pattern16_0050,high,identical,
-0607F3EC,Pattern16_0051,high,identical,
-0607F41E,Pattern16_0052,high,identical,
-0607F492,Pattern16_0053,high,identical,
-0607F54C,Pattern16_0054,high,identical,
+0607F348,Pattern16_0048,events,identical,
+0607F388,Pattern16_0049,events,identical,
+0607F3BA,Pattern16_0050,events,identical,
+0607F3EC,Pattern16_0051,events,identical,
+0607F41E,Pattern16_0052,events,identical,
+0607F492,Pattern16_0053,events,identical,
+0607F54C,Pattern16_0054,events,identical,
 0607F594,Pattern16_0055,exact,identical,
-0607F5BC,Pattern16_0056,high,identical,
-0607F5EE,Pattern16_0057,high,identical,
-0607F620,Pattern16_0058,high,identical,
+0607F5BC,Pattern16_0056,events,identical,
+0607F5EE,Pattern16_0057,events,identical,
+0607F620,Pattern16_0058,events,identical,
 0607F652,Pattern16_0059,exact,remap-only,case 0: Command_Attack arg4 0x700 -> 0x380
 0607F6A2,Pattern16_0060,exact,identical,
 0607F6D4,Pattern16_0061,exact,remap-only,case 0: Jump_Command_Attack_Term arg4 0x700 -> 0x380; case 0: Jump_Command_Attack_Term arg10 0x400 -> 0x200
@@ -4813,7 +4813,7 @@ arcade_addr,name,grade,status,detail
 0607F7BC,Pattern16_0065,exact,identical,
 0607F7F2,Pattern16_0066,exact,identical,
 0607F826,Pattern16_0067,exact,remap-only,case 0: Normal_Attack arg2 0x110 -> 0x90
-0607F846,Pattern16_0068,high,identical,
+0607F846,Pattern16_0068,events,identical,
 0607F878,Pattern16_0069,exact,identical,
 0607F8CC,Pattern17_0000,exact,identical,
 0607F8F4,Pattern17_0001,exact,identical,
@@ -5086,7 +5086,7 @@ arcade_addr,name,grade,status,detail
 06083CFC,Pattern19_0076,exact,remap-only,case 0: Jump_Attack_Term arg4 0x402 -> 0x202; case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x102 -> 0x82; case 2: Normal_Attack arg2 0x102 -> 0x82
 06083D6A,Pattern19_0077,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x202 -> 0x102
 06083DD6,Pattern19_0078,exact,remap-only,case 0: Normal_Attack arg2 0x102 -> 0x82; case 1: Normal_Attack arg2 0x102 -> 0x82
-060840A4,Shell00_0000,high,not-lifted,selector
+060840A4,Shell00_0000,events,not-lifted,selector
 060840B8,Shell00_0001,exact,identical,
 060840F8,Shell00_0002,exact,identical,
 06084138,Shell00_0003,exact,identical,
@@ -5096,8 +5096,8 @@ arcade_addr,name,grade,status,detail
 060842E0,Shell00_0007,exact,identical,
 06084312,Shell00_0008,exact,remap-only,case 1: Jump_Attack_Term arg8 0x200 -> 0x100; case 2: Normal_Attack arg2 0x202 -> 0x102
 06084380,Shell00_0009,exact,identical,
-060843CA,Shell00_0010,high,not-lifted,selector
-06084424,Shell01_0000,high,not-lifted,selector
+060843CA,Shell00_0010,events,not-lifted,selector
+06084424,Shell01_0000,events,not-lifted,selector
 06084438,Shell01_0001,exact,identical,
 06084478,Shell01_0002,exact,identical,
 060844B8,Shell01_0003,exact,remap-only,case 1: Jump_Attack_Term arg4 0x400 -> 0x200
@@ -5107,7 +5107,7 @@ arcade_addr,name,grade,status,detail
 0608466A,Shell01_0007,exact,identical,
 060846D2,Shell01_0008,exact,remap-only,case 1: Jump_Attack_Term arg4 0x200 -> 0x100; case 2: Normal_Attack arg2 0x202 -> 0x102
 0608473A,Shell01_0009,exact,identical,
-060847C4,Shell03_0000,high,not-lifted,selector
+060847C4,Shell03_0000,events,not-lifted,selector
 060847D8,Shell03_0001,exact,identical,
 06084818,Shell03_0002,exact,identical,
 06084858,Shell03_0003,exact,remap-only,case 1: Jump_Attack_Term arg4 0x200 -> 0x100; case 1: Jump_Attack_Term arg8 0x200 -> 0x100
@@ -5117,8 +5117,8 @@ arcade_addr,name,grade,status,detail
 06084A4C,Shell03_0007,exact,identical,
 06084A7E,Shell03_0008,exact,remap-only,case 1: Jump_Attack_Term arg8 0x200 -> 0x100; case 2: Normal_Attack arg2 0x202 -> 0x102
 06084B10,Shell03_0009,exact,identical,
-06084B5A,Shell03_0010,high,not-lifted,selector
-06084BB0,Shell04_0000,high,not-lifted,selector
+06084B5A,Shell03_0010,events,not-lifted,selector
+06084BB0,Shell04_0000,events,not-lifted,selector
 06084BC4,Shell04_0001,exact,identical,
 06084C04,Shell04_0002,exact,identical,
 06084C44,Shell04_0003,exact,remap-only,case 1: Jump_Attack_Term arg4 0x200 -> 0x100; case 1: Jump_Attack_Term arg8 0x200 -> 0x100
@@ -5128,9 +5128,9 @@ arcade_addr,name,grade,status,detail
 06084E3C,Shell04_0007,exact,identical,
 06084E88,Shell04_0008,exact,remap-only,case 1: Jump_Attack_Term arg8 0x200 -> 0x100; case 2: Normal_Attack arg2 0x202 -> 0x102
 06084F1E,Shell04_0009,exact,identical,
-06084F68,Shell04_0010,high,not-lifted,selector
+06084F68,Shell04_0010,events,not-lifted,selector
 06084F7C,Shell04_0011,exact,identical,
-06085010,Shell05_0000,high,not-lifted,selector
+06085010,Shell05_0000,events,not-lifted,selector
 06085024,Shell05_0001,exact,identical,
 06085064,Shell05_0002,exact,identical,
 060850A4,Shell05_0003,exact,remap-only,case 1: Jump_Attack_Term arg4 0x200 -> 0x100; case 1: Jump_Attack_Term arg8 0x200 -> 0x100
@@ -5140,8 +5140,8 @@ arcade_addr,name,grade,status,detail
 0608529C,Shell05_0007,exact,remap-only,case 0: Jump_Attack_Term arg4 0x202 -> 0x102
 060852DE,Shell05_0008,exact,remap-only,case 1: Jump_Attack_Term arg8 0x200 -> 0x100; case 2: Normal_Attack arg2 0x202 -> 0x102
 06085374,Shell05_0009,exact,identical,
-060853BE,Shell05_0010,high,not-lifted,selector
-06085414,Shell07_0000,high,not-lifted,selector
+060853BE,Shell05_0010,events,not-lifted,selector
+06085414,Shell07_0000,events,not-lifted,selector
 06085428,Shell07_0001,exact,identical,
 06085468,Shell07_0002,exact,identical,
 060854A8,Shell07_0003,exact,remap-only,case 1: Jump_Attack_Term arg4 0x200 -> 0x100; case 1: Jump_Attack_Term arg8 0x200 -> 0x100
@@ -5151,9 +5151,9 @@ arcade_addr,name,grade,status,detail
 0608569C,Shell07_0007,exact,identical,
 060856CE,Shell07_0008,exact,remap-only,case 1: Jump_Attack_Term arg8 0x200 -> 0x100; case 2: Normal_Attack arg2 0x202 -> 0x102
 06085760,Shell07_0009,exact,identical,
-060857AA,Shell07_0010,high,not-lifted,selector
+060857AA,Shell07_0010,events,not-lifted,selector
 060857BE,Shell07_0011,exact,identical,
-06085848,Shell11_0000,high,not-lifted,selector
+06085848,Shell11_0000,events,not-lifted,selector
 0608585C,Shell11_0001,exact,identical,
 0608589C,Shell11_0002,exact,identical,
 060858DC,Shell11_0003,exact,remap-only,case 1: Jump_Attack_Term arg4 0x400 -> 0x200; case 1: Jump_Attack_Term arg8 0x200 -> 0x100; case 3: Normal_Attack arg2 0x202 -> 0x102
@@ -5163,11 +5163,11 @@ arcade_addr,name,grade,status,detail
 06085AC6,Shell11_0007,exact,identical,
 06085AF8,Shell11_0008,exact,remap-only,case 1: Jump_Attack_Term arg8 0x200 -> 0x100; case 2: Normal_Attack arg2 0x202 -> 0x102
 06085B8C,Shell11_0009,exact,identical,
-06085BD6,Shell11_0010,high,not-lifted,selector
+06085BD6,Shell11_0010,events,not-lifted,selector
 06085BEA,Shell11_0011,exact,identical,
 06085C1C,Shell11_0012,exact,identical,
 06085C62,Shell11_0013,exact,remap-only,case 0: Jump_Command_Attack_Term arg4 0x700 -> 0x380
-06085CE8,Shell12_0000,high,not-lifted,selector
+06085CE8,Shell12_0000,events,not-lifted,selector
 06085CFC,Shell12_0001,exact,identical,
 06085D3C,Shell12_0002,exact,identical,
 06085D7C,Shell12_0003,exact,remap-only,case 1: Jump_Attack_Term arg4 0x200 -> 0x100; case 1: Jump_Attack_Term arg8 0x200 -> 0x100
@@ -5177,20 +5177,20 @@ arcade_addr,name,grade,status,detail
 06085F74,Shell12_0007,exact,identical,
 06085FC0,Shell12_0008,exact,remap-only,case 1: Jump_Attack_Term arg8 0x200 -> 0x100; case 2: Normal_Attack arg2 0x202 -> 0x102
 0608604E,Shell12_0009,exact,identical,
-06086098,Shell12_0010,high,not-lifted,selector
-060860EC,Shell13_0000,high,not-lifted,selector
+06086098,Shell12_0010,events,not-lifted,selector
+060860EC,Shell13_0000,events,not-lifted,selector
 06086100,Shell13_0001,exact,identical,
 06086140,Shell13_0002,exact,identical,
 06086180,Shell13_0003,exact,remap-only,case 1: Jump_Attack_Term arg4 0x200 -> 0x100; case 1: Jump_Attack_Term arg8 0x200 -> 0x100
 06086210,Shell13_0004,exact,remap-only,case 1: Jump_Attack_Term arg4 0x200 -> 0x100; case 2: Normal_Attack arg2 0x202 -> 0x102
 0608627E,Shell13_0005,exact,remap-only,case 1: Jump_Attack_Term arg4 0x200 -> 0x100; case 1: Jump_Attack_Term arg8 0x400 -> 0x200
-06086312,Shell13_0006,high,remap-only,case 1: Jump_Attack_Term arg4 0x400 -> 0x200
-0608636A,Shell13_0007,high,identical,
+06086312,Shell13_0006,events,remap-only,case 1: Jump_Attack_Term arg4 0x400 -> 0x200
+0608636A,Shell13_0007,events,identical,
 0608639C,Shell13_0008,exact,remap-only,case 1: Jump_Attack_Term arg8 0x200 -> 0x100; case 2: Normal_Attack arg2 0x202 -> 0x102
 06086430,Shell13_0009,exact,identical,
-0608647A,Shell13_0010,high,not-lifted,selector
+0608647A,Shell13_0010,events,not-lifted,selector
 0608648E,Shell13_0011,exact,identical,
-060864F0,Shell14_0000,high,not-lifted,selector
+060864F0,Shell14_0000,events,not-lifted,selector
 06086504,Shell14_0001,exact,identical,
 06086544,Shell14_0002,exact,identical,
 06086584,Shell14_0003,exact,remap-only,case 1: Jump_Attack_Term arg4 0x200 -> 0x100; case 1: Jump_Attack_Term arg8 0x200 -> 0x100; case 3: Normal_Attack arg2 0x202 -> 0x102
@@ -5200,6 +5200,6 @@ arcade_addr,name,grade,status,detail
 0608676E,Shell14_0007,exact,identical,
 060867A0,Shell14_0008,exact,remap-only,case 1: Jump_Attack_Term arg8 0x200 -> 0x100; case 2: Normal_Attack arg2 0x202 -> 0x102
 06086834,Shell14_0009,exact,identical,
-0608687E,Shell14_0010,high,not-lifted,selector
+0608687E,Shell14_0010,events,not-lifted,selector
 06086892,Shell14_0011,exact,identical,
 060868D8,Shell14_0012,exact,remap-only,case 0: Jump_Command_Attack_Term arg4 0x700 -> 0x380

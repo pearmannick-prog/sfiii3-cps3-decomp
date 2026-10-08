@@ -57,12 +57,16 @@ if a.overrides:
         if r["name"]: MANUAL[r["name"]] = x
     for n, x in MANUAL.items(): assign(n, x, "manual", 1.0)
 
+SEMEQ = set()
 if a.content:
-    for r in csv.DictReader(open(a.content)):
+  for cf in a.content.split(","):
+    for r in csv.DictReader(open(cf)):
         n, x = r["name"], int(r["arcade_addr"], 16)
+        if r["verdict"] == "semeq": SEMEQ.add((n, x)); continue
         if r["verdict"] == "reject": REJECT.add((n, x))
         elif r["verdict"] == "verified": VERIFIED.add((n, x)); assign(n, x, "content", 1.0)
         if r["verdict"] in ("seed", "table"): assign(n, x, "content", 1.0)
+        if r["verdict"] == "simseed": assign(n, x, "similar", 0.8)
     for n, x in VERIFIED: assign(n, x, "content", 1.0)
     print(f"content feedback: {len(M)} pairs fixed by exact content, {len(REJECT)} rejected")
 
@@ -395,6 +399,7 @@ def grade(n, x):
     shape = float(pair_score(*pfeat(n), *afeat(x))); cs = const_sim(n, x); cl = call_sim(n, x)
     if how[n][0] == "manual": g = "manual"
     elif (n, x) in VERIFIED: g = "exact"
+    elif (n, x) in SEMEQ: g = "events"
     elif contradicted(n, x) or (cl is not None and cl < 0.3 and (cs or 0) < 0.5): g = "low"
     elif (cs is not None and cs >= 0.5) or (cl is not None and cl >= 0.8): g = "high"
     else: g = "medium"

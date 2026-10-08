@@ -8,16 +8,20 @@ you must supply your own dump, and everything under `rom/` and `build/` is regen
 
 ## Status
 - 10,442 functions found in the 990512 program (98.8% of the code range)
-- 7,092 matched to named functions from the PS2 decompilation (`symbols/sfiii3r1.csv`):
-  4,480 exact (every call argument verified), 15 hand-verified, about 1,870 high confidence, 680 medium, 50 low
-- 247 global variables named (`symbols/sfiii3r1_data.csv`)
-- CPU-AI pattern routines (`symbols/sfiii3r1_ai_routines.csv`): 5,167 of 5,204 lifted exactly from the arcade code;
+- 7,521 matched to named functions from the PS2 decompilation (`symbols/sfiii3r1.csv`):
+  4,480 `exact` (every call argument verified), 1,681 `events` (same calls, field writes and bit tests as the
+  PS2 C compiled for SH-2), 16 `manual` (read by hand), 851 high, 422 medium, 71 low
+- 299 global variables named (`symbols/sfiii3r1_data.csv`); these come from co-occurrence and at least one is
+  known to be wrong, so treat them as hints
+- CPU-AI pattern routines (`symbols/sfiii3r1_ai_routines.csv`): 5,167 of 5,204 lifted exactly;
   3,187 identical to PS2, 1,974 differ only by the button-mask layout, 6 really differ
-- arcade C: 1,980 generated functions in `src/arcade/generated/`, 10 written by hand in `src/arcade/hand/`
-- arcade-only functions identified so far: `symbols/arcade_only.csv`
-- other matched functions, compared by calls and constants (`symbols/sfiii3r1_status.csv`):
-  about 240 flagged as differing, 757 not yet decidable. A flag means "read this": the ones read so far were a mix
-  of wrong names and real differences.
+- arcade C: 1,978 generated functions in `src/arcade/generated/`, 10 written by hand in `src/arcade/hand/`
+- **flagged-function review** (`symbols/sfiii3r1_flagged_review.csv`): every function the comparison flagged
+  (402) has a verdict and the evidence it rests on:
+  18 read line by line (11 differ, 2 PS2 additions, 5 same);
+  103 probably carry the wrong name; 53 differ only by an extra arcade `all_cgps_put_back` call;
+  46 are the same once compiler noise is removed; 10 could not be compared (their PS2 file does not build for SH-2);
+  170 differ on events but have not been read line by line (37 gameplay, 133 effects/opening/ending/menu code)
 
 ## Layout
 This repo is an overlay on crowded-street/3s-decomp rather than a copy of it. A function whose arcade
@@ -60,6 +64,12 @@ C in `src/arcade/` is derived from 3s-decomp and is therefore AGPL-3.0.
   rumble hooks.
 - **`Bonus_Game_Flag`** is compared with 21 in the arcade build wherever PS2 compares it with 20 (about 20
   functions): a renumbered constant, not a behaviour change.
+- **More player-code differences read by hand** (details in `symbols/sfiii3r1_flagged_review.csv`):
+  `check_cg_cancel_data` does not try `check_full_gauge_attack2` when cancelling and has none of the PS2
+  option tests; `nm_38000` does not call `check_sankaku_tobi` or `check_air_jump`; `dm_04000` and the stun
+  state `Damage_25000` do not call `setup_kuzureochi`; `Player_normal` does not call `clear_chainex_check`;
+  the air-parry start `Normal_35000` matches `Normal_31000` (no `dm_stop` negation, no `subtract_dm_vital`);
+  `Att_DENJINHADOUKEN` and `Att_PL08_HEALING` do not call `hoken_muriyari_chakuchi`.
 - **Struct layout**: `PLW`/`WORK` fields sit at different offsets in the arcade build (for example `cp` is at
   0x3B8 in arcade and 0x388 when the PS2 headers are compiled for SH-2), and `CP_Index` is 16-bit there
   where the PS2 headers make it 8-bit. `WORK_CP` matches.
@@ -90,6 +100,16 @@ Python 3 with `numpy`, `capstone` (5.x, for SH-2 support), `tree-sitter`, `tree-
 8. `python3 tools/compare.py build/ps2_index.json build/split symbols/sfiii3r1.csv symbols/sfiii3r1_status.csv`
    classifies each matched function as same / reordered / remapped / differs / unknown
 
+## Event comparison
+`tools/events.py` abstract-interprets SH-2 functions into events: calls (with constant arguments), field and
+global writes, and bit tests. It runs on the arcade program and on the PS2 C compiled for SH-2, so two
+compilers' output for the same C gives nearly the same event set. `tools/semdiff.py` learns how PS2-layout
+field offsets and global symbols map to arcade ones (`symbols/sfiii3r1_fieldmap.csv`,
+`symbols/sfiii3r1_globalmap.csv`), reports per-function differences (`symbols/sfiii3r1_events.csv`) and feeds
+names back to the matcher. `tools/pipeline.sh <work dir> <3s-decomp dir>` runs everything in order.
+Known noise: one compiler may store a known constant where the other computes it, and labels wrongly split off
+as functions show up as calls.
+
 ## Reading aids
 - `tools/build_ref_sh2.py <3s-decomp> build/obj` compiles the PS2 C for SH-2 with GCC (493 of 507 game files build).
   It is a reference to read against, not a matching build. `tools/ref_index.py` indexes it (experimental).
@@ -109,7 +129,7 @@ The PS2 port was built from the arcade source, so most functions exist in both.
 - **content**: AI pattern routines are lifted to (case, callee, arguments) and whole tables are placed where
   the lifted arcade routines equal the PS2 ones.
 
-Grades in the CSV: `exact` = lifted arcade routine equals the PS2 routine argument for argument
+Grades in the CSV: `manual` = read by hand; `events` = event sets agree (see Event comparison); `exact` = lifted arcade routine equals the PS2 routine argument for argument
 (up to the button-mask layout); `high` = supported by uncommon shared constants or by callee agreement; `low` = some evidence contradicts the match; `medium` = everything else.
 Checks so far, against an independent constant-only matcher: 49 of 49 `exact` and 57 of 62 `high` matches agree. Treat `medium`
 and `low` rows as candidates, not facts.

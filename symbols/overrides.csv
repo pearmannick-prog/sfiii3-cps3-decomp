@@ -17,3 +17,4 @@ arcade_addr,name,note
 0611D150,,arcade-only: check_walking_lv_dir variant for routines 11/12
 06121EC0,Normal_31000,read by hand: arcade parry start has no dm_stop negation and no subtract_dm_vital
 06124BC4,subtract_dm_vital,read by hand: PS2 training/rumble additions absent
+0608D638,hit_pattern_extdat_check,by position between check_normal_attack and check_dm_att_guard; called where PS2 calls it
