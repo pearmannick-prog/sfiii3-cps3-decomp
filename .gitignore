@@ -1,0 +1,7 @@
+rom/
+build/
+asm/
+ref-ps2/
+__pycache__/
+*.bin
+*.zip
