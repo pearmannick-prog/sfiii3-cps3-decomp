@@ -4,7 +4,7 @@ usage: match.py <ps2_index.json> <split dir> <out symbols.csv> [--code-hi HEX]
 
 Stages (each later stage only fills what earlier ones left open):
   1 tables  - place each PS2 function-pointer table onto an arcade pointer run (shape score + repeat pattern)
-  2 calls   - propagate through call sequences of matched caller pairs
+  2 calls   - propagate through call sequences of matched caller pairs; name shared helpers from their callers
   3 order   - within a source file, fill gaps between matched neighbours when the counts agree
 """
 import argparse, collections, csv, itertools, json, math, os
@@ -12,7 +12,7 @@ import numpy as np
 
 ap = argparse.ArgumentParser(); ap.add_argument("ps2"); ap.add_argument("split"); ap.add_argument("out")
 ap.add_argument("--code-hi", type=lambda s: int(s, 16), default=0x0613BDFA)
-ap.add_argument("--content", help="feedback from lift_patterns.py"); ap.add_argument("-v", action="store_true"); a = ap.parse_args()
+ap.add_argument("--content", help="feedback from lift_patterns.py"); ap.add_argument("--overrides", help="hand-verified names (blank name = keep unnamed)"); ap.add_argument("-v", action="store_true"); a = ap.parse_args()
 PS = json.load(open(a.ps2)); AR = json.load(open(os.path.join(a.split, "functions.json")))
 P = {r["name"]: r for r in PS["functions"]}; A = {r["addr"]: r for r in AR["functions"]}
 pnames = set(P)
@@ -45,10 +45,17 @@ def contradicted(n, x):
     return len(P[n]["rare"]) >= 2 and len(A[x]["rare"]) >= 2 and not (P[n]["rare"] & A[x]["rare"])
 
 M, Minv, how = {}, {}, {}                      # name -> addr, addr -> name, name -> (stage, confidence)
-REJECT, VERIFIED = set(), set()
+REJECT, VERIFIED, MANUAL, BLOCKED = set(), set(), {}, set()
 def assign(n, x, stage, conf):
     if n in M or x in Minv or n not in P or x not in A or (n, x) in REJECT: return False
+    if stage != "manual" and (x in BLOCKED or n in MANUAL): return False
     M[n] = x; Minv[x] = n; how[n] = (stage, round(float(conf), 3)); return True
+
+if a.overrides:
+    for r in csv.DictReader(open(a.overrides)):
+        x = int(r["arcade_addr"], 16); BLOCKED.add(x)
+        if r["name"]: MANUAL[r["name"]] = x
+    for n, x in MANUAL.items(): assign(n, x, "manual", 1.0)
 
 if a.content:
     for r in csv.DictReader(open(a.content)):
@@ -334,9 +341,43 @@ def stage_order_align():
                 elif len(ns) != len(xs): sc *= 0.8
                 if sc >= 0.55 and not contradicted(n, x): assign(n, x, "order-align", sc)
 
+pcallers, acallers = collections.defaultdict(set), collections.defaultdict(set)
+for r in P.values():
+    for c in r["dcalls"]: pcallers[c].add(r["name"])
+for r in A.values():
+    for y in r["dcalls"]: acallers[y].add(r["addr"])
+
+def stage_callers():
+    """Name a function from who calls it: the matched callers of a PS2 function should be the callers of its twin."""
+    for n in [n for n in P if n not in M and len(pcallers[n]) >= 2]:
+        want = {M[c] for c in pcallers[n] if c in M}
+        if len(want) < 2: continue
+        cand = collections.Counter(y for c in want for y in set(A[c]["dcalls"]) if y not in Minv)
+        scored = []
+        for x, hit in cand.most_common(6):
+            have = {c for c in acallers[x] if c in Minv}
+            total = len(pcallers[n]) + len(acallers[x]) - hit
+            scored.append((hit / total, hit, x))
+        scored.sort(reverse=True)
+        if not scored: continue
+        j, hit, x = scored[0]
+        if j >= 0.6 and hit >= 3 and (len(scored) == 1 or scored[1][0] < 0.7 * j) and not contradicted(n, x):
+            assign(n, x, "callers", j)
+
+def audit_callers():
+    """Drop matches whose number of callers is wildly different on the two sides (a misnamed shared helper
+    poisons every function that calls it)."""
+    dropped = 0
+    for n, x in list(M.items()):
+        if how[n][0] in ("content", "manual"): continue
+        pc, ac = len(pcallers[n]), len(acallers[x])
+        if max(pc, ac) >= 10 and (pc > 5 * ac or ac > 5 * pc):
+            unassign(n); REJECT.add((n, x)); dropped += 1
+    return dropped
+
 for it in range(10):
     n0 = len(M)
-    stage_tables(); stage_align(); n1 = len(M); stage_calls(); n2 = len(M)
+    stage_tables(); stage_align(); n1 = len(M); stage_calls(); stage_callers(); n2 = len(M)
     if it == 0:        # consistency check before order is used as evidence
         inv0, tot0 = stage_order()
     else: stage_order()
@@ -345,12 +386,15 @@ for it in range(10):
     if len(M) == n0:
         nbad, moved = stage_repair()
         print(f"repair: {nbad} table placements failed the content check, {moved} moved")
-        if not nbad or it > 6: break
+        ndrop = audit_callers()
+        print(f"caller-count audit: {ndrop} matches dropped")
+        if (not nbad and not ndrop) or it > 7: break
 print(f"order check on table+call matches of pass 1: {inv0}/{tot0} adjacent same-file pairs out of order")
 
 def grade(n, x):
     shape = float(pair_score(*pfeat(n), *afeat(x))); cs = const_sim(n, x); cl = call_sim(n, x)
-    if (n, x) in VERIFIED: g = "exact"
+    if how[n][0] == "manual": g = "manual"
+    elif (n, x) in VERIFIED: g = "exact"
     elif contradicted(n, x) or (cl is not None and cl < 0.3 and (cs or 0) < 0.5): g = "low"
     elif (cs is not None and cs >= 0.5) or (cl is not None and cl >= 0.8): g = "high"
     else: g = "medium"

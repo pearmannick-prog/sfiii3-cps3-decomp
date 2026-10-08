@@ -2317,7 +2317,7 @@ arcade_addr,name,grade,status,detail
 06045E48,Passive13_0151,exact,identical,
 06045E8A,Passive13_0152,exact,identical,
 06045EE2,Passive13_0153,high,remap-only,case 1: Jump_Attack_Term arg4 0x400 -> 0x200; case 2: Command_Attack arg4 0x700 -> 0x380
-06045F78,Passive13_0154,medium,identical,
+06045F78,Passive13_0154,high,identical,
 06046008,Passive13_0155,exact,identical,
 0604604E,Passive13_0156,exact,identical,
 060460D4,Passive13_0157,exact,remap-only,case 0: Lever_Attack arg3 0x200 -> 0x100
@@ -2654,7 +2654,7 @@ arcade_addr,name,grade,status,detail
 06054948,Passive15_0073,exact,identical,
 06054998,Passive15_0074,exact,identical,
 06054A0E,Passive15_0075,high,identical,
-06054A7A,Passive15_0076,medium,identical,
+06054A7A,Passive15_0076,high,identical,
 06054B2C,Passive15_0077,exact,remap-only,case 0: Jump_Attack_Term arg8 0x200 -> 0x100; case 1: Normal_Attack arg2 0x200 -> 0x100
 06054B7C,Passive15_0078,exact,remap-only,case 0: Jump_Attack_Term arg4 0x100 -> 0x80; case 2: Normal_Attack arg2 0x200 -> 0x100
 06054C00,Passive15_0079,exact,remap-only,case 1: Normal_Attack arg2 0x200 -> 0x100
@@ -2887,7 +2887,7 @@ arcade_addr,name,grade,status,detail
 06059424,Passive16_0143,exact,identical,
 0605946C,Passive16_0144,exact,identical,
 060594CA,Passive16_0145,exact,identical,
-06059542,Passive16_0146,medium,identical,
+06059542,Passive16_0146,high,identical,
 060595CE,Passive16_0147,exact,remap-only,case 1: Jump_Command_Attack_Term arg4 0x700 -> 0x380; case 1: Jump_Command_Attack_Term arg10 0x400 -> 0x200
 06059654,Passive16_0148,exact,identical,
 0605967C,Passive16_0149,exact,identical,
@@ -4917,7 +4917,6 @@ arcade_addr,name,grade,status,detail
 0608133A,Pattern18_0016,exact,identical,
 0608135C,Pattern18_0017,exact,identical,
 0608138E,Pattern18_0018,exact,remap-only,case 0: Jump_Command_Attack_Term arg10 0x400 -> 0x200
-060813D8,Pattern18_0019,medium,different,case 0: Normal_Attack -> Lever_Attack
 06081418,Pattern18_0020,exact,identical,
 06081464,Pattern18_0021,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Jump_Attack_Term arg8 0x200 -> 0x100
 060814A6,Pattern18_0022,exact,remap-only,case 0: Jump_Attack arg3 0x400 -> 0x200

@@ -1,0 +1,6 @@
+arcade_addr,name,note
+0611CEA4,check_jump_ready,read by hand: sw_new&1 then waza_flag[2] -> routine 17 or 16; no spmv_ng_flag tests in arcade
+0611CF76,check_bend_myself,read by hand: sw_new&2 -> routine 8
+0611CF9C,check_F_R_walk,read by hand: lever_dir 1/2 -> routine 3/4
+0611CF04,check_hijump_only,read by hand: identical to PS2
+0611CE6C,,arcade-only: if !(spmv_ng_flag & 0x10000) and cp->waza_flag[13] != 0 -> routine_no[2] = 19; called from the standing state before check_jump_ready
