@@ -121,7 +121,7 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 0600B558,Jump,Source/Game/Com_Sub.c,calls,high,0.65,,0.94
 0600B6F6,Hi_Jump,Source/Game/Com_Sub.c,calls,high,0.67,,0.96
 0600B93C,Check_Start_Hi_Jump,Source/Game/Com_Sub.c,callers,medium,0.82,,
-0600B974,Check_Air_Guard,Source/Game/Com_Sub.c,calls,high,0.32,,0.8
+0600B974,Check_Air_Guard,Source/Game/Com_Sub.c,calls,medium,0.32,,0.67
 0600BC46,Jump_Attack,Source/Game/Com_Sub.c,calls,high,0.71,0.67,0.96
 0600BE70,Jump_Attack_Term,Source/Game/Com_Sub.c,calls,high,0.76,0.67,0.98
 0600C164,Check_SP_Jump_Attack,Source/Game/Com_Sub.c,calls,events,0.89,,1.0
@@ -176,7 +176,7 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 060102F0,Get_Meoshi_Data,Source/Game/Com_Sub.c,calls,events,1.0,,1.0
 06010350,Reaction_Exit_Sub,Source/Game/Com_Sub.c,calls,events,0.93,,
 0601047C,Check_First_Menu,Source/Game/Com_Sub.c,calls,events,0.96,,1.0
-060104B4,Select_Active,Source/Game/Com_Sub.c,calls,high,0.32,,1.0
+060104B4,Select_Active,Source/Game/Com_Sub.c,calls,high,0.32,,0.86
 060107A6,Check_SA_Active,Source/Game/Com_Sub.c,order-align,events,0.88,,
 06010918,Decide_Follow_Menu,Source/Game/Com_Sub.c,calls,medium,0.86,,
 060109AC,Select_Passive,Source/Game/Com_Sub.c,calls,events,0.92,1.0,1.0
@@ -184,7 +184,7 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 06010D18,Setup_Random,Source/Game/Com_Sub.c,calls,medium,0.91,,0.5
 06010D8C,Check_Dramatic,Source/Game/Com_Sub.c,calls,events,0.96,,
 06010DEA,Check_Passive,Source/Game/Com_Sub.c,calls,high,1.0,,1.0
-06010F4C,Check_Guard,Source/Game/Com_Sub.c,calls,high,0.39,,0.89
+06010F4C,Check_Guard,Source/Game/Com_Sub.c,calls,high,0.39,,0.8
 060110E0,Check_Makoto,Source/Game/Com_Sub.c,order-align,events,0.77,,
 0601111A,Check_Flip_Term,Source/Game/Com_Sub.c,order-align,high,0.32,,0.86
 060111F0,Flip_Term_Correct,Source/Game/Com_Sub.c,order-align,events,0.81,,1.0
@@ -284,7 +284,7 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 0601466A,VS_KEN_A,Source/Game/Ck_Pass.c,table-align,events,0.93,,1.0
 060146A0,VS_SEAN_A,Source/Game/Ck_Pass.c,table-align,events,0.88,,1.0
 0601472C,VS_URIEN_A,Source/Game/Ck_Pass.c,table-align,events,0.86,,1.0
-060147C4,VS_GOUKI_A,Source/Game/Ck_Pass.c,content,high,0.71,,1.0
+060147C4,VS_GOUKI_A,Source/Game/Ck_Pass.c,content,events,0.71,,1.0
 0601484C,VS_CHUN_LI_A,Source/Game/Ck_Pass.c,content,high,0.83,,1.0
 060148C6,VS_Q_A,Source/Game/Ck_Pass.c,content,medium,0.0,,
 060148CA,VS_NO12_A,Source/Game/Ck_Pass.c,content,medium,0.4,,0.67
@@ -2299,7 +2299,7 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 0603DB28,Passive11_0234,Source/Game/PASS11.c,content,exact,1.0,,1.0
 0603DB70,Passive11_0235,Source/Game/PASS11.c,content,exact,1.0,,1.0
 0603DBB8,Passive11_0236,Source/Game/PASS11.c,content,exact,1.0,1.0,1.0
-0603DBF4,Passive11_0237,Source/Game/PASS11.c,content,high,0.81,0.75,1.0
+0603DBF4,Passive11_0237,Source/Game/PASS11.c,content,events,0.81,0.75,1.0
 0603DC70,Passive11_0238,Source/Game/PASS11.c,content,exact,0.99,,1.0
 0603DCCA,Passive11_0239,Source/Game/PASS11.c,content,exact,1.0,,1.0
 0603DD02,Passive11_0240,Source/Game/PASS11.c,content,exact,0.59,,1.0
@@ -4574,7 +4574,7 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 0607011C,Pattern09_0075,Source/Game/active09.c,content,exact,1.0,,1.0
 0607015E,Pattern09_0076,Source/Game/active09.c,content,exact,1.0,,1.0
 060701AE,Pattern09_0077,Source/Game/active09.c,content,exact,1.0,1.0,1.0
-06070244,Pattern09_0078,Source/Game/active09.c,content,high,0.61,,0.92
+06070244,Pattern09_0078,Source/Game/active09.c,content,events,0.61,,0.92
 060702CE,Pattern09_0079,Source/Game/active09.c,content,exact,1.0,,1.0
 0607034C,Pattern09_0080,Source/Game/active09.c,content,exact,0.98,,1.0
 060703A2,Pattern09_0081,Source/Game/active09.c,content,exact,0.99,1.0,1.0
@@ -6473,7 +6473,7 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 060E0A06,quake_level_middle,Source/Game/EFF11.c,similar,high,0.0,1.0,0.67
 060E1020,effect_12_move,Source/Game/eff12.c,table-align,high,0.95,,1.0
 060E11C0,effect_13_move,Source/Game/EFF13.c,table-align,high,0.5,1.0,0.96
-060E1582,tama_display,Source/Game/EFF13.c,order,high,0.92,,1.0
+060E1582,tama_display,Source/Game/EFF13.c,order,medium,0.92,,0.67
 060E15AC,screen_x_range_check,Source/Game/EFF13.c,calls,events,0.71,,1.0
 060E15F4,screen_range_check,Source/Game/EFF13.c,calls,events,0.69,,1.0
 060E165C,tama15_screen_check,Source/Game/EFF13.c,order,events,0.88,,1.0
@@ -6758,7 +6758,7 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 060FCF54,check_effc2_p2_rno,Source/Game/EFFC2.c,order,events,0.82,,
 060FCF7E,sean_ball_move,Source/Game/EFF09.c,similar,medium,0.0,,
 060FCFA4,player_hosei_data,Source/Game/EFFC2.c,order,high,1.0,,1.0
-060FD044,set_c2_quake,Source/Game/EFFC2.c,order,events,0.89,,
+060FD044,set_c2_quake,Source/Game/EFFC2.c,order,medium,0.89,,
 060FD080,get_bs2_parts_data,Source/Game/EFFC2.c,calls,high,1.0,1.0,1.0
 060FD0DE,setup_prio_ix,Source/Game/EFFC2.c,calls,events,0.94,,
 060FD10E,set_parts_priority,Source/Game/EFFC2.c,calls,events,0.96,,
@@ -7071,11 +7071,11 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 06116C6C,pli_0000,Source/Game/PLCNT.c,similar,high,0.36,,1.0
 06116DF0,plcnt_move,Source/Game/PLCNT.c,table-align,high,0.65,1.0,1.0
 06116F64,plcnt_die,Source/Game/PLCNT.c,table-align,high,0.98,,1.0
-06116FA4,settle_type_00000,Source/Game/PLCNT.c,order-align,high,0.78,,0.86
-06117164,settle_type_10000,Source/Game/PLCNT.c,table,high,0.16,,1.0
-0611721A,settle_type_20000,Source/Game/PLCNT.c,order-align,medium,0.8,,0.67
+06116FA4,settle_type_00000,Source/Game/PLCNT.c,order-align,high,0.78,,1.0
+06117164,settle_type_10000,Source/Game/PLCNT.c,order-align,high,0.16,,1.0
+0611721A,settle_type_20000,Source/Game/PLCNT.c,order-align,high,0.8,,1.0
 06117352,settle_type_30000,Source/Game/PLCNT.c,order-align,high,0.6,,1.0
-06117446,settle_type_40000,Source/Game/PLCNT.c,order-align,high,0.34,,0.8
+06117446,settle_type_40000,Source/Game/PLCNT.c,order-align,high,0.34,,0.91
 061177C6,move_player_work,Source/Game/PLCNT.c,calls,medium,0.04,,0.6
 06117A4A,check_damage_hosei,Source/Game/PLCNT.c,order-align,high,0.39,,0.86
 06117B1C,check_damage_hosei_nage,Source/Game/PLCNT.c,order-align,high,0.92,,1.0
@@ -7086,9 +7086,9 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 06117D28,settle_check,Source/Game/PLCNT.c,order,high,0.64,,1.0
 06117E66,check_sa_resurrection,Source/Game/PLCNT.c,order,high,1.0,,1.0
 06117E8C,check_sa_type_rebirth,Source/Game/PLCNT.c,calls,medium,0.27,,
-06117EAE,nekorobi_check,Source/Game/PLCNT.c,calls,events,0.55,,
-06117F28,footwork_check,Source/Game/PLCNT.c,order-align,medium,0.98,,
-06117F6E,set_quake,Source/Game/PLCNT.c,order-align,events,0.87,,
+06117EAE,nekorobi_check,Source/Game/PLCNT.c,order,events,0.55,,
+06117EE2,footwork_check,Source/Game/PLCNT.c,manual,manual,0.7,,
+06117F28,set_quake,Source/Game/PLCNT.c,order-align,medium,1.0,,
 06117FA4,add_next_position,Source/Game/PLCNT.c,similar,medium,0.76,,
 06117FD0,setup_gouki_wins,Source/Game/PLCNT.c,order-align,medium,0.82,,
 06118290,setup_base_and_other_data,Source/Game/PLCNT.c,order-align,high,0.09,1.0,0.94
@@ -7235,8 +7235,10 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 0611DF7C,check_work_position_bonus,Source/Game/PLS02.c,calls,events,0.37,,
 0611DFB8,set_field_hosei_flag,Source/Game/PLS02.c,order,medium,0.75,,
 0611E056,check_work_position,Source/Game/PLS02.c,calls,events,0.72,,
-0611E0D6,random_32,Source/Game/PLS02.c,calls,medium,0.46,,
-0611E0EE,random_16,Source/Game/PLS02.c,calls,medium,0.46,,
+0611E0D6,random_32,Source/Game/PLS02.c,manual,manual,0.46,,
+0611E0EE,random_16,Source/Game/PLS02.c,manual,manual,0.46,,
+0611E106,random_32_ex,Source/Game/PLS02.c,manual,manual,0.46,,
+0611E11E,random_16_ex,Source/Game/PLS02.c,manual,manual,0.46,,
 0611E136,get_guard_direction,Source/Game/PLS02.c,calls,medium,0.08,,
 0611E186,cal_attdir,Source/Game/PLS02.c,order,events,0.46,,
 0611E19E,cal_attdir_flip,Source/Game/PLS02.c,calls,events,0.17,,

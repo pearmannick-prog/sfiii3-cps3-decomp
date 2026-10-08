@@ -8,17 +8,17 @@ you must supply your own dump, and everything under `rom/` and `build/` is regen
 
 ## Status
 - 10,442 functions found in the 990512 program (98.8% of the code range)
-- 7,521 matched to named functions from the PS2 decompilation (`symbols/sfiii3r1.csv`):
-  4,480 `exact` (every call argument verified), 1,681 `events` (same calls, field writes and bit tests as the
-  PS2 C compiled for SH-2), 16 `manual` (read by hand), 851 high, 422 medium, 71 low
+- about 7,520 matched to named functions from the PS2 decompilation (`symbols/sfiii3r1.csv`):
+  4,480 `exact` (every call argument verified), about 1,680 `events` (same calls, field writes and bit tests as the
+  PS2 C compiled for SH-2), 21 `manual` (read by hand), about 850 high, 420 medium, 70 low
 - 299 global variables named (`symbols/sfiii3r1_data.csv`); these come from co-occurrence and at least one is
   known to be wrong, so treat them as hints
 - CPU-AI pattern routines (`symbols/sfiii3r1_ai_routines.csv`): 5,167 of 5,204 lifted exactly;
   3,187 identical to PS2, 1,974 differ only by the button-mask layout, 6 really differ
-- arcade C: 1,978 generated functions in `src/arcade/generated/`, 10 written by hand in `src/arcade/hand/`
+- arcade C: 1,978 generated functions in `src/arcade/generated/`, 14 written by hand in `src/arcade/hand/`
 - **flagged-function review** (`symbols/sfiii3r1_flagged_review.csv`): every function the comparison flagged
   (402) has a verdict and the evidence it rests on:
-  18 read line by line (11 differ, 2 PS2 additions, 5 same);
+  about 30 read line by line;
   103 probably carry the wrong name; 53 differ only by an extra arcade `all_cgps_put_back` call;
   46 are the same once compiler noise is removed; 10 could not be compared (their PS2 file does not build for SH-2);
   170 differ on events but have not been read line by line (37 gameplay, 133 effects/opening/ending/menu code)
@@ -70,6 +70,17 @@ C in `src/arcade/` is derived from 3s-decomp and is therefore AGPL-3.0.
   state `Damage_25000` do not call `setup_kuzureochi`; `Player_normal` does not call `clear_chainex_check`;
   the air-parry start `Normal_35000` matches `Normal_31000` (no `dm_stop` negation, no `subtract_dm_vital`);
   `Att_DENJINHADOUKEN` and `Att_PL08_HEALING` do not call `hoken_muriyari_chakuchi`.
+- **Random numbers** (read by hand, `src/arcade/hand/PLS02.c`): the arcade build has four random functions
+  (`random_32`, `random_16` and the two `_ex` ones) and none has the PS2 `Debug_w` reset. The PS2 `_com`
+  variants, which give CPU-opponent code its own streams when `Play_Mode != 0`, do not exist: arcade
+  CPU-opponent code calls `random_32` / `random_16` and shares the stream with everything else.
+- **`spmv_ng_flag` is per character in the arcade build** (`set_base_data`, read by hand): it is loaded from a
+  table indexed by `player_number` (data at 0x065EA5B0). PS2 loads it from `omop_spmv_ng_table[wk->wu.id]`,
+  indexed by player side, and adds `spmv_ng_flag2`. This is why the PS2 "option" tests on that flag look
+  different or are missing in arcade functions, and probably what the arcade-only routines 11, 12 and 19 are
+  for (character-specific movement); that last part is a guess.
+- **Time over** (`time_over_check`): the arcade build also calls `setup_gouki_wins`.
+- `PLW` is 0x498 bytes in the arcade build (0x46C in the PS2 headers); `plw` is at 0x02068C6C.
 - **Struct layout**: `PLW`/`WORK` fields sit at different offsets in the arcade build (for example `cp` is at
   0x3B8 in arcade and 0x388 when the PS2 headers are compiled for SH-2), and `CP_Index` is 16-bit there
   where the PS2 headers make it 8-bit. `WORK_CP` matches.

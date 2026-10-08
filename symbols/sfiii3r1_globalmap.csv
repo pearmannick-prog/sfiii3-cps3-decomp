@@ -39,7 +39,7 @@ Timer_Freeze,02015732,3.0
 WGJ_Score,02016D18,2
 WGJ_Target,02016D50,3
 Weak_PL,02016AD6,10.6
-Winner_id,0201137F,10
+Winner_id,0201137F,12
 aiuchi_flag,0201581E,2
 appear_type,02068C64,2
 bg_app,0202805B,3
@@ -64,6 +64,6 @@ op_obj_disp,020281E2,4.1
 op_scrn_end,020281E6,1.5
 op_w,020281C4,15
 pcon_dp_flag,02068C67,6
-pcon_rno,02068C5C,9
+pcon_rno,02068C5C,11
 round_slow_flag,02068C66,2
 test_flag,02000094,3

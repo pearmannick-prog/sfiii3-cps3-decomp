@@ -18,3 +18,8 @@ arcade_addr,name,note
 06121EC0,Normal_31000,read by hand: arcade parry start has no dm_stop negation and no subtract_dm_vital
 06124BC4,subtract_dm_vital,read by hand: PS2 training/rumble additions absent
 0608D638,hit_pattern_extdat_check,by position between check_normal_attack and check_dm_att_guard; called where PS2 calls it
+0611E0D6,random_32,read by hand: index & 0x7F; no Debug_w reset
+0611E0EE,random_16,read by hand: index & 0x3F; no Debug_w reset
+0611E106,random_32_ex,read by hand: index & 0x1F
+0611E11E,random_16_ex,read by hand: index & 0xF
+06117EE2,footwork_check,read by hand: plw[ix] routine_no[1] == 0 and routine_no[2] == 1

@@ -291,6 +291,7 @@ arcade_addr,name,functions,agreement
 02068C67,pcon_dp_flag,21,0.81
 02068C6A,win_sp_flag,6,0.86
 02068C6B,dead_voice_flag,4,1.0
+02068C6C,plw,75,0.6
 0206A080,bcdext,2,1.0
 0206A15A,s_prm,9,0.75
 0206A1DC,Screen_Switch,2,1.0

@@ -121,7 +121,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0600B558,Jump,high,unknown,9,8,0x30000
 0600B6F6,Hi_Jump,high,unknown,12,11,0x30000
 0600B93C,Check_Start_Hi_Jump,medium,same,0,0,
-0600B974,Check_Air_Guard,high,unknown,6,4,
+0600B974,Check_Air_Guard,medium,unknown,6,4,
 0600BC46,Jump_Attack,high,reordered,14,13,0x30000
 0600BE70,Jump_Attack_Term,high,reordered,22,21,0x30000
 0600C164,Check_SP_Jump_Attack,events,same,1,1,
@@ -284,7 +284,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0601466A,VS_KEN_A,events,same,1,1,
 060146A0,VS_SEAN_A,events,same,4,4,
 0601472C,VS_URIEN_A,events,same,4,4,
-060147C4,VS_GOUKI_A,high,same,3,3,
+060147C4,VS_GOUKI_A,events,same,3,3,
 0601484C,VS_CHUN_LI_A,high,same,3,3,
 060148C6,VS_Q_A,medium,differs,1,0,0x18 0x19 0x58
 060148CA,VS_NO12_A,medium,differs,2,1,0x11 0x16 0x69 0x6b
@@ -2299,7 +2299,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0603DB28,Passive11_0234,exact,same,2,2,0xffffffff
 0603DB70,Passive11_0235,exact,same,2,2,0xffffffff
 0603DBB8,Passive11_0236,exact,remapped,2,2,
-0603DBF4,Passive11_0237,high,same,4,4,0xd2
+0603DBF4,Passive11_0237,events,same,4,4,0xd2
 0603DC70,Passive11_0238,exact,same,3,3,
 0603DCCA,Passive11_0239,exact,same,2,2,
 0603DD02,Passive11_0240,exact,same,3,3,
@@ -4574,7 +4574,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0607011C,Pattern09_0075,exact,same,2,2,
 0607015E,Pattern09_0076,exact,same,3,3,
 060701AE,Pattern09_0077,exact,same,4,4,
-06070244,Pattern09_0078,high,reordered,7,6,0xffffffff
+06070244,Pattern09_0078,events,reordered,7,6,
 060702CE,Pattern09_0079,exact,same,4,4,
 0607034C,Pattern09_0080,exact,same,4,4,
 060703A2,Pattern09_0081,exact,same,3,3,
@@ -5328,7 +5328,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0608133A,Pattern18_0016,exact,same,2,2,
 0608135C,Pattern18_0017,exact,same,2,2,
 0608138E,Pattern18_0018,exact,same,2,2,
-060813D8,Pattern18_0019,medium,differs,2,2,
+060813D8,Pattern18_0019,medium,same,2,2,
 06081418,Pattern18_0020,exact,same,3,3,
 06081464,Pattern18_0021,exact,same,2,2,
 060814A6,Pattern18_0022,exact,same,2,2,
@@ -6473,7 +6473,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060E0A06,quake_level_middle,high,differs,10,6,
 060E1020,effect_12_move,high,differs,6,7,
 060E11C0,effect_13_move,high,differs,14,13,0x47 0x7f
-060E1582,tama_display,high,same,2,2,
+060E1582,tama_display,medium,differs,2,2,
 060E15AC,screen_x_range_check,events,same,1,1,
 060E15F4,screen_range_check,events,same,2,2,
 060E165C,tama15_screen_check,events,unknown,2,2,0x120
@@ -6758,7 +6758,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060FCF54,check_effc2_p2_rno,events,unknown,0,0,
 060FCF7E,sean_ball_move,medium,unknown,0,0,
 060FCFA4,player_hosei_data,high,same,2,2,
-060FD044,set_c2_quake,events,unknown,0,0,
+060FD044,set_c2_quake,medium,unknown,0,0,
 060FD080,get_bs2_parts_data,high,same,1,1,
 060FD0DE,setup_prio_ix,events,unknown,0,0,
 060FD10E,set_parts_priority,events,unknown,0,0,
@@ -7071,9 +7071,9 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 06116C6C,pli_0000,high,unknown,3,4,
 06116DF0,plcnt_move,high,differs,9,8,0x19 0x1a 0x1b 0x1c
 06116F64,plcnt_die,high,same,1,1,
-06116FA4,settle_type_00000,high,differs,4,4,
+06116FA4,settle_type_00000,high,same,4,4,
 06117164,settle_type_10000,high,same,3,3,
-0611721A,settle_type_20000,medium,differs,4,4,
+0611721A,settle_type_20000,high,same,4,4,
 06117352,settle_type_30000,high,same,2,2,
 06117446,settle_type_40000,high,differs,5,6,
 061177C6,move_player_work,medium,unknown,11,15,
@@ -7087,8 +7087,8 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 06117E66,check_sa_resurrection,high,same,1,1,
 06117E8C,check_sa_type_rebirth,medium,differs,0,0,0x40000000 0x80000000
 06117EAE,nekorobi_check,events,unknown,0,0,
-06117F28,footwork_check,medium,unknown,0,0,
-06117F6E,set_quake,events,unknown,0,0,
+06117EE2,footwork_check,manual,unknown,0,0,
+06117F28,set_quake,medium,unknown,0,0,
 06117FA4,add_next_position,medium,unknown,0,0,
 06117FD0,setup_gouki_wins,medium,unknown,0,0,
 06118290,setup_base_and_other_data,high,differs,16,9,
@@ -7235,8 +7235,10 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0611DF7C,check_work_position_bonus,events,unknown,0,0,
 0611DFB8,set_field_hosei_flag,medium,unknown,0,0,
 0611E056,check_work_position,events,unknown,0,0,
-0611E0D6,random_32,medium,differs,0,0,0x3b 0xe0
-0611E0EE,random_16,medium,differs,0,0,0x3b 0xe0
+0611E0D6,random_32,manual,same,0,0,
+0611E0EE,random_16,manual,same,0,0,
+0611E106,random_32_ex,manual,same,0,0,
+0611E11E,random_16_ex,manual,unknown,0,0,
 0611E136,get_guard_direction,medium,unknown,0,0,0x4000000
 0611E186,cal_attdir,events,unknown,0,0,
 0611E19E,cal_attdir_flip,events,unknown,0,0,
