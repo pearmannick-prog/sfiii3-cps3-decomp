@@ -2328,7 +2328,6 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 0603DB28,Passive11_0234,Source/Game/PASS11.c,content,exact,1.0,,1.0
 0603DB70,Passive11_0235,Source/Game/PASS11.c,content,exact,1.0,,1.0
 0603DBB8,Passive11_0236,Source/Game/PASS11.c,content,exact,1.0,1.0,1.0
-0603DBF4,Passive11_0237,Source/Game/PASS11.c,content,high,0.81,0.75,1.0
 0603DC70,Passive11_0238,Source/Game/PASS11.c,content,exact,0.99,,1.0
 0603DCCA,Passive11_0239,Source/Game/PASS11.c,content,exact,1.0,,1.0
 0603DD02,Passive11_0240,Source/Game/PASS11.c,content,exact,0.59,,1.0
@@ -4603,7 +4602,6 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 0607011C,Pattern09_0075,Source/Game/active09.c,content,exact,1.0,,1.0
 0607015E,Pattern09_0076,Source/Game/active09.c,content,exact,1.0,,1.0
 060701AE,Pattern09_0077,Source/Game/active09.c,content,exact,1.0,1.0,1.0
-06070244,Pattern09_0078,Source/Game/active09.c,content,high,0.61,,0.92
 060702CE,Pattern09_0079,Source/Game/active09.c,content,exact,1.0,,1.0
 0607034C,Pattern09_0080,Source/Game/active09.c,content,exact,0.98,,1.0
 060703A2,Pattern09_0081,Source/Game/active09.c,content,exact,0.99,1.0,1.0
@@ -5852,7 +5850,13 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 0608F3FC,set_conclusion_slow,Source/Game/SLOWF.c,calls,high,0.91,1.0,
 0608FB34,Sound_SE,Source/Game/SE.c,calls,high,0.29,,1.0
 0608FB6A,BGM_Request,Source/Game/SE.c,calls,high,0.05,,1.0
+0608FBF0,Se_Shock,Source/Game/SE.c,order-align,high,0.94,,1.0
 0608FCDE,end_d00_7000,Source/Game/end_13.c,table-align,low,0.25,,0.0
+0608FFBA,Finish_SE,Source/Game/SE.c,calls,high,0.94,,1.0
+06090000,Se_Myself,Source/Game/SE.c,similar,high,0.3,,1.0
+0609002C,Check_Finish_SE,Source/Game/SE.c,calls,events,0.99,,
+0609007E,Get_Position,Source/Game/SE.c,calls,events,0.98,,1.0
+060900F4,Check_Bonus_SE,Source/Game/SE.c,calls,events,0.99,1.0,
 06090270,caldir_pos_032,Source/Game/CALDIR.c,calls,medium,0.83,,
 06090516,add_pos_dir_064,Source/Game/CALDIR.c,calls,medium,0.74,,
 060907A4,cal_move_quantity2,Source/Game/CALDIR.c,calls,events,0.82,,
@@ -5911,7 +5915,7 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 06094702,grade_store_vitality,Source/Game/Grade.c,calls,events,0.9,,
 06094744,grade_add_blocking,Source/Game/Grade.c,calls,events,0.82,,
 0609485C,grade_get_first_attack,Source/Game/Grade.c,order,events,0.91,,
-06094894,grade_set_round_result,Source/Game/Grade.c,order,events,0.42,1.0,
+06094894,grade_set_round_result,Source/Game/Grade.c,order,high,0.42,1.0,
 06094908,grade_add_personal_action,Source/Game/Grade.c,calls,events,0.76,,
 0609497C,grade_check_tairyokusa,Source/Game/Grade.c,calls,events,0.89,,
 060949FA,grade_add_onaji_waza,Source/Game/Grade.c,order,events,0.86,0.0,
@@ -5935,8 +5939,9 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 0609965E,Game_Manage_2_2,Source/Game/Manage.c,order,low,0.3,,0.0
 06099770,Game_Manage_2_4,Source/Game/Manage.c,order,medium,0.65,,0.4
 0609989E,Game_Manage_3rd,Source/Game/Manage.c,table-align,medium,0.41,,
-060998D8,Update_BI_Term,Source/Game/Manage.c,similar,events,0.01,1.0,
+060998D8,Update_BI_Term,Source/Game/Manage.c,similar,high,0.01,1.0,
 060999B0,Game_Manage_4th,Source/Game/Manage.c,table-align,high,0.33,1.0,0.92
+06099B56,Setup_Win_Mark,Source/Game/Manage.c,manual,manual,0.15,1.0,0.35
 06099D5E,Game_Manage_5th,Source/Game/Manage.c,table-align,events,0.42,,
 06099D9C,Game_Manage_5_0,Source/Game/Manage.c,table,medium,0.14,,
 06099DD0,Game_Manage_5_1,Source/Game/Manage.c,table,high,0.45,,0.8
@@ -5994,9 +5999,10 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 0609C114,Check_Disp_Winner,Source/Game/Manage.c,calls,medium,0.39,,
 0609C198,Disp_Winner,Source/Game/Manage.c,calls,high,0.22,1.0,0.8
 0609C274,request_center_message,Source/Game/Manage.c,calls,medium,0.64,,
+0609C280,Judge_Next_Disposal,Source/Game/Manage.c,manual,manual,0.39,,
+0609C2F0,Check_Perfect,Source/Game/Manage.c,manual,manual,0.79,,
 0609C3A4,Check_Ending,Source/Game/Manage.c,calls,high,0.4,1.0,
 0609C4C8,Quick_Entry,Source/Game/Manage.c,calls,medium,0.45,,
-0609C750,Update_VS_Data,Source/Game/Manage.c,calls,medium,0.4,,
 0609C912,Check_Fade_Out_BGM,Source/Game/Manage.c,calls,high,0.94,,1.0
 0609C948,Control_Music_Fade,Source/Game/Manage.c,calls,high,0.99,1.0,1.0
 0609CAEC,Setup_BGM_Fade_In,Source/Game/Manage.c,calls,medium,0.96,,
@@ -7290,6 +7296,8 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 0611E974,check_buttobi_type2,Source/Game/PLS02.c,order,events,0.86,,1.0
 0611E996,setup_saishin_lvdir,Source/Game/PLS02.c,calls,medium,0.69,,
 0611E9F6,setup_lvdir_after_autodir,Source/Game/PLS02.c,calls,events,0.9,,
+0611EA24,dead_voice_request,Source/Game/PLS02.c,similar,high,0.99,,1.0
+0611EA78,dead_voice_request2,Source/Game/PLS02.c,calls,high,0.71,1.0,
 0611EBF0,hissatsu_setup_union,Source/Game/PLS03.c,calls,medium,0.99,,
 0611EC1A,check_full_gauge_attack,Source/Game/PLS03.c,calls,high,0.2,0.75,1.0
 0611F0E0,check_full_gauge_attack2,Source/Game/PLS03.c,calls,high,0.2,0.75,1.0

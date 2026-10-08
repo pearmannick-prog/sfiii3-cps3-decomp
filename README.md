@@ -18,7 +18,7 @@ you must supply your own dump, and everything under `rom/` and `build/` is regen
 - arcade C: 1,978 generated functions in `src/arcade/generated/`, 21 written by hand in `src/arcade/hand/`
 - **flagged-function review** (`symbols/sfiii3r1_flagged_review.csv`): every function the comparison flagged
   (402) has a verdict and the evidence it rests on:
-  about 54 read line by line;
+  about 55 read line by line;
   103 probably carry the wrong name; 53 differ only by an extra arcade `all_cgps_put_back` call;
   46 are the same once compiler noise is removed; 10 could not be compared (their PS2 file does not build for SH-2);
   170 differ on events but have not been read line by line (37 gameplay, 133 effects/opening/ending/menu code)
@@ -94,9 +94,9 @@ C in `src/arcade/` is derived from 3s-decomp and is therefore AGPL-3.0.
   second half, which applies `spmv_ng_flag2` options to `cg_cancel` and `cg_meoshi` (including the chain
   tables), does not exist. `check_cgd_patdat` shows the same PS2-only block on events.
 - **`set_new_attnum`** (read by hand): identical apart from a PS2-only `setup_metamor_kezuri` call at the end.
-- **Player struct layout**: `symbols/sfiii3r1_plw_layout.csv` gives arcade offsets for 341 of the 447 `PLW`
-  fields (69 read or learned directly, the rest inferred where the fields on both sides shift by the same
-  amount). Fields up to 0x20F sit where PS2 has them; later ones are shifted by +1, +44, +28, +48 and +44 in turn.
+- **Player struct layout**: `symbols/sfiii3r1_plw_layout.csv` gives arcade offsets for 402 of the 447 `PLW`
+  fields (about 150 read or learned directly, the rest inferred where the fields on both sides shift by the same
+  amount); two fields (`spmv_ng_flag2`, `kezurare_flag`) appear not to exist in the arcade build. Fields up to 0x20F sit where PS2 has them; later ones are shifted by +1, +44, +28, +48 and +44 in turn.
 - **Struct layout**: `PLW`/`WORK` fields sit at different offsets in the arcade build (for example `cp` is at
   0x3B8 in arcade and 0x388 when the PS2 headers are compiled for SH-2), and `CP_Index` is 16-bit there
   where the PS2 headers make it 8-bit. `WORK_CP` matches.

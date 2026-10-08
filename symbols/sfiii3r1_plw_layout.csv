@@ -1,8 +1,8 @@
 field,type,ps2_offset,arcade_offset,basis
-wu.be_flag,s8,0x0,,
+wu.be_flag,s8,0x0,0x0,learned from few functions (4); consistent with neighbours
 wu.disp_flag,s8,0x1,0x1,learned (78 functions)
 wu.blink_timing,u8,0x2,0x2,learned (33 functions)
-wu.operator,u8,0x3,0x3,inferred: neighbours on both sides shift by the same amount
+wu.operator,u8,0x3,0x3,learned from few functions (3); consistent with neighbours
 wu.type,u8,0x4,0x4,learned (55 functions)
 wu.charset_id,u8,0x5,0x5,inferred: neighbours on both sides shift by the same amount
 wu.work_id,s16,0x6,0x6,learned (43 functions)
@@ -30,15 +30,15 @@ wu.kage_prio,s16,0x4E,0x4E,learned (10 functions)
 wu.kage_width,s16,0x50,0x50,inferred: neighbours on both sides shift by the same amount
 wu.kage_char,s16,0x52,0x52,learned (8 functions)
 wu.position_x,s16,0x54,0x54,learned (9 functions)
-wu.position_y,s16,0x56,0x56,inferred: neighbours on both sides shift by the same amount
+wu.position_y,s16,0x56,0x56,learned from few functions (4); consistent with neighbours
 wu.position_z,s16,0x58,0x58,learned (11 functions)
 wu.next_x,s16,0x5A,0x5A,inferred: neighbours on both sides shift by the same amount
 wu.next_y,s16,0x5C,0x5C,inferred: neighbours on both sides shift by the same amount
 wu.next_z,s16,0x5E,0x5E,learned (27 functions)
-wu.scr_mv_x,s16,0x60,0x60,inferred: neighbours on both sides shift by the same amount
-wu.scr_mv_y,s16,0x62,0x62,inferred: neighbours on both sides shift by the same amount
+wu.scr_mv_x,s16,0x60,0x60,learned from few functions (3); consistent with neighbours
+wu.scr_mv_y,s16,0x62,0x62,learned from few functions (2); consistent with neighbours
 wu.xyz,XY[3],0x64,0x64,learned (11 functions)
-wu.old_pos,s16[3],0x70,0x70,inferred: neighbours on both sides shift by the same amount
+wu.old_pos,s16[3],0x70,0x70,learned from few functions (3); consistent with neighbours
 wu.sync_suzi,s16,0x76,0x76,inferred: neighbours on both sides shift by the same amount
 wu.suzi_offset,u16*,0x78,0x78,inferred: neighbours on both sides shift by the same amount
 wu.mvxy.a,Reg32SpReal[2],0x7C,0x7C,learned (39 functions)
@@ -52,10 +52,10 @@ wu.dir_timer,s16,0x9A,0x9A,learned (24 functions)
 wu.vitality,s16,0x9C,0x9C,inferred: neighbours on both sides shift by the same amount
 wu.vital_new,s16,0x9E,0x9E,learned (7 functions)
 wu.vital_old,s16,0xA0,0xA0,learned (6 functions)
-wu.dm_vital,s16,0xA2,0xA2,inferred: neighbours on both sides shift by the same amount
-wu.dmcal_m,s16,0xA4,0xA4,inferred: neighbours on both sides shift by the same amount
-wu.dmcal_d,s16,0xA6,0xA6,inferred: neighbours on both sides shift by the same amount
-wu.weight_level,s8,0xA8,0xA8,inferred: neighbours on both sides shift by the same amount
+wu.dm_vital,s16,0xA2,0xA2,learned from few functions (3); consistent with neighbours
+wu.dmcal_m,s16,0xA4,0xA4,learned from few functions (2); consistent with neighbours
+wu.dmcal_d,s16,0xA6,0xA6,learned from few functions (2); consistent with neighbours
+wu.weight_level,s8,0xA8,0xA8,learned from few functions (3); consistent with neighbours
 wu.cmoa.code,u16,0xAA,0xAA,inferred: neighbours on both sides shift by the same amount
 wu.cmoa.koc,s16,0xAC,0xAC,inferred: neighbours on both sides shift by the same amount
 wu.cmoa.ix,s16,0xAE,0xAE,inferred: neighbours on both sides shift by the same amount
@@ -73,9 +73,9 @@ wu.cml2.koc,s16,0xC4,0xC4,inferred: neighbours on both sides shift by the same a
 wu.cml2.ix,s16,0xC6,0xC6,inferred: neighbours on both sides shift by the same amount
 wu.cml2.pat,s16,0xC8,0xC8,inferred: neighbours on both sides shift by the same amount
 wu.cmja.code,u16,0xCA,0xCA,inferred: neighbours on both sides shift by the same amount
-wu.cmja.koc,s16,0xCC,0xCC,inferred: neighbours on both sides shift by the same amount
-wu.cmja.ix,s16,0xCE,0xCE,inferred: neighbours on both sides shift by the same amount
-wu.cmja.pat,s16,0xD0,0xD0,inferred: neighbours on both sides shift by the same amount
+wu.cmja.koc,s16,0xCC,0xCC,learned from few functions (2); consistent with neighbours
+wu.cmja.ix,s16,0xCE,0xCE,learned from few functions (2); consistent with neighbours
+wu.cmja.pat,s16,0xD0,0xD0,learned from few functions (2); consistent with neighbours
 wu.cmj2.code,u16,0xD2,0xD2,inferred: neighbours on both sides shift by the same amount
 wu.cmj2.koc,s16,0xD4,0xD4,inferred: neighbours on both sides shift by the same amount
 wu.cmj2.ix,s16,0xD6,0xD6,inferred: neighbours on both sides shift by the same amount
@@ -85,9 +85,9 @@ wu.cmj3.koc,s16,0xDC,0xDC,inferred: neighbours on both sides shift by the same a
 wu.cmj3.ix,s16,0xDE,0xDE,inferred: neighbours on both sides shift by the same amount
 wu.cmj3.pat,s16,0xE0,0xE0,inferred: neighbours on both sides shift by the same amount
 wu.cmj4.code,u16,0xE2,0xE2,inferred: neighbours on both sides shift by the same amount
-wu.cmj4.koc,s16,0xE4,0xE4,inferred: neighbours on both sides shift by the same amount
-wu.cmj4.ix,s16,0xE6,0xE6,inferred: neighbours on both sides shift by the same amount
-wu.cmj4.pat,s16,0xE8,0xE8,inferred: neighbours on both sides shift by the same amount
+wu.cmj4.koc,s16,0xE4,0xE4,learned from few functions (2); consistent with neighbours
+wu.cmj4.ix,s16,0xE6,0xE6,learned from few functions (2); consistent with neighbours
+wu.cmj4.pat,s16,0xE8,0xE8,learned from few functions (2); consistent with neighbours
 wu.cmj5.code,u16,0xEA,0xEA,inferred: neighbours on both sides shift by the same amount
 wu.cmj5.koc,s16,0xEC,0xEC,inferred: neighbours on both sides shift by the same amount
 wu.cmj5.ix,s16,0xEE,0xEE,inferred: neighbours on both sides shift by the same amount
@@ -101,9 +101,9 @@ wu.cmj7.koc,s16,0xFC,0xFC,inferred: neighbours on both sides shift by the same a
 wu.cmj7.ix,s16,0xFE,0xFE,inferred: neighbours on both sides shift by the same amount
 wu.cmj7.pat,s16,0x100,0x100,inferred: neighbours on both sides shift by the same amount
 wu.cmms.code,u16,0x102,0x102,inferred: neighbours on both sides shift by the same amount
-wu.cmms.koc,s16,0x104,0x104,inferred: neighbours on both sides shift by the same amount
-wu.cmms.ix,s16,0x106,0x106,inferred: neighbours on both sides shift by the same amount
-wu.cmms.pat,s16,0x108,0x108,inferred: neighbours on both sides shift by the same amount
+wu.cmms.koc,s16,0x104,0x104,learned from few functions (2); consistent with neighbours
+wu.cmms.ix,s16,0x106,0x106,learned from few functions (2); consistent with neighbours
+wu.cmms.pat,s16,0x108,0x108,learned from few functions (2); consistent with neighbours
 wu.cmmd.code,u16,0x10A,0x10A,inferred: neighbours on both sides shift by the same amount
 wu.cmmd.koc,s16,0x10C,0x10C,inferred: neighbours on both sides shift by the same amount
 wu.cmmd.ix,s16,0x10E,0x10E,inferred: neighbours on both sides shift by the same amount
@@ -133,9 +133,9 @@ wu.cmb3.koc,s16,0x13C,0x13C,inferred: neighbours on both sides shift by the same
 wu.cmb3.ix,s16,0x13E,0x13E,inferred: neighbours on both sides shift by the same amount
 wu.cmb3.pat,s16,0x140,0x140,inferred: neighbours on both sides shift by the same amount
 wu.cmhs.code,u16,0x142,0x142,inferred: neighbours on both sides shift by the same amount
-wu.cmhs.koc,s16,0x144,0x144,inferred: neighbours on both sides shift by the same amount
-wu.cmhs.ix,s16,0x146,0x146,inferred: neighbours on both sides shift by the same amount
-wu.cmhs.pat,s16,0x148,0x148,inferred: neighbours on both sides shift by the same amount
+wu.cmhs.koc,s16,0x144,0x144,learned from few functions (2); consistent with neighbours
+wu.cmhs.ix,s16,0x146,0x146,learned from few functions (2); consistent with neighbours
+wu.cmhs.pat,s16,0x148,0x148,learned from few functions (2); consistent with neighbours
 wu.cmr0.code,u16,0x14A,0x14A,inferred: neighbours on both sides shift by the same amount
 wu.cmr0.koc,s16,0x14C,0x14C,inferred: neighbours on both sides shift by the same amount
 wu.cmr0.ix,s16,0x14E,0x14E,inferred: neighbours on both sides shift by the same amount
@@ -155,7 +155,7 @@ wu.cmr3.pat,s16,0x168,0x168,inferred: neighbours on both sides shift by the same
 wu.cmwk,s16[32],0x16A,0x16A,inferred: neighbours on both sides shift by the same amount
 wu.char_table,u32*[12],0x1AC,0x1AC,inferred: neighbours on both sides shift by the same amount
 wu.se_random_table,u32*,0x1DC,0x1DC,inferred: neighbours on both sides shift by the same amount
-wu.step_xy_table,s16*,0x1E0,0x1E0,inferred: neighbours on both sides shift by the same amount
+wu.step_xy_table,s16*,0x1E0,0x1E0,learned from few functions (3); consistent with neighbours
 wu.move_xy_table,s16*,0x1E4,0x1E4,inferred: neighbours on both sides shift by the same amount
 wu.overlap_char_tbl,UNK_8*,0x1E8,0x1E8,inferred: neighbours on both sides shift by the same amount
 wu.olc_ix_table,UNK_9*,0x1EC,0x1EC,inferred: neighbours on both sides shift by the same amount
@@ -163,44 +163,44 @@ wu.cg_olc.olc_ix,s16[4],0x1F0,0x1F0,inferred: neighbours on both sides shift by 
 wu.rival_catch_tbl,CatchTable*,0x1F8,0x1F8,inferred: neighbours on both sides shift by the same amount
 wu.curr_rca,CatchTable*,0x1FC,0x1FC,inferred: neighbours on both sides shift by the same amount
 wu.set_char_ad,u32*,0x200,0x200,inferred: neighbours on both sides shift by the same amount
-wu.cg_ix,s16,0x204,0x204,inferred: neighbours on both sides shift by the same amount
-wu.now_koc,s16,0x206,0x206,inferred: neighbours on both sides shift by the same amount
+wu.cg_ix,s16,0x204,0x204,learned from few functions (3); consistent with neighbours
+wu.now_koc,s16,0x206,0x206,learned from few functions (4); consistent with neighbours
 wu.char_index,s16,0x208,0x208,learned (39 functions)
 wu.current_colcd,s16,0x20A,0x20A,inferred: neighbours on both sides shift by the same amount
-wu.cgd_type,s16,0x20C,0x20C,inferred: neighbours on both sides shift by the same amount
+wu.cgd_type,s16,0x20C,0x20C,learned from few functions (3); consistent with neighbours
 wu.pat_status,u8,0x20E,0x20E,learned (18 functions)
 wu.kind_of_waza,u8,0x20F,0x20F,read by hand
-wu.hit_range,u8,0x210,,
-wu.total_paring,u8,0x211,,
-wu.total_att_set,u8,0x212,,
-wu.sp_tech_id,u8,0x213,,
-wu.cg_type,u8,0x214,0x215,learned (160 functions)
-wu.cg_ctr,u8,0x215,,
+wu.hit_range,u8,0x210,0x210,inferred: neighbours on both sides shift by the same amount
+wu.total_paring,u8,0x211,0x211,inferred: neighbours on both sides shift by the same amount
+wu.total_att_set,u8,0x212,0x212,inferred: neighbours on both sides shift by the same amount
+wu.sp_tech_id,u8,0x213,0x213,learned from few functions (3); consistent with neighbours
+wu.cg_type,u8,0x214,0x215,read by hand
+wu.cg_ctr,u8,0x215,0x214,read by hand (hit_pattern_extdat_check); note cg_type and cg_ctr are in the opposite order
 wu.cg_se,u16,0x216,,
 wu.cg_olc_ix,u16,0x218,,
 wu.cg_number,u16,0x21A,,
-wu.cg_hit_ix,u16,0x21C,,
-wu.cg_att_ix,s16,0x21E,,
-wu.cg_extdat,u8,0x220,,
-wu.cg_cancel,u8,0x221,,
-wu.cg_effect,u8,0x222,,
-wu.cg_eftype,u8,0x223,,
-wu.cg_zoom,u16,0x224,,
-wu.cg_rival,u16,0x226,,
-wu.cg_add_xy,u16,0x228,,
-wu.cg_next_ix,u8,0x22A,,
-wu.cg_status,u8,0x22B,,
-wu.cg_wca_ix,s16,0x22C,,
-wu.cg_jphos,s16,0x22E,,
-wu.cg_meoshi,u16,0x230,,
-wu.cg_prio,u8,0x232,,
+wu.cg_hit_ix,u16,0x21C,0x21E,learned from few functions (2); consistent with neighbours
+wu.cg_att_ix,s16,0x21E,0x21C,read by hand (set_new_attnum)
+wu.cg_extdat,u8,0x220,0x220,read by hand (hit_pattern_extdat_check)
+wu.cg_cancel,u8,0x221,0x221,learned from few functions (4); consistent with neighbours
+wu.cg_effect,u8,0x222,0x222,inferred: neighbours on both sides shift by the same amount
+wu.cg_eftype,u8,0x223,0x223,inferred: neighbours on both sides shift by the same amount
+wu.cg_zoom,u16,0x224,0x224,inferred: neighbours on both sides shift by the same amount
+wu.cg_rival,u16,0x226,0x226,inferred: neighbours on both sides shift by the same amount
+wu.cg_add_xy,u16,0x228,0x228,inferred: neighbours on both sides shift by the same amount
+wu.cg_next_ix,u8,0x22A,0x22A,learned from few functions (3); consistent with neighbours
+wu.cg_status,u8,0x22B,0x22B,inferred: neighbours on both sides shift by the same amount
+wu.cg_wca_ix,s16,0x22C,0x22C,inferred: neighbours on both sides shift by the same amount
+wu.cg_jphos,s16,0x22E,0x22E,inferred: neighbours on both sides shift by the same amount
+wu.cg_meoshi,u16,0x230,0x230,learned from few functions (2); consistent with neighbours
+wu.cg_prio,u8,0x232,0x232,read by hand (Normal_31000)
 wu.cg_flip,u8,0x233,,
 wu.old_cgnum,u16,0x234,,
 wu.floor,s16,0x236,,
 wu.ccoff,u16,0x238,,
 wu.colcd,s16,0x23A,,
-wu.my_col_mode,s16,0x23C,,
-wu.my_col_code,s16,0x23E,,
+wu.my_col_mode,s16,0x23C,0x268,learned from few functions (2); consistent with neighbours
+wu.my_col_code,s16,0x23E,0x26A,learned from few functions (3); consistent with neighbours
 wu.my_priority,s16,0x240,0x26C,learned (32 functions)
 wu.my_family,s16,0x242,0x26E,learned (10 functions)
 wu.my_ext_pri,s16,0x244,,
@@ -208,9 +208,9 @@ wu.my_bright_type,s16,0x246,,
 wu.my_bright_level,s16,0x248,,
 wu.my_clear_level,s16,0x24A,,
 wu.my_mts,s16,0x24C,,
-wu.my_mr_flag,s16,0x24E,,
-wu.my_mr.size.x,s16,0x250,,
-wu.my_mr.size.y,s16,0x252,,
+wu.my_mr_flag,s16,0x24E,0x272,learned from few functions (2); consistent with neighbours
+wu.my_mr.size.x,s16,0x250,0x278,learned from few functions (2); consistent with neighbours
+wu.my_mr.size.y,s16,0x252,0x27A,learned from few functions (2); consistent with neighbours
 wu.my_trans_mode,s16,0x254,,
 wu.my_roll_flag,s16,0x256,,
 wu.my_roll.now,s16,0x258,,
@@ -225,31 +225,31 @@ wu.cg_ja.bhix,u16,0x272,,
 wu.cg_ja.haix,u16,0x274,,
 wu.cg_ja.mf.full,u16,0x276,,
 wu.cg_ja.mf.half,structure_type,0x276,,
-wu.cg_ja.caix,u16,0x278,,
-wu.cg_ja.cuix,u16,0x27A,,
-wu.cg_ja.atix,u16,0x27C,,
-wu.cg_ja.hoix,u16,0x27E,,
-wu.body_adrs,UNK_1*,0x280,,
-wu.h_bod,UNK_1*,0x284,,
-wu.hand_adrs,UNK_2*,0x288,,
-wu.h_han,UNK_2*,0x28C,,
-wu.dumm_adrs,UNK_2*,0x290,,
-wu.h_dumm,UNK_2*,0x294,,
-wu.catch_adrs,UNK_3*,0x298,,
-wu.h_cat,UNK_3*,0x29C,,
-wu.caught_adrs,UNK_4*,0x2A0,,
-wu.h_cau,UNK_4*,0x2A4,,
-wu.attack_adrs,UNK_5*,0x2A8,,
-wu.h_att,UNK_5*,0x2AC,,
-wu.h_eat,UNK_5*,0x2B0,,
-wu.hosei_adrs,UNK_6*,0x2B4,,
-wu.h_hos,UNK_6*,0x2B8,,
-wu.att_ix_table,UNK_7*,0x2BC,,
-wu.att.reaction,u8,0x2C0,,
-wu.att.level,u8,0x2C1,,
-wu.att.mkh_ix,u8,0x2C2,,
-wu.att.but_ix,u8,0x2C3,,
-wu.att.dipsw,u8,0x2C4,,
+wu.cg_ja.caix,u16,0x278,0x294,learned from few functions (3); consistent with neighbours
+wu.cg_ja.cuix,u16,0x27A,0x296,inferred: neighbours on both sides shift by the same amount
+wu.cg_ja.atix,u16,0x27C,0x298,learned from few functions (3); consistent with neighbours
+wu.cg_ja.hoix,u16,0x27E,0x29A,learned from few functions (2); consistent with neighbours
+wu.body_adrs,UNK_1*,0x280,0x29C,learned from few functions (2); consistent with neighbours
+wu.h_bod,UNK_1*,0x284,0x2A0,inferred: neighbours on both sides shift by the same amount
+wu.hand_adrs,UNK_2*,0x288,0x2A4,inferred: neighbours on both sides shift by the same amount
+wu.h_han,UNK_2*,0x28C,0x2A8,inferred: neighbours on both sides shift by the same amount
+wu.dumm_adrs,UNK_2*,0x290,0x2AC,inferred: neighbours on both sides shift by the same amount
+wu.h_dumm,UNK_2*,0x294,0x2B0,inferred: neighbours on both sides shift by the same amount
+wu.catch_adrs,UNK_3*,0x298,0x2B4,learned from few functions (2); consistent with neighbours
+wu.h_cat,UNK_3*,0x29C,0x2B8,learned from few functions (3); consistent with neighbours
+wu.caught_adrs,UNK_4*,0x2A0,0x2BC,inferred: neighbours on both sides shift by the same amount
+wu.h_cau,UNK_4*,0x2A4,0x2C0,inferred: neighbours on both sides shift by the same amount
+wu.attack_adrs,UNK_5*,0x2A8,0x2C4,inferred: neighbours on both sides shift by the same amount
+wu.h_att,UNK_5*,0x2AC,0x2C8,inferred: neighbours on both sides shift by the same amount
+wu.h_eat,UNK_5*,0x2B0,0x2CC,inferred: neighbours on both sides shift by the same amount
+wu.hosei_adrs,UNK_6*,0x2B4,0x2D0,learned from few functions (2); consistent with neighbours
+wu.h_hos,UNK_6*,0x2B8,0x2D4,inferred: neighbours on both sides shift by the same amount
+wu.att_ix_table,UNK_7*,0x2BC,0x2D8,inferred: neighbours on both sides shift by the same amount
+wu.att.reaction,u8,0x2C0,0x2DC,learned from few functions (2); consistent with neighbours
+wu.att.level,u8,0x2C1,0x2DD,inferred: neighbours on both sides shift by the same amount
+wu.att.mkh_ix,u8,0x2C2,0x2DE,inferred: neighbours on both sides shift by the same amount
+wu.att.but_ix,u8,0x2C3,0x2DF,inferred: neighbours on both sides shift by the same amount
+wu.att.dipsw,u8,0x2C4,0x2E0,learned from few functions (3); consistent with neighbours
 wu.att.guard,u8,0x2C5,0x2E1,read by hand
 wu.att.dir,u8,0x2C6,0x2E2,inferred: neighbours on both sides shift by the same amount
 wu.att.free,u8,0x2C7,0x2E3,inferred: neighbours on both sides shift by the same amount
@@ -270,8 +270,8 @@ wu.att_zuru,u16,0x2DA,0x2F6,inferred: neighbours on both sides shift by the same
 wu.at_ten_ix,u16,0x2DC,0x2F8,inferred: neighbours on both sides shift by the same amount
 wu.dir_atthit,s16,0x2DE,0x2FA,inferred: neighbours on both sides shift by the same amount
 wu.vs_id,s16,0x2E0,0x2FC,inferred: neighbours on both sides shift by the same amount
-wu.att_hit_ok,u8,0x2E2,0x2FE,inferred: neighbours on both sides shift by the same amount
-wu.meoshi_hit_flag,u8,0x2E3,0x2FF,inferred: neighbours on both sides shift by the same amount
+wu.att_hit_ok,u8,0x2E2,0x2FE,learned from few functions (3); consistent with neighbours
+wu.meoshi_hit_flag,u8,0x2E3,0x2FF,learned from few functions (2); consistent with neighbours
 wu.at_koa,u16,0x2E4,0x300,inferred: neighbours on both sides shift by the same amount
 wu.paring_attack_flag,u8,0x2E6,0x302,inferred: neighbours on both sides shift by the same amount
 wu.no_death_attack,s8,0x2E7,0x303,inferred: neighbours on both sides shift by the same amount
@@ -298,7 +298,7 @@ wu.dm_attlv,s16,0x30C,0x328,learned (15 functions)
 wu.dm_dir,s16,0x30E,0x32A,inferred: neighbours on both sides shift by the same amount
 wu.dm_rl,s8,0x310,0x32C,learned (10 functions)
 wu.dm_impact,u8,0x311,0x32D,inferred: neighbours on both sides shift by the same amount
-wu.dm_stop,s16,0x312,0x32E,inferred: neighbours on both sides shift by the same amount
+wu.dm_stop,s16,0x312,0x32E,learned from few functions (4); consistent with neighbours
 wu.dm_quake,s16,0x314,0x330,inferred: neighbours on both sides shift by the same amount
 wu.dm_piyo,u16,0x316,0x332,inferred: neighbours on both sides shift by the same amount
 wu.dm_ten_ix,u16,0x318,0x334,inferred: neighbours on both sides shift by the same amount
@@ -315,24 +315,24 @@ wu.dm_kind_of_waza,u8,0x327,0x343,inferred: neighbours on both sides shift by th
 wu.attpow,s16,0x328,0x344,inferred: neighbours on both sides shift by the same amount
 wu.defpow,s16,0x32A,0x346,inferred: neighbours on both sides shift by the same amount
 wu.my_effadrs,u32*,0x32C,0x348,learned (7 functions)
-wu.shell_ix,s16[8],0x330,,
-wu.hm_dm_side,s16,0x340,,
-wu.extra_col,s16,0x342,,
-wu.extra_col_2,s16,0x344,,
-wu.original_vitality,s16,0x346,,
-wu.hit_work_id,u8,0x348,,
-wu.dmg_work_id,u8,0x349,,
-wu.K5_init_flag,s8,0x34A,,
+wu.shell_ix,s16[8],0x330,0x34C,learned from few functions (2); consistent with neighbours
+wu.hm_dm_side,s16,0x340,0x35C,inferred: neighbours on both sides shift by the same amount
+wu.extra_col,s16,0x342,0x35E,inferred: neighbours on both sides shift by the same amount
+wu.extra_col_2,s16,0x344,0x360,inferred: neighbours on both sides shift by the same amount
+wu.original_vitality,s16,0x346,0x362,inferred: neighbours on both sides shift by the same amount
+wu.hit_work_id,u8,0x348,0x364,inferred: neighbours on both sides shift by the same amount
+wu.dmg_work_id,u8,0x349,0x365,inferred: neighbours on both sides shift by the same amount
+wu.K5_init_flag,s8,0x34A,0x366,learned from few functions (3); consistent with neighbours
 wu.K5_exec_ok,s8,0x34B,,
 wu.kow,u8,0x34C,,
 wu.swallow_no_effect,u8,0x34D,,
 wu.E3_work_index,s16,0x34E,,
 wu.E4_work_index,s16,0x350,,
-wu.kezurare_flag,u8,0x352,,
+wu.kezurare_flag,u8,0x352,,apparently absent: the arcade check_dm_att_guard does not write it
 wu.wrd_free,u8[53],0x353,,
 cp,WORK_CP*,0x388,0x3B8,read by hand
 spmv_ng_flag,u32,0x38C,0x3BC,read by hand
-spmv_ng_flag2,u32,0x390,,
+spmv_ng_flag2,u32,0x390,,"apparently absent: no arcade function read so far has it, and the offsets around it leave no room"
 player_number,s16,0x394,0x3C0,learned (24 functions)
 zuru_timer,s16,0x396,0x3C2,inferred: neighbours on both sides shift by the same amount
 zuru_ix_counter,u16,0x398,0x3C4,learned (7 functions)
@@ -340,8 +340,8 @@ zuru_flag,u8,0x39A,0x3C6,inferred: neighbours on both sides shift by the same am
 tsukamarenai_flag,s8,0x39B,0x3C7,inferred: neighbours on both sides shift by the same amount
 kizetsu_kow,u8,0x39C,0x3C8,inferred: neighbours on both sides shift by the same amount
 micchaku_flag,u8,0x39D,0x3C9,learned (5 functions)
-hos_fi_flag,u8,0x39E,0x3CA,inferred: neighbours on both sides shift by the same amount
-hos_em_flag,u8,0x39F,0x3CB,inferred: neighbours on both sides shift by the same amount
+hos_fi_flag,u8,0x39E,0x3CA,learned from few functions (2); consistent with neighbours
+hos_em_flag,u8,0x39F,0x3CB,learned from few functions (2); consistent with neighbours
 tsukami_num,s16,0x3A0,0x3CC,inferred: neighbours on both sides shift by the same amount
 tsukami_f,s8,0x3A2,0x3CE,inferred: neighbours on both sides shift by the same amount
 tsukamare_f,s8,0x3A3,0x3CF,inferred: neighbours on both sides shift by the same amount
@@ -349,23 +349,23 @@ kind_of_catch,s8,0x3A4,0x3D0,inferred: neighbours on both sides shift by the sam
 old_gdflag,u8,0x3A5,0x3D1,inferred: neighbours on both sides shift by the same amount
 guard_flag,u8,0x3A6,0x3D2,read by hand
 guard_chuu,u8,0x3A7,0x3D3,read by hand
-dm_ix,s16,0x3A8,0x3D4,inferred: neighbours on both sides shift by the same amount
-hosei_amari,s16,0x3AA,0x3D6,inferred: neighbours on both sides shift by the same amount
-dm_hos_flag,s8,0x3AC,0x3D8,inferred: neighbours on both sides shift by the same amount
+dm_ix,s16,0x3A8,0x3D4,learned from few functions (3); consistent with neighbours
+hosei_amari,s16,0x3AA,0x3D6,learned from few functions (3); consistent with neighbours
+dm_hos_flag,s8,0x3AC,0x3D8,learned from few functions (4); consistent with neighbours
 dm_point,u8,0x3AD,0x3D9,inferred: neighbours on both sides shift by the same amount
 muriyari_ugoku,s16,0x3AE,0x3DA,inferred: neighbours on both sides shift by the same amount
 scr_pos_set_flag,s8,0x3B0,0x3DC,learned (19 functions)
 hoshi_flag,s8,0x3B1,0x3DD,inferred: neighbours on both sides shift by the same amount
 the_same_players,s8,0x3B2,0x3DE,learned (23 functions)
-dm_step_tbl,s8*,0x3B4,0x3E0,inferred: neighbours on both sides shift by the same amount
-running_f,s8,0x3B8,0x3E4,inferred: neighbours on both sides shift by the same amount
-cancel_timer,s8,0x3B9,0x3E5,inferred: neighbours on both sides shift by the same amount
+dm_step_tbl,s8*,0x3B4,0x3E0,learned from few functions (2); consistent with neighbours
+running_f,s8,0x3B8,0x3E4,learned from few functions (3); consistent with neighbours
+cancel_timer,s8,0x3B9,0x3E5,learned from few functions (2); consistent with neighbours
 jpdir,s8,0x3BA,0x3E6,read by hand
 jptim,s8,0x3BB,0x3E7,inferred: neighbours on both sides shift by the same amount
 current_attack,s16,0x3BC,0x3E8,inferred: neighbours on both sides shift by the same amount
 as,AS*,0x3C0,0x3EC,learned (78 functions)
 sa,SA_WORK*,0x3C4,0x3F0,learned (5 functions)
-cb,ComboType*,0x3C8,0x3F4,inferred: neighbours on both sides shift by the same amount
+cb,ComboType*,0x3C8,0x3F4,learned from few functions (3); consistent with neighbours
 py,PiyoriType*,0x3CC,0x3F8,read by hand
 wkey_flag,s8,0x3D0,0x3FC,inferred: neighbours on both sides shift by the same amount
 dead_flag,s8,0x3D1,0x3FD,read by hand
@@ -373,71 +373,71 @@ ukemi_ok_timer,s16,0x3D2,0x3FE,inferred: neighbours on both sides shift by the s
 backup_ok_timer,s16,0x3D4,0x400,inferred: neighbours on both sides shift by the same amount
 uot_cd_ok_flag,s8,0x3D6,0x402,inferred: neighbours on both sides shift by the same amount
 ukemi_success,s8,0x3D7,0x403,inferred: neighbours on both sides shift by the same amount
-old_pos_data,s16[8],0x3D8,0x404,inferred: neighbours on both sides shift by the same amount
-move_distance,s16,0x3E8,0x414,inferred: neighbours on both sides shift by the same amount
+old_pos_data,s16[8],0x3D8,0x404,learned from few functions (2); consistent with neighbours
+move_distance,s16,0x3E8,0x414,learned from few functions (2); consistent with neighbours
 move_power,s16,0x3EA,0x416,inferred: neighbours on both sides shift by the same amount
 sa_stop_sai,s16,0x3EC,0x418,inferred: neighbours on both sides shift by the same amount
 saishin_lvdir,u8,0x3EE,0x41A,read by hand
 sa_stop_lvdir,u8,0x3EF,0x41B,inferred: neighbours on both sides shift by the same amount
-sa_stop_flag,u8,0x3F0,0x41C,inferred: neighbours on both sides shift by the same amount
-kezurijini_flag,u8,0x3F1,0x41D,inferred: neighbours on both sides shift by the same amount
+sa_stop_flag,u8,0x3F0,0x41C,learned from few functions (3); consistent with neighbours
+kezurijini_flag,u8,0x3F1,0x41D,read by hand
 illusion_work,WORK*,0x3F4,0x420,inferred: neighbours on both sides shift by the same amount
 image_setup_flag,s16,0x3F8,0x424,inferred: neighbours on both sides shift by the same amount
 image_data_index,s16,0x3FA,0x426,inferred: neighbours on both sides shift by the same amount
 caution_flag,u8,0x3FC,0x428,inferred: neighbours on both sides shift by the same amount
 tc_1st_flag,u8,0x3FD,0x429,inferred: neighbours on both sides shift by the same amount
-rp,ComboType*,0x400,0x42C,inferred: neighbours on both sides shift by the same amount
+rp,ComboType*,0x400,0x42C,learned from few functions (3); consistent with neighbours
 bullet_hcnt,s16,0x404,0x430,inferred: neighbours on both sides shift by the same amount
 bhcnt_timer,s16,0x406,0x432,inferred: neighbours on both sides shift by the same amount
-cat_break_ok_timer,s8,0x408,0x434,inferred: neighbours on both sides shift by the same amount
-cat_break_reserve,s8,0x409,0x435,inferred: neighbours on both sides shift by the same amount
+cat_break_ok_timer,s8,0x408,0x434,learned from few functions (2); consistent with neighbours
+cat_break_reserve,s8,0x409,0x435,learned from few functions (2); consistent with neighbours
 hazusenai_flag,s8,0x40A,0x436,inferred: neighbours on both sides shift by the same amount
 hurimukenai_flag,s8,0x40B,0x437,inferred: neighbours on both sides shift by the same amount
-tk_success,u8,0x40C,0x438,inferred: neighbours on both sides shift by the same amount
+tk_success,u8,0x40C,0x438,learned from few functions (2); consistent with neighbours
 resurrection_resv,u8,0x40D,0x439,inferred: neighbours on both sides shift by the same amount
 tk_dageki,s16,0x40E,0x43A,learned (11 functions)
 tk_nage,s16,0x410,0x43C,learned (6 functions)
 tk_kizetsu,s16,0x412,0x43E,learned (5 functions)
-tk_konjyou,s16,0x414,0x440,inferred: neighbours on both sides shift by the same amount
+tk_konjyou,s16,0x414,0x440,learned from few functions (4); consistent with neighbours
 utk_dageki,s16,0x416,0x442,inferred: neighbours on both sides shift by the same amount
 utk_nage,s16,0x418,0x444,inferred: neighbours on both sides shift by the same amount
 utk_kizetsu,s16,0x41A,0x446,inferred: neighbours on both sides shift by the same amount
-atemi_flag,u8,0x41C,0x448,inferred: neighbours on both sides shift by the same amount
+atemi_flag,u8,0x41C,0x448,read by hand
 atemi_point,u8,0x41D,0x449,inferred: neighbours on both sides shift by the same amount
-dm_vital_backup,s16,0x41E,0x44A,inferred: neighbours on both sides shift by the same amount
+dm_vital_backup,s16,0x41E,0x44A,read by hand
 dm_refrect,u8,0x420,0x44C,inferred: neighbours on both sides shift by the same amount
-dm_vital_use,u8,0x421,0x44D,inferred: neighbours on both sides shift by the same amount
+dm_vital_use,u8,0x421,0x44D,read by hand
 exdm_ix,u8,0x422,0x44E,inferred: neighbours on both sides shift by the same amount
 meoshi_jump_flag,u8,0x423,0x44F,inferred: neighbours on both sides shift by the same amount
 cmd_request,s16,0x424,0x450,inferred: neighbours on both sides shift by the same amount
-rl_save,s16,0x426,0x452,inferred: neighbours on both sides shift by the same amount
+rl_save,s16,0x426,0x452,learned from few functions (2); consistent with neighbours
 zettai_muteki_flag,u8,0x428,0x454,inferred: neighbours on both sides shift by the same amount
 do_not_move,u8,0x429,0x455,inferred: neighbours on both sides shift by the same amount
 just_sa_stop_timer,u16,0x42A,0x456,inferred: neighbours on both sides shift by the same amount
 total_att_hit_ok,s16,0x42C,0x458,inferred: neighbours on both sides shift by the same amount
 sa_healing,u8,0x42E,0x45A,inferred: neighbours on both sides shift by the same amount
 auto_guard,u8,0x42F,0x45B,read by hand
-hsjp_ok,u8,0x430,0x45C,inferred: neighbours on both sides shift by the same amount
+hsjp_ok,u8,0x430,0x45C,learned from few functions (3); consistent with neighbours
 high_jump_flag,u8,0x431,0x45D,inferred: neighbours on both sides shift by the same amount
 att_plus,s16,0x432,0x45E,inferred: neighbours on both sides shift by the same amount
 def_plus,s16,0x434,0x460,inferred: neighbours on both sides shift by the same amount
 bs2_on_car,s8,0x436,0x462,learned (6 functions)
-bs2_area_car,s8,0x437,0x463,inferred: neighbours on both sides shift by the same amount
+bs2_area_car,s8,0x437,0x463,learned from few functions (3); consistent with neighbours
 bs2_over_car,s8,0x438,0x464,inferred: neighbours on both sides shift by the same amount
 bs2_area_car2,s8,0x439,0x465,inferred: neighbours on both sides shift by the same amount
 bs2_over_car2,s8,0x43A,0x466,inferred: neighbours on both sides shift by the same amount
 micchaku_wall_time,u8,0x43B,0x467,inferred: neighbours on both sides shift by the same amount
 extra_jump,u8,0x43C,0x468,learned (6 functions)
-air_jump_ok_time,u8,0x43D,0x469,inferred: neighbours on both sides shift by the same amount
+air_jump_ok_time,u8,0x43D,0x469,learned from few functions (3); consistent with neighbours
 waku_ram_index,s16,0x43E,0x46A,inferred: neighbours on both sides shift by the same amount
 permited_koa,u16,0x440,0x46C,learned (5 functions)
 ja_nmj_rno,u8,0x442,0x46E,inferred: neighbours on both sides shift by the same amount
 ja_nmj_cnt,u8,0x443,0x46F,inferred: neighbours on both sides shift by the same amount
 kind_of_blocking,u8,0x444,0x470,read by hand
-metamorphose,u8,0x445,,
+metamorphose,u8,0x445,0x471,learned from few functions (4); consistent with neighbours
 metamor_index,s16,0x446,,
 metamor_over,u8,0x448,,
-gill_ccch_go,u8,0x449,,
+gill_ccch_go,u8,0x449,0x475,read by hand (setup_any_data)
 renew_attchar,u8,0x44A,,
 omop_vital_timer,s16,0x44C,,
 sfwing_pos,s16,0x44E,,

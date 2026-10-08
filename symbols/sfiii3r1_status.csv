@@ -2328,7 +2328,6 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0603DB28,Passive11_0234,exact,same,2,2,0xffffffff
 0603DB70,Passive11_0235,exact,same,2,2,0xffffffff
 0603DBB8,Passive11_0236,exact,remapped,2,2,
-0603DBF4,Passive11_0237,high,same,4,4,0xd2
 0603DC70,Passive11_0238,exact,same,3,3,
 0603DCCA,Passive11_0239,exact,same,2,2,
 0603DD02,Passive11_0240,exact,same,3,3,
@@ -4603,7 +4602,6 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0607011C,Pattern09_0075,exact,same,2,2,
 0607015E,Pattern09_0076,exact,same,3,3,
 060701AE,Pattern09_0077,exact,same,4,4,
-06070244,Pattern09_0078,high,reordered,7,6,0xffffffff
 060702CE,Pattern09_0079,exact,same,4,4,
 0607034C,Pattern09_0080,exact,same,4,4,
 060703A2,Pattern09_0081,exact,same,3,3,
@@ -5852,7 +5850,13 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0608F3FC,set_conclusion_slow,high,same,0,0,
 0608FB34,Sound_SE,high,same,1,1,
 0608FB6A,BGM_Request,high,unknown,1,2,
+0608FBF0,Se_Shock,high,unknown,3,3,0x300
 0608FCDE,end_d00_7000,low,differs,1,3,0x78
+0608FFBA,Finish_SE,high,unknown,3,3,0x300
+06090000,Se_Myself,high,unknown,2,2,0x300
+0609002C,Check_Finish_SE,events,unknown,0,0,
+0609007E,Get_Position,events,differs,2,2,0x10 0x70 0xc0
+060900F4,Check_Bonus_SE,events,same,0,0,0x14
 06090270,caldir_pos_032,medium,unknown,1,1,
 06090516,add_pos_dir_064,medium,unknown,0,0,
 060907A4,cal_move_quantity2,events,unknown,0,0,0x80
@@ -5911,7 +5915,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 06094702,grade_store_vitality,events,unknown,0,0,
 06094744,grade_add_blocking,events,unknown,0,0,
 0609485C,grade_get_first_attack,events,unknown,0,0,
-06094894,grade_set_round_result,events,same,0,0,
+06094894,grade_set_round_result,high,same,0,0,
 06094908,grade_add_personal_action,events,unknown,0,0,
 0609497C,grade_check_tairyokusa,events,unknown,0,0,
 060949FA,grade_add_onaji_waza,events,same,0,0,
@@ -5935,8 +5939,9 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0609965E,Game_Manage_2_2,low,differs,3,2,
 06099770,Game_Manage_2_4,medium,unknown,9,8,0x28 0x32
 0609989E,Game_Manage_3rd,medium,unknown,1,2,
-060998D8,Update_BI_Term,events,same,0,0,
+060998D8,Update_BI_Term,high,same,0,0,
 060999B0,Game_Manage_4th,high,differs,20,16,
+06099B56,Setup_Win_Mark,manual,differs,12,7,
 06099D5E,Game_Manage_5th,events,unknown,0,0,
 06099D9C,Game_Manage_5_0,medium,same,0,0,
 06099DD0,Game_Manage_5_1,high,differs,3,2,
@@ -5994,9 +5999,10 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0609C114,Check_Disp_Winner,medium,unknown,0,0,
 0609C198,Disp_Winner,high,differs,6,8,
 0609C274,request_center_message,medium,unknown,0,0,
+0609C280,Judge_Next_Disposal,manual,unknown,0,0,
+0609C2F0,Check_Perfect,manual,unknown,0,0,
 0609C3A4,Check_Ending,high,unknown,4,3,
 0609C4C8,Quick_Entry,medium,unknown,3,4,
-0609C750,Update_VS_Data,medium,differs,0,1,0x11
 0609C912,Check_Fade_Out_BGM,high,same,1,1,
 0609C948,Control_Music_Fade,high,unknown,2,2,
 0609CAEC,Setup_BGM_Fade_In,medium,unknown,0,0,
@@ -7290,6 +7296,8 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0611E974,check_buttobi_type2,events,same,2,2,
 0611E996,setup_saishin_lvdir,medium,unknown,0,0,0x2000
 0611E9F6,setup_lvdir_after_autodir,events,unknown,0,0,
+0611EA24,dead_voice_request,high,same,2,2,
+0611EA78,dead_voice_request2,high,same,0,0,
 0611EBF0,hissatsu_setup_union,medium,unknown,0,0,
 0611EC1A,check_full_gauge_attack,high,unknown,10,6,0x14 0x26 0x800000
 0611F0E0,check_full_gauge_attack2,high,unknown,10,6,0x14 0x26 0x800000
