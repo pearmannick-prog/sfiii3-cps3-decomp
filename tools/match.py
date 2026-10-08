@@ -12,7 +12,7 @@ import numpy as np
 
 ap = argparse.ArgumentParser(); ap.add_argument("ps2"); ap.add_argument("split"); ap.add_argument("out")
 ap.add_argument("--code-hi", type=lambda s: int(s, 16), default=0x0613BDFA)
-ap.add_argument("-v", action="store_true"); a = ap.parse_args()
+ap.add_argument("--content", help="feedback from lift_patterns.py"); ap.add_argument("-v", action="store_true"); a = ap.parse_args()
 PS = json.load(open(a.ps2)); AR = json.load(open(os.path.join(a.split, "functions.json")))
 P = {r["name"]: r for r in PS["functions"]}; A = {r["addr"]: r for r in AR["functions"]}
 pnames = set(P)
@@ -45,9 +45,19 @@ def contradicted(n, x):
     return len(P[n]["rare"]) >= 2 and len(A[x]["rare"]) >= 2 and not (P[n]["rare"] & A[x]["rare"])
 
 M, Minv, how = {}, {}, {}                      # name -> addr, addr -> name, name -> (stage, confidence)
+REJECT, VERIFIED = set(), set()
 def assign(n, x, stage, conf):
-    if n in M or x in Minv or n not in P or x not in A: return False
+    if n in M or x in Minv or n not in P or x not in A or (n, x) in REJECT: return False
     M[n] = x; Minv[x] = n; how[n] = (stage, round(float(conf), 3)); return True
+
+if a.content:
+    for r in csv.DictReader(open(a.content)):
+        n, x = r["name"], int(r["arcade_addr"], 16)
+        if r["verdict"] == "reject": REJECT.add((n, x))
+        elif r["verdict"] == "verified": VERIFIED.add((n, x)); assign(n, x, "content", 1.0)
+        if r["verdict"] in ("seed", "table"): assign(n, x, "content", 1.0)
+    for n, x in VERIFIED: assign(n, x, "content", 1.0)
+    print(f"content feedback: {len(M)} pairs fixed by exact content, {len(REJECT)} rejected")
 
 # ---- stage 1: tables ------------------------------------------------------------------
 runs = [r for r in AR["runs"] if r["addr"] >= a.code_hi]
@@ -340,7 +350,8 @@ print(f"order check on table+call matches of pass 1: {inv0}/{tot0} adjacent same
 
 def grade(n, x):
     shape = float(pair_score(*pfeat(n), *afeat(x))); cs = const_sim(n, x); cl = call_sim(n, x)
-    if contradicted(n, x) or (cl is not None and cl < 0.3 and (cs or 0) < 0.5): g = "low"
+    if (n, x) in VERIFIED: g = "exact"
+    elif contradicted(n, x) or (cl is not None and cl < 0.3 and (cs or 0) < 0.5): g = "low"
     elif (cs is not None and cs >= 0.5) or (cl is not None and cl >= 0.8): g = "high"
     else: g = "medium"
     return g, round(shape, 2), "" if cs is None else round(cs, 2), "" if cl is None else round(cl, 2)

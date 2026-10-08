@@ -12,7 +12,7 @@ P = {r["name"]: r for r in PS["functions"]}
 rows = list(csv.DictReader(open(sys.argv[3]))); M = {r["name"]: int(r["arcade_addr"], 16) for r in rows}
 Minv = {v: k for k, v in M.items()}
 def canon(c): return c if c >= 0 else (c & 0xFFFF if c >= -0x8000 else c & 0xFFFFFFFF)
-def remap(c): return (c & 0x7F) | ((c >> 1) & ~0x7F)      # PS2 button mask -> arcade button mask
+def remap(c): return (c & ~0x7F80) | ((c & 0x7F80) >> 1) & 0x7F80 if c & 0x7F80 else c      # PS2 button mask -> arcade
 stat = collections.Counter(); out = []
 for r in rows:
     n, x = r["name"], int(r["arcade_addr"], 16)
@@ -22,7 +22,7 @@ for r in rows:
     ac = {canon(c) for c in A[x]["consts"]} | {c & 0xFF for c in A[x]["consts"]} | {c & 0xFFFF for c in A[x]["consts"]}
     raw = [canon(c) for c in A[x]["consts"]]
     if len(raw) <= 60: ac |= {(u + v) & 0xFFFFFFFF for u in raw for v in raw}      # constants built as base + offset
-    missing = sorted(pc - ac); remapped = [c for c in missing if c < 0x1000 and remap(c) in ac]
+    missing = sorted(pc - ac); remapped = [c for c in missing if c < 0x10000 and remap(c) in ac]
     missing = [c for c in missing if c not in remapped]
     if None in cm or None in named:
         known_c = collections.Counter(c for c in cm if c); known_x = collections.Counter(y for y, nm in zip(xs, named) if nm)

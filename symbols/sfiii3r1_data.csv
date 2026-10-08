@@ -61,7 +61,7 @@ arcade_addr,name,functions,agreement
 02015564,Select_Arts,2,1.0
 0201556C,Select_Status,7,1.0
 02015572,CP_No,42,0.88
-02015582,CP_Index,5042,1.0
+02015582,CP_Index,5288,1.0
 020155A6,Timer_00,43,0.96
 020155AA,Timer_01,10,0.91
 020155AE,Combo_Speed,22,1.0
@@ -90,7 +90,7 @@ arcade_addr,name,functions,agreement
 02015636,Event_Judge_Gals,4,1.0
 0201563B,Guard_Flag,3,1.0
 0201563E,Lever_Squat,5,1.0
-02015642,M_Lv,19,0.95
+02015642,M_Lv,20,1.0
 02015646,Pierce_Menu,3,1.0
 02015648,Counter_Attack,15,0.94
 0201564C,Face_MV_Time,2,1.0
