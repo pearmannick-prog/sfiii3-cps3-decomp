@@ -113,7 +113,8 @@ for root, _, files in walks:
                     params = [fname(p) or "" for p in pl.named_children if p.type == "parameter_declaration"] if pl is not None else []
                     for t in tables_in(body): raw_tables.append((os.path.relpath(path, src), name, *t))
                     recs.append(dict(name=name, file=os.path.relpath(path, src), addr=a, size=size_of(a),
-                                     consts=consts, calls=calls, idents=idents(body, params), lines=body.end_point[0] - body.start_point[0]))
+                                     consts=consts, calls=calls, idents=idents(body, params),
+                                     empty=not [k for k in body.named_children if k.type != "comment"], lines=body.end_point[0] - body.start_point[0]))
             elif n.type == "declaration":
                 for t in tables_in(n): raw_tables.append((os.path.relpath(path, src), None, *t))
             else:

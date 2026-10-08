@@ -9,3 +9,11 @@ arcade_addr,name,note
 0608DAE8,defense_sky,read by hand: arcade logic differs (see src/arcade/hand/HITCHECK.c)
 0608DBEC,blocking_point_count_up,read by hand
 0608DC44,defense_ground,read by hand: arcade logic differs (see src/arcade/hand/HITCHECK.c)
+0611CDA0,check_F_R_dash,read by hand: same as PS2 except Bonus_Game_Flag is compared with 21 (PS2: 20)
+0611D03E,check_turn_to_back,read by hand: same as PS2 except Bonus_Game_Flag 21 and check_rl_flag inlined
+0611D0BA,check_hurimuki,read by hand: identical to PS2
+0611D0E4,check_walking_lv_dir,read by hand: identical to PS2
+0611CFDE,,arcade-only: lever_dir 1/2 -> routine 11/12 unless spmv_ng_flag bit 1/2
+0611D150,,arcade-only: check_walking_lv_dir variant for routines 11/12
+06121EC0,Normal_31000,read by hand: arcade parry start has no dm_stop negation and no subtract_dm_vital
+06124BC4,subtract_dm_vital,read by hand: PS2 training/rumble additions absent

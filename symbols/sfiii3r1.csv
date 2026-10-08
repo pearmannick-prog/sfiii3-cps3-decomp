@@ -6717,7 +6717,7 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 0611ABB6,nm_00000,Source/Game/PLS00.c,table-align,medium,0.64,,
 0611ABC4,nm_01000,Source/Game/PLS00.c,table-align,high,0.66,,1.0
 0611AC84,nm_02000,Source/Game/PLS00.c,table-align,high,0.45,,1.0
-0611ADE8,nm_03000,Source/Game/PLS00.c,order,high,0.66,,0.94
+0611ADE8,nm_03000,Source/Game/PLS00.c,order,high,0.66,,1.0
 0611AEAE,nm_05000,Source/Game/PLS00.c,table-align,high,0.91,,1.0
 0611AF18,nm_07000,Source/Game/PLS00.c,table-align,high,0.68,,1.0
 0611B02C,nm_08000,Source/Game/PLS00.c,table-align,high,0.52,,1.0
@@ -6769,14 +6769,14 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 0611CBE0,check_sankaku_tobi,Source/Game/PLS01.c,calls,high,1.0,1.0,1.0
 0611CC86,check_extra_jump_timer,Source/Game/PLS01.c,order,medium,0.98,,
 0611CCE2,remake_sankaku_tobi_mvxy,Source/Game/PLS01.c,order,high,0.23,,1.0
-0611CDA0,check_F_R_dash,Source/Game/PLS01.c,calls,high,1.0,,1.0
+0611CDA0,check_F_R_dash,Source/Game/PLS01.c,manual,manual,1.0,,1.0
 0611CEA4,check_jump_ready,Source/Game/PLS01.c,manual,manual,0.99,0.0,1.0
 0611CF04,check_hijump_only,Source/Game/PLS01.c,manual,manual,0.98,1.0,1.0
 0611CF76,check_bend_myself,Source/Game/PLS01.c,manual,manual,1.0,,
 0611CF9C,check_F_R_walk,Source/Game/PLS01.c,manual,manual,0.99,,
-0611D03E,check_turn_to_back,Source/Game/PLS01.c,calls,low,0.43,,0.0
-0611D0E4,check_hurimuki,Source/Game/PLS01.c,order-align,medium,0.79,,
-0611D150,check_walking_lv_dir,Source/Game/PLS01.c,order-align,medium,0.94,,
+0611D03E,check_turn_to_back,Source/Game/PLS01.c,manual,manual,0.43,,0.67
+0611D0BA,check_hurimuki,Source/Game/PLS01.c,manual,manual,0.48,,
+0611D0E4,check_walking_lv_dir,Source/Game/PLS01.c,manual,manual,0.99,,
 0611D1B0,check_stand_up,Source/Game/PLS01.c,calls,medium,1.0,,
 0611D1D6,check_defense_lever,Source/Game/PLS01.c,calls,high,0.97,,1.0
 0611D226,check_em_catt,Source/Game/PLS01.c,calls,medium,0.43,,
@@ -6875,7 +6875,7 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 06121D70,Normal_18000,Source/Game/PLPNM.c,table-align,high,1.0,,1.0
 06121DFE,Normal_18000_init_unit,Source/Game/PLPNM.c,calls,high,1.0,,1.0
 06121E50,Normal_27000,Source/Game/PLPNM.c,table-align,high,0.84,,1.0
-06121EC0,Normal_31000,Source/Game/PLPNM.c,table-align,high,0.35,,0.91
+06121EC0,Normal_31000,Source/Game/PLPNM.c,manual,manual,0.35,,0.91
 06122046,Normal_35000,Source/Game/PLPNM.c,table-align,high,0.42,,0.93
 06122148,Normal_36000,Source/Game/PLPNM.c,table-align,high,0.64,,1.0
 06122160,Normal_37000,Source/Game/PLPNM.c,table-align,high,0.64,,1.0
@@ -6929,7 +6929,7 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 06124AA8,set_dm_hos_flag_sky,Source/Game/PLPDM.c,calls,medium,0.78,,
 06124B2A,set_dm_hos_flag_grd,Source/Game/PLPDM.c,order,medium,0.24,,
 06124B64,get_sky_dm_timer,Source/Game/PLPDM.c,calls,medium,0.84,,
-06124BC4,subtract_dm_vital,Source/Game/PLPDM.c,order-align,high,0.3,,1.0
+06124BC4,subtract_dm_vital,Source/Game/PLPDM.c,manual,manual,0.3,,1.0
 06124D16,subtract_dm_vital_aiuchi,Source/Game/PLPDM.c,calls,high,0.28,,1.0
 06124E4C,get_damage_reaction_data,Source/Game/PLPDM.c,order-align,high,0.45,0.0,0.86
 06124FF4,setup_kuzureochi,Source/Game/PLPDM.c,calls,high,0.83,,1.0

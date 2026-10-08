@@ -9,14 +9,14 @@ you must supply your own dump, and everything under `rom/` and `build/` is regen
 ## Status
 - 10,442 functions found in the 990512 program (98.8% of the code range)
 - 7,092 matched to named functions from the PS2 decompilation (`symbols/sfiii3r1.csv`):
-  4,480 exact (every call argument verified), 9 hand-verified, 1,868 high confidence, 686 medium, 49 low
+  4,480 exact (every call argument verified), 15 hand-verified, about 1,870 high confidence, 680 medium, 50 low
 - 247 global variables named (`symbols/sfiii3r1_data.csv`)
 - CPU-AI pattern routines (`symbols/sfiii3r1_ai_routines.csv`): 5,167 of 5,204 lifted exactly from the arcade code;
   3,187 identical to PS2, 1,974 differ only by the button-mask layout, 6 really differ
-- arcade C: 1,980 generated functions in `src/arcade/generated/`, 6 written by hand in `src/arcade/hand/`
+- arcade C: 1,980 generated functions in `src/arcade/generated/`, 10 written by hand in `src/arcade/hand/`
 - arcade-only functions identified so far: `symbols/arcade_only.csv`
 - other matched functions, compared by calls and constants (`symbols/sfiii3r1_status.csv`):
-  239 flagged as differing, 757 not yet decidable. A flag means "read this": the ones read so far were a mix
+  about 240 flagged as differing, 757 not yet decidable. A flag means "read this": the ones read so far were a mix
   of wrong names and real differences.
 
 ## Layout
@@ -51,6 +51,15 @@ C in `src/arcade/` is derived from 3s-decomp and is therefore AGPL-3.0.
   - `check_dm_att_guard` takes two parameters: chip damage is `dm_vital / kezuri_pow`. PS2 adds a third
     (`kom`, 1 on the ground and 2 in the air) and divides by `kezuri_pow / kom`.
   - `blocking_point_count_up` always calls `grade_add_blocking`; PS2 does so only with an option flag set.
+- **Parry start** (`Normal_31000`, read by hand): PS2 makes `dm_stop` negative and calls `subtract_dm_vital`
+  when a ground parry begins; the arcade build does neither.
+- **Extra walk-like states** (read by hand): two more arcade-only functions (0x0611CFDE, 0x0611D150) enter and
+  leave player routines 11 and 12 from the lever, gated by `spmv_ng_flag` bits 1 and 2. PS2 keeps table slots
+  for routines 11, 12 and 19 but nothing in its source enters them.
+- **`subtract_dm_vital`** (read by hand): same damage, death and stun logic; PS2 adds training-mode and
+  rumble hooks.
+- **`Bonus_Game_Flag`** is compared with 21 in the arcade build wherever PS2 compares it with 20 (about 20
+  functions): a renumbered constant, not a behaviour change.
 - **Struct layout**: `PLW`/`WORK` fields sit at different offsets in the arcade build (for example `cp` is at
   0x3B8 in arcade and 0x388 when the PS2 headers are compiled for SH-2), and `CP_Index` is 16-bit there
   where the PS2 headers make it 8-bit. `WORK_CP` matches.

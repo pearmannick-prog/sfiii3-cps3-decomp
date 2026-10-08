@@ -155,7 +155,7 @@ arcade_addr,name,functions,agreement
 02016B22,Exit_Timer,4,1.0
 02016B30,Max_vitality,5,1.0
 02016B32,gouki_wins,3,1.0
-02016B3A,Bonus_Game_Flag,20,0.83
+02016B3A,Bonus_Game_Flag,21,0.84
 02016B3E,Bonus_Game_result,8,1.0
 02016B40,Bonus_Game_ex_result,4,1.0
 02016B4F,Completion_Bonus,2,1.0

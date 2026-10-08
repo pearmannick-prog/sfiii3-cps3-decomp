@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Compare each matched arcade function with its PS2 C source and classify it.
 usage: compare.py <ps2_index.json> <split dir> <symbols.csv> <out status.csv>
+Calls to PS2 functions with an empty body are ignored (stubs the arcade build simply does not call).
   same      - identical call sequence and every notable C constant is present in the arcade code
   reordered - same calls, different order or count (block layout, or the compiler merged identical tail calls)
   remapped  - same, except button-mask constants use the arcade bit layout (PS2 shifts bits >= 0x80 up by one)
@@ -16,7 +17,7 @@ def remap(c): return (c & ~0x7F80) | ((c & 0x7F80) >> 1) & 0x7F80 if c & 0x7F80 
 stat = collections.Counter(); out = []
 for r in rows:
     n, x = r["name"], int(r["arcade_addr"], 16)
-    cs = [c for c in P[n]["calls"] if c in P]; xs = [y for y in A[x]["calls"] if y is not None]
+    cs = [c for c in P[n]["calls"] if c in P and not P[c].get("empty")]; xs = [y for y in A[x]["calls"] if y is not None]
     cm = [M.get(c) for c in cs]; named = [Minv.get(y) for y in xs]
     pc = {canon(c) for c in P[n]["consts"] if abs(c) >= 16}
     ac = {canon(c) for c in A[x]["consts"]} | {c & 0xFF for c in A[x]["consts"]} | {c & 0xFFFF for c in A[x]["consts"]}
