@@ -89,6 +89,11 @@ C in `src/arcade/` is derived from 3s-decomp and is therefore AGPL-3.0.
   for (character-specific movement); that last part is a guess.
 - **`clear_chainex_check`** is called by PS2 in `Player_normal` and in every case of `jumping_cg_type_check`;
   the arcade build makes none of those calls, and no arcade function has been identified as it.
+  (The function at 0x061185CE, once labelled with this name, is `set_kizetsu_status`.)
+- **Game flow** (`Game.c`, found from the state tables at 0x06194158-0x061941E4): the arcade `Game` has 18 states
+  where PS2 has 13; states 0-11 line up with PS2 `Game00`-`Game11`, states 12-17 are arcade-only. `Game02` has 6
+  sub-states (PS2 8) and `Next_Q` has 4 steps (PS2 6). The arcade `Game2_1` makes none of the PS2 HUD calls in
+  that place. These names come from table position and callees; most bodies are not read yet.
 - **Round flow** (`Check_Time_Over`, `Disp_Winner`, `Setup_Next_Fighter`, `setup_any_data`): same steps and
   timers; messages are drawn through different routines, and a few constants differ (details in the review file).
 - **Per-matchup CPU checks** (`Ck_Pass.c`, read by hand, `src/arcade/hand/Ck_Pass.c`): against Makoto, PS2 adds

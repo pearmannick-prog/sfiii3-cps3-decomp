@@ -257,8 +257,6 @@ arcade_addr,size,calls_made,callers,category,neighbouring_ps2_file
 0608EC66,12,0,0,inside the code of one PS2 file,HITCHECK.c
 0608EC72,12,0,0,inside the code of one PS2 file,HITCHECK.c
 0608EC7E,12,0,0,inside the code of one PS2 file,HITCHECK.c
-0608F3EC,16,0,12,between files,HITEFEF.c / SLOWF.c
-0608F404,96,1,9,between files,SLOWF.c / SE.c
 0608F480,136,0,1,hardware access,SLOWF.c / SE.c
 0608F508,146,0,1,hardware access,SLOWF.c / SE.c
 0608F5B0,276,0,0,hardware access,SLOWF.c / SE.c
@@ -316,12 +314,9 @@ arcade_addr,size,calls_made,callers,category,neighbouring_ps2_file
 06091180,28,0,0,between files,SYS_sub.c / Sound3rd.c
 060911E4,48,0,34,between files,SYS_sub.c / Sound3rd.c
 06091214,232,5,24,between files,SYS_sub.c / Sound3rd.c
-060912FC,198,4,14,between files,SYS_sub.c / Sound3rd.c
 06091404,44,0,9,hardware access,SYS_sub.c / Sound3rd.c
 06091430,44,0,5,hardware access,SYS_sub.c / Sound3rd.c
 0609145C,46,0,6,between files,SYS_sub.c / Sound3rd.c
-060914AE,38,1,0,between files,Sound3rd.c / SYS_sub.c
-060914D4,32,0,4,between files,Sound3rd.c / SYS_sub.c
 060914F4,584,6,2,between files,Sound3rd.c / SYS_sub.c
 0609173C,70,0,1,between files,Sound3rd.c / SYS_sub.c
 06091782,150,0,1,between files,Sound3rd.c / SYS_sub.c
@@ -330,7 +325,6 @@ arcade_addr,size,calls_made,callers,category,neighbouring_ps2_file
 060919A2,192,1,1,between files,Sound3rd.c / SYS_sub.c
 06091A6C,82,0,1,between files,Sound3rd.c / SYS_sub.c
 06091ABE,84,0,1,between files,Sound3rd.c / SYS_sub.c
-06091B12,84,0,2,between files,Sound3rd.c / SYS_sub.c
 06091B9C,180,1,0,between files,Sound3rd.c / SYS_sub.c
 06092026,86,2,1,between files,eff14.c / Sound3rd.c
 06092122,24,0,0,between files,bg_sub.c / SYS_sub.c
@@ -343,7 +337,6 @@ arcade_addr,size,calls_made,callers,category,neighbouring_ps2_file
 06092748,48,0,2,between files,SYS_sub.c / Grade.c
 06092778,24,0,0,between files,SYS_sub.c / Grade.c
 060927C0,14,0,1,between files,SYS_sub.c / Grade.c
-060927CE,66,0,2,between files,SYS_sub.c / Grade.c
 06092C5A,948,10,1,inside the code of one PS2 file,Grade.c
 06092D44,70,0,1,inside the code of one PS2 file,Grade.c
 06093308,334,8,1,inside the code of one PS2 file,Grade.c
@@ -355,42 +348,12 @@ arcade_addr,size,calls_made,callers,category,neighbouring_ps2_file
 06094C7C,34,0,3,inside the code of one PS2 file,Grade.c
 06094D78,54,3,0,between files,Grade.c / RANKING.c
 06094DAE,42,0,0,between files,Grade.c / RANKING.c
-06094DD8,978,42,0,between files,Grade.c / RANKING.c
 060951AA,50,1,1,between files,Grade.c / RANKING.c
 060951DC,48,2,1,between files,Grade.c / RANKING.c
-0609520C,302,8,2,between files,Grade.c / RANKING.c
-0609533A,78,0,0,between files,Grade.c / RANKING.c
-06095388,60,1,0,between files,Grade.c / RANKING.c
-060953C4,26,1,0,between files,Grade.c / RANKING.c
-0609544C,20,0,0,between files,Grade.c / RANKING.c
-06095460,24,2,0,between files,Grade.c / RANKING.c
-06095478,42,1,0,between files,Grade.c / RANKING.c
-060954A2,434,13,1,between files,Grade.c / RANKING.c
-06095674,220,21,5,between files,Grade.c / RANKING.c
-06095750,224,11,0,between files,Grade.c / RANKING.c
-06095830,486,14,0,between files,Grade.c / RANKING.c
-06095A16,64,1,2,between files,Grade.c / RANKING.c
-06095AA0,132,7,0,between files,Grade.c / RANKING.c
-06095B24,102,17,3,between files,Grade.c / RANKING.c
-06095B8A,4,0,0,stub (8 bytes or less),Grade.c / RANKING.c
-06095B8E,38,2,0,between files,Grade.c / RANKING.c
-06095C3C,184,14,0,between files,Grade.c / RANKING.c
 06095CF4,234,15,0,between files,Grade.c / RANKING.c
-06095DDE,380,4,0,between files,Grade.c / RANKING.c
-06095F5A,176,3,0,between files,Grade.c / RANKING.c
-0609600A,898,32,0,between files,Grade.c / RANKING.c
-0609638C,124,15,1,between files,Grade.c / RANKING.c
-06096408,182,11,0,between files,Grade.c / RANKING.c
-060964BE,586,11,0,between files,Grade.c / RANKING.c
-06096748,762,21,0,between files,Grade.c / RANKING.c
-06096A42,114,2,1,between files,Grade.c / RANKING.c
-06096AB4,120,0,1,between files,Grade.c / RANKING.c
 06096B2C,46,0,0,between files,Grade.c / RANKING.c
 06096B5A,62,1,1,between files,Grade.c / RANKING.c
-06096B98,284,16,1,between files,Grade.c / RANKING.c
-06096CB4,48,2,0,between files,Grade.c / RANKING.c
 06096CE4,4,0,0,stub (8 bytes or less),Grade.c / RANKING.c
-06096CE8,80,1,2,between files,Grade.c / RANKING.c
 06096D94,230,1,1,between files,Grade.c / RANKING.c
 06096EBC,244,8,1,between files,Grade.c / RANKING.c
 06096FE8,18,1,0,between files,Grade.c / RANKING.c
@@ -442,11 +405,9 @@ arcade_addr,size,calls_made,callers,category,neighbouring_ps2_file
 0609CA5E,142,3,1,inside the code of one PS2 file,Manage.c
 0609CC6C,148,3,2,between files,Manage.c / savesub.c
 0609CD00,228,2,1,between files,Manage.c / savesub.c
-0609CE50,132,9,1,between files,Manage.c / savesub.c
 0609CED4,144,11,0,between files,Manage.c / savesub.c
 0609CFC8,242,12,0,between files,Manage.c / savesub.c
 0609D20C,8,0,0,stub (8 bytes or less),savesub.c / Win.c
-0609D27C,134,9,1,between files,savesub.c / Win.c
 0609D59E,124,1,10,between files,Win.c / Continue.c
 0609D61A,118,5,1,between files,Win.c / Continue.c
 0609D6C8,122,9,1,between files,Win.c / Continue.c
@@ -455,28 +416,18 @@ arcade_addr,size,calls_made,callers,category,neighbouring_ps2_file
 0609DB88,8,0,0,stub (8 bytes or less),Win.c / Continue.c
 0609DB90,80,10,1,between files,Win.c / Continue.c
 0609DC20,344,17,1,between files,Win.c / Continue.c
-0609DD78,108,10,1,between files,Win.c / Continue.c
 0609E042,68,1,2,between files,Continue.c / Pow_Pow.c
 0609E086,150,0,1,between files,Continue.c / Pow_Pow.c
-0609E11C,468,1,8,between files,Continue.c / Pow_Pow.c
 0609E2F0,52,0,1,between files,Continue.c / Pow_Pow.c
 0609E324,50,0,3,between files,Continue.c / Pow_Pow.c
 0609E3FA,142,3,1,inside the code of one PS2 file,Pow_Pow.c
 0609E57A,448,11,5,between files,Pow_Pow.c / sel_pl.c
 0609E73A,246,10,3,between files,Pow_Pow.c / sel_pl.c
-0609E868,68,4,1,between files,Pow_Pow.c / sel_pl.c
 0609E8AC,134,5,1,between files,Pow_Pow.c / sel_pl.c
-0609E932,424,13,0,between files,Pow_Pow.c / sel_pl.c
 0609EADA,78,4,0,between files,Pow_Pow.c / sel_pl.c
 0609EB28,76,3,0,between files,Pow_Pow.c / sel_pl.c
 0609EB74,4,0,0,stub (8 bytes or less),Pow_Pow.c / sel_pl.c
-0609EBF4,30,5,1,between files,Pow_Pow.c / sel_pl.c
-0609EC12,128,3,1,between files,Pow_Pow.c / sel_pl.c
-0609EC92,34,0,1,between files,Pow_Pow.c / sel_pl.c
-0609ECB4,30,0,1,between files,Pow_Pow.c / sel_pl.c
-0609ECD2,52,1,1,between files,Pow_Pow.c / sel_pl.c
 0609ED38,48,1,1,between files,Pow_Pow.c / sel_pl.c
-0609ED68,88,0,1,between files,Pow_Pow.c / sel_pl.c
 0609F0AA,322,1,1,inside the code of one PS2 file,sel_pl.c
 0609FB44,44,0,1,inside the code of one PS2 file,sel_pl.c
 060A0020,26,0,1,inside the code of one PS2 file,sel_pl.c
@@ -492,9 +443,7 @@ arcade_addr,size,calls_made,callers,category,neighbouring_ps2_file
 060A0394,146,3,2,inside the code of one PS2 file,sel_pl.c
 060A0426,4,0,0,stub (8 bytes or less),sel_pl.c
 060A0482,36,0,1,between files,sel_pl.c / SYS_sub.c
-060A04D4,86,15,7,between files,sel_pl.c / SYS_sub.c
 060A052A,40,7,1,between files,sel_pl.c / SYS_sub.c
-060A0552,34,4,1,between files,sel_pl.c / SYS_sub.c
 060A0574,48,1,1,between files,sel_pl.c / SYS_sub.c
 060A05A4,92,1,1,between files,sel_pl.c / SYS_sub.c
 060A062C,92,1,1,between files,sel_pl.c / SYS_sub.c
@@ -505,26 +454,17 @@ arcade_addr,size,calls_made,callers,category,neighbouring_ps2_file
 060A0B42,76,0,1,inside the code of one PS2 file,sel_pl.c
 060A0C36,28,0,0,inside the code of one PS2 file,sel_pl.c
 060A0C52,94,3,1,inside the code of one PS2 file,sel_pl.c
-060A0D18,156,9,1,inside the code of one PS2 file,sel_pl.c
 060A0F4E,258,3,0,between files,sel_pl.c / Next_CPU.c
 060A1050,418,8,0,between files,sel_pl.c / Next_CPU.c
 060A1224,648,13,0,between files,sel_pl.c / Next_CPU.c
-060A14AC,64,0,2,between files,sel_pl.c / Next_CPU.c
-060A14EC,8,0,0,stub (8 bytes or less),sel_pl.c / Next_CPU.c
-060A14F4,144,9,1,between files,sel_pl.c / Next_CPU.c
-060A15C0,80,7,0,between files,sel_pl.c / Next_CPU.c
-060A1610,200,10,0,between files,sel_pl.c / Next_CPU.c
 060A1744,258,10,0,between files,sel_pl.c / Next_CPU.c
 060A18BC,40,1,0,between files,sel_pl.c / Next_CPU.c
 060A18E4,360,7,0,between files,sel_pl.c / Next_CPU.c
 060A1A4C,8,0,0,stub (8 bytes or less),sel_pl.c / Next_CPU.c
 060A2192,366,7,0,inside the code of one PS2 file,Next_CPU.c
-060A2308,132,9,1,inside the code of one PS2 file,Next_CPU.c
-060A2416,310,11,0,inside the code of one PS2 file,Next_CPU.c
 060A2606,8,0,0,stub (8 bytes or less),Next_CPU.c
 060A2E66,68,2,1,inside the code of one PS2 file,Next_CPU.c
 060A2EE8,66,0,1,inside the code of one PS2 file,Next_CPU.c
-060A2F6A,34,1,4,between files,Next_CPU.c / EFFA6.c
 060A3004,92,1,1,between files,EFFA6.c / CMD_MAIN.c
 060A3060,76,1,0,between files,EFFA6.c / CMD_MAIN.c
 060A30C4,606,21,0,hardware access,EFFA6.c / CMD_MAIN.c
@@ -751,7 +691,6 @@ arcade_addr,size,calls_made,callers,category,neighbouring_ps2_file
 060B6DF8,28,0,2,inside the code of one PS2 file,ta_sub.c
 060B6E34,52,0,1,inside the code of one PS2 file,ta_sub.c
 060B6E82,46,0,1,between files,ta_sub.c / TATE00.c
-060B6EB0,38,0,10,between files,ta_sub.c / TATE00.c
 060B6F04,248,4,0,between files,ta_sub.c / TATE00.c
 060B6FFC,166,2,1,between files,ta_sub.c / TATE00.c
 060B70A2,166,2,1,between files,ta_sub.c / TATE00.c
@@ -801,7 +740,6 @@ arcade_addr,size,calls_made,callers,category,neighbouring_ps2_file
 060BA1AA,110,4,1,between files,OPENING.c / bg_sub.c
 060BA218,174,1,1,between files,OPENING.c / bg_sub.c
 060BA2C6,192,2,0,between files,OPENING.c / bg_sub.c
-060BA3C0,106,0,11,between files,OPENING.c / bg_sub.c
 060BA42A,4,0,0,stub (8 bytes or less),OPENING.c / bg_sub.c
 060BA6B4,682,6,2,between files,OPENING.c / bg_sub.c
 060BA964,34,1,0,between files,OPENING.c / bg_sub.c
@@ -1012,7 +950,6 @@ arcade_addr,size,calls_made,callers,category,neighbouring_ps2_file
 060C9E82,26,1,0,between files,OPENING.c / end_main.c
 060C9E9C,6,1,0,stub (8 bytes or less),OPENING.c / end_main.c
 060C9EA2,12,1,0,between files,OPENING.c / end_main.c
-060C9EAE,36,1,19,between files,OPENING.c / end_main.c
 060C9F18,1232,15,19,between files,OPENING.c / end_main.c
 060CA3E8,300,7,19,between files,OPENING.c / end_main.c
 060CA648,78,0,19,inside the code of one PS2 file,end_main.c
@@ -1223,9 +1160,7 @@ arcade_addr,size,calls_made,callers,category,neighbouring_ps2_file
 060D76D6,654,3,1,between files,PulPul.c / count.c
 060D7AF0,106,3,9,between files,PulPul.c / count.c
 060D7B5A,84,3,2,between files,PulPul.c / count.c
-060D7BAE,266,8,1,between files,PulPul.c / count.c
 060D7CB8,76,1,1,between files,PulPul.c / count.c
-060D7D04,26,1,1,between files,PulPul.c / count.c
 060D7D74,78,3,1,between files,PulPul.c / count.c
 060D7DC2,54,3,0,between files,PulPul.c / count.c
 060D7F34,586,9,2,between files,count.c / cmb_win.c
@@ -1277,7 +1212,6 @@ arcade_addr,size,calls_made,callers,category,neighbouring_ps2_file
 060DAB70,74,0,2,hardware access,cmb_win.c / EFFECT.c
 060DABBA,692,6,5,between files,cmb_win.c / EFFECT.c
 060DAE6E,1608,13,1,between files,cmb_win.c / EFFECT.c
-060DB4D0,114,0,8,between files,cmb_win.c / EFFECT.c
 060DB5E8,40,2,13,inside the code of one PS2 file,EFFECT.c
 060DB638,146,4,4,inside the code of one PS2 file,EFFECT.c
 060DB7EC,142,1,0,inside the code of one PS2 file,EFFECT.c
@@ -1422,7 +1356,6 @@ arcade_addr,size,calls_made,callers,category,neighbouring_ps2_file
 060F62CE,142,0,1,hardware access,eff91.c / EFF92.c
 060F6380,138,1,0,between files,eff91.c / EFF92.c
 060F6424,178,2,0,between files,eff91.c / EFF92.c
-060F6980,122,2,5,between files,Eff93.c / eff94.c
 060F69FA,84,1,1,between files,Eff93.c / eff94.c
 060F7CAC,192,1,1,between files,EFF98.c / Eff99.c
 060F7D88,160,3,0,between files,EFF98.c / Eff99.c
@@ -1611,7 +1544,6 @@ arcade_addr,size,calls_made,callers,category,neighbouring_ps2_file
 06115E54,132,2,1,between files,effM6.c / effM7.c
 06115ED8,6,0,0,stub (8 bytes or less),effM6.c / effM7.c
 061162BC,240,6,1,inside the code of one PS2 file,effM8.c
-0611675C,548,14,7,between files,effM8.c / PLCNT.c
 06116B2E,318,9,0,inside the code of one PS2 file,PLCNT.c
 06116D38,160,7,2,inside the code of one PS2 file,PLCNT.c
 06117640,194,3,0,inside the code of one PS2 file,PLCNT.c
@@ -1622,9 +1554,6 @@ arcade_addr,size,calls_made,callers,category,neighbouring_ps2_file
 061181B4,14,3,0,inside the code of one PS2 file,PLCNT.c
 061181C2,44,5,2,inside the code of one PS2 file,PLCNT.c
 061181EE,56,4,0,inside the code of one PS2 file,PLCNT.c
-06118226,48,6,3,inside the code of one PS2 file,PLCNT.c
-0611873C,222,0,1,between files,PLCNT.c / PLCNT2.c
-0611881A,30,1,1,between files,PLCNT.c / PLCNT2.c
 06118850,534,11,1,between files,PLCNT.c / PLCNT2.c
 06119124,252,0,2,between files,PLCNT2.c / PLCNT3.c
 06119234,538,11,1,between files,PLCNT2.c / PLCNT3.c
@@ -1705,7 +1634,6 @@ arcade_addr,size,calls_made,callers,category,neighbouring_ps2_file
 0612BC9C,22,0,0,between files,plpat18.c / plpat19.c
 0612C7AC,22,0,0,between files,plpat19.c / plpat20.c
 0612CCB8,806,5,1,between files,plpat20.c / BCD.c
-0612CFDE,14,0,1,between files,plpat20.c / BCD.c
 0612CFEC,128,3,1,between files,plpat20.c / BCD.c
 0612D06C,70,0,1,between files,plpat20.c / BCD.c
 0612D0B2,128,0,1,between files,plpat20.c / BCD.c

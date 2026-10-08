@@ -403,3 +403,9 @@ arcade_addr,label,note
 0607D560,PatternSG_0146,slot-15 AI routine; same calls as Pattern14_0146
 0607D5F8,PatternSG_0147,slot-15 AI routine; same calls as Pattern14_0147
 0607D670,PatternSG_0148,slot-15 AI routine; same calls as Pattern14_0148
+060953C4,Game12_arcade,entry 12 of the arcade Game state table; PS2 has no state with this number (PS2 Game12 is different)
+0609544C,Game13_arcade,entry 13 of the arcade Game state table; PS2 has no state with this number (PS2 Game12 is different)
+06095460,Game14_arcade,entries 14 and 16 of the arcade Game state table; PS2 has no state with this number (PS2 Game12 is different)
+06095478,Game15_arcade,entries 15 and 17 of the arcade Game state table; PS2 has no state with this number (PS2 Game12 is different)
+06094DD8,Main_state0_arcade,"entry 0 of the 3-entry main table at 0x06194158 (entry 1 is Game, entry 2 is an empty stub)"
+06095B8A,Game2_2_arcade,entry 2 of the arcade Game02 table: empty

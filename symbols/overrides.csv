@@ -474,3 +474,51 @@ arcade_addr,name,note
 0607D560,,slot-15 AI routine (see arcade_only.csv)
 0607D5F8,,slot-15 AI routine (see arcade_only.csv)
 0607D670,,slot-15 AI routine (see arcade_only.csv)
+0609533A,Game,read by hand: copies an 18-entry table (PS2 has 13) and calls entry G_No[1]
+06095388,Game00,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
+060954A2,Game01,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
+06095A16,Game02,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
+06095DDE,Game03,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
+06095F5A,Game04,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
+06095750,Game05,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
+06096748,Game06,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
+06096CB4,Game07,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
+060964BE,Game08,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
+0609600A,Game09,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
+06096408,Game10,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
+06095830,Game11,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
+06095AA0,Game2_0,position in the arcade Game02 table at 0x061941D0 and matching callees
+06095B24,Game2_1,"read by hand: Game_timer++, Time_Control, Player_control ... hit_check_main_process; no cockpit calls as in PS2"
+06095B8E,Game2_3,read by hand: Game2_1 then timer countdown
+06095674,Game01_Sub,"read by hand: clears Score/PL_Wins, set_kizetsu_status(0/1), set_super_arts_status(0/1), Demo_Flag branch"
+061185CE,set_kizetsu_status,"called as (0),(1) from Game01_Sub; fills a 20-byte per-player record from My_char tables; was misnamed clear_chainex_check"
+06118680,set_super_arts_status,"called as (0),(1) from Game01_Sub after set_kizetsu_status; was misnamed remake_sa_gauge_len"
+06096CE8,Time_Control,called from the arcade Game states at the place PS2 calls it; not read in full
+0609520C,Before_Select_Sub,"two rounds of Clear_Disp_Ranking, Clear_Personal_Data, grade_check_work_1st_init x2, as PS2"
+06096B98,Disp_Ranking,called from the arcade Game states at the place PS2 calls it; not read in full
+06096A42,Check_Disp_Ranking,"calls Disp_Rank_Sub twice, as PS2"
+06096AB4,Disp_Rank_Sub,called from the arcade Game states at the place PS2 calls it; not read in full
+0609638C,Bonus_Sub,"Cut_Cut_Cut ... hit_check_main_process, called from Game09"
+060D7BAE,count_cont_main,called from the arcade Game states at the place PS2 calls it; not read in full
+060DB4D0,move_effect_work,called from the arcade Game states at the place PS2 calls it; not read in full
+0609CE50,Winner_Scene,called from the arcade Game states at the place PS2 calls it; not read in full
+0609D27C,Loser_Scene,called from the arcade Game states at the place PS2 calls it; not read in full
+0609DD78,Continue_Scene,called from the arcade Game states at the place PS2 calls it; not read in full
+060A0D18,Next_CPU,called from the arcade Game states at the place PS2 calls it; not read in full
+060A14F4,After_Bonus,called from the arcade Game states at the place PS2 calls it; not read in full
+060A2308,Next_Q,called from the arcade Game states at the place PS2 calls it; not read in full
+060914D4,Setup_Play_Type,called from the arcade Game states at the place PS2 calls it; not read in full
+0608F3EC,init_slow_flag,called from the arcade Game states at the place PS2 calls it; not read in full
+0609E868,Select_Player,called from the arcade Game states at the place PS2 calls it; not read in full
+0609E11C,Clear_Personal_Data,called from the arcade Game states at the place PS2 calls it; not read in full
+060927CE,Clear_Disp_Ranking,called from the arcade Game states at the place PS2 calls it; not read in full
+0611675C,Player_control,called from the arcade Game states at the place PS2 calls it; not read in full
+060A2028,Select_CPU_4th,entry 3 of the 4-entry table before Next_Q's table (after Select_CPU_1st..3rd)
+060A23BC,Next_Q_1st,entry 0 of Next_Q's arcade table at 0x06195558 (4 entries; PS2 has 6)
+060A2416,Next_Q_2nd,entry 1 of Next_Q's arcade table
+060A254C,Next_Q_3rd,entry 2 of Next_Q's arcade table
+060A2606,,entry 3 of Next_Q's arcade table; PS2 counterpart not settled
+060953C4,,arcade Game state 12; not PS2 Game12
+0609544C,,arcade Game state 13
+06095460,,arcade Game states 14 and 16
+06095478,,arcade Game states 15 and 17
