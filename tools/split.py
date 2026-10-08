@@ -5,7 +5,7 @@ usage: split.py <image.bin> <out_dir> [--code-hi HEX] [--no-asm]
 Strategy: exception vectors -> call graph -> code pointers found in data -> linear gap filling
 (the compiler lays functions out back to back), then re-analysis so bra-style tail calls
 split correctly."""
-import argparse, csv, os, struct, sys
+import argparse, csv, json, os, struct, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from sh2 import Image
 BASE = 0x06000000
@@ -68,6 +68,20 @@ with open(os.path.join(a.out, "functions.csv"), "w", newline="") as fh:
                     len(f.ind_jumps), len(f.lits), f"{f.bad:08X}" if f.bad else ""])
 with open(os.path.join(a.out, "unknown_regions.csv"), "w") as fh:
     fh.write("start,end,size\n"); fh.writelines(f"{s:08X},{e:08X},{e-s}\n" for s, e in unknown)
+# runs of consecutive function pointers anywhere in the image (dispatch tables)
+runs = []; cur = None
+words = struct.unpack_from(f">{len(d)//4}I", d, 0)
+for i, v in enumerate(words):
+    ok = v in img.funcs or (v == 0 and cur is not None)
+    if ok:
+        if cur is None: cur = [BASE + 4 * i, []]
+        cur[1].append(v)
+    elif cur is not None:
+        while cur[1] and cur[1][-1] == 0: cur[1].pop()
+        if sum(1 for x in cur[1] if x) >= 2: runs.append(dict(addr=cur[0], items=cur[1]))
+        cur = None
+json.dump(dict(functions=[img.features(f) for f in fs], runs=runs), open(os.path.join(a.out, "functions.json"), "w"))
+print(f"pointer-table runs: {len(runs)} with {sum(len(r['items']) for r in runs)} entries")
 lits = {}
 for f in fs: lits.update(f.lits)
 nxt = {x.addr: max(x.end, y.addr) for x, y in zip(fs, fs[1:])}; nxt[fs[-1].addr] = fs[-1].end

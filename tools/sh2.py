@@ -7,11 +7,11 @@ def s8(x):  return x - 0x100 if x & 0x80 else x
 def s12(x): return x - 0x1000 if x & 0x800 else x
 
 class Func:
-    __slots__ = ("addr", "insns", "lits", "calls", "tails", "ind_calls", "ind_jumps", "bad", "end")
+    __slots__ = ("addr", "insns", "lits", "calls", "tails", "ind_calls", "ind_jumps", "bad", "end", "sites")
     def __init__(self, addr):
         self.addr = addr; self.insns = set(); self.lits = {}   # lits: addr -> size
         self.calls = set(); self.tails = set(); self.ind_calls = 0; self.ind_jumps = []
-        self.bad = None; self.end = addr
+        self.bad = None; self.end = addr; self.sites = {}   # call site pc -> target (None = indirect)
 
 class Image:
     def __init__(self, data, base, code_lo=None, code_hi=None):
@@ -58,18 +58,18 @@ class Image:
                     t = pc + 4 + s12(w & 0xFFF) * 2; delay = stop = True
                     (work.append if self._local(f, t) else f.tails.add)(t)
                 elif hi == 0xB:
-                    f.calls.add(pc + 4 + s12(w & 0xFFF) * 2); delay = True
+                    t = pc + 4 + s12(w & 0xFFF) * 2; f.calls.add(t); f.sites[pc] = t; delay = True
                 elif w >> 8 in (0x89, 0x8B, 0x8D, 0x8F):
                     work.append(pc + 4 + s8(w & 0xFF) * 2); delay = w >> 8 in (0x8D, 0x8F)
                 elif w & 0xF0FF == 0x400B:
                     t = self.lit_reg(f, pc, n); delay = True
-                    if t is not None and self.in_code(t): f.calls.add(t)
-                    else: f.ind_calls += 1
+                    if t is not None and self.in_code(t): f.calls.add(t); f.sites[pc] = t
+                    else: f.ind_calls += 1; f.sites[pc] = None
                 elif w & 0xF0FF == 0x402B:
                     t = self.lit_reg(f, pc, n); delay = stop = True
-                    if t is not None and self.in_code(t): f.tails.add(t)
+                    if t is not None and self.in_code(t): f.tails.add(t); f.sites[pc] = t
                     else: f.ind_jumps.append(pc)
-                elif w & 0xF0FF == 0x0003: f.ind_calls += 1; delay = True
+                elif w & 0xF0FF == 0x0003: f.ind_calls += 1; f.sites[pc] = None; delay = True
                 elif w & 0xF0FF == 0x0023: f.ind_jumps.append(pc); delay = stop = True
                 if delay:
                     ds = pc + 2
@@ -117,3 +117,19 @@ class Image:
             else:
                 out.append(f"  /* {a:08X} */  .word  {self.u16(a):#06x}"); a += 2
         return "\n".join(out)
+
+    def features(self, f):
+        """Architecture-neutral-ish features: immediates/constants, ordered call targets, RAM refs."""
+        consts, ram = [], []
+        for pc in sorted(f.insns):
+            w = self.u16(pc); hi = w >> 12; lo = w & 0xFF
+            if hi in (0xE, 0x7) or w >> 8 in (0x88, 0xC8, 0xC9, 0xCA, 0xCB):
+                consts.append(s8(lo) if hi in (0xE, 0x7) or w >> 8 == 0x88 else lo)
+            elif hi == 0x9:
+                v = self.u16(pc + 4 + lo * 2); consts.append(v - 0x10000 if v & 0x8000 else v)
+            elif hi == 0xD:
+                v = self.u32((pc & ~3) + 4 + lo * 4)
+                if 0x02000000 <= v < 0x02080000: ram.append(v)
+                elif not (self.base <= v < self.base + len(self.d)): consts.append(v - (1 << 32) if v & 0x80000000 else v)
+        return dict(addr=f.addr, size=f.end - f.addr, consts=consts, ram=ram,
+                    calls=[f.sites[k] for k in sorted(f.sites)], ind_jumps=len(f.ind_jumps))
