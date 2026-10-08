@@ -94,6 +94,20 @@ void Pattern18_0018(PLW* wk) {
     }
 }
 
+// 0x060813D8
+//   PS2 case 0: Normal_Attack -> Lever_Attack
+void Pattern18_0019(PLW* wk) {
+    switch (CP_Index[wk->wu.id][0]) {
+    case 0:
+        Lever_Attack(wk, 8, 0, 0x200);
+        break;
+
+    default:
+        End_Pattern(wk);
+        break;
+    }
+}
+
 // 0x06081464
 //   PS2 case 0: Jump_Attack_Term arg4 0x400 -> 0x200
 //   PS2 case 0: Jump_Attack_Term arg8 0x200 -> 0x100

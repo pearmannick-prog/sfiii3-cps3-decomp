@@ -1,0 +1,3 @@
+arcade_addr,label,note
+0611CE6C,func_0611CE6C,player input check with no PS2 counterpart (waza_flag[13] -> routine 19)
+0612D584,rt_divs,compiler runtime: signed divide (r1 / r0); used by check_dm_att_guard

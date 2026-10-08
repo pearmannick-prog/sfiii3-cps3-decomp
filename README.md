@@ -8,14 +8,15 @@ you must supply your own dump, and everything under `rom/` and `build/` is regen
 
 ## Status
 - 10,442 functions found in the 990512 program (98.8% of the code range)
-- 7,091 matched to named functions from the PS2 decompilation (`symbols/sfiii3r1.csv`):
-  4,480 exact (every call argument verified), 4 hand-verified, 1,871 high confidence, 687 medium, 49 low
+- 7,092 matched to named functions from the PS2 decompilation (`symbols/sfiii3r1.csv`):
+  4,480 exact (every call argument verified), 9 hand-verified, 1,868 high confidence, 686 medium, 49 low
 - 247 global variables named (`symbols/sfiii3r1_data.csv`)
 - CPU-AI pattern routines (`symbols/sfiii3r1_ai_routines.csv`): 5,167 of 5,204 lifted exactly from the arcade code;
   3,187 identical to PS2, 1,974 differ only by the button-mask layout, 6 really differ
-- arcade C: 1,979 generated functions in `src/arcade/generated/`, 2 written by hand in `src/arcade/hand/`
+- arcade C: 1,980 generated functions in `src/arcade/generated/`, 6 written by hand in `src/arcade/hand/`
+- arcade-only functions identified so far: `symbols/arcade_only.csv`
 - other matched functions, compared by calls and constants (`symbols/sfiii3r1_status.csv`):
-  241 flagged as differing, 757 not yet decidable. A flag means "read this": the ones read so far were a mix
+  239 flagged as differing, 757 not yet decidable. A flag means "read this": the ones read so far were a mix
   of wrong names and real differences.
 
 ## Layout
@@ -40,6 +41,16 @@ C in `src/arcade/` is derived from 3s-decomp and is therefore AGPL-3.0.
   (PS2 tests bits 0x20000 and 0x10000 there), and the standing-state routines call an extra function at
   0x0611CE6C that PS2 does not have: it tests `spmv_ng_flag & 0x10000` and `cp->waza_flag[13]` and enters
   routine 19. PS2 never reads `waza_flag[13]`. Not yet traced further.
+- **Parry and guard decision** (read by hand, `src/arcade/hand/HITCHECK.c`):
+  - `defense_ground`: the arcade build has no auto-parry/auto-guard option flags and no `dead_flag` test; the
+    just-guarded thresholds are indexed by attack type only (PS2 also by player); a high parry of a jump attack
+    needs `waza_flag[12]` only; guarding always tests the lever unless `auto_guard` is set, where PS2 skips
+    that test while `just_now`.
+  - `defense_sky`: the arcade build has two air parries (`waza_flag[5]` -> routine 34, `waza_flag[6]` ->
+    routine 35); PS2 has one plus a just-guarded path.
+  - `check_dm_att_guard` takes two parameters: chip damage is `dm_vital / kezuri_pow`. PS2 adds a third
+    (`kom`, 1 on the ground and 2 in the air) and divides by `kezuri_pow / kom`.
+  - `blocking_point_count_up` always calls `grade_add_blocking`; PS2 does so only with an option flag set.
 - **Struct layout**: `PLW`/`WORK` fields sit at different offsets in the arcade build (for example `cp` is at
   0x3B8 in arcade and 0x388 when the PS2 headers are compiled for SH-2), and `CP_Index` is 16-bit there
   where the PS2 headers make it 8-bit. `WORK_CP` matches.

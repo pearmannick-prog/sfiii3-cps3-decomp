@@ -4917,6 +4917,7 @@ arcade_addr,name,grade,status,detail
 0608133A,Pattern18_0016,exact,identical,
 0608135C,Pattern18_0017,exact,identical,
 0608138E,Pattern18_0018,exact,remap-only,case 0: Jump_Command_Attack_Term arg10 0x400 -> 0x200
+060813D8,Pattern18_0019,medium,different,case 0: Normal_Attack -> Lever_Attack
 06081418,Pattern18_0020,exact,identical,
 06081464,Pattern18_0021,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200; case 0: Jump_Attack_Term arg8 0x200 -> 0x100
 060814A6,Pattern18_0022,exact,remap-only,case 0: Jump_Attack arg3 0x400 -> 0x200

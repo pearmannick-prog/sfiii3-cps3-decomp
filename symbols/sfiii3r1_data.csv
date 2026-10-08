@@ -75,7 +75,7 @@ arcade_addr,name,functions,agreement
 02015564,Select_Arts,2,1.0
 0201556C,Select_Status,7,0.88
 02015572,CP_No,42,0.86
-02015582,CP_Index,5287,1.0
+02015582,CP_Index,5288,1.0
 020155A6,Timer_00,43,0.96
 020155AA,Timer_01,10,0.91
 020155AE,Combo_Speed,22,1.0

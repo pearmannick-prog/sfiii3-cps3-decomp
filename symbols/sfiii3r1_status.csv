@@ -5329,6 +5329,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0608133A,Pattern18_0016,exact,same,2,2,
 0608135C,Pattern18_0017,exact,same,2,2,
 0608138E,Pattern18_0018,exact,same,2,2,
+060813D8,Pattern18_0019,medium,same,2,2,
 06081418,Pattern18_0020,exact,same,3,3,
 06081464,Pattern18_0021,exact,same,2,2,
 060814A6,Pattern18_0022,exact,same,2,2,
@@ -5784,15 +5785,15 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0608CF62,cal_hit_mark_pos,high,same,1,1,
 0608D02C,plef_at_vs_player_damage_union,medium,unknown,23,25,
 0608D300,dm_reaction_init_set,high,same,2,2,
-0608D5F6,check_normal_attack,medium,unknown,0,0,
-0608D6E4,check_dm_att_guard,medium,differs,0,1,0x8000 0x10000000
+0608D5F6,check_normal_attack,manual,unknown,0,0,
+0608D6E4,check_dm_att_guard,manual,unknown,0,1,
 0608D776,check_dm_att_blocking,medium,unknown,0,1,
 0608D7FC,set_damage_and_piyo,high,unknown,5,7,
 0608DA3C,remake_score_index,medium,same,0,0,
 0608DA62,same_dm_stop,medium,unknown,0,0,
-0608DAE8,defense_sky,high,differs,6,5,
-0608DBEC,blocking_point_count_up,high,remapped,1,1,
-0608DC44,defense_ground,high,differs,18,15,0x800 0x1000 0x2000
+0608DAE8,defense_sky,manual,same,5,5,
+0608DBEC,blocking_point_count_up,manual,same,1,1,
+0608DC44,defense_ground,manual,differs,8,15,
 0608DF2A,setup_dm_rl,high,same,1,1,
 0608DFCC,dm_status_copy,medium,unknown,1,0,
 0608E098,add_combo_work,medium,same,0,0,
@@ -6769,7 +6770,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0611CC86,check_extra_jump_timer,medium,same,0,0,
 0611CCE2,remake_sankaku_tobi_mvxy,high,unknown,1,3,0xffff7800
 0611CDA0,check_F_R_dash,high,unknown,1,1,0x14
-0611CEA4,check_jump_ready,manual,unknown,1,1,0x10000 0x20000
+0611CEA4,check_jump_ready,manual,same,1,1,
 0611CF04,check_hijump_only,manual,same,1,1,
 0611CF76,check_bend_myself,manual,unknown,0,0,
 0611CF9C,check_F_R_walk,manual,unknown,0,0,
