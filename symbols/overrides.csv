@@ -23,3 +23,4 @@ arcade_addr,name,note
 0611E106,random_32_ex,read by hand: index & 0x1F
 0611E11E,random_16_ex,read by hand: index & 0xF
 06117EE2,footwork_check,read by hand: plw[ix] routine_no[1] == 0 and routine_no[2] == 1
+0610007E,effect_D3_init,called from plcnt_move exactly where PS2 calls effect_D3_init with the same argument logic

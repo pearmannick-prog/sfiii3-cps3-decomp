@@ -2299,7 +2299,7 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 0603DB28,Passive11_0234,Source/Game/PASS11.c,content,exact,1.0,,1.0
 0603DB70,Passive11_0235,Source/Game/PASS11.c,content,exact,1.0,,1.0
 0603DBB8,Passive11_0236,Source/Game/PASS11.c,content,exact,1.0,1.0,1.0
-0603DBF4,Passive11_0237,Source/Game/PASS11.c,content,events,0.81,0.75,1.0
+0603DBF4,Passive11_0237,Source/Game/PASS11.c,content,high,0.81,0.75,1.0
 0603DC70,Passive11_0238,Source/Game/PASS11.c,content,exact,0.99,,1.0
 0603DCCA,Passive11_0239,Source/Game/PASS11.c,content,exact,1.0,,1.0
 0603DD02,Passive11_0240,Source/Game/PASS11.c,content,exact,0.59,,1.0
@@ -4574,7 +4574,7 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 0607011C,Pattern09_0075,Source/Game/active09.c,content,exact,1.0,,1.0
 0607015E,Pattern09_0076,Source/Game/active09.c,content,exact,1.0,,1.0
 060701AE,Pattern09_0077,Source/Game/active09.c,content,exact,1.0,1.0,1.0
-06070244,Pattern09_0078,Source/Game/active09.c,content,events,0.61,,0.92
+06070244,Pattern09_0078,Source/Game/active09.c,content,high,0.61,,0.92
 060702CE,Pattern09_0079,Source/Game/active09.c,content,exact,1.0,,1.0
 0607034C,Pattern09_0080,Source/Game/active09.c,content,exact,0.98,,1.0
 060703A2,Pattern09_0081,Source/Game/active09.c,content,exact,0.99,1.0,1.0
@@ -5879,12 +5879,12 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 060945F8,grade_add_target_combo,Source/Game/Grade.c,order,events,0.81,,
 06094650,grade_add_command_waza,Source/Game/Grade.c,calls,events,0.81,,
 060946A8,grade_add_super_arts,Source/Game/Grade.c,order,events,0.83,,
-06094702,grade_store_vitality,Source/Game/Grade.c,order,events,0.9,,
+06094702,grade_store_vitality,Source/Game/Grade.c,calls,events,0.9,,
 06094744,grade_add_blocking,Source/Game/Grade.c,calls,events,0.82,,
 0609485C,grade_get_first_attack,Source/Game/Grade.c,order,events,0.91,,
 06094894,grade_set_round_result,Source/Game/Grade.c,order,events,0.42,1.0,
 06094908,grade_add_personal_action,Source/Game/Grade.c,calls,events,0.76,,
-0609497C,grade_check_tairyokusa,Source/Game/Grade.c,order,events,0.89,,
+0609497C,grade_check_tairyokusa,Source/Game/Grade.c,calls,events,0.89,,
 060949FA,grade_add_onaji_waza,Source/Game/Grade.c,order,events,0.86,0.0,
 06094AD8,grade_get_my_grade,Source/Game/Grade.c,calls,events,0.91,,
 06094CA8,check_guard_miss,Source/Game/Grade.c,calls,medium,0.98,,
@@ -6793,6 +6793,7 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 060FF456,fall_data_set,Source/Game/EFFD1.c,similar,events,0.98,,1.0
 060FF614,effect_D3_move,Source/Game/effd3.c,table-align,medium,0.43,,
 06100010,Reset_Wait,Source/Game/Reset.c,table,medium,0.97,,0.5
+0610007E,effect_D3_init,Source/Game/effd3.c,manual,manual,1.0,1.0,1.0
 06100100,effect_D4_move,Source/Game/EFFD4.c,table-align,high,0.92,,1.0
 06100364,distance2speed,Source/Game/EFFD4.c,calls,high,0.8,1.0,
 0610050C,effect_D5_move,Source/Game/EFFD5.c,table-align,high,0.9,,0.9
@@ -7069,7 +7070,7 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 061163F8,effect_M8_init,Source/Game/effM8.c,similar,high,0.21,1.0,1.0
 06116980,plcnt_init,Source/Game/PLCNT.c,table-align,events,0.43,,1.0
 06116C6C,pli_0000,Source/Game/PLCNT.c,similar,high,0.36,,1.0
-06116DF0,plcnt_move,Source/Game/PLCNT.c,table-align,high,0.65,1.0,1.0
+06116DF0,plcnt_move,Source/Game/PLCNT.c,table-align,high,0.65,1.0,0.94
 06116F64,plcnt_die,Source/Game/PLCNT.c,table-align,high,0.98,,1.0
 06116FA4,settle_type_00000,Source/Game/PLCNT.c,order-align,high,0.78,,1.0
 06117164,settle_type_10000,Source/Game/PLCNT.c,order-align,high,0.16,,1.0

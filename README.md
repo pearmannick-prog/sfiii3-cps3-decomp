@@ -18,7 +18,7 @@ you must supply your own dump, and everything under `rom/` and `build/` is regen
 - arcade C: 1,978 generated functions in `src/arcade/generated/`, 14 written by hand in `src/arcade/hand/`
 - **flagged-function review** (`symbols/sfiii3r1_flagged_review.csv`): every function the comparison flagged
   (402) has a verdict and the evidence it rests on:
-  about 36 read line by line;
+  about 45 read line by line;
   103 probably carry the wrong name; 53 differ only by an extra arcade `all_cgps_put_back` call;
   46 are the same once compiler noise is removed; 10 could not be compared (their PS2 file does not build for SH-2);
   170 differ on events but have not been read line by line (37 gameplay, 133 effects/opening/ending/menu code)

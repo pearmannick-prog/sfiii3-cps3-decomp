@@ -2298,7 +2298,7 @@ arcade_addr,name,grade,status,agreement,ps2_only,arcade_only,untranslated
 0603DB28,Passive11_0234,exact,same,1.0,0,0,0
 0603DB70,Passive11_0235,exact,same,1.0,0,0,0
 0603DBB8,Passive11_0236,exact,remapped,1.0,0,0,0
-0603DBF4,Passive11_0237,events,same,1.0,0,0,0
+0603DBF4,Passive11_0237,high,same,1.0,0,0,0
 0603DC70,Passive11_0238,exact,same,1.0,0,0,0
 0603DCCA,Passive11_0239,exact,same,1.0,0,0,0
 0603DD02,Passive11_0240,exact,same,1.0,0,0,0
@@ -4573,7 +4573,7 @@ arcade_addr,name,grade,status,agreement,ps2_only,arcade_only,untranslated
 0607011C,Pattern09_0075,exact,same,1.0,0,0,0
 0607015E,Pattern09_0076,exact,same,1.0,0,0,0
 060701AE,Pattern09_0077,exact,same,1.0,0,0,0
-06070244,Pattern09_0078,events,reordered,1.0,0,0,0
+06070244,Pattern09_0078,high,reordered,1.0,0,0,0
 060702CE,Pattern09_0079,exact,same,1.0,0,0,0
 0607034C,Pattern09_0080,exact,same,1.0,0,0,0
 060703A2,Pattern09_0081,exact,same,1.0,0,0,0
@@ -6770,6 +6770,7 @@ arcade_addr,name,grade,status,agreement,ps2_only,arcade_only,untranslated
 060FF456,fall_data_set,events,same,1.0,0,0,1
 060FF614,effect_D3_move,medium,unknown,0.0,2,3,0
 06100010,Reset_Wait,medium,unknown,0.08,4,7,3
+0610007E,effect_D3_init,manual,same,1.0,0,0,0
 06100100,effect_D4_move,high,same,0.8,1,2,4
 0610050C,effect_D5_move,high,differs,0.82,2,4,5
 06100676,effD5_main_process,high,differs,0.85,2,5,5
@@ -7036,7 +7037,7 @@ arcade_addr,name,grade,status,agreement,ps2_only,arcade_only,untranslated
 061163F8,effect_M8_init,high,unknown,0.75,1,0,4
 06116980,plcnt_init,events,same,1.0,0,0,4
 06116C6C,pli_0000,high,unknown,0.62,1,2,0
-06116DF0,plcnt_move,high,differs,0.43,1,11,31
+06116DF0,plcnt_move,high,differs,0.5,0,10,31
 06116F64,plcnt_die,high,same,0.2,0,4,8
 06116FA4,settle_type_00000,high,same,0.36,2,7,9
 06117164,settle_type_10000,high,same,0.31,0,11,4

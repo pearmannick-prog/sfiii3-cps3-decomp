@@ -277,7 +277,7 @@ arcade_addr,name,functions,agreement
 02028265,wr5_index,2,1.0
 02028678,round_timer,2,0.67
 0202884C,calc_hit,2,1.0
-02028990,frw,74,0.97
+02028990,frw,75,0.97
 02068994,frwctr,3,1.0
 02068A94,frwque,3,1.0
 02068A96,head_ix,6,1.0
