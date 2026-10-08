@@ -4,26 +4,17 @@ arcade_addr,name,ps2_file,grade,verdict,basis,note
 06007D28,Flip_3rd,Source/Game/Com_Pl.c,medium,differs,read in full against the C,"if the name is right (medium match): arcade sets Timer_00 to 12 where PS2 sets 15, has no case 3, no att.guard & 0x10 test adding 2 to the lever, and no Next_Be_Free default; the helper it calls sits at 0x06007E44, so names in this block of Com_Pl.c may be shuffled"
 06007DE4,Flip_4th,Source/Game/Com_Pl.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
 06007E44,SetShellFlipLever,Source/Game/Com_Pl.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
-0600826C,Decide_Exit_Catch,Source/Game/Com_Pl.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.17
+0600826C,Decide_Exit_Catch,Source/Game/Com_Pl.c,high,probable-wrong-name,rule on event differences,weak match and events agree only 0.17
 06008E22,Push_Shot,Source/Game/Com_Sub.c,high,same,rule on event differences,only a compiler runtime helper call differs
 060097B2,Provoke,Source/Game/Com_Sub.c,high,ps2-addition,read in full against the C,PS2 adds an spmv_ng_flag & 1 test that skips the taunt; arcade has none; rest identical
 06009BD4,Adjust_Attack,Source/Game/Com_Sub.c,high,same,read in full against the C,Check_Squat is expanded inline in the arcade code (target pat_status == 32 ? 0 : 2); rest identical
 0600B466,Check_Term_Sub_Air,Source/Game/Com_Sub.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
+0600B974,Check_Air_Guard,Source/Game/Com_Sub.c,medium,not-reviewed,,flagged after the splitter cleanup; not yet looked at
 0600FE80,Reaction_Sub,Source/Game/Com_Sub.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.17
+06010F4C,Check_Guard,Source/Game/Com_Sub.c,medium,not-reviewed,,flagged after the splitter cleanup; not yet looked at
+0601111A,Check_Flip_Term,Source/Game/Com_Sub.c,medium,not-reviewed,,flagged after the splitter cleanup; not yet looked at
 06011324,Next_Be_Flip,Source/Game/Com_Sub.c,high,ps2-addition,read in full against the C,PS2 adds the xx == 8 branch calling SetShellFlipLever; arcade has only the pat_status / Setup_Guard_Lever path
-060125B4,KEN_vs,Source/Game/Ck_Pass.c,high,same-likely,read in full against the C,arcade calls the eight Check_PL_Unit_* functions directly where the PS2 C goes through a table; arguments agree
-060128FA,HUGO_vs,Source/Game/Ck_Pass.c,high,same-likely,read in full against the C,as KEN_vs
-06012BA4,GILL_vs,Source/Game/Ck_Pass.c,high,same-likely,read in full against the C,as KEN_vs
-060134CC,Setup_Next_Stand_Timer,Source/Game/Ck_Pass.c,low,differs,read in full against the C,calls random_16 where PS2 calls random_16_com (the arcade build has no _com random functions)
-060136A4,Setup_Next_Squat_Timer,Source/Game/Ck_Pass.c,medium,differs,read in full against the C,calls random_16 where PS2 calls random_16_com
-060136C6,Check_Thrown,Source/Game/Ck_Pass.c,high,differs,read in full against the C,calls random_32 where PS2 calls random_32_com
-06014090,VS_MAKOTO_AS,Source/Game/Ck_Pass.c,manual,differs,read in full against the C,PS2 adds a Check_Special_Technique call (pattern 95) that the arcade build does not have; see src/arcade/hand/Ck_Pass.c
-060148C6,VS_MAKOTO_A,Source/Game/Ck_Pass.c,manual,differs,read in full against the C,PS2 adds a Check_Special_Technique call (pattern 95) that the arcade build does not have; see src/arcade/hand/Ck_Pass.c
-060150C4,VS_MAKOTO_BS,Source/Game/Ck_Pass.c,manual,differs,read in full against the C,PS2 adds a Check_Special_Technique call (pattern 95) that the arcade build does not have; see src/arcade/hand/Ck_Pass.c
-06015A32,VS_MAKOTO_B,Source/Game/Ck_Pass.c,manual,differs,read in full against the C,PS2 adds a Check_Special_Technique call (pattern 95) that the arcade build does not have; see src/arcade/hand/Ck_Pass.c
-0601622E,VS_MAKOTO_CS,Source/Game/Ck_Pass.c,manual,differs,read in full against the C,PS2 adds a Check_Special_Technique call (pattern 95) that the arcade build does not have; see src/arcade/hand/Ck_Pass.c
-0601674A,VS_IBUKI_C,Source/Game/Ck_Pass.c,manual,differs,read in full against the C,arcade passes technique 24 where PS2 passes 8; see src/arcade/hand/Ck_Pass.c
-06016ADA,VS_MAKOTO_C,Source/Game/Ck_Pass.c,manual,differs,read in full against the C,PS2 adds a Check_Special_Technique call (pattern 95) that the arcade build does not have; see src/arcade/hand/Ck_Pass.c
+060117B0,Decide_Shell_Guard,Source/Game/Com_Sub.c,medium,not-reviewed,,flagged after the splitter cleanup; not yet looked at
 0601C634,Passive01_0130,Source/Game/PASS01.c,medium,same,read in full against the C,tool artefact: the default label inside the function was split off as its own function
 0602D4EC,Passive07_0162,Source/Game/PASS07.c,exact,same,rule on event differences,events agree; the earlier flag was comparison noise
 06038530,Passive10_0128,Source/Game/pass10.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.25
@@ -33,19 +24,16 @@ arcade_addr,name,ps2_file,grade,verdict,basis,note
 06049690,Passive14_0147,Source/Game/pass14.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.20
 06064A2E,Pattern00_0015,Source/Game/ACTIVE00.c,exact,same,read in full against the C,"tool artefact: the default label inside the function was split off as its own function, so the branch to it looked like a call"
 060771BC,Pattern14_0052,Source/Game/active14.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.17
-0607BC2E,init_app_20000,Source/Game/PLCNT.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
-0607BCE4,init_app_30000,Source/Game/PLCNT.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
 06087024,effect_05_init,Source/Game/eff05.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
 060887B4,sort_push_request4,Source/Game/aboutspr.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
 0608A3F2,comm_quay,Source/Game/CHARSET.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
 0608A3FC,comm_if_s,Source/Game/CHARSET.c,high,ps2-addition,rule on event differences,PS2 adds: bit a0+3bc 0x2
-0608B2CC,comm_chkwf,Source/Game/CHARSET.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.33
 0608BD6A,check_cgd_patdat,Source/Game/CHARSET.c,high,ps2-addition,event differences inspected; not read line by line,not read in full: the PS2-only events are the same option block as in hit_pattern_extdat_check (spmv_ng_flag2 bits editing cg_cancel and cg_meoshi) plus hikusugi_check and setupCharTableData; the arcade-only events are field writes whose PS2 offsets are not mapped yet
 0608C2CC,set_new_attnum,Source/Game/CHARSET.c,high,ps2-addition,read in full against the C,identical apart from the last statement: PS2 calls setup_metamor_kezuri for players unless spmv_ng_flag & 0x4000; the arcade build has no such call
 0608D638,hit_pattern_extdat_check,Source/Game/HITCHECK.c,manual,differs,read in full against the C,"the arcade function is only the cg_extdat switch; the whole PS2 second half (work_id == 1: the spmv_ng_flag2 option tests that edit cg_cancel and cg_meoshi, including the chain tables) does not exist; inside the switch the arcade build does not clear cg_extdat in cases 0x40, 0x41 and 1"
-0608D6E4,check_dm_att_guard,Source/Game/HITCHECK.c,manual,differs,read in full against the C,read in full earlier: see src/arcade/hand/HITCHECK.c
 0608DC44,defense_ground,Source/Game/HITCHECK.c,manual,differs,read in full against the C,read in full earlier: see src/arcade/hand/HITCHECK.c
 0608EEA0,player_at_vs_effect_dm,Source/Game/HITPLEF.c,high,same-likely,event differences inspected; not read line by line,the arcade callee 0x0608D638 is hit_pattern_extdat_check by position; not read in full
+0608FBA2,BGM_Stop,Source/Game/SE.c,medium,not-reviewed,,flagged after the splitter cleanup; not yet looked at
 0608FCDE,end_d00_7000,Source/Game/end_13.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
 0609007E,Get_Position,Source/Game/SE.c,events,same,rule on event differences,events agree; the earlier flag was comparison noise
 06091E80,effect_14_init,Source/Game/eff14.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
@@ -54,7 +42,6 @@ arcade_addr,name,ps2_file,grade,verdict,basis,note
 06098064,Ranking_00_2nd,Source/Game/RANKING.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.18
 06098504,Ranking_01_5th,Source/Game/RANKING.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.05
 06099326,Game_Manage_1st,Source/Game/Manage.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.23
-0609965E,Game_Manage_2_2,Source/Game/Manage.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
 060999B0,Game_Manage_4th,Source/Game/Manage.c,high,differs,read in full against the C,"same three outcomes (KO, double KO, time over) and the same win bookkeeping; the arcade build never calls setFinishType or Update_Level_Control, has no training-mode clause in the time-over case, reads the rounds-to-win count from a byte table at 0x02016D7D instead of save_w, and ends the KO and time-over paths with a call to an unnamed routine at 0x0609C232"
 06099B56,Setup_Win_Mark,Source/Game/Manage.c,manual,differs-unread,event differences listed; gameplay code not read line by line,PS2 only: call Control_Music_Fade | arcade only: bit g:0201137C+0 0x800; bit g:0201137C+0 0x180; bit g:0201137C+0 0x200; call Setup_BGM_Fade_In; call 0613A324; st g:02016B79+0
 06099DD0,Game_Manage_5_1,Source/Game/Manage.c,high,same,read in full against the C,request_center_message is expanded inline in the arcade code; rest identical
@@ -73,18 +60,17 @@ arcade_addr,name,ps2_file,grade,verdict,basis,note
 0609D302,Win_1st,Source/Game/Win.c,high,differs-unread,event differences listed; presentation code not read line by line,PS2 only: call BGM_Request; call pulpul_stop | arcade only: call effect_05_init; call 06090F7E; call 0609272C; call 0609D59E; call 060BB620; call 060D4DF2; st g:0201542A+0; st g:020155EE+0; st g:020155F0+0; st g:0202802C+0
 0609D56C,Win_5th,Source/Game/Win.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
 0609EF80,Sel_PL_3rd,Source/Game/sel_pl.c,high,differs-unread,event differences listed; presentation code not read line by line,PS2 only: call ?Check_Demo_Data; call ?Clear_Break_Com; call ?Deley_Shot_Sub; call ?Push_LDREQ_Queue_Player; call ?Sel_PL_Sub | arcade only: call 06092748; call 0609F0AA; call 0609F39C
-0609FE5C,OBJ_2nd,Source/Game/sel_pl.c,medium,differs-unread,event differences listed; presentation code not read line by line,PS2 only: call Go_Away_Red_Lines | arcade only: call 060A0020; call 060A0026; call 060A0730; carg effect_39_init arg0=0x1; carg effect_39_init arg1=0x10; st g:02016BA6+0; st g:02016BAC+0; st g:02016BAF+0; st g:02016BB7+0; st g:02016BB8+0; st g:02016BC3+0; st g:02016BC4+0; st g:02016BC9+0; st g:02016BCA+0; st g:02016BCD+0; st g:02016BD2+0; st g:02
-060A0302,PL_Sel_2nd,Source/Game/sel_pl.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
-060A07E2,Exit_1st,Source/Game/sel_pl.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.07
+0609F258,Sel_PL_5th,Source/Game/sel_pl.c,medium,not-reviewed,,flagged after the splitter cleanup; not yet looked at
+0609FE5C,OBJ_2nd,Source/Game/sel_pl.c,high,differs-unread,event differences listed; presentation code not read line by line,PS2 only: call Go_Away_Red_Lines | arcade only: call 060A0020; call 060A0026; call 060A0730; carg effect_39_init arg0=0x1; carg effect_39_init arg1=0x10; st g:02016BA6+0; st g:02016BAC+0; st g:02016BAF+0; st g:02016BB7+0; st g:02016BB8+0; st g:02016BC3+0; st g:02016BC4+0; st g:02016BC9+0; st g:02016BCA+0; st g:02016BCD+0; st g:02016BD2+0; st g:02
 060A0F26,Handicap_3rd,Source/Game/sel_pl.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
 060A1AA6,Select_CPU_1st,Source/Game/Next_CPU.c,high,same-likely,event differences inspected; not read line by line,first half read and identical; remainder not read in full; event differences are a PS2 load-queue call and an unnamed callee (0x060F1E74) where PS2 calls effect_76_init
 060A1C7C,Select_CPU_3rd,Source/Game/Next_CPU.c,high,differs-unread,event differences inspected; not read line by line,"940 bytes, not read: PS2-only events are load-queue, demo, speech and super-art checks plus two effect inits; arcade-only events are unnamed callees and globals"
 060A2128,Next_Bonus_2nd,Source/Game/Next_CPU.c,medium,differs,read in full against the C,arcade step 1 is just a countdown (Scene_Cut sets the timer to 1); PS2 adds a sub-step that fades the music out at timer 9 and resets SC_No[2]
+060A23BC,Next_Q_1st,Source/Game/Next_CPU.c,medium,not-reviewed,,flagged after the splitter cleanup; not yet looked at
 060A254C,Next_Q_2nd,Source/Game/Next_CPU.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
 060A27DC,Setup_Next_Fighter,Source/Game/Next_CPU.c,high,differs,read in full against the C,"arcade tests EM_id == 18 for the Q_Country case where PS2 tests 17; arcade has no special case for My_char[Player_id] == 0 with EM_id == 1, no Debug_w overrides and no load-queue call; rest identical"
 060A2A76,Setup_Regular_OBJ,Source/Game/Next_CPU.c,high,differs,read in full against the C,in the VS_Index >= 8 branch the arcade build has no chkNameAkuma substitution (PS2 swaps the name id to 23) and issues the four effect_A9_init calls in a different order; first branch identical
 060A2F2A,Setup_Next_Stage,Source/Game/Next_CPU.c,events,same,rule on event differences,events agree; the earlier flag was comparison noise
-060B5050,check_9,Source/Game/CMD_MAIN.c,medium,same-likely,rule on event differences,remaining differences are constant-store patterns that differ between compilers
 060B630E,sync_fam_set3,Source/Game/ta_sub.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.25
 060B6786,disp_pos_trans_entry,Source/Game/ta_sub.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.33
 060B67C2,disp_pos_trans_entry5,Source/Game/ta_sub.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.33
@@ -97,9 +83,9 @@ arcade_addr,name,ps2_file,grade,verdict,basis,note
 060BB48C,akebono_initialize,Source/Game/bg_sub.c,high,differs-unread,event differences listed; presentation code not read line by line,PS2 only: call Bg_Family_Set_appoint | arcade only: bit g:0206A178+0 0xfe7f; call 060B9880; call 060BA1AA; call 060D4DF2; call 0612E0D8; call 0612E2FE; call Check_LDREQ_Break; call 0612E3B6; call suzi_offset_set; call 061377F0; call 06137980; call 061379EC; call 06137CE4; call 061384E0; st g:02026B50+0; st g:02026B52+0; st g:02026B54+0; st g:02026B58
 060BBEDA,bg0000_init00,Source/Game/bg000.c,high,differs-unread,event differences listed; presentation code not read line by line,arcade only: call gill_appear_check; st g:02026FF4+0>+18; st g:02026FF4+0>+20; st g:02026FF4+0>+30; st g:02026FF4+0>+34; st g:02026FF4+0>+4; st g:02026FF4+0>+40; st g:02026FF4+0>+48; st g:02026FF4+0>+50
 060BC2FC,BG020,Source/Game/bg020.c,medium,differs-unread,event differences listed; presentation code not read line by line,PS2 only: call bg0201; call bg0202; call bg020_sync_common
+060BC470,bg0202_init00,Source/Game/bg020.c,high,not-reviewed,,flagged after the splitter cleanup; not yet looked at
 060BC71C,BG040,Source/Game/bg040.c,medium,differs-unread,event differences listed; presentation code not read line by line,PS2 only: call bg0401; call bg0402
 060BEBD4,bg1502_init00,Source/Game/bg150.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.05
-060C01D8,Appear_01000,Source/Game/appear.c,high,differs-unread,event differences listed; presentation code not read line by line,arcade only: st g:0202802A+0; st g:02028194+0
 060C085C,Appear_06000,Source/Game/appear.c,high,differs-unread,event differences listed; presentation code not read line by line,PS2 only: call ?effect_C5_init; call ?effect_M5_init | arcade only: call 060FE1DC; call 06115B90; st g:0202802A+0; st g:02028194+0
 060C0F88,Appear_12000,Source/Game/appear.c,high,differs-unread,event differences listed; presentation code not read line by line,PS2 only: call ?effect_46_init | arcade only: call 060EBEA4; st g:0202802A+0; st g:02028194+0
 060C17AE,Appear_19000,Source/Game/appear.c,high,differs-unread,event differences listed; presentation code not read line by line,PS2 only: call ?effect_15_init | arcade only: call 060E4090; st g:0202802A+0; st g:02028194+0; st g:0202819A+0; st g:0202819B+0; stc a0+a 0x0
@@ -138,7 +124,6 @@ arcade_addr,name,ps2_file,grade,verdict,basis,note
 060D138C,end_e01_0000,Source/Game/end_14.c,high,differs-unread,event differences listed; presentation code not read line by line,PS2 only: call Bg_Off_W; call ?end_e00_0000_col_sub2; st g:0202824A+0 | arcade only: call 060CA938; call 0612E2FE; call Check_LDREQ_Break; st g:02026FF4+0>+18; st g:02026FF4+0>+1c; st g:02026FF4+0>+6; st g:02026FF4+0>+60; st g:02026FF4+0>+8c; st g:02026FF4+0>+8e
 060D2798,end_1800_0001,Source/Game/end_18.c,high,differs-unread,event differences listed; presentation code not read line by line,PS2 only: carg effect_E6_init arg0=0x70; carg effect_E6_init arg0=0x71; carg effect_E6_init arg0=0x72 | arcade only: call 060D4DF2; st g:02026FF4+0>+18; st g:02026FF4+0>+1c; st g:02026FF4+0>+6; st g:02026FF4+0>+60; st g:02026FF4+0>+68
 060D2890,end_1800_0005,Source/Game/end_18.c,high,differs-unread,event differences listed; presentation code not read line by line,arcade only: call 060D4DF2; st g:02026FF4+0>+18; st g:02026FF4+0>+1c; st g:02026FF4+0>+6; st g:02026FF4+0>+60; st g:02026FF4+0>+68
-060D35E8,end_2001_0000,Source/Game/end_20.c,high,differs-unread,event differences listed; presentation code not read line by line,arcade only: call 0612E2FE; call Check_LDREQ_Break; st g:02026FF4+0>+18; st g:02026FF4+0>+1c; st g:02026FF4+0>+6
 060D380C,end_2001_0004,Source/Game/end_20.c,medium,differs-unread,event differences listed; presentation code not read line by line,arcade only: call Bg_Off_W
 060D5D52,effect_08_init,Source/Game/eff08.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
 060DB610,effect_work_quick_init,Source/Game/EFFECT.c,events,same,rule on event differences,events agree; the earlier flag was comparison noise
@@ -148,6 +133,7 @@ arcade_addr,name,ps2_file,grade,verdict,basis,note
 060DD248,effect_04_move,Source/Game/EFF04.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.13
 060DD410,effect_05_move,Source/Game/eff05.c,events,same,rule on event differences,events agree; the earlier flag was comparison noise
 060DD59C,effect_06_move,Source/Game/eff06.c,events,same,rule on event differences,events agree; the earlier flag was comparison noise
+060DD612,effect_06_init,Source/Game/eff06.c,medium,not-reviewed,,flagged after the splitter cleanup; not yet looked at
 060DD728,effect_07_move,Source/Game/EFF07.c,events,same,rule on event differences,events agree; the earlier flag was comparison noise
 060DDD1C,eff09_0000,Source/Game/EFF09.c,high,arcade-extra,rule on event differences,arcade calls all_cgps_put_back (sprite cleanup) where PS2 does not
 060DDDE8,eff09_1000,Source/Game/EFF09.c,high,differs-unread,event differences listed; presentation code not read line by line,arcade only: bit a0+34 0x1
@@ -175,14 +161,13 @@ arcade_addr,name,ps2_file,grade,verdict,basis,note
 060DFC48,eff09_23000,Source/Game/EFF09.c,high,arcade-extra,rule on event differences,arcade calls all_cgps_put_back (sprite cleanup) where PS2 does not
 060DFD94,eff09_24000,Source/Game/EFF09.c,high,arcade-extra,rule on event differences,arcade calls all_cgps_put_back; other differences are constant-store noise between compilers
 060DFF1C,eff09_25000,Source/Game/EFF09.c,high,arcade-extra,rule on event differences,arcade calls all_cgps_put_back; other differences are constant-store noise between compilers
-060E0010,Reset_Move,Source/Game/Reset.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
 060E0080,eff09_26000,Source/Game/EFF09.c,high,arcade-extra,rule on event differences,arcade calls all_cgps_put_back (sprite cleanup) where PS2 does not
 060E0216,eff09_27000,Source/Game/EFF09.c,high,arcade-extra,rule on event differences,arcade calls all_cgps_put_back (sprite cleanup) where PS2 does not
 060E0628,effect_10_move,Source/Game/EFF10.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.08
 060E0A06,quake_level_middle,Source/Game/EFF11.c,high,differs-unread,event differences listed; presentation code not read line by line,arcade only: bit a0+34 0x3; st a0+36
+060E0F34,effect_11_init,Source/Game/EFF11.c,medium,not-reviewed,,flagged after the splitter cleanup; not yet looked at
 060E1020,effect_12_move,Source/Game/eff12.c,high,same-likely,rule on event differences,remaining differences are constant-store patterns that differ between compilers
 060E11C0,effect_13_move,Source/Game/EFF13.c,high,differs-unread,event differences listed; presentation code not read line by line,PS2 only: call ?effect_00_init; st a0+272; st a0+278; st a0+27a; stc a0+5e 0x47 | arcade only: st a0+300; st a0+305; st a0+362; st a0+5; stc a0+5e 0x46
-060E1582,tama_display,Source/Game/EFF13.c,medium,differs-unread,event differences listed; presentation code not read line by line,PS2 only: call set_quake | arcade only: call 06117F6E
 060E172A,kotp_00000,Source/Game/EFF13.c,medium,differs-unread,event differences listed; presentation code not read line by line,PS2 only: st a0+3c0; st a0+46; st a0+68 | arcade only: bit a0+312 0xf0; st a0+3c4
 060E1F6C,kotp_03000,Source/Game/EFF13.c,high,differs-unread,event differences listed; presentation code not read line by line,PS2 only: st a0+68 | arcade only: bit a0+312 0xf0; st a0+46
 060E2166,kotp_05000,Source/Game/EFF13.c,medium,differs-unread,event differences listed; presentation code not read line by line,arcade only: bit a0+312 0xf0
@@ -236,6 +221,7 @@ arcade_addr,name,ps2_file,grade,verdict,basis,note
 060ED152,EFF52_SLIDE_OUT,Source/Game/Eff52.c,high,arcade-extra,rule on event differences,arcade calls all_cgps_put_back (sprite cleanup) where PS2 does not
 060ED21A,EFF52_KILL,Source/Game/Eff52.c,medium,arcade-extra,rule on event differences,arcade calls all_cgps_put_back (sprite cleanup) where PS2 does not
 060ED49C,effect_53_move,Source/Game/EFF53.c,high,same-likely,rule on event differences,remaining differences are constant-store patterns that differ between compilers
+060ED62A,effect_54_init,Source/Game/EFF54.c,medium,not-reviewed,,flagged after the splitter cleanup; not yet looked at
 060ED70C,effect_55_move,Source/Game/EFF55.c,high,same-likely,rule on event differences,remaining differences are constant-store patterns that differ between compilers
 060ED956,effect_57_move,Source/Game/EFF57.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.11
 060ED9E8,effect_58_move,Source/Game/EFF58.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.10
@@ -246,13 +232,14 @@ arcade_addr,name,ps2_file,grade,verdict,basis,note
 060EF710,effect_66_move,Source/Game/EFF66.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.13
 060EFA78,effect_67_move,Source/Game/EFF67.c,medium,differs-unread,event differences listed; presentation code not read line by line,PS2 only: st a0+3c0 | arcade only: bit a0+21a 0x7fff; call 060886C6; st a0+21a; st a0+234
 060F02A8,effect_68_move,Source/Game/EFF68.c,high,same-likely,rule on event differences,remaining differences are constant-store patterns that differ between compilers
+060F057E,effect_68_init,Source/Game/EFF68.c,medium,not-reviewed,,flagged after the splitter cleanup; not yet looked at
 060F084E,EFF69_SLIDE_OUT,Source/Game/EFF69.c,high,arcade-extra,rule on event differences,arcade calls all_cgps_put_back (sprite cleanup) where PS2 does not
 060F0AFC,effect_70_move,Source/Game/EFF70.c,high,differs-unread,event differences listed; presentation code not read line by line,arcade only: bit g:020154C2+0 0x8000; bit g:020154C4+0 0x8000; st g:02016B9F+0; stc a0+278 0x0
 060F0DA8,effect_71_move,Source/Game/EFF71.c,high,same-likely,rule on event differences,remaining differences are constant-store patterns that differ between compilers
 060F0EE8,effect_72_move,Source/Game/EFF72.c,high,same-likely,rule on event differences,remaining differences are constant-store patterns that differ between compilers
 060F0F76,effect_72_init,Source/Game/EFF72.c,high,differs-unread,event differences listed; presentation code not read line by line,PS2 only: call suzi_offset_set | arcade only: call 060B9640
 060F1070,effect_73_move,Source/Game/eff73.c,high,same-likely,rule on event differences,remaining differences are constant-store patterns that differ between compilers
-060F1384,effect_74_move,Source/Game/EFF74.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.12
+060F1384,effect_74_move,Source/Game/EFF74.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.12
 060F1970,effect_76_move,Source/Game/Eff76.c,high,differs-unread,event differences listed; presentation code not read line by line,PS2 only: call ?Check_Pos_OBJ
 060F1D66,EFF57_KILL,Source/Game/EFF57.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.25
 060F3214,effect_79_move,Source/Game/Eff79.c,high,differs-unread,event differences listed; presentation code not read line by line,PS2 only: call sort_push_request4; call set_char_move_init; call set_char_move_init2; call char_move; call effect_80_init; call ?Check_Play_Status_79; call ?Check_Speed_79; call ?EFF79_Move_X; call ?EFF79_Move_Y; call ?Move_79; call ?Move_Move_79; call ?Select_End_Sub_79; call ?Setup_Move_79; st a0+2e; st a0+
@@ -276,6 +263,8 @@ arcade_addr,name,ps2_file,grade,verdict,basis,note
 060F95E8,effect_A8_move,Source/Game/EFFA8.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.08
 060F96BC,effect_A9_move,Source/Game/EffA9.c,high,differs-unread,event differences listed; presentation code not read line by line,PS2 only: carg SsRequest arg0=0x62 | arcade only: carg SsRequest arg0=0x68; stc a0+9a 0x1
 060F99D4,effect_B0_move,Source/Game/EFFB0.c,high,arcade-extra,rule on event differences,arcade calls all_cgps_put_back; other differences are constant-store noise between compilers
+060FA0B0,effect_B2_move,Source/Game/effb2.c,high,not-reviewed,,flagged after the splitter cleanup; not yet looked at
+060FA3CC,effect_B2_init,Source/Game/effb2.c,high,not-reviewed,,flagged after the splitter cleanup; not yet looked at
 060FA97C,effect_B4_move,Source/Game/EFFB4.c,high,differs-unread,event differences listed; presentation code not read line by line,arcade only: bit a0+34 0x1f
 060FAA5C,effect_B4_init,Source/Game/EFFB4.c,medium,differs-unread,event differences listed; presentation code not read line by line,PS2 only: call suzi_offset_set | arcade only: call 060B9640
 060FB390,effect_B7_move,Source/Game/EFFB7.c,events,same,rule on event differences,events agree; the earlier flag was comparison noise
@@ -292,9 +281,7 @@ arcade_addr,name,ps2_file,grade,verdict,basis,note
 060FF2CC,effect_D1_move,Source/Game/EFFD1.c,high,differs-unread,event differences listed; presentation code not read line by line,arcade only: st a0+303
 0610050C,effect_D5_move,Source/Game/EFFD5.c,high,differs-unread,event differences listed; presentation code not read line by line,arcade only: st a0+1ac; st a0+5
 06100676,effD5_main_process,Source/Game/EFFD5.c,high,differs-unread,event differences listed; presentation code not read line by line,PS2 only: carg setup_hana_extra arg1=0x0; carg setup_hana_extra arg2=0x8 | arcade only: bit a0+312 0xc0; bit a0+343 0xf8; st a0+3c5
-06100952,Caught_01000,Source/Game/PLPCU.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
 06100AD8,effect_D6_move,Source/Game/EFFD6.c,high,arcade-extra,rule on event differences,arcade calls all_cgps_put_back; other differences are constant-store noise between compilers
-06100C58,Caught_02000,Source/Game/PLPCU.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
 06100E10,effect_D7_move,Source/Game/EFFD7.c,high,differs-unread,event differences listed; presentation code not read line by line,arcade only: st a0+1ac; st a0+350; st a0+352; st a0+5
 06100F72,effD7_main_process,Source/Game/EFFD7.c,high,differs-unread,event differences listed; presentation code not read line by line,PS2 only: call ?check_ball_mizushibuki | arcade only: bit a0+312 0xc0; call 0610C332; st a0+350; st a0+364; st a0+365; st a0+3b8>+178; st a0+3c5; stc a0+80 0x0
 06101CE8,effect_E0_move,Source/Game/EffE0.c,high,arcade-extra,rule on event differences,arcade calls all_cgps_put_back; other differences are constant-store noise between compilers
@@ -360,7 +347,6 @@ arcade_addr,name,ps2_file,grade,verdict,basis,note
 06115D34,effect_M6_move,Source/Game/effM6.c,high,same-likely,rule on event differences,remaining differences are constant-store patterns that differ between compilers
 06115EFC,effect_M7_move,Source/Game/effM7.c,events,same,rule on event differences,events agree; the earlier flag was comparison noise
 06116DF0,plcnt_move,Source/Game/PLCNT.c,high,ps2-addition,read in full against the C,identical apart from the PS2 Debug_w tests and the training-mode no-death setup; the unnamed arcade callee 0x0610007E is effect_D3_init
-06116FA4,settle_type_00000,Source/Game/PLCNT.c,high,same-likely,event differences inspected; not read line by line,the unnamed arcade callee 0x06117EE2 is footwork_check (read); other differences are unnamed globals; not read in full
 06117446,settle_type_40000,Source/Game/PLCNT.c,high,same-likely,event differences inspected; not read line by line,as settle_type_00000; arcade also calls complete_victory_pause; not read in full
 06117C26,time_over_check,Source/Game/PLCNT.c,high,differs,read in full against the C,arcade also calls setup_gouki_wins after choosing the winner; rest identical
 06117E8C,check_sa_type_rebirth,Source/Game/PLCNT.c,medium,ps2-addition,rule on event differences,PS2 adds: bit a0+3bc 0x0
@@ -375,12 +361,9 @@ arcade_addr,name,ps2_file,grade,verdict,basis,note
 0611C2EA,dm_04000,Source/Game/PLS00.c,high,differs,read in full against the C,arcade does not call setup_kuzureochi in cases 64 and 0xFF; rest identical
 0611C6F6,check_cg_cancel_data,Source/Game/PLS00.c,high,differs,read in full against the C,"arcade has no spmv_ng_flag2 option handling, does not try check_full_gauge_attack2 in the 0x40 cancel branch, and has no spmv_ng_flag 0x400000 test before check_hijump_only; rest identical"
 0611D03E,check_turn_to_back,Source/Game/PLS01.c,manual,same,read in full against the C,read in full earlier: identical apart from the Bonus_Game_Flag constant (21 vs 20) and an inlined check_rl_flag
-0611E0D6,random_32,Source/Game/PLS02.c,manual,differs,read in full against the C,arcade has no Debug_w[0x3B] reset; see src/arcade/hand/PLS02.c
-0611E0EE,random_16,Source/Game/PLS02.c,manual,differs,read in full against the C,arcade has no Debug_w[0x3B] reset; see src/arcade/hand/PLS02.c
 0611E652,add_sp_arts_gauge_paring,Source/Game/PLS02.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.25
 06120C00,waza_select,Source/Game/PLS03.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
 061214A4,Player_normal,Source/Game/PLPNM.c,medium,differs,read in full against the C,arcade does not call clear_chainex_check when routine_no[3] == 0 (and has no rumble hook); rest identical
-06121EC0,Normal_31000,Source/Game/PLPNM.c,manual,differs,read in full against the C,read in full earlier: see src/arcade/hand/PLPNM.c
 06122046,Normal_35000,Source/Game/PLPNM.c,high,differs,read in full against the C,air parry start: arcade has no dm_stop negation and no subtract_dm_vital call (same pattern as Normal_31000); rest identical
 061221F0,Normal_40000,Source/Game/PLPNM.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.33
 061221FC,Normal_41000,Source/Game/PLPNM.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.33

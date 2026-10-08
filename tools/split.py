@@ -59,6 +59,37 @@ for _ in range(4):                      # split bra tail calls into known functi
     img.discover({t for f in img.funcs.values() for t in f.calls | f.tails} - set(img.funcs))
     if before == {k: (f.end, len(f.insns)) for k, f in img.funcs.items()}: break
 
+# Drop false entries: an address inside another function's code that nothing calls is a label or a
+# coincidental data value (round numbers like 0x06010000 turn up in data), not a function. Real secondary
+# entry points, which something does call, are kept.
+called = set()
+for f in img.funcs.values():
+    for pc, t in f.sites.items():
+        w = img.u16(pc)
+        if t is not None and (w >> 12 == 0xB or w & 0xF0FF == 0x400B): called.add(t)
+seen = set(); labels = []
+for f in sorted(img.funcs.values(), key=lambda f: f.addr):       # in address order, against accepted functions only,
+    if f.addr in seen and f.addr not in called: labels.append(f.addr); continue      # so a bogus entry cannot evict what follows it
+    seen.update(f.insns)
+    for l, n in f.lits.items(): seen.update(range(l & ~1, l + n, 2))
+# rescue: an overlapping entry listed in a pointer table whose other entries are ordinary functions is a real
+# function sharing its tail with a neighbour, not a stray value
+lab = set(labels); words = struct.unpack_from(f">{len(d)//4}I", d, 0); i0 = (a.code_hi - BASE) // 4; i = i0
+while i < len(words):
+    if words[i] in img.funcs:
+        j = i
+        while j < len(words) and (words[j] in img.funcs or words[j] == 0): j += 1
+        ent = [w for w in words[i:j] if w]
+        if len(ent) >= 4 and sum(1 for w in ent if w not in lab) >= 0.8 * len(ent): lab.difference_update(ent)
+        i = j
+    else: i += 1
+for f in img.funcs.values():                                     # ... and so is the target of another function's tail jump
+    for t in f.tails:
+        if t in lab and t not in f.insns: lab.discard(t)
+labels = sorted(lab)
+for x in labels: del img.funcs[x]
+for k in list(img.funcs): img.funcs[k] = img.analyze(k)          # branches into dropped labels are local again
+print(f"dropped {len(labels)} labels or data values that had been taken for functions")
 os.makedirs(a.out, exist_ok=True)
 fs = sorted(img.funcs.values(), key=lambda f: f.addr)
 with open(os.path.join(a.out, "functions.csv"), "w", newline="") as fh:

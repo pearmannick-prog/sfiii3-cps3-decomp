@@ -7,10 +7,13 @@ This repository contains tooling and notes only. It contains no ROM data and no 
 you must supply your own dump, and everything under `rom/` and `build/` is regenerated from it.
 
 ## Status
-- 10,442 functions found in the 990512 program (98.8% of the code range)
-- about 7,520 matched to named functions from the PS2 decompilation (`symbols/sfiii3r1.csv`):
-  4,480 `exact` (every call argument verified), about 1,680 `events` (same calls, field writes and bit tests as the
-  PS2 C compiled for SH-2), 21 `manual` (read by hand), about 850 high, 420 medium, 70 low
+- 10,096 functions found in the 990512 program (the splitter now drops 346 false entries: labels inside
+  other functions and data values that only looked like code pointers)
+- about 7,590 matched to named functions from the PS2 decompilation (`symbols/sfiii3r1.csv`):
+  4,480 `exact` (every call argument verified), about 1,720 `events` (same calls, field writes and bit tests as the
+  PS2 C compiled for SH-2), 72 `manual` (read by hand or taken from a dispatcher table), about 850 high, 400 medium, 60 low
+- 400 more are labelled as arcade-only CPU AI for character slot 15 (`symbols/arcade_only.csv`)
+- about 2,100 remain unnamed, listed by category in `symbols/sfiii3r1_unnamed.csv`
 - 299 global variables named (`symbols/sfiii3r1_data.csv`); these come from co-occurrence and at least one is
   known to be wrong, so treat them as hints
 - CPU-AI pattern routines (`symbols/sfiii3r1_ai_routines.csv`): 5,167 of 5,204 lifted exactly;
@@ -70,6 +73,11 @@ C in `src/arcade/` is derived from 3s-decomp and is therefore AGPL-3.0.
   state `Damage_25000` do not call `setup_kuzureochi`; `Player_normal` does not call `clear_chainex_check`;
   the air-parry start `Normal_35000` matches `Normal_31000` (no `dm_stop` negation, no `subtract_dm_vital`);
   `Att_DENJINHADOUKEN` and `Att_PL08_HEALING` do not call `hoken_muriyari_chakuchi`.
+- **An extra character slot** (found from the dispatcher tables at 0x0613E544 and 0x0613E5EC): the arcade
+  program has 21 CPU-AI slots where PS2 has 20. Slot 15 sits between Akuma (14) and Chun-Li (PS2 15, arcade 16)
+  and has its own 149 attack routines and 249 defence routines. They mirror Akuma's routine for routine;
+  26 differ in their numbers (`src/arcade/slot15/`). This is presumably Shin Akuma, which is not confirmed.
+  So arcade character numbers above 14 are one higher than the PS2 ones.
 - **Random numbers** (read by hand, `src/arcade/hand/PLS02.c`): the arcade build has four random functions
   (`random_32`, `random_16` and the two `_ex` ones) and none has the PS2 `Debug_w` reset. The PS2 `_com`
   variants, which give CPU-opponent code its own streams when `Play_Mode != 0`, do not exist: arcade
@@ -166,10 +174,10 @@ Function names come from crowded-street/3s-decomp (AGPL-3.0).
 ## Findings so far (990512)
 - SH-2 big-endian, reset PC 0x06000EA0, SP 0x02008F94, work RAM at 0x02000000
 - code 0x06000400..~0x0613BDFA, data after; SIMM2 (0x06800000+) is data and identical to 990608
-- 10,442 functions found, 98.8% of the code range covered
+- 10,096 functions found
 - code style suggests Hitachi SHC (shared literal pools, `jmp @rN` tail calls with filled delay slots); unconfirmed
 
 ## Known gaps
-- ~3,400 arcade functions unnamed; ~2,900 PS2 names unplaced (some are PS2-only: SDK, CRI, renderer)
+- ~2,100 arcade functions unnamed; ~2,300 PS2 names unplaced (some are PS2-only: SDK, CRI, renderer)
 - ~420 overlapping functions (multiple entry points or false-positive code pointers)
 - ~155 functions with unresolved jump tables; 135 small unclassified regions
