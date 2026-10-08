@@ -24,3 +24,10 @@ arcade_addr,name,note
 0611E11E,random_16_ex,read by hand: index & 0xF
 06117EE2,footwork_check,read by hand: plw[ix] routine_no[1] == 0 and routine_no[2] == 1
 0610007E,effect_D3_init,called from plcnt_move exactly where PS2 calls effect_D3_init with the same argument logic
+06014090,VS_MAKOTO_AS,read by hand: returns 0 (position fixed by align_file.py)
+060148C6,VS_MAKOTO_A,read by hand: returns 0
+060150C4,VS_MAKOTO_BS,read by hand: one Check_Special_Technique call
+06015A32,VS_MAKOTO_B,read by hand
+0601622E,VS_MAKOTO_CS,read by hand
+06016ADA,VS_MAKOTO_C,read by hand
+0601674A,VS_IBUKI_C,read by hand: technique 24 where PS2 has 8

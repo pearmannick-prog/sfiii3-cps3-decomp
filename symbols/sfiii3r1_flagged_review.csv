@@ -17,25 +17,13 @@ arcade_addr,name,ps2_file,grade,verdict,basis,note
 060134CC,Setup_Next_Stand_Timer,Source/Game/Ck_Pass.c,low,differs,read in full against the C,calls random_16 where PS2 calls random_16_com (the arcade build has no _com random functions)
 060136A4,Setup_Next_Squat_Timer,Source/Game/Ck_Pass.c,medium,differs,read in full against the C,calls random_16 where PS2 calls random_16_com
 060136C6,Check_Thrown,Source/Game/Ck_Pass.c,high,differs,read in full against the C,calls random_32 where PS2 calls random_32_com
-0601408C,VS_MAKOTO_AS,Source/Game/Ck_Pass.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
-06014090,VS_Q_AS,Source/Game/Ck_Pass.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
-06014094,VS_NO12_AS,Source/Game/Ck_Pass.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
-060140CA,VS_REMY_AS,Source/Game/Ck_Pass.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
-060148C6,VS_Q_A,Source/Game/Ck_Pass.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
-060148CA,VS_NO12_A,Source/Game/Ck_Pass.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.17
-06014900,VS_REMY_A,Source/Game/Ck_Pass.c,medium,differs-unread,event differences listed; gameplay code not read line by line,PS2 only: carg Check_Special_Technique arg2=0xb | arcade only: carg Check_Special_Technique arg2=0x11; carg Check_Special_Technique arg2=0x16
-0601506C,VS_MAKOTO_BS,Source/Game/Ck_Pass.c,high,differs-unread,event differences inspected; not read line by line,constant arguments to Check_Special_Technique differ from every PS2 function in the file; either the matchup data differs or the name is wrong
-060150C4,VS_Q_BS,Source/Game/Ck_Pass.c,high,differs-unread,event differences listed; gameplay code not read line by line,PS2 only: carg Check_Special_Technique arg2=0x19; carg Check_Special_Technique arg3=0x18 | arcade only: carg Check_Special_Technique arg2=0x8; carg Check_Special_Technique arg3=0x8
-060150F8,VS_NO12_BS,Source/Game/Ck_Pass.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
-0601512E,VS_REMY_BS,Source/Game/Ck_Pass.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
-06015998,VS_MAKOTO_B,Source/Game/Ck_Pass.c,medium,differs-unread,event differences inspected; not read line by line,as VS_MAKOTO_BS
-06015AE2,VS_REMY_B,Source/Game/Ck_Pass.c,medium,differs-unread,event differences listed; gameplay code not read line by line,PS2 only: carg Check_Special_Technique arg2=0xb | arcade only: carg Check_Special_Technique arg2=0x11; carg Check_Special_Technique arg2=0x16
-060161D6,VS_MAKOTO_CS,Source/Game/Ck_Pass.c,high,differs-unread,event differences inspected; not read line by line,as VS_MAKOTO_BS
-0601622E,VS_Q_CS,Source/Game/Ck_Pass.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
-0601626A,VS_REMY_CS,Source/Game/Ck_Pass.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
-0601674A,VS_IBUKI_C,Source/Game/Ck_Pass.c,high,differs-unread,event differences inspected; not read line by line,one constant argument differs (0x18 where PS2 has 8); name or data
-06016A40,VS_MAKOTO_C,Source/Game/Ck_Pass.c,medium,differs-unread,event differences inspected; not read line by line,as VS_MAKOTO_BS
-06016B68,VS_REMY_C,Source/Game/Ck_Pass.c,medium,differs-unread,event differences listed; gameplay code not read line by line,PS2 only: carg Check_Special_Technique arg2=0xb | arcade only: carg Check_Special_Technique arg2=0x11; carg Check_Special_Technique arg2=0x16
+06014090,VS_MAKOTO_AS,Source/Game/Ck_Pass.c,manual,differs,read in full against the C,PS2 adds a Check_Special_Technique call (pattern 95) that the arcade build does not have; see src/arcade/hand/Ck_Pass.c
+060148C6,VS_MAKOTO_A,Source/Game/Ck_Pass.c,manual,differs,read in full against the C,PS2 adds a Check_Special_Technique call (pattern 95) that the arcade build does not have; see src/arcade/hand/Ck_Pass.c
+060150C4,VS_MAKOTO_BS,Source/Game/Ck_Pass.c,manual,differs,read in full against the C,PS2 adds a Check_Special_Technique call (pattern 95) that the arcade build does not have; see src/arcade/hand/Ck_Pass.c
+06015A32,VS_MAKOTO_B,Source/Game/Ck_Pass.c,manual,differs,read in full against the C,PS2 adds a Check_Special_Technique call (pattern 95) that the arcade build does not have; see src/arcade/hand/Ck_Pass.c
+0601622E,VS_MAKOTO_CS,Source/Game/Ck_Pass.c,manual,differs,read in full against the C,PS2 adds a Check_Special_Technique call (pattern 95) that the arcade build does not have; see src/arcade/hand/Ck_Pass.c
+0601674A,VS_IBUKI_C,Source/Game/Ck_Pass.c,manual,differs,read in full against the C,arcade passes technique 24 where PS2 passes 8; see src/arcade/hand/Ck_Pass.c
+06016ADA,VS_MAKOTO_C,Source/Game/Ck_Pass.c,manual,differs,read in full against the C,PS2 adds a Check_Special_Technique call (pattern 95) that the arcade build does not have; see src/arcade/hand/Ck_Pass.c
 0601C634,Passive01_0130,Source/Game/PASS01.c,medium,same,read in full against the C,tool artefact: the default label inside the function was split off as its own function
 0602D4EC,Passive07_0162,Source/Game/PASS07.c,exact,same,rule on event differences,events agree; the earlier flag was comparison noise
 06038530,Passive10_0128,Source/Game/pass10.c,low,probable-wrong-name,rule on event differences,weak match and events agree only 0.25
@@ -400,10 +388,8 @@ arcade_addr,name,ps2_file,grade,verdict,basis,note
 061243F4,Damage_30000,Source/Game/PLPDM.c,high,ps2-addition,read in full against the C,identical apart from the PS2 rumble call (pp_screen_quake) and the empty check_dmpat_to_dmpat stub
 061284AA,Att_JYOUKA,Source/Game/PLPAT00.c,medium,differs-unread,event differences listed; gameplay code not read line by line,PS2 only: call set_char_move_init2; call setup_kuzureochi; carg cal_all_speed_data arg3=0x50
 06128872,Att_DENJINHADOUKEN,Source/Game/PLPAT02.c,high,differs,read in full against the C,PS2 calls hoken_muriyari_chakuchi in case 0; the arcade build does not; rest identical
-06128B10,VS_RYU_DS,Source/Game/Ck_Pass.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
 061297F2,Att_PL08_HEALING,Source/Game/PLPAT08.c,high,differs,read in full against the C,PS2 calls hoken_muriyari_chakuchi in case 0; the arcade build does not; healing amounts and the rest identical
 06129B00,set_tenguiwa,Source/Game/PLPAT09.c,high,differs-unread,event differences listed; gameplay code not read line by line,PS2 only: call ?effect_13_init | arcade only: call 060E3896
-0612A278,VS_ELENA_DS,Source/Game/Ck_Pass.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
 061376C6,suzi_offset_set,Source/Game/bg_sub.c,events,same,rule on event differences,events agree; the earlier flag was comparison noise
 0613A182,SsRequestPan,Source/Game/Sound3rd.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.00
 0613A300,SsBgmFadeOut,Source/Game/Sound3rd.c,medium,probable-wrong-name,rule on event differences,weak match and events agree only 0.00

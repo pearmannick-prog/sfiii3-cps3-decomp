@@ -11,7 +11,7 @@ W=$1; REF=$2; N=${3:-3}; T=$(dirname "$0"); S=$T/../symbols
 mkdir -p $W/sem; [ -f $W/sem/feedback.csv ] || echo "arcade_addr,name,verdict" > $W/sem/feedback.csv
 i=0
 while [ $i -lt $N ]; do
-  python3 $T/match.py $W/ps2_index.json $W/split-r1 $W/symbols.csv --content $W/content.csv,$W/sem/feedback.csv --overrides $S/overrides.csv | tail -2
+  python3 $T/match.py $W/ps2_index.json $W/split-r1 $W/symbols.csv --content $W/content.csv,$W/sem/feedback.csv --overrides $S/overrides.csv --pins $S/aligned_pins.csv | tail -2
   python3 $T/globals.py $W/ps2_index.json $W/split-r1 $W/symbols.csv $W/data_symbols.csv
   python3 $T/lift_patterns.py $W/sfiii3r1.bin $REF $W/symbols.csv $W/data_symbols.csv $W/lift.csv --split $W/split-r1 --ps2 $W/ps2_index.json --content $W/content.csv | grep -v positions
   python3 $T/ps2_index.py $REF $W/ps2_index_arc.json $T/../src/arcade > /dev/null

@@ -15,10 +15,10 @@ you must supply your own dump, and everything under `rom/` and `build/` is regen
   known to be wrong, so treat them as hints
 - CPU-AI pattern routines (`symbols/sfiii3r1_ai_routines.csv`): 5,167 of 5,204 lifted exactly;
   3,187 identical to PS2, 1,974 differ only by the button-mask layout, 6 really differ
-- arcade C: 1,978 generated functions in `src/arcade/generated/`, 14 written by hand in `src/arcade/hand/`
+- arcade C: 1,978 generated functions in `src/arcade/generated/`, 21 written by hand in `src/arcade/hand/`
 - **flagged-function review** (`symbols/sfiii3r1_flagged_review.csv`): every function the comparison flagged
   (402) has a verdict and the evidence it rests on:
-  about 45 read line by line;
+  about 52 read line by line;
   103 probably carry the wrong name; 53 differ only by an extra arcade `all_cgps_put_back` call;
   46 are the same once compiler noise is removed; 10 could not be compared (their PS2 file does not build for SH-2);
   170 differ on events but have not been read line by line (37 gameplay, 133 effects/opening/ending/menu code)
@@ -83,6 +83,11 @@ C in `src/arcade/` is derived from 3s-decomp and is therefore AGPL-3.0.
   the arcade build makes none of those calls, and no arcade function has been identified as it.
 - **Round flow** (`Check_Time_Over`, `Disp_Winner`, `Setup_Next_Fighter`, `setup_any_data`): same steps and
   timers; messages are drawn through different routines, and a few constants differ (details in the review file).
+- **Per-matchup CPU checks** (`Ck_Pass.c`, read by hand, `src/arcade/hand/Ck_Pass.c`): against Makoto, PS2 adds
+  one `Check_Special_Technique` call (pattern 95) to each of six functions; the arcade build has none of them,
+  so two of those functions just return 0. `VS_IBUKI_C` passes technique 24 where PS2 passes 8. Every other
+  matchup function agrees on calls and arguments. Names in this file are fixed by `tools/align_file.py`
+  (source order plus content; `symbols/aligned_pins.csv`), because many of the functions are identical.
 - **Time over** (`time_over_check`): the arcade build also calls `setup_gouki_wins`.
 - `PLW` is 0x498 bytes in the arcade build (0x46C in the PS2 headers); `plw` is at 0x02068C6C.
 - **Struct layout**: `PLW`/`WORK` fields sit at different offsets in the arcade build (for example `cp` is at

@@ -12,7 +12,7 @@ import numpy as np
 
 ap = argparse.ArgumentParser(); ap.add_argument("ps2"); ap.add_argument("split"); ap.add_argument("out")
 ap.add_argument("--code-hi", type=lambda s: int(s, 16), default=0x0613BDFA)
-ap.add_argument("--content", help="feedback from lift_patterns.py"); ap.add_argument("--overrides", help="hand-verified names (blank name = keep unnamed)"); ap.add_argument("-v", action="store_true"); a = ap.parse_args()
+ap.add_argument("--content", help="feedback from lift_patterns.py"); ap.add_argument("--overrides", help="hand-verified names (blank name = keep unnamed)"); ap.add_argument("--pins", help="names fixed by align_file.py (source order + content)"); ap.add_argument("-v", action="store_true"); a = ap.parse_args()
 PS = json.load(open(a.ps2)); AR = json.load(open(os.path.join(a.split, "functions.json")))
 P = {r["name"]: r for r in PS["functions"]}; A = {r["addr"]: r for r in AR["functions"]}
 pnames = set(P)
@@ -48,7 +48,7 @@ M, Minv, how = {}, {}, {}                      # name -> addr, addr -> name, nam
 REJECT, VERIFIED, MANUAL, BLOCKED = set(), set(), {}, set()
 def assign(n, x, stage, conf):
     if n in M or x in Minv or n not in P or x not in A or (n, x) in REJECT: return False
-    if stage != "manual" and (x in BLOCKED or n in MANUAL): return False
+    if stage not in ("manual", "aligned") and (x in BLOCKED or n in MANUAL): return False
     M[n] = x; Minv[x] = n; how[n] = (stage, round(float(conf), 3)); return True
 
 if a.overrides:
@@ -56,6 +56,11 @@ if a.overrides:
         x = int(r["arcade_addr"], 16); BLOCKED.add(x)
         if r["name"]: MANUAL[r["name"]] = x
     for n, x in MANUAL.items(): assign(n, x, "manual", 1.0)
+if a.pins:
+    pins = [(r["name"], int(r["arcade_addr"], 16)) for r in csv.DictReader(open(a.pins))]
+    pins = [(n, x) for n, x in pins if n not in MANUAL and x not in BLOCKED]
+    for n, x in pins: BLOCKED.add(x); MANUAL[n] = x
+    for n, x in pins: assign(n, x, "aligned", 1.0)
 
 SEMEQ = set()
 if a.content:
@@ -373,7 +378,7 @@ def audit_callers():
     poisons every function that calls it)."""
     dropped = 0
     for n, x in list(M.items()):
-        if how[n][0] in ("content", "manual"): continue
+        if how[n][0] in ("content", "manual", "aligned"): continue
         pc, ac = len(pcallers[n]), len(acallers[x])
         if max(pc, ac) >= 10 and (pc > 5 * ac or ac > 5 * pc):
             unassign(n); REJECT.add((n, x)); dropped += 1
