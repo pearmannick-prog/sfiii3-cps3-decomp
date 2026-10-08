@@ -9,11 +9,12 @@ you must supply your own dump, and everything under `rom/` and `build/` is regen
 ## Status
 - 10,096 functions found in the 990512 program (the splitter now drops 346 false entries: labels inside
   other functions and data values that only looked like code pointers)
-- about 7,700 matched to named functions from the PS2 decompilation (`symbols/sfiii3r1.csv`):
+- about 7,710 matched to named functions from the PS2 decompilation (`symbols/sfiii3r1.csv`):
   4,480 `exact` (every call argument verified), about 1,720 `events` (same calls, field writes and bit tests as the
-  PS2 C compiled for SH-2), 191 `manual` (read by hand or taken from a dispatcher or state table), about 850 high, 400 medium, 60 low
-- about 420 more are labelled as arcade-only, mostly the CPU AI of character slot 15 (`symbols/arcade_only.csv`)
-- about 1,980 remain unnamed, listed by category in `symbols/sfiii3r1_unnamed.csv`
+  PS2 C compiled for SH-2), 201 `manual` (read by hand or taken from a dispatcher or state table), about 850 high, 400 medium, 60 low
+- about 630 more are labelled as arcade-only: the CPU AI of character slot 15, a developer object and hit-box
+  tool, and operator test-menu pages (`symbols/arcade_only.csv`)
+- about 1,760 remain unnamed, listed by category in `symbols/sfiii3r1_unnamed.csv`
 - 299 global variables named (`symbols/sfiii3r1_data.csv`); these come from co-occurrence and at least one is
   known to be wrong, so treat them as hints
 - CPU-AI pattern routines (`symbols/sfiii3r1_ai_routines.csv`): 5,167 of 5,204 lifted exactly;
@@ -78,6 +79,10 @@ C in `src/arcade/` is derived from 3s-decomp and is therefore AGPL-3.0.
   and has its own 149 attack routines and 249 defence routines. They mirror Akuma's routine for routine;
   26 differ in their numbers (`src/arcade/slot15/`). The projectile-reaction table gives slot 15 the same entry as slot 14. This is presumably Shin Akuma, which is not confirmed.
   So arcade character numbers above 14 are one higher than the PS2 ones.
+- **Developer tool left in the program** (0x060A4748-0x060B27FF, about 165 functions, labelled `dbg_*` in
+  `symbols/arcade_only.csv`): a menu of 14 modes with screens titled BG SELECT, OBJECT LOOK, OBJECT EDIT,
+  HIT JUDGMENT, CATCH JUDJEMENT and PARTS. No caller of its top function was found, so it may be unreachable.
+  Just before it sit two operator test-menu pages (one is "7-2. GAME CONFIGURATION").
 - **Random numbers** (read by hand, `src/arcade/hand/PLS02.c`): the arcade build has four random functions
   (`random_32`, `random_16` and the two `_ex` ones) and none has the PS2 `Debug_w` reset. The PS2 `_com`
   variants, which give CPU-opponent code its own streams when `Play_Mode != 0`, do not exist: arcade

@@ -606,3 +606,13 @@ arcade_addr,name,note
 060860D4,Shell13,position in the per-character table of Com_VS_Shell / Com_Follow (21 slots; slot 15 uses the same entry as slot 14)
 060864D8,Shell14,position in the per-character table of Com_VS_Shell / Com_Follow (21 slots; slot 15 uses the same entry as slot 14)
 06083F70,Follow02,position in the per-character table of Com_VS_Shell / Com_Follow (21 slots; slot 15 uses the same entry as slot 14)
+0600171A,Entry_Task,owner of the 11-entry table at 0x0613D55C
+0600177E,Entry_00,"position in the Entry_Task table at 0x0613D55C (11 entries, Entry_03 at 3, 5 and 9, as PS2)"
+06001A72,Entry_01,"position in the Entry_Task table at 0x0613D55C (11 entries, Entry_03 at 3, 5 and 9, as PS2)"
+06001C8E,Entry_02,"position in the Entry_Task table at 0x0613D55C (11 entries, Entry_03 at 3, 5 and 9, as PS2)"
+06001CB6,Entry_03,"position in the Entry_Task table at 0x0613D55C (11 entries, Entry_03 at 3, 5 and 9, as PS2)"
+06001E10,Entry_04,"position in the Entry_Task table at 0x0613D55C (11 entries, Entry_03 at 3, 5 and 9, as PS2)"
+06002026,Entry_06,"position in the Entry_Task table at 0x0613D55C (11 entries, Entry_03 at 3, 5 and 9, as PS2)"
+060021B4,Entry_07,"position in the Entry_Task table at 0x0613D55C (11 entries, Entry_03 at 3, 5 and 9, as PS2)"
+060022CC,Entry_08,"position in the Entry_Task table at 0x0613D55C (11 entries, Entry_03 at 3, 5 and 9, as PS2)"
+0600247E,Entry_10,"position in the Entry_Task table at 0x0613D55C (11 entries, Entry_03 at 3, 5 and 9, as PS2)"

@@ -1,9 +1,4 @@
 arcade_addr,label,note
-0611CE6C,func_0611CE6C,player input check with no PS2 counterpart (waza_flag[13] -> routine 19)
-0612D584,rt_divs,compiler runtime: signed divide (r1 / r0); used by check_dm_att_guard
-0611CFDE,func_0611CFDE,enters player routines 11/12 from lever_dir; no PS2 counterpart
-0611D150,func_0611D150,leaves player routines 11/12 when the lever changes; no PS2 counterpart
-06079CA4,ComputerSG,"dispatcher for character slot 15, absent from PS2; routines mirror character 14 (Akuma) with different numbers - presumably Shin Akuma"
 0604CBD8,PassiveSG,"dispatcher for character slot 15, absent from PS2; routines mirror character 14 (Akuma) with different numbers - presumably Shin Akuma"
 0604CBF0,PassiveSG_0000,slot-15 AI routine; same calls as Passive14_0000
 0604CC24,PassiveSG_0001,slot-15 AI routine; same calls as Passive14_0001
@@ -254,6 +249,7 @@ arcade_addr,label,note
 060532C2,PassiveSG_0246,slot-15 AI routine; same calls as Passive14_0246
 0605336A,PassiveSG_0247,slot-15 AI routine; same calls as Passive14_0247
 060533F0,PassiveSG_0248,slot-15 AI routine; same calls as Passive14_0248
+06079CA4,ComputerSG,"dispatcher for character slot 15, absent from PS2; routines mirror character 14 (Akuma) with different numbers - presumably Shin Akuma"
 06079CBC,PatternSG_0000,slot-15 AI routine; same calls as Pattern14_0000
 06079CE4,PatternSG_0001,slot-15 AI routine; same calls as Pattern14_0001
 06079D02,PatternSG_0002,slot-15 AI routine; same calls as Pattern14_0002
@@ -403,11 +399,11 @@ arcade_addr,label,note
 0607D560,PatternSG_0146,slot-15 AI routine; same calls as Pattern14_0146
 0607D5F8,PatternSG_0147,slot-15 AI routine; same calls as Pattern14_0147
 0607D670,PatternSG_0148,slot-15 AI routine; same calls as Pattern14_0148
+06094DD8,Main_state0_arcade,"entry 0 of the 3-entry main table at 0x06194158 (entry 1 is Game, entry 2 is an empty stub)"
 060953C4,Game0_0_arcade,entry 0 of the 6-entry table used by the arcade Game00 (PS2 Game00 has 3 sub-states: Game0_0..Game0_2); correspondence not settled
 0609544C,Game0_1_arcade,entry 1 of the 6-entry table used by the arcade Game00 (PS2 Game00 has 3 sub-states: Game0_0..Game0_2); correspondence not settled
 06095460,Game0_2_arcade,entries 2 and 4 of the 6-entry table used by the arcade Game00 (PS2 Game00 has 3 sub-states: Game0_0..Game0_2); correspondence not settled
 06095478,Game0_3_arcade,entries 3 and 5 of the 6-entry table used by the arcade Game00 (PS2 Game00 has 3 sub-states: Game0_0..Game0_2); correspondence not settled
-06094DD8,Main_state0_arcade,"entry 0 of the 3-entry main table at 0x06194158 (entry 1 is Game, entry 2 is an empty stub)"
 06095B8A,Game2_2_arcade,entry 2 of the arcade Game02 table: empty
 0609D302,Lose_1_arcade,entry 0 of the Loser_Scene table at 0x0619463C; PS2 uses the Winner_Scene function here
 0609D548,Lose_4_arcade,entry 3 of the Loser_Scene table at 0x0619463C; PS2 uses the Winner_Scene function here
@@ -417,3 +413,215 @@ arcade_addr,label,note
 060A18BC,After_Bonus_e3_arcade,"entry 3 of the 7-entry After_Bonus table; PS2 uses a Next_CPU step here, arcade has a separate function (entry 4 is Next_CPU_3rd in both)"
 060A18E4,After_Bonus_e5_arcade,"entry 5 of the 7-entry After_Bonus table; PS2 uses a Next_CPU step here, arcade has a separate function (entry 4 is Next_CPU_3rd in both)"
 060A1A4C,After_Bonus_e6_arcade,"entry 6 of the 7-entry After_Bonus table; PS2 uses a Next_CPU step here, arcade has a separate function (entry 4 is Next_CPU_3rd in both)"
+060A3004,testmenu_cfgA_060A3004,operator test menu page built like the game configuration page (same layout of functions); called from system code at 0x06135A28; which page is not settled
+060A3060,testmenu_cfgA_060A3060,operator test menu page built like the game configuration page (same layout of functions); called from system code at 0x06135A28; which page is not settled
+060A30C4,testmenu_cfgA_060A30C4,operator test menu page built like the game configuration page (same layout of functions); called from system code at 0x06135A28; which page is not settled; entry 0 of its table at 0x06195810
+060A3322,testmenu_cfgA_060A3322,operator test menu page built like the game configuration page (same layout of functions); called from system code at 0x06135A28; which page is not settled; entry 1 of its table at 0x06195810
+060A33BC,testmenu_cfgA_060A33BC,operator test menu page built like the game configuration page (same layout of functions); called from system code at 0x06135A28; which page is not settled
+060A34FE,testmenu_cfgA_060A34FE,operator test menu page built like the game configuration page (same layout of functions); called from system code at 0x06135A28; which page is not settled; entry 4 of its table at 0x06195810
+060A35A6,testmenu_cfgA_060A35A6,operator test menu page built like the game configuration page (same layout of functions); called from system code at 0x06135A28; which page is not settled; entry 5 of its table at 0x06195810
+060A3648,testmenu_cfgA_060A3648,operator test menu page built like the game configuration page (same layout of functions); called from system code at 0x06135A28; which page is not settled; entry 6 of its table at 0x06195810
+060A3718,testmenu_cfgA_060A3718,operator test menu page built like the game configuration page (same layout of functions); called from system code at 0x06135A28; which page is not settled; entry 7 of its table at 0x06195810
+060A37DC,testmenu_cfgA_060A37DC,operator test menu page built like the game configuration page (same layout of functions); called from system code at 0x06135A28; which page is not settled; entry 8 of its table at 0x06195810
+060A38D8,testmenu_cfgA_060A38D8,operator test menu page built like the game configuration page (same layout of functions); called from system code at 0x06135A28; which page is not settled; entry 9 of its table at 0x06195810
+060A39A4,testmenu_cfgA_060A39A4,operator test menu page built like the game configuration page (same layout of functions); called from system code at 0x06135A28; which page is not settled; entry 10 of its table at 0x06195810
+060A3A50,testmenu_cfgA_060A3A50,operator test menu page built like the game configuration page (same layout of functions); called from system code at 0x06135A28; which page is not settled; entry 11 of its table at 0x06195810
+060A3A94,testmenu_cfgA_060A3A94,operator test menu page built like the game configuration page (same layout of functions); called from system code at 0x06135A28; which page is not settled
+060A3AF8,testmenu_cfgA_060A3AF8,operator test menu page built like the game configuration page (same layout of functions); called from system code at 0x06135A28; which page is not settled
+060A3B44,testmenu_cfgA_060A3B44,operator test menu page built like the game configuration page (same layout of functions); called from system code at 0x06135A28; which page is not settled
+060A3BBC,testmenu_cfgA_060A3BBC,operator test menu page built like the game configuration page (same layout of functions); called from system code at 0x06135A28; which page is not settled
+060A3BD6,testmenu_cfgA_060A3BD6,operator test menu page built like the game configuration page (same layout of functions); called from system code at 0x06135A28; which page is not settled
+060A3C30,testmenu_cfgA_060A3C30,operator test menu page built like the game configuration page (same layout of functions); called from system code at 0x06135A28; which page is not settled
+060A3C64,testmenu_cfgA_060A3C64,operator test menu page built like the game configuration page (same layout of functions); called from system code at 0x06135A28; which page is not settled
+060A3C9C,testmenu_gamecfg_060A3C9C,"operator test menu page ""7-2. GAME CONFIGURATION"" (difficulty, damage, timer, rounds, event, bonus game); entry 0 of its table at 0x06195908"
+060A3EB0,testmenu_gamecfg_060A3EB0,"operator test menu page ""7-2. GAME CONFIGURATION"" (difficulty, damage, timer, rounds, event, bonus game); entry 1 of its table at 0x06195908"
+060A3F1A,testmenu_gamecfg_060A3F1A,"operator test menu page ""7-2. GAME CONFIGURATION"" (difficulty, damage, timer, rounds, event, bonus game)"
+060A4028,testmenu_gamecfg_060A4028,"operator test menu page ""7-2. GAME CONFIGURATION"" (difficulty, damage, timer, rounds, event, bonus game); entry 2 of its table at 0x06195908"
+060A40DA,testmenu_gamecfg_060A40DA,"operator test menu page ""7-2. GAME CONFIGURATION"" (difficulty, damage, timer, rounds, event, bonus game); entry 3 of its table at 0x06195908"
+060A417C,testmenu_gamecfg_060A417C,"operator test menu page ""7-2. GAME CONFIGURATION"" (difficulty, damage, timer, rounds, event, bonus game); entry 4 of its table at 0x06195908"
+060A4248,testmenu_gamecfg_060A4248,"operator test menu page ""7-2. GAME CONFIGURATION"" (difficulty, damage, timer, rounds, event, bonus game); entry 5 of its table at 0x06195908"
+060A4312,testmenu_gamecfg_060A4312,"operator test menu page ""7-2. GAME CONFIGURATION"" (difficulty, damage, timer, rounds, event, bonus game); entry 6 of its table at 0x06195908"
+060A4414,testmenu_gamecfg_060A4414,"operator test menu page ""7-2. GAME CONFIGURATION"" (difficulty, damage, timer, rounds, event, bonus game); entry 7 of its table at 0x06195908"
+060A44E6,testmenu_gamecfg_060A44E6,"operator test menu page ""7-2. GAME CONFIGURATION"" (difficulty, damage, timer, rounds, event, bonus game); entry 8 of its table at 0x06195908"
+060A4598,testmenu_gamecfg_060A4598,"operator test menu page ""7-2. GAME CONFIGURATION"" (difficulty, damage, timer, rounds, event, bonus game); entry 9 of its table at 0x06195908"
+060A45B6,testmenu_gamecfg_060A45B6,"operator test menu page ""7-2. GAME CONFIGURATION"" (difficulty, damage, timer, rounds, event, bonus game)"
+060A461A,testmenu_gamecfg_060A461A,"operator test menu page ""7-2. GAME CONFIGURATION"" (difficulty, damage, timer, rounds, event, bonus game)"
+060A4666,testmenu_gamecfg_060A4666,"operator test menu page ""7-2. GAME CONFIGURATION"" (difficulty, damage, timer, rounds, event, bonus game)"
+060A46C0,testmenu_gamecfg_060A46C0,"operator test menu page ""7-2. GAME CONFIGURATION"" (difficulty, damage, timer, rounds, event, bonus game)"
+060A4714,testmenu_gamecfg_060A4714,"operator test menu page ""7-2. GAME CONFIGURATION"" (difficulty, damage, timer, rounds, event, bonus game)"
+060A4748,dbg_tool_main,"top of the developer object/hit-box tool: runs the 2-entry table at 0x06195BA8; no caller found, so it may be unreachable in this build"
+060A4858,dbg_060A4858,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A4886,dbg_060A4886,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A49BC,dbg_060A49BC,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A49F2,dbg_060A49F2,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A4BC8,dbg_060A4BC8,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A4BEE,dbg_tool_init,entry 0 of the table at 0x06195BA8
+060A4C2E,dbg_tool_menu,entry 1 of the table at 0x06195BA8; picks one of the 14 modes at 0x06195BB8
+060A4D30,dbg_060A4D30,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A4D92,dbg_mode0_bg_select,"mode 0 of the developer tool; screen title ""BG SELECT"""
+060A4DD2,dbg_mode0_bg_select_step0,"step 0 of mode 0 (""BG SELECT"")"
+060A4E48,dbg_mode0_bg_select_step1,"step 1 of mode 0 (""BG SELECT"")"
+060A4EDA,dbg_mode1_object_look,"mode 1 of the developer tool; screen title ""OBJECT LOOK"""
+060A4F60,dbg_mode1_object_look_step0,"step 0 of mode 1 (""OBJECT LOOK"")"
+060A500A,dbg_mode1_object_look_step1,"step 1 of mode 1 (""OBJECT LOOK"")"
+060A53A8,dbg_mode2_object_edit,"mode 2 of the developer tool; screen title ""OBJECT EDIT"""
+060A546C,dbg_mode2_object_edit_step0,"step 0 of mode 2 (""OBJECT EDIT"")"
+060A55F4,dbg_mode2_object_edit_step1,"step 1 of mode 2 (""OBJECT EDIT"")"
+060A5A4E,dbg_060A5A4E,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A5CEC,dbg_060A5CEC,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A5E32,dbg_mode3_object_edit_all,"mode 3 of the developer tool; screen title ""OBJECT EDIT -ALL CHAR VERSION-"""
+060A5EF0,dbg_mode3_object_edit_all_step0,"step 0 of mode 3 (""OBJECT EDIT -ALL CHAR VERSION-"")"
+060A6060,dbg_mode3_object_edit_all_step1,"step 1 of mode 3 (""OBJECT EDIT -ALL CHAR VERSION-"")"
+060A64BA,dbg_060A64BA,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A6564,dbg_060A6564,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A65D4,dbg_060A65D4,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A6678,dbg_060A6678,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A66EE,dbg_060A66EE,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A6744,dbg_060A6744,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A6A9A,dbg_mode4_hit_judgment,"mode 4 of the developer tool; screen title ""HIT JUDGMENT"""
+060A6B44,dbg_mode4_hit_judgment_step0,"step 0 of mode 4 (""HIT JUDGMENT"")"
+060A6DC0,dbg_mode4_hit_judgment_step1,"step 1 of mode 4 (""HIT JUDGMENT"")"
+060A7122,dbg_mode4_hit_judgment_step2,"step 2 of mode 4 (""HIT JUDGMENT"")"
+060A7200,dbg_060A7200,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A7780,dbg_060A7780,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A77CC,dbg_060A77CC,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A780C,dbg_060A780C,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A7868,dbg_mode4_hit_judgment_step3,"step 3 of mode 4 (""HIT JUDGMENT"")"
+060A7A7C,dbg_060A7A7C,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A7B04,dbg_060A7B04,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A7F60,dbg_060A7F60,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A7FB2,dbg_060A7FB2,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A7FF8,dbg_060A7FF8,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A820C,dbg_060A820C,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A8240,dbg_060A8240,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A827C,dbg_060A827C,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A8314,dbg_060A8314,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A8844,dbg_060A8844,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A9164,dbg_060A9164,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A9560,dbg_mode4_hit_judgment_step4,"step 4 of mode 4 (""HIT JUDGMENT"")"
+060A962A,dbg_mode4_hit_judgment_step5,"step 5 of mode 4 (""HIT JUDGMENT"")"
+060A96D4,dbg_060A96D4,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A96F0,dbg_060A96F0,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A9846,dbg_060A9846,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A98B8,dbg_060A98B8,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060A994C,dbg_catch_judgement,"dispatcher for the ""CATCH JUDJEMENT"" screen (table at 0x06195D4C)"
+060A9A04,dbg_catch_judgement_step0,"step 0 of ""CATCH JUDJEMENT"""
+060A9B4C,dbg_catch_judgement_step1,"step 1 of ""CATCH JUDJEMENT"""
+060A9E0C,dbg_mode5_tikuji_ikkatu,"mode 5 of the developer tool; screen title ""TIKUJI / IKKATU"""
+060A9E58,dbg_mode5_tikuji_ikkatu_step0,"step 0 of mode 5 (""TIKUJI / IKKATU"")"
+060A9FD0,dbg_mode5_tikuji_ikkatu_step1,"step 1 of mode 5 (""TIKUJI / IKKATU"")"
+060AA5B4,dbg_mode6_parts,"mode 6 of the developer tool; screen title ""PARTS"""
+060AA660,dbg_mode6_parts_step0,"step 0 of mode 6 (""PARTS"")"
+060AA872,dbg_mode6_parts_step1,"step 1 of mode 6 (""PARTS"")"
+060AAC9C,dbg_060AAC9C,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AAF1C,dbg_060AAF1C,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AAFFC,dbg_060AAFFC,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AB094,dbg_060AB094,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AB0D8,dbg_060AB0D8,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AB1E2,dbg_060AB1E2,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AB27C,dbg_060AB27C,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AB290,dbg_060AB290,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AB2AC,dbg_060AB2AC,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AB2BC,dbg_060AB2BC,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AB2D4,dbg_060AB2D4,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AB334,dbg_060AB334,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AB3B8,dbg_060AB3B8,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AB43A,dbg_060AB43A,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AB494,dbg_060AB494,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AB4D8,dbg_060AB4D8,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AB4E8,dbg_060AB4E8,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AB542,dbg_060AB542,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AB6A6,dbg_060AB6A6,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AB6D4,dbg_060AB6D4,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AB82A,dbg_060AB82A,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AB9F4,dbg_060AB9F4,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060ABD5A,dbg_060ABD5A,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060ABD5E,dbg_060ABD5E,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060ABD80,dbg_060ABD80,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060ABDA2,dbg_060ABDA2,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060ABDC2,dbg_060ABDC2,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060ABDE2,dbg_060ABDE2,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060ABE04,dbg_060ABE04,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060ABE40,dbg_060ABE40,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060ABE64,dbg_060ABE64,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060ABEFE,dbg_060ABEFE,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060ABF3C,dbg_060ABF3C,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AC12C,dbg_060AC12C,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AC1D2,dbg_060AC1D2,"part of the developer object/hit-box tool block 0x060A4748-0x060B27FF; prints the ""1P S1 UJA"" animation-table labels"
+060AC3C0,dbg_060AC3C0,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AC470,dbg_060AC470,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AC534,dbg_060AC534,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AC610,dbg_060AC610,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AC63C,dbg_060AC63C,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AC84C,dbg_060AC84C,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AC8BE,dbg_060AC8BE,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060ACCAE,dbg_060ACCAE,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060ACD24,dbg_060ACD24,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060ACE46,dbg_060ACE46,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060ACF96,dbg_060ACF96,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AD06A,dbg_060AD06A,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AD104,dbg_060AD104,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AD414,dbg_060AD414,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AD4C8,dbg_060AD4C8,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AD582,dbg_060AD582,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AD618,dbg_060AD618,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AD64A,dbg_060AD64A,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AD678,dbg_060AD678,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AD7AC,dbg_060AD7AC,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060ADB34,dbg_060ADB34,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060ADE80,dbg_060ADE80,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060ADE9E,dbg_060ADE9E,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060ADEEC,dbg_060ADEEC,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060ADF16,dbg_060ADF16,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AE46C,dbg_060AE46C,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AE49C,dbg_060AE49C,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AE552,dbg_060AE552,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AE5B8,dbg_060AE5B8,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AE7E8,dbg_060AE7E8,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AE9A4,dbg_060AE9A4,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AE9BC,dbg_060AE9BC,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AED5C,dbg_060AED5C,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AEDBE,dbg_060AEDBE,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AEDF8,dbg_060AEDF8,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AEE48,dbg_060AEE48,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AEE8E,dbg_060AEE8E,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AEF32,dbg_060AEF32,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AEF4E,dbg_060AEF4E,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF; prints BCP / BCE / BCB
+060AEFE8,dbg_060AEFE8,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AF06A,dbg_060AF06A,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AF388,dbg_060AF388,"part of the developer object/hit-box tool block 0x060A4748-0x060B27FF; prints KAKUSYUKU ON/OFF, FRAME ON/OFF"
+060AF3D2,dbg_060AF3D2,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AF502,dbg_060AF502,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AF51C,dbg_060AF51C,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF; prints HOLD / FREE / COPY / USER / DEFINE
+060AF924,dbg_060AF924,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060AFD04,dbg_060AFD04,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060B02AE,dbg_060B02AE,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060B02B8,dbg_060B02B8,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF; prints OVER WRITE / INSERT / ADDITION
+060B03A8,dbg_060B03A8,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF; prints NOTHING / PARTS 1-4
+060B090E,dbg_060B090E,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060B0A5E,dbg_060B0A5E,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060B0A74,dbg_060B0A74,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060B0AF0,dbg_060B0AF0,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060B0B4C,dbg_060B0B4C,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060B1280,dbg_060B1280,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060B1750,dbg_060B1750,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060B1C58,dbg_060B1C58,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060B1E18,dbg_060B1E18,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060B1F1C,dbg_060B1F1C,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060B20A4,dbg_060B20A4,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060B221C,dbg_060B221C,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060B252A,dbg_060B252A,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060B257A,dbg_060B257A,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060B25E4,dbg_060B25E4,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060B272C,dbg_060B272C,part of the developer object/hit-box tool block 0x060A4748-0x060B27FF
+060D4428,dbg_mode7,mode 7 of the developer tool (in the 0x060D4000 block; sets up a fight and runs the hit check)
+060D45B4,dbg_mode8,mode 8 of the developer tool (in the 0x060D4000 block; sets up a fight and runs the hit check)
+060D4740,dbg_mode9,mode 9 of the developer tool (in the 0x060D4000 block; sets up a fight and runs the hit check)
+060D48CC,dbg_mode10,mode 10 of the developer tool (in the 0x060D4000 block; sets up a fight and runs the hit check)
+060D4A58,dbg_mode11,mode 11 of the developer tool (in the 0x060D4000 block; sets up a fight and runs the hit check)
+060D4BE4,dbg_mode12,mode 12 of the developer tool (in the 0x060D4000 block; sets up a fight and runs the hit check)
+060D4C4C,dbg_mode13,mode 13 of the developer tool (in the 0x060D4000 block; sets up a fight and runs the hit check)
+0611CE6C,func_0611CE6C,player input check with no PS2 counterpart (waza_flag[13] -> routine 19)
+0611CFDE,func_0611CFDE,enters player routines 11/12 from lever_dir; no PS2 counterpart
+0611D150,func_0611D150,leaves player routines 11/12 when the lever changes; no PS2 counterpart
+0612D584,rt_divs,compiler runtime: signed divide (r1 / r0); used by check_dm_att_guard

@@ -2357,28 +2357,6 @@ void Passive11_0235(PLW* wk) {
     }
 }
 
-// 0x0603DBF4
-//   PS2 case 2: Com_Random_Select arg6 5 -> 6
-void Passive11_0237(PLW* wk) {
-    switch (CP_Index[wk->wu.id][0]) {
-    case 0:
-        Pierce_On(wk);
-        break;
-
-    case 1:
-        Jump(wk, 0);
-        break;
-
-    case 2:
-        Com_Random_Select(wk, 6, 0xD2, 0xEC, 0xA1, 0xCF, 6);
-        break;
-
-    default:
-        End_Pattern(wk);
-        break;
-    }
-}
-
 // 0x0603DC70
 //   PS2 case 0: Hi_Jump_Attack_Term arg4 0x200 -> 0x100
 //   PS2 case 0: Hi_Jump_Attack_Term arg8 0x200 -> 0x100

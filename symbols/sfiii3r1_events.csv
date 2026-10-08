@@ -1,5 +1,17 @@
 arcade_addr,name,grade,status,agreement,ps2_only,arcade_only,untranslated
 06000AB0,q_ldreq_error,medium,unknown,0.67,0,1,0
+0600171A,Entry_Task,manual,unknown,0.0,1,3,11
+0600177E,Entry_00,manual,unknown,0.0,1,5,11
+06001A72,Entry_01,manual,differs,0.11,2,14,13
+06001C38,Exit_Title_Sub_Entry,medium,unknown,0.0,0,10,36
+06001C8E,Entry_02,manual,same,0.67,0,2,3
+06001CB6,Entry_03,manual,unknown,0.0,2,16,1
+06001E10,Entry_04,manual,unknown,0.0,2,17,1
+06002026,Entry_06,manual,unknown,0.0,2,21,1
+060021B4,Entry_07,manual,unknown,0.0,2,21,1
+060022CC,Entry_08,manual,unknown,0.0,2,24,1
+0600247E,Entry_10,manual,unknown,0.0,3,27,5
+060026EE,Entry_Main_Sub,medium,unknown,0.03,13,21,6
 06005DA8,Zoomf_Init,medium,unknown,0.0,0,12,12
 06005E44,Frame_Up,medium,unknown,0.0,2,4,4
 06005E62,Frame_Down,medium,unknown,0.0,2,4,4
@@ -2339,7 +2351,6 @@ arcade_addr,name,grade,status,agreement,ps2_only,arcade_only,untranslated
 0603DB28,Passive11_0234,exact,same,1.0,0,0,0
 0603DB70,Passive11_0235,exact,same,1.0,0,0,0
 0603DBB8,Passive11_0236,exact,remapped,1.0,0,0,0
-0603DBF4,Passive11_0237,events,same,1.0,0,0,0
 0603DC70,Passive11_0238,exact,same,1.0,0,0,0
 0603DCCA,Passive11_0239,exact,same,1.0,0,0,0
 0603DD02,Passive11_0240,exact,same,1.0,0,0,0
@@ -4625,7 +4636,6 @@ arcade_addr,name,grade,status,agreement,ps2_only,arcade_only,untranslated
 0607011C,Pattern09_0075,exact,same,1.0,0,0,0
 0607015E,Pattern09_0076,exact,same,1.0,0,0,0
 060701AE,Pattern09_0077,exact,same,1.0,0,0,0
-06070244,Pattern09_0078,events,reordered,1.0,0,0,0
 060702CE,Pattern09_0079,exact,same,1.0,0,0,0
 0607034C,Pattern09_0080,exact,same,1.0,0,0,0
 060703A2,Pattern09_0081,exact,same,1.0,0,0,0

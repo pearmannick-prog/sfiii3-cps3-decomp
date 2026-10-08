@@ -1916,7 +1916,6 @@ arcade_addr,name,grade,status,detail
 0603DB28,Passive11_0234,exact,remap-only,case 0: Jump_Command_Attack_Term arg4 0x700 -> 0x380
 0603DB70,Passive11_0235,exact,remap-only,case 0: Hi_Jump_Command_Attack_Term arg4 0x700 -> 0x380
 0603DBB8,Passive11_0236,exact,identical,
-0603DBF4,Passive11_0237,events,different,case 2: Com_Random_Select arg6 5 -> 6
 0603DC70,Passive11_0238,exact,remap-only,case 0: Hi_Jump_Attack_Term arg4 0x200 -> 0x100; case 0: Hi_Jump_Attack_Term arg8 0x200 -> 0x100; case 1: J_Command_Attack arg4 0x700 -> 0x380
 0603DCCA,Passive11_0239,exact,identical,
 0603DD02,Passive11_0240,exact,identical,
@@ -4175,7 +4174,6 @@ arcade_addr,name,grade,status,detail
 0607011C,Pattern09_0075,exact,identical,
 0607015E,Pattern09_0076,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100; case 1: Normal_Attack arg2 0x402 -> 0x202
 060701AE,Pattern09_0077,exact,remap-only,case 0: Jump_Attack_Term arg4 0x400 -> 0x200
-06070244,Pattern09_0078,events,different,case 1: SA_Term -> Pierce_On; case 2: Pierce_On -> SA_Term
 060702CE,Pattern09_0079,exact,identical,
 0607034C,Pattern09_0080,exact,identical,
 060703A2,Pattern09_0081,exact,remap-only,case 0: Jump_Attack_Term arg4 0x200 -> 0x100

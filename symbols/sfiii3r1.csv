@@ -1,5 +1,17 @@
 arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 06000AB0,q_ldreq_error,Source/Game/GD3rd.c,similar,medium,0.28,,
+0600171A,Entry_Task,Source/Game/Entry.c,manual,manual,0.84,,
+0600177E,Entry_00,Source/Game/Entry.c,manual,manual,0.0,,
+06001A72,Entry_01,Source/Game/Entry.c,manual,manual,0.0,,0.25
+06001C38,Exit_Title_Sub_Entry,Source/Game/Entry.c,order-align,medium,1.0,,
+06001C8E,Entry_02,Source/Game/Entry.c,manual,manual,1.0,,1.0
+06001CB6,Entry_03,Source/Game/Entry.c,manual,manual,0.0,,0.0
+06001E10,Entry_04,Source/Game/Entry.c,manual,manual,0.0,,0.0
+06002026,Entry_06,Source/Game/Entry.c,manual,manual,0.0,,0.0
+060021B4,Entry_07,Source/Game/Entry.c,manual,manual,0.0,,0.0
+060022CC,Entry_08,Source/Game/Entry.c,manual,manual,0.0,,0.0
+0600247E,Entry_10,Source/Game/Entry.c,manual,manual,0.0,,0.0
+060026EE,Entry_Main_Sub,Source/Game/Entry.c,calls,medium,0.0,,0.5
 06005DA8,Zoomf_Init,Source/Game/bg.c,calls,medium,0.06,,
 06005E44,Frame_Up,Source/Game/bg.c,calls,medium,0.2,,
 06005E62,Frame_Down,Source/Game/bg.c,calls,medium,0.2,,
@@ -2340,7 +2352,6 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 0603DB28,Passive11_0234,Source/Game/PASS11.c,content,exact,1.0,,1.0
 0603DB70,Passive11_0235,Source/Game/PASS11.c,content,exact,1.0,,1.0
 0603DBB8,Passive11_0236,Source/Game/PASS11.c,content,exact,1.0,1.0,1.0
-0603DBF4,Passive11_0237,Source/Game/PASS11.c,content,events,0.81,0.75,1.0
 0603DC70,Passive11_0238,Source/Game/PASS11.c,content,exact,0.99,,1.0
 0603DCCA,Passive11_0239,Source/Game/PASS11.c,content,exact,1.0,,1.0
 0603DD02,Passive11_0240,Source/Game/PASS11.c,content,exact,0.59,,1.0
@@ -4626,7 +4637,6 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 0607011C,Pattern09_0075,Source/Game/active09.c,content,exact,1.0,,1.0
 0607015E,Pattern09_0076,Source/Game/active09.c,content,exact,1.0,,1.0
 060701AE,Pattern09_0077,Source/Game/active09.c,content,exact,1.0,1.0,1.0
-06070244,Pattern09_0078,Source/Game/active09.c,content,events,0.61,,0.92
 060702CE,Pattern09_0079,Source/Game/active09.c,content,exact,1.0,,1.0
 0607034C,Pattern09_0080,Source/Game/active09.c,content,exact,0.98,,1.0
 060703A2,Pattern09_0081,Source/Game/active09.c,content,exact,0.99,1.0,1.0
