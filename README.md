@@ -9,11 +9,11 @@ you must supply your own dump, and everything under `rom/` and `build/` is regen
 ## Status
 - 10,096 functions found in the 990512 program (the splitter now drops 346 false entries: labels inside
   other functions and data values that only looked like code pointers)
-- about 7,590 matched to named functions from the PS2 decompilation (`symbols/sfiii3r1.csv`):
+- about 7,700 matched to named functions from the PS2 decompilation (`symbols/sfiii3r1.csv`):
   4,480 `exact` (every call argument verified), about 1,720 `events` (same calls, field writes and bit tests as the
-  PS2 C compiled for SH-2), 72 `manual` (read by hand or taken from a dispatcher table), about 850 high, 400 medium, 60 low
-- 400 more are labelled as arcade-only CPU AI for character slot 15 (`symbols/arcade_only.csv`)
-- about 2,100 remain unnamed, listed by category in `symbols/sfiii3r1_unnamed.csv`
+  PS2 C compiled for SH-2), 191 `manual` (read by hand or taken from a dispatcher or state table), about 850 high, 400 medium, 60 low
+- about 420 more are labelled as arcade-only, mostly the CPU AI of character slot 15 (`symbols/arcade_only.csv`)
+- about 1,980 remain unnamed, listed by category in `symbols/sfiii3r1_unnamed.csv`
 - 299 global variables named (`symbols/sfiii3r1_data.csv`); these come from co-occurrence and at least one is
   known to be wrong, so treat them as hints
 - CPU-AI pattern routines (`symbols/sfiii3r1_ai_routines.csv`): 5,167 of 5,204 lifted exactly;
@@ -76,7 +76,7 @@ C in `src/arcade/` is derived from 3s-decomp and is therefore AGPL-3.0.
 - **An extra character slot** (found from the dispatcher tables at 0x0613E544 and 0x0613E5EC): the arcade
   program has 21 CPU-AI slots where PS2 has 20. Slot 15 sits between Akuma (14) and Chun-Li (PS2 15, arcade 16)
   and has its own 149 attack routines and 249 defence routines. They mirror Akuma's routine for routine;
-  26 differ in their numbers (`src/arcade/slot15/`). This is presumably Shin Akuma, which is not confirmed.
+  26 differ in their numbers (`src/arcade/slot15/`). The projectile-reaction table gives slot 15 the same entry as slot 14. This is presumably Shin Akuma, which is not confirmed.
   So arcade character numbers above 14 are one higher than the PS2 ones.
 - **Random numbers** (read by hand, `src/arcade/hand/PLS02.c`): the arcade build has four random functions
   (`random_32`, `random_16` and the two `_ex` ones) and none has the PS2 `Debug_w` reset. The PS2 `_com`
@@ -90,10 +90,13 @@ C in `src/arcade/` is derived from 3s-decomp and is therefore AGPL-3.0.
 - **`clear_chainex_check`** is called by PS2 in `Player_normal` and in every case of `jumping_cg_type_check`;
   the arcade build makes none of those calls, and no arcade function has been identified as it.
   (The function at 0x061185CE, once labelled with this name, is `set_kizetsu_status`.)
-- **Game flow** (`Game.c`, found from the state tables at 0x06194158-0x061941E4): the arcade `Game` has 18 states
-  where PS2 has 13; states 0-11 line up with PS2 `Game00`-`Game11`, states 12-17 are arcade-only. `Game02` has 6
-  sub-states (PS2 8) and `Next_Q` has 4 steps (PS2 6). The arcade `Game2_1` makes none of the PS2 HUD calls in
-  that place. These names come from table position and callees; most bodies are not read yet.
+- **Game flow** (`Game.c` and the scene files, found from the state tables in the data area; `tools/local_tables.py`
+  lists them): the arcade `Game` has 12 states, `Game00`-`Game11`, in the PS2 order; PS2 adds `Game12`.
+  `Game00` has 6 sub-states (PS2 3), `Game02` 6 (PS2 8), `Next_Q` 4 steps (PS2 6), `Next_CPU` 10 (PS2 12, no
+  load-wait steps), the exit table 7 (PS2 adds 3 handicap steps). `Loser_Scene` has its own functions for steps
+  1, 4, 5 and 6 where PS2 reuses the `Winner_Scene` ones, and `After_Bonus` has four steps of its own.
+  The arcade `Game2_1` makes none of the PS2 HUD calls in that place. These names come from table position and
+  callees; most bodies are not read yet.
 - **Round flow** (`Check_Time_Over`, `Disp_Winner`, `Setup_Next_Fighter`, `setup_any_data`): same steps and
   timers; messages are drawn through different routines, and a few constants differ (details in the review file).
 - **Per-matchup CPU checks** (`Ck_Pass.c`, read by hand, `src/arcade/hand/Ck_Pass.c`): against Makoto, PS2 adds

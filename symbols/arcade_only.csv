@@ -403,9 +403,17 @@ arcade_addr,label,note
 0607D560,PatternSG_0146,slot-15 AI routine; same calls as Pattern14_0146
 0607D5F8,PatternSG_0147,slot-15 AI routine; same calls as Pattern14_0147
 0607D670,PatternSG_0148,slot-15 AI routine; same calls as Pattern14_0148
-060953C4,Game12_arcade,entry 12 of the arcade Game state table; PS2 has no state with this number (PS2 Game12 is different)
-0609544C,Game13_arcade,entry 13 of the arcade Game state table; PS2 has no state with this number (PS2 Game12 is different)
-06095460,Game14_arcade,entries 14 and 16 of the arcade Game state table; PS2 has no state with this number (PS2 Game12 is different)
-06095478,Game15_arcade,entries 15 and 17 of the arcade Game state table; PS2 has no state with this number (PS2 Game12 is different)
+060953C4,Game0_0_arcade,entry 0 of the 6-entry table used by the arcade Game00 (PS2 Game00 has 3 sub-states: Game0_0..Game0_2); correspondence not settled
+0609544C,Game0_1_arcade,entry 1 of the 6-entry table used by the arcade Game00 (PS2 Game00 has 3 sub-states: Game0_0..Game0_2); correspondence not settled
+06095460,Game0_2_arcade,entries 2 and 4 of the 6-entry table used by the arcade Game00 (PS2 Game00 has 3 sub-states: Game0_0..Game0_2); correspondence not settled
+06095478,Game0_3_arcade,entries 3 and 5 of the 6-entry table used by the arcade Game00 (PS2 Game00 has 3 sub-states: Game0_0..Game0_2); correspondence not settled
 06094DD8,Main_state0_arcade,"entry 0 of the 3-entry main table at 0x06194158 (entry 1 is Game, entry 2 is an empty stub)"
 06095B8A,Game2_2_arcade,entry 2 of the arcade Game02 table: empty
+0609D302,Lose_1_arcade,entry 0 of the Loser_Scene table at 0x0619463C; PS2 uses the Winner_Scene function here
+0609D548,Lose_4_arcade,entry 3 of the Loser_Scene table at 0x0619463C; PS2 uses the Winner_Scene function here
+0609D56C,Lose_5_arcade,entry 4 of the Loser_Scene table at 0x0619463C; PS2 uses the Winner_Scene function here
+0609D596,Lose_6_arcade,entry 5 of the Loser_Scene table at 0x0619463C; PS2 uses the Winner_Scene function here
+060A1744,After_Bonus_e2_arcade,"entry 2 of the 7-entry After_Bonus table; PS2 uses a Next_CPU step here, arcade has a separate function (entry 4 is Next_CPU_3rd in both)"
+060A18BC,After_Bonus_e3_arcade,"entry 3 of the 7-entry After_Bonus table; PS2 uses a Next_CPU step here, arcade has a separate function (entry 4 is Next_CPU_3rd in both)"
+060A18E4,After_Bonus_e5_arcade,"entry 5 of the 7-entry After_Bonus table; PS2 uses a Next_CPU step here, arcade has a separate function (entry 4 is Next_CPU_3rd in both)"
+060A1A4C,After_Bonus_e6_arcade,"entry 6 of the 7-entry After_Bonus table; PS2 uses a Next_CPU step here, arcade has a separate function (entry 4 is Next_CPU_3rd in both)"

@@ -474,19 +474,19 @@ arcade_addr,name,note
 0607D560,,slot-15 AI routine (see arcade_only.csv)
 0607D5F8,,slot-15 AI routine (see arcade_only.csv)
 0607D670,,slot-15 AI routine (see arcade_only.csv)
-0609533A,Game,read by hand: copies an 18-entry table (PS2 has 13) and calls entry G_No[1]
-06095388,Game00,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
-060954A2,Game01,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
-06095A16,Game02,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
-06095DDE,Game03,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
-06095F5A,Game04,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
-06095750,Game05,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
-06096748,Game06,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
-06096CB4,Game07,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
-060964BE,Game08,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
-0609600A,Game09,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
-06096408,Game10,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
-06095830,Game11,position in the arcade Game state table at 0x06194174 (copied to the stack by Game) and matching callees
+0609533A,Game,read by hand: copies a 12-entry table (PS2 has 13; no Game12) and calls entry G_No[1]
+06095388,Game00,"position in the arcade Game state table at 0x06194174 (12 entries, copied to the stack by Game) and matching callees"
+060954A2,Game01,"position in the arcade Game state table at 0x06194174 (12 entries, copied to the stack by Game) and matching callees"
+06095A16,Game02,"position in the arcade Game state table at 0x06194174 (12 entries, copied to the stack by Game) and matching callees"
+06095DDE,Game03,"position in the arcade Game state table at 0x06194174 (12 entries, copied to the stack by Game) and matching callees"
+06095F5A,Game04,"position in the arcade Game state table at 0x06194174 (12 entries, copied to the stack by Game) and matching callees"
+06095750,Game05,"position in the arcade Game state table at 0x06194174 (12 entries, copied to the stack by Game) and matching callees"
+06096748,Game06,"position in the arcade Game state table at 0x06194174 (12 entries, copied to the stack by Game) and matching callees"
+06096CB4,Game07,"position in the arcade Game state table at 0x06194174 (12 entries, copied to the stack by Game) and matching callees"
+060964BE,Game08,"position in the arcade Game state table at 0x06194174 (12 entries, copied to the stack by Game) and matching callees"
+0609600A,Game09,"position in the arcade Game state table at 0x06194174 (12 entries, copied to the stack by Game) and matching callees"
+06096408,Game10,"position in the arcade Game state table at 0x06194174 (12 entries, copied to the stack by Game) and matching callees"
+06095830,Game11,"position in the arcade Game state table at 0x06194174 (12 entries, copied to the stack by Game) and matching callees"
 06095AA0,Game2_0,position in the arcade Game02 table at 0x061941D0 and matching callees
 06095B24,Game2_1,"read by hand: Game_timer++, Time_Control, Player_control ... hit_check_main_process; no cockpit calls as in PS2"
 06095B8E,Game2_3,read by hand: Game2_1 then timer countdown
@@ -518,7 +518,91 @@ arcade_addr,name,note
 060A2416,Next_Q_2nd,entry 1 of Next_Q's arcade table
 060A254C,Next_Q_3rd,entry 2 of Next_Q's arcade table
 060A2606,,entry 3 of Next_Q's arcade table; PS2 counterpart not settled
-060953C4,,arcade Game state 12; not PS2 Game12
-0609544C,,arcade Game state 13
-06095460,,arcade Game states 14 and 16
-06095478,,arcade Game states 15 and 17
+060953C4,,sub-state of the arcade Game00 (see arcade_only.csv)
+0609544C,,sub-state of the arcade Game00 (see arcade_only.csv)
+06095460,,sub-state of the arcade Game00 (see arcade_only.csv)
+06095478,,sub-state of the arcade Game00 (see arcade_only.csv)
+060C7D9C,op_bg0_0000,"position in op_bg0_move table (94 entries, same repetition pattern as PS2)"
+060C7DCE,op_bg0_0001,"position in op_bg0_move table (94 entries, same repetition pattern as PS2)"
+060C8D62,op_bg0_0015,"position in op_bg0_move table (94 entries, same repetition pattern as PS2)"
+060C82A6,op_bg0_0002,"position in op_bg0_move table (94 entries, same repetition pattern as PS2)"
+060C832C,op_bg0_0003,"position in op_bg0_move table (94 entries, same repetition pattern as PS2)"
+060C847A,op_bg0_0004,"position in op_bg0_move table (94 entries, same repetition pattern as PS2)"
+060C8590,op_bg0_0005,"position in op_bg0_move table (94 entries, same repetition pattern as PS2)"
+060C871A,op_bg0_0006,"position in op_bg0_move table (94 entries, same repetition pattern as PS2)"
+060C87E0,op_bg0_0007,"position in op_bg0_move table (94 entries, same repetition pattern as PS2)"
+060C888E,op_bg0_0008,"position in op_bg0_move table (94 entries, same repetition pattern as PS2)"
+060C9238,op_bg1_0003,"position in op_bg0_move table (94 entries, same repetition pattern as PS2)"
+060C8A3C,op_bg0_0010,"position in op_bg0_move table (94 entries, same repetition pattern as PS2)"
+060C8ADA,op_bg0_0011,"position in op_bg0_move table (94 entries, same repetition pattern as PS2)"
+060C8BC8,op_bg0_0012,"position in op_bg0_move table (94 entries, same repetition pattern as PS2)"
+060C8CB8,op_bg0_0013,"position in op_bg0_move table (94 entries, same repetition pattern as PS2)"
+060C8D5E,op_bg0_0014,"position in op_bg0_move table (94 entries, same repetition pattern as PS2)"
+060C8E9C,op_bg0_0016,"position in op_bg0_move table (94 entries, same repetition pattern as PS2)"
+06105DD6,efff5_0000,position in effect_F5_move table (12 entries as PS2)
+06105E64,efff5_1000,position in effect_F5_move table (12 entries as PS2)
+06105ED4,efff5_2000,position in effect_F5_move table (12 entries as PS2)
+06105F3A,efff5_3000,position in effect_F5_move table (12 entries as PS2)
+06105FA2,efff5_4000,position in effect_F5_move table (12 entries as PS2)
+06106034,efff5_5000,position in effect_F5_move table (12 entries as PS2)
+061060D4,efff5_6000,position in effect_F5_move table (12 entries as PS2)
+06106158,efff5_7000,position in effect_F5_move table (12 entries as PS2)
+061061B4,efff5_8000,position in effect_F5_move table (12 entries as PS2)
+06106216,efff5_9000,position in effect_F5_move table (12 entries as PS2)
+06106322,efff5_A000,position in effect_F5_move table (12 entries as PS2)
+06106442,efff5_B000,position in effect_F5_move table (12 entries as PS2)
+060C5CAA,opening_init2,entry 0 of oh_opening_demo table
+060C9548,opening_title,entry 2 of oh_opening_demo table
+06113264,effl3_0002,entry 2 of effect_L3_move table (was effl3_tobi)
+06097BAA,Ranking_00,owner of the 6-entry table at 0x06194244
+06097C1C,Ranking_00_2nd,entry 1 of Ranking_00 table
+06098064,Ranking_00_3rd,"entry 2 of Ranking_00 table and of Ranking_01 table, as PS2"
+0609CED4,Win_1st,entry 0 of Winner_Scene table at 0x06194624
+0609CFC8,Win_2nd,entry 1 of Winner_Scene table at 0x06194624
+0609D0BA,Win_3rd,entry 2 of Winner_Scene table at 0x06194624
+0609D1BE,Win_4th,entry 3 of Winner_Scene table at 0x06194624
+0609D1E2,Win_5th,entry 4 of Winner_Scene table at 0x06194624
+0609D20C,Win_6th,entry 5 of Winner_Scene table at 0x06194624
+0609D302,,Loser_Scene table entry; arcade has its own function where PS2 reuses Win_*
+0609D548,,Loser_Scene table entry; arcade has its own function where PS2 reuses Win_*
+0609D56C,,Loser_Scene table entry; arcade has its own function where PS2 reuses Win_*
+0609D596,,Loser_Scene table entry; arcade has its own function where PS2 reuses Win_*
+0609D3E8,Lose_2nd,entry 1 of Loser_Scene table
+0609D45E,Lose_3rd,entry 2 of Loser_Scene table
+0609223E,Cut_Cut_Loser,called by Loser_Scene where PS2 calls it
+06099580,Game_Manage_2_0,entry 0 of Game_Manage_2nd table
+060995B6,Game_Manage_2_1,entry 1 of Game_Manage_2nd table
+060A07E2,Exit_1st,entry 0 of the 7-entry exit table at 0x061954E8 (PS2 table also holds 3 Handicap entries)
+060A084E,Exit_2nd,entry 1 of the 7-entry exit table at 0x061954E8 (PS2 table also holds 3 Handicap entries)
+060A0912,Exit_3rd,entry 2 of the 7-entry exit table at 0x061954E8 (PS2 table also holds 3 Handicap entries)
+060A0974,Exit_4th,entry 3 of the 7-entry exit table at 0x061954E8 (PS2 table also holds 3 Handicap entries)
+060A0ADC,Exit_5th,entry 4 of the 7-entry exit table at 0x061954E8 (PS2 table also holds 3 Handicap entries)
+060A0B08,Exit_6th,entry 5 of the 7-entry exit table at 0x061954E8 (PS2 table also holds 3 Handicap entries)
+060A0B2E,Exit_7th,entry 6 of the 7-entry exit table at 0x061954E8 (PS2 table also holds 3 Handicap entries)
+060A0DB4,Next_CPU_1st,position in Next_CPU table at 0x06195504 (10 entries; PS2 has 12)
+060A0F26,Next_CPU_2nd,position in Next_CPU table at 0x06195504 (10 entries; PS2 has 12)
+060A0F4E,Next_CPU_3rd,position in Next_CPU table at 0x06195504 (10 entries; PS2 has 12)
+060A1050,Next_CPU_4th,position in Next_CPU table at 0x06195504 (10 entries; PS2 has 12)
+060A1224,Next_CPU_5th,position in Next_CPU table at 0x06195504 (10 entries; PS2 has 12)
+060A14EC,Next_CPU_6th,position in Next_CPU table at 0x06195504 (10 entries; PS2 has 12)
+060A2034,Next_Bonus_1st,position in Next_CPU table at 0x06195504 (10 entries; PS2 has 12)
+060A2128,Next_Bonus_2nd,position in Next_CPU table at 0x06195504 (10 entries; PS2 has 12)
+060A2192,Next_Bonus_3rd,position in Next_CPU table at 0x06195504 (10 entries; PS2 has 12)
+060A2300,Next_Bonus_End,position in Next_CPU table at 0x06195504 (10 entries; PS2 has 12)
+060A15C0,After_Bonus_1st,entry 0 of After_Bonus table at 0x0619552C
+060A1610,After_Bonus_2nd,entry 1 of After_Bonus table
+060A1744,,After_Bonus table entry with no PS2 counterpart settled
+060A18BC,,After_Bonus table entry with no PS2 counterpart settled
+060A18E4,,After_Bonus table entry with no PS2 counterpart settled
+060A1A4C,,After_Bonus table entry with no PS2 counterpart settled
+0608408C,Shell00,position in the per-character table of Com_VS_Shell / Com_Follow (21 slots; slot 15 uses the same entry as slot 14)
+0608440C,Shell01,position in the per-character table of Com_VS_Shell / Com_Follow (21 slots; slot 15 uses the same entry as slot 14)
+06085830,Shell11,position in the per-character table of Com_VS_Shell / Com_Follow (21 slots; slot 15 uses the same entry as slot 14)
+060847AC,Shell03,position in the per-character table of Com_VS_Shell / Com_Follow (21 slots; slot 15 uses the same entry as slot 14)
+06084B98,Shell04,position in the per-character table of Com_VS_Shell / Com_Follow (21 slots; slot 15 uses the same entry as slot 14)
+06084FF8,Shell05,position in the per-character table of Com_VS_Shell / Com_Follow (21 slots; slot 15 uses the same entry as slot 14)
+060853FC,Shell07,position in the per-character table of Com_VS_Shell / Com_Follow (21 slots; slot 15 uses the same entry as slot 14)
+06085CD0,Shell12,position in the per-character table of Com_VS_Shell / Com_Follow (21 slots; slot 15 uses the same entry as slot 14)
+060860D4,Shell13,position in the per-character table of Com_VS_Shell / Com_Follow (21 slots; slot 15 uses the same entry as slot 14)
+060864D8,Shell14,position in the per-character table of Com_VS_Shell / Com_Follow (21 slots; slot 15 uses the same entry as slot 14)
+06083F70,Follow02,position in the per-character table of Com_VS_Shell / Com_Follow (21 slots; slot 15 uses the same entry as slot 14)
