@@ -56,7 +56,8 @@ class Image:
                 elif w in (0x000B, 0x002B): delay = stop = True
                 elif hi == 0xA:
                     t = pc + 4 + s12(w & 0xFFF) * 2; delay = stop = True
-                    (work.append if self._local(f, t) else f.tails.add)(t)
+                    if self._local(f, t): work.append(t)
+                    else: f.tails.add(t); f.sites[pc] = t
                 elif hi == 0xB:
                     t = pc + 4 + s12(w & 0xFFF) * 2; f.calls.add(t); f.sites[pc] = t; delay = True
                 elif w >> 8 in (0x89, 0x8B, 0x8D, 0x8F):

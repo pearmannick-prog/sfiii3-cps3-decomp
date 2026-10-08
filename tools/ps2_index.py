@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Index the PS2 decompilation (crowded-street/3s-decomp) into per-function features.
-usage: ps2_index.py <3s-decomp dir> <out.json>
+usage: ps2_index.py <3s-decomp dir> <out.json> [overlay dir]
+Functions defined in the overlay dir (arcade-specific C) replace the PS2 ones of the same name.
 Output: {"functions": [name, file, addr, size, order, consts, calls, lines], "tables": [name, file, owner, items]}
 `size` is the distance to the next PS2 function symbol. `tables` are initialisers holding function pointers
 (items are function names, or null for anything else)."""
@@ -27,6 +28,28 @@ def num(text):
     except ValueError:
         try: return int(t.lstrip("0") or "0")
         except ValueError: return None
+
+def idents(body, params):
+    """Identifiers used in a body that are not locals or parameters (globals, macros, enum constants), in order."""
+    local = set(params); seen = []; st = [body]
+    decl_ids = set()
+    def declared(n):
+        while n is not None and n.type != "identifier":
+            n = n.child_by_field_name("declarator")
+        return n
+    nodes = []
+    while st:
+        n = st.pop(); nodes.append(n); st.extend(reversed(n.children))
+    for n in nodes:
+        if n.type == "declaration":
+            for ch in n.named_children:
+                d = declared(ch if ch.type != "init_declarator" else ch.child_by_field_name("declarator")) if ch.type in ("init_declarator", "identifier", "pointer_declarator", "array_declarator") else None
+                if d is not None: local.add(d.text.decode()); decl_ids.add(d.id)
+    for n in nodes:
+        if n.type == "identifier" and n.id not in decl_ids:
+            t = n.text.decode()
+            if t not in local and t not in seen: seen.append(t)
+    return seen
 
 def walk(node, consts, calls, neg=False):
     if node.type == "number_literal":
@@ -69,7 +92,9 @@ def tables_in(node):
         st.extend(reversed(n.children))
     return res
 src = os.path.join(ref, "src/anniversary/sf33rd")
-for root, _, files in sorted(os.walk(src)):
+overlay = sys.argv[3] if len(sys.argv) > 3 else None
+walks = list(sorted(os.walk(src))) + (list(sorted(os.walk(overlay))) if overlay else [])
+for root, _, files in walks:
     for fn in sorted(files):
         if not fn.endswith(".c"): continue
         path = os.path.join(root, fn)
@@ -84,13 +109,23 @@ for root, _, files in sorted(os.walk(src)):
                     consts, calls = [], []
                     walk(body, consts, calls)
                     a = syms.get(name, 0)
+                    pl = n.child_by_field_name("declarator").child_by_field_name("parameters")
+                    params = [fname(p) or "" for p in pl.named_children if p.type == "parameter_declaration"] if pl is not None else []
                     for t in tables_in(body): raw_tables.append((os.path.relpath(path, src), name, *t))
                     recs.append(dict(name=name, file=os.path.relpath(path, src), addr=a, size=size_of(a),
-                                     consts=consts, calls=calls, lines=body.end_point[0] - body.start_point[0]))
+                                     consts=consts, calls=calls, idents=idents(body, params), lines=body.end_point[0] - body.start_point[0]))
             elif n.type == "declaration":
                 for t in tables_in(n): raw_tables.append((os.path.relpath(path, src), None, *t))
             else:
                 stack.extend(reversed(n.children))
+if overlay:                              # later definitions (overlay) win; they keep the PS2 file for ordering
+    first = {}; over = 0
+    for r in recs:
+        if r["name"] in first and r["file"].startswith(".."):
+            r["file"] = first[r["name"]]["file"]; r["overlay"] = True; first[r["name"]]["dead"] = True; over += 1
+        else: first[r["name"]] = r
+    recs = [r for r in recs if not r.get("dead")]
+    print(f"{over} functions overridden by arcade-specific source")
 recs.sort(key=lambda r: (r["addr"] == 0, r["addr"]))
 for i, r in enumerate(recs): r["order"] = i
 names = {r["name"] for r in recs} | set(syms)

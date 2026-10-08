@@ -87,9 +87,54 @@ def seg_score(t, ri, k):
     v = ~np.isnan(tf[:, 0])
     return float(pair_score(tf[:, 0], tf[:, 1], rf[:, 0], rf[:, 1])[v].mean())
 
+placed_at = {}
 def commit(t, ri, k, sc):
+    placed_at[id(t)] = (ri, k)
     for nme, x in zip(t["items"], runs[ri]["items"][k:k + len(t["items"])]):
         if nme and x: assign(nme, x, "table", sc)
+
+def unassign(n):
+    x = M.pop(n, None)
+    if x is not None: Minv.pop(x, None); how.pop(n, None)
+
+def evidence(n, x):
+    """Content evidence for a pair, independent of where it sits: callee agreement and uncommon constants."""
+    ev = [v for v in (call_sim(n, x), const_sim(n, x)) if v is not None]
+    return sum(ev) / len(ev) if ev else None
+
+def stage_repair():
+    """Tables are first placed by shape alone. Once callees are named, re-test each placement on content
+    and move the ones that fail."""
+    bad = []
+    for t in tables:
+        if id(t) not in placed_at: continue
+        ri, k = placed_at[id(t)]
+        ev = [evidence(n, x) for n, x in zip(t["items"], runs[ri]["items"][k:k + len(t["items"])]) if n and x and M.get(n) == x]
+        ev = [e for e in ev if e is not None]
+        if len(ev) >= 4 and sum(ev) / len(ev) < 0.6: bad.append(t)
+    for t in bad:
+        for n in t["items"]:
+            if n and how.get(n, ("",))[0] == "table": unassign(n)
+        del placed_at[id(t)]
+    moved = 0
+    for t in sorted(bad, key=lambda t: -len(t["items"])):
+        items = t["items"]; n = len(items); best = (0.0, None, None); second = 0.0
+        for ri, r in enumerate(runs):
+            full = r["items"]
+            for k in range(len(full) - n + 1):
+                seg = full[k:k + n]
+                if any((nm is not None and x == 0) or (x in Minv and Minv[x] != nm) or (nm in M and M[nm] != x) for nm, x in zip(items, seg) if nm): continue
+                ev = [evidence(nm, x) for nm, x in zip(items, seg) if nm and x in A]
+                ev = [e for e in ev if e is not None]
+                if len(ev) < 4: continue
+                sc = sum(ev) / len(ev)
+                if sc > best[0]: second = best[0]; best = (sc, ri, k)
+                elif sc > second: second = sc
+        if a.v: print(f"REPAIR {t['file']} n={n} best={best[0]:.2f} second={second:.2f}")
+        if best[1] is not None and best[0] >= 0.7 and best[0] - second >= 0.15:
+            commit(t, best[1], best[2], best[0]); moved += 1
+        else: pending.append(t)
+    return len(bad), moved
 
 def stage_tables():
     global pending
@@ -287,13 +332,16 @@ for it in range(10):
     else: stage_order()
     n3 = len(M); stage_order_align()
     print(f"pass {it + 1}: tables +{n1 - n0}, calls +{n2 - n1}, order +{n3 - n2}, order-align +{len(M) - n3}  (total {len(M)})")
-    if len(M) == n0: break
+    if len(M) == n0:
+        nbad, moved = stage_repair()
+        print(f"repair: {nbad} table placements failed the content check, {moved} moved")
+        if not nbad or it > 6: break
 print(f"order check on table+call matches of pass 1: {inv0}/{tot0} adjacent same-file pairs out of order")
 
 def grade(n, x):
     shape = float(pair_score(*pfeat(n), *afeat(x))); cs = const_sim(n, x); cl = call_sim(n, x)
     if contradicted(n, x) or (cl is not None and cl < 0.3 and (cs or 0) < 0.5): g = "low"
-    elif (cs is not None and cs >= 0.5) or (cl is not None and cl >= 0.8) or (how[n][0] == "table" and shape >= 0.5): g = "high"
+    elif (cs is not None and cs >= 0.5) or (cl is not None and cl >= 0.8): g = "high"
     else: g = "medium"
     return g, round(shape, 2), "" if cs is None else round(cs, 2), "" if cl is None else round(cl, 2)
 
