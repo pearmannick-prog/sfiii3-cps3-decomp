@@ -18,7 +18,7 @@ you must supply your own dump, and everything under `rom/` and `build/` is regen
 - arcade C: 1,978 generated functions in `src/arcade/generated/`, 14 written by hand in `src/arcade/hand/`
 - **flagged-function review** (`symbols/sfiii3r1_flagged_review.csv`): every function the comparison flagged
   (402) has a verdict and the evidence it rests on:
-  about 30 read line by line;
+  about 36 read line by line;
   103 probably carry the wrong name; 53 differ only by an extra arcade `all_cgps_put_back` call;
   46 are the same once compiler noise is removed; 10 could not be compared (their PS2 file does not build for SH-2);
   170 differ on events but have not been read line by line (37 gameplay, 133 effects/opening/ending/menu code)
@@ -79,6 +79,10 @@ C in `src/arcade/` is derived from 3s-decomp and is therefore AGPL-3.0.
   indexed by player side, and adds `spmv_ng_flag2`. This is why the PS2 "option" tests on that flag look
   different or are missing in arcade functions, and probably what the arcade-only routines 11, 12 and 19 are
   for (character-specific movement); that last part is a guess.
+- **`clear_chainex_check`** is called by PS2 in `Player_normal` and in every case of `jumping_cg_type_check`;
+  the arcade build makes none of those calls, and no arcade function has been identified as it.
+- **Round flow** (`Check_Time_Over`, `Disp_Winner`, `Setup_Next_Fighter`, `setup_any_data`): same steps and
+  timers; messages are drawn through different routines, and a few constants differ (details in the review file).
 - **Time over** (`time_over_check`): the arcade build also calls `setup_gouki_wins`.
 - `PLW` is 0x498 bytes in the arcade build (0x46C in the PS2 headers); `plw` is at 0x02068C6C.
 - **Struct layout**: `PLW`/`WORK` fields sit at different offsets in the arcade build (for example `cp` is at
