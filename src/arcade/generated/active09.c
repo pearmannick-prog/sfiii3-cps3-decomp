@@ -505,6 +505,41 @@ void Pattern09_0077(PLW* wk) {
     }
 }
 
+// 0x06070244
+//   PS2 case 1: SA_Term -> Pierce_On
+//   PS2 case 2: Pierce_On -> SA_Term
+void Pattern09_0078(PLW* wk) {
+    switch (CP_Index[wk->wu.id][0]) {
+    case 0:
+        Search_Back_Term(wk, 0x60, 2, 0x4F);
+        break;
+
+    case 1:
+        Pierce_On(wk);
+        break;
+
+    case 2:
+        SA_Term(wk, 0x35, 0xFFFFFFFF, 0xFFFFFFFF, 0x9F);
+        break;
+
+    case 3:
+        Command_Attack(wk, 8, 1, 0xB, -1);
+        break;
+
+    case 4:
+        SA_Term(wk, 0xFFFFFFFF, 0x64, 0x3A, 0);
+        break;
+
+    case 5:
+        Command_Attack(wk, 8, 0x8016, 0xA, -1);
+        break;
+
+    default:
+        End_Pattern(wk);
+        break;
+    }
+}
+
 // 0x060703A2
 //   PS2 case 0: Jump_Attack_Term arg4 0x200 -> 0x100
 void Pattern09_0081(PLW* wk) {

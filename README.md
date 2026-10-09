@@ -9,12 +9,12 @@ you must supply your own dump, and everything under `rom/` and `build/` is regen
 ## Status
 - 10,096 functions found in the 990512 program (the splitter now drops 346 false entries: labels inside
   other functions and data values that only looked like code pointers)
-- about 7,710 matched to named functions from the PS2 decompilation (`symbols/sfiii3r1.csv`):
+- about 7,820 matched to named functions from the PS2 decompilation (`symbols/sfiii3r1.csv`):
   4,480 `exact` (every call argument verified), about 1,720 `events` (same calls, field writes and bit tests as the
-  PS2 C compiled for SH-2), 201 `manual` (read by hand or taken from a dispatcher or state table), about 850 high, 400 medium, 60 low
+  PS2 C compiled for SH-2), 290 `manual` (read by hand or taken from a dispatcher or state table), about 850 high, 400 medium, 60 low
 - about 630 more are labelled as arcade-only: the CPU AI of character slot 15, a developer object and hit-box
   tool, and operator test-menu pages (`symbols/arcade_only.csv`)
-- about 1,760 remain unnamed, listed by category in `symbols/sfiii3r1_unnamed.csv`
+- about 1,650 remain unnamed, listed by category in `symbols/sfiii3r1_unnamed.csv`
 - 299 global variables named (`symbols/sfiii3r1_data.csv`); these come from co-occurrence and at least one is
   known to be wrong, so treat them as hints
 - CPU-AI pattern routines (`symbols/sfiii3r1_ai_routines.csv`): 5,167 of 5,204 lifted exactly;
@@ -79,6 +79,12 @@ C in `src/arcade/` is derived from 3s-decomp and is therefore AGPL-3.0.
   and has its own 149 attack routines and 249 defence routines. They mirror Akuma's routine for routine;
   26 differ in their numbers (`src/arcade/slot15/`). The projectile-reaction table gives slot 15 the same entry as slot 14. This is presumably Shin Akuma, which is not confirmed.
   So arcade character numbers above 14 are one higher than the PS2 ones.
+- **Stage backgrounds** (`bg000.c`-`bg190.c`, bonus stages; named from the stage table at 0x06614C94 and the
+  order of functions inside each stage): the arcade table has 23 entries where PS2 `ta_move_tbl` has 22,
+  because the stage of character slot 14 is repeated for slot 15. Stage 10 has 12 functions (PS2 5), stage 7 has
+  7 (PS2 10), and each bonus stage has two layers (PS2 three). The stage entry functions contain their layer
+  dispatchers inline, so they compare as different without differing in content; several layer set-up
+  functions do differ (for example `bg0502_init00` also starts effect 12).
 - **Developer tool left in the program** (0x060A4748-0x060B27FF, about 165 functions, labelled `dbg_*` in
   `symbols/arcade_only.csv`): a menu of 14 modes with screens titled BG SELECT, OBJECT LOOK, OBJECT EDIT,
   HIT JUDGMENT, CATCH JUDJEMENT and PARTS. No caller of its top function was found, so it may be unreachable.

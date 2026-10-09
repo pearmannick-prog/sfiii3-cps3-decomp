@@ -1,7 +1,7 @@
 symbol,arcade_addr,votes
 Aborigine,02016D35,5
 Appear_Q,02016D89,2
-Bonus_Game_Flag,02016B3A,15
+Bonus_Game_Flag,02016B3A,16
 Bonus_Game_result,02016B3E,5
 Bonus_Stage_Level,02016B6E,2
 Bonus_Type,02016B89,8
@@ -75,10 +75,10 @@ aiuchi_flag,0201581E,2
 appear_type,02068C64,3
 base_y_pos,0202802C,3
 bgPalCodeOffset,0201138E,3
-bg_app,0202805B,4
+bg_app,0202805B,7
 bg_mvxy,02028010,22
 bg_stop,02028028,2
-bgw_ptr,02026FF4,72
+bgw_ptr,02026FF4,141
 bs2_floor,02016B90,5.2
 bs2_hosei,02016B96,3.0
 bs_scrrrl,02016B54,3

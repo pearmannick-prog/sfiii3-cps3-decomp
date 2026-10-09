@@ -2352,6 +2352,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0603DB28,Passive11_0234,exact,same,2,2,0xffffffff
 0603DB70,Passive11_0235,exact,same,2,2,0xffffffff
 0603DBB8,Passive11_0236,exact,remapped,2,2,
+0603DBF4,Passive11_0237,high,same,4,4,0xd2
 0603DC70,Passive11_0238,exact,same,3,3,
 0603DCCA,Passive11_0239,exact,same,2,2,
 0603DD02,Passive11_0240,exact,same,3,3,
@@ -4637,6 +4638,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0607011C,Pattern09_0075,exact,same,2,2,
 0607015E,Pattern09_0076,exact,same,3,3,
 060701AE,Pattern09_0077,exact,same,4,4,
+06070244,Pattern09_0078,high,reordered,7,6,0xffffffff
 060702CE,Pattern09_0079,exact,same,4,4,
 0607034C,Pattern09_0080,exact,same,4,4,
 060703A2,Pattern09_0081,exact,same,3,3,
@@ -6256,10 +6258,15 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060B6DB0,eff_hit_flag_clear,events,unknown,0,0,
 060B6E68,compel_dead_check,events,unknown,0,0,
 060B6EB0,win_lose_work_clear,medium,unknown,0,0,
+060B6FFC,cal_bg_speed_data_x,medium,unknown,0,2,
+060B70A2,cal_bg_speed_data_y,medium,unknown,0,2,
 060B71EA,ta0_init00,medium,unknown,1,2,
 060B720A,ta0_init01,high,same,1,1,
 060B7228,ta0_init02,medium,unknown,0,1,
 060B7246,ta0_move,medium,unknown,0,0,
+060B7D5E,bg_chase_move,events,same,2,2,
+060B7D94,chase_start_check,high,same,4,4,
+060B7F64,chase_xy_move,medium,same,0,0,
 060B8140,Bg_mv_tw,medium,unknown,0,0,
 060B81A8,x_right_check,medium,unknown,0,0,
 060B81CC,x_left_check,medium,unknown,0,0,
@@ -6279,6 +6286,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060B886E,bg_x_move_check,medium,unknown,0,0,
 060B8926,bg_y_move_check,medium,same,0,0,
 060B8A34,zoom_ud_check,high,same,5,5,
+060B9640,get_my_trans_mode,medium,unknown,0,0,
 060B964C,suzi_offset_set_sub,medium,same,0,0,
 060B96A8,suzi_sync_pos_set,high,unknown,1,1,0xffff
 060B96EE,Bg_Family_Set,events,unknown,2,2,0xffff
@@ -6293,51 +6301,141 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060B9B30,get_height_position,events,unknown,0,0,
 060B9C06,oh_bg_blk_w,medium,differs,1,1,0x259 0xffffffff
 060BA3C0,bg_work_clear,medium,unknown,0,0,
-060BACB4,bg_base_move_common,high,unknown,3,4,
+060BACB4,bg_base_move_common,medium,differs,3,4,
 060BACE4,bg_move_common,events,same,2,2,
 060BB48C,akebono_initialize,high,differs,2,17,
+060BBCE4,BG000,manual,differs,5,3,
+060BBD4A,bg0001,events,unknown,0,0,
 060BBD76,bg0001_init00,high,unknown,6,5,0x10
 060BBEAE,bg0000,events,unknown,0,0,
 060BBEDA,bg0000_init00,high,differs,0,1,
 060BBFCA,bg0000_demo,high,same,0,0,
+060BC0B0,BG010,manual,differs,6,4,
+060BC128,bg0101,events,unknown,0,0,
 060BC150,bg0101_init00,high,unknown,4,5,
+060BC1AA,bg0102,manual,unknown,0,0,
+060BC1D2,bg0102_init00,manual,same,0,0,
+060BC244,bg0103,manual,reordered,4,3,
 060BC2FC,BG020,medium,differs,9,5,
 060BC3BC,bg0201,events,unknown,0,0,
+060BC3E4,bg0201_init00,manual,same,0,0,
 060BC41A,bg0202,events,unknown,0,0,
-060BC470,bg0202_init00,high,differs,2,3,
+060BC470,bg1001_init00,high,differs,3,3,
 060BC4BE,bg020_sync_common,events,unknown,0,0,
 060BC4E6,bg020_sync_init,high,same,1,1,
 060BC548,bg020_sync_move,events,same,3,3,
+060BC58C,BG030,manual,differs,5,3,
+060BC5EA,bg0300,manual,unknown,0,0,
+060BC612,bg0300_init00,manual,unknown,0,1,
+060BC650,bg0301,manual,unknown,0,0,
+060BC678,bg0301_init00,manual,unknown,4,6,
 060BC71C,BG040,medium,differs,5,3,
 060BC782,bg0401,events,unknown,0,0,
-060BC7AE,bg0401_init00,high,unknown,4,5,
+060BC7AE,bg0401_init00,medium,differs,4,5,
 060BC808,bg0401_init01,medium,unknown,0,0,
 060BC814,bg0402,events,unknown,0,0,
 060BC840,bg0402_init00,medium,same,0,0,
 060BC876,bg0402_init01,medium,unknown,0,0,
-060BC9D2,bg1001_init00,high,unknown,3,3,
+060BC8BC,BG050,manual,differs,6,3,
+060BC94C,bg0501,manual,unknown,0,0,
+060BC974,bg0501_init00,manual,same,0,0,
+060BC9AA,bg0502,manual,unknown,0,0,
+060BC9D2,bg0502_init00,manual,differs,2,3,
+060BCA58,bg050_sync_common,manual,unknown,0,0,
+060BCA80,bg050_sync_init,manual,same,1,1,
+060BCAE2,bg050_sync_move,manual,same,3,3,
+060BCB14,BG180,manual,differs,6,3,
+060BCBA4,bg1801,manual,unknown,0,0,
+060BCBCC,bg1801_init00,manual,same,0,0,
+060BCC02,bg1801_move,manual,same,2,2,
+060BCC10,bg1802,manual,unknown,0,0,
+060BCC68,bg1802_init00,manual,differs,4,7,
+060BCCD0,bg1802_move,manual,same,3,3,
+060BCCE4,bg180_sync_common,manual,unknown,0,0,
+060BCD0C,bg180_sync_init,manual,same,1,1,
+060BCD6E,bg180_sync_move,manual,same,3,3,
+060BCDC8,BG060,manual,differs,6,4,
+060BCE40,bg0601,medium,unknown,0,0,
 060BCE68,bg0601_init00,medium,same,0,0,
-060BD240,bg0301_init00,high,unknown,4,4,
-060BD464,bg1000_init00,high,same,1,1,
+060BCEBE,bg0602,manual,unknown,0,0,
+060BCF0C,bg0602_init00,manual,unknown,5,6,
+060BCF90,bg0603,manual,reordered,4,3,
+060BD064,BG070,manual,differs,7,4,
+060BD0DC,bg0701,manual,unknown,0,0,
+060BD104,bg0701_init00,manual,unknown,0,7,
+060BD1AE,bg0701_move00,manual,unknown,2,3,
+060BD218,bg0702,manual,unknown,0,0,
+060BD240,bg0702_init00,manual,differs,3,4,
+060BD364,BG080,manual,differs,8,3,
+060BD43C,bg0801,events,unknown,0,0,
+060BD464,bg0801_init00,manual,unknown,0,1,
+060BD4AC,bg0802,events,unknown,0,0,
+060BD504,bg0802_init00,high,differs,4,5,
+060BD564,bg080_sync_common,events,unknown,0,0,
 060BD58C,bg080_sync_init,high,same,1,1,
 060BD624,bg080_sync_move,events,same,3,3,
 060BD684,BG090,events,same,8,8,
 060BD6DC,bg0901,events,same,1,1,
 060BD718,bg0901_init00,high,same,1,1,
 060BD74A,bg0902,events,same,1,1,
-060BD7B0,bg0902_init00,high,unknown,4,5,
+060BD7B0,bg0902_init00,high,differs,4,5,
 060BD800,bg_fam0900,high,reordered,9,7,
 060BD91E,bg090_demo_check,medium,same,0,0,
 060BD964,demo90_base,medium,unknown,0,0,
 060BDA52,jijii_win_bg,high,same,0,0,
 060BDAA8,jijii_win_bg2,medium,unknown,0,0,
+060BDB14,BG100,manual,differs,5,3,
+060BDB72,bg1000,events,unknown,0,0,
+060BDB9A,bg1000_init00,medium,unknown,1,2,
+060BDE58,BG120,manual,differs,8,6,
+060BDEE8,bg1201,events,unknown,0,0,
 060BDF10,bg1201_init00,medium,same,0,0,
-060BE1F4,bg0801_init00,medium,same,0,0,
-060BE39C,bg0602_init00,medium,unknown,5,5,
-060BE428,bg0501_init00,medium,same,0,0,
-060BE8FC,bg0300_init00,medium,same,0,0,
-060BEB54,bg0201_init00,medium,same,0,0,
-060BEBD4,bg1502_init00,medium,differs,9,9,
+060BDF46,bg1202,manual,unknown,0,0,
+060BDF94,bg1202_init00,manual,unknown,4,5,
+060BDFF0,bg_fam0C00,manual,reordered,4,3,
+060BE0E4,BG130,manual,differs,6,4,
+060BE15C,bg1301,manual,unknown,0,0,
+060BE184,bg1301_init00,manual,differs,1,2,
+060BE1CC,bg1300,manual,unknown,0,0,
+060BE1F4,bg1300_init00,manual,same,0,0,
+060BE22A,bg1302,manual,reordered,4,3,
+060BE2FC,BG140,manual,differs,6,4,
+060BE374,bg1401,manual,unknown,0,0,
+060BE39C,bg1401_init00,manual,differs,2,5,
+060BE400,bg1400,manual,unknown,0,0,
+060BE428,bg1400_init00,manual,same,0,0,
+060BE5D8,BG150,manual,differs,6,4,
+060BE650,bg1501,manual,unknown,0,0,
+060BE678,bg1501_init00,manual,same,0,0,
+060BE6AE,bg1502,manual,unknown,0,0,
+060BE6F8,bg1502_init00,manual,differs,9,11,
+060BE77C,bg1502_sync_common,manual,reordered,4,3,
+060BE85C,BG160,manual,differs,6,4,
+060BE8D4,bg1601,manual,unknown,0,0,
+060BE8FC,bg1601_init00,manual,same,0,0,
+060BE932,bg1602,manual,unknown,0,0,
+060BE95A,bg1602_init00,manual,differs,5,6,
+060BE9FC,bg1602_sync_common,manual,reordered,4,3,
+060BEAB4,BG190,manual,differs,6,4,
+060BEB2C,bg1901,manual,unknown,0,0,
+060BEB54,bg1901_init00,manual,same,0,0,
+060BEB8A,bg1902,manual,unknown,0,0,
+060BEBD4,bg1902_init00,manual,unknown,5,9,
+060BEC48,sync_bg14_common,manual,reordered,4,3,
+060BED24,Bonus_bg,manual,differs,7,2,
+060BED7C,bns01,manual,unknown,0,0,
+060BEDA4,bns01_init00,manual,differs,1,2,0x1c5 0x209
+060BEDF0,bns01_move,manual,same,2,2,
+060BEDFE,bns02,manual,unknown,0,0,
+060BEE26,bns02_init00,manual,differs,0,0,0x1c5 0x209
+060BEE5C,bns02_move,manual,same,2,2,
+060BEEA8,Bonus_bg2,manual,differs,7,2,
+060BEF00,bns11,manual,unknown,0,0,
+060BEF28,bns11_init00,manual,differs,7,7,0x1eb 0x223
+060BEFAA,bns11_move,manual,same,2,2,
+060BEFB8,bns12,manual,unknown,0,0,
+060BF024,bns12_init00,manual,differs,0,0,0x1f5 0x211
+060BF05A,bns12_move,manual,same,2,2,
 060BFFB0,appear_work_clear,medium,unknown,0,0,
 060BFFCE,home_visitor_check,events,unknown,0,0,
 060C0022,appear_data_set,events,unknown,0,0,
@@ -6433,6 +6531,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060C97DC,op_scrn_pos_set2,events,same,1,1,
 060C9880,Bg_Family_Set_op,high,differs,2,3,
 060C9EAE,fadeout_to_staff_roll,events,same,1,1,
+060C9F18,common_end_init00,high,unknown,5,15,
 060CA514,end_fam_set,events,differs,1,1,0x10 0xffff
 060CA54E,end_fam_set2,events,differs,1,1,0x10 0xffff
 060CA602,end_bg_pos_hosei,events,unknown,0,0,0xffff
@@ -6607,8 +6706,9 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060DD160,effect_03_init,events,same,1,1,
 060DD248,effect_04_move,medium,differs,3,3,
 060DD410,effect_05_move,events,differs,5,6,
+060DD486,effect_12_init,events,same,2,2,0x7f
 060DD59C,effect_06_move,events,differs,5,6,
-060DD612,effect_06_init,medium,differs,3,2,
+060DD612,effect_06_init,high,unknown,3,2,
 060DD728,effect_07_move,events,differs,5,6,
 060DD888,effect_08_move,medium,unknown,2,10,0x63
 060DDCF0,effect_09_move,events,same,1,1,
@@ -6645,7 +6745,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060E0628,effect_10_move,low,differs,3,8,0x11 0x16
 060E098C,effect_11_move,high,unknown,5,6,
 060E0A06,quake_level_middle,high,differs,10,6,
-060E0F34,effect_11_init,medium,differs,3,2,
+060E0F34,effect_11_init,high,unknown,3,2,
 060E1020,effect_12_move,high,differs,6,7,
 060E11C0,effect_13_move,high,differs,14,13,0x47 0x7f
 060E1582,tama_display,high,same,2,2,
@@ -6680,16 +6780,23 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060E4770,effect_18_move,low,unknown,2,6,
 060E4B4C,effect_19_move,events,differs,5,6,
 060E4BC4,eff19_quake_sub,high,same,6,6,
+060E4D90,effect_19_init,high,unknown,3,2,0x212c
 060E4E5C,effect_20_move,high,differs,4,5,0xffff
 060E505C,effect_21_move,high,differs,5,6,
+060E513A,effect_21_init,high,unknown,3,2,
 060E5298,effect_22_move,high,differs,7,8,0x17
+060E53FC,effect_22_init,medium,differs,2,1,
 060E549C,effect_23_move,low,differs,5,7,0x17 0x5b 0x67 0xffd4
-060E56EC,effect_24_move,high,unknown,5,6,
+060E56EC,effect_24_move,high,differs,5,6,
+060E5778,eff24_quake_sub,high,differs,13,12,
+060E591C,dog24_data_set,high,same,1,1,
+060E5A6E,effect_24_init,high,unknown,3,2,
 060E5B88,effect_25_move,high,differs,3,4,
 060E5CFE,eff25_02,high,unknown,8,7,
 060E5E56,eff25_06,high,unknown,9,9,
 060E5F42,eff25_08,high,unknown,4,4,
 060E5FE2,piece_set,events,same,1,1,
+060E6028,effect_25_init,high,unknown,4,3,
 060E6130,effect_26_move,high,differs,5,6,
 060E6202,eff26_00,events,same,2,2,
 060E626C,eff26_01,events,same,4,4,
@@ -6707,7 +6814,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060E6D2E,eff27_07,high,unknown,9,8,
 060E6DF4,eff27_08,events,same,2,2,
 060E6E34,eff27_09,events,same,3,3,
-060E6F38,effect_27_init,medium,differs,3,2,
+060E6F38,effect_27_init,high,unknown,3,2,
 060E70C8,effect_28_move,low,differs,0,8,
 060E729C,effect_29_move,high,differs,6,7,
 060E7444,effect_30_move,events,reordered,16,12,
@@ -6723,9 +6830,9 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060E883A,eff35_0004,high,differs,9,8,
 060E8944,eff35_0005,high,differs,3,4,0x49
 060E8A64,eff35_0006,high,differs,3,4,0x49
-060E8B68,effect_35_init,high,unknown,2,1,
+060E8B68,effect_35_init,medium,differs,2,1,
 060E8CC4,effect_36_move,low,unknown,8,23,
-060E91CA,effect_36_init,high,unknown,3,2,0x30
+060E91CA,effect_36_init,high,differs,3,2,0x30
 060E92A8,effect_37_move,high,differs,4,5,
 060E94DC,effect_38_move,high,unknown,1,1,0xffff
 060E9510,EFF38_WAIT,events,unknown,0,0,
@@ -6738,7 +6845,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060E9B82,Move_X_Sub_38,events,unknown,0,0,
 060E9BF2,Move_Y_Sub_38,events,unknown,0,0,
 060E9C50,EFF38_MOVE,high,unknown,1,1,0x17
-060E9E60,effect_38_init,high,unknown,2,1,0x15 0x17
+060E9E60,effect_38_init,high,differs,2,1,0x15 0x17
 060EA314,effect_39_move,high,unknown,1,1,0xffff
 060EA348,EFF39_WAIT,events,unknown,0,0,
 060EA36C,EFF39_SUDDENLY,events,same,1,1,
@@ -6746,7 +6853,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060EA6AE,EFF39_SLIDE_OUT,high,differs,2,3,
 060EA780,EFF39_KILL,medium,differs,1,2,
 060EA7C8,EFF39_MOVE,high,differs,4,5,
-060EA96A,effect_39_init,high,unknown,5,4,0x2090
+060EA96A,effect_39_init,high,differs,5,4,0x2090
 060EAA92,Get_Pos39,events,unknown,0,0,
 060EAB04,effect_40_move,medium,differs,3,2,
 060EACF0,effect_41_move,high,unknown,7,7,
@@ -6757,12 +6864,12 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060EB494,EFF42_KILL,events,differs,1,2,
 060EB500,EFF42_MOVE,events,same,2,2,
 060EB56C,Setup_Char_Index,events,same,0,0,
-060EB59E,effect_42_init,high,unknown,2,1,0x2090
+060EB59E,effect_42_init,medium,differs,2,1,0x2090
 060EB774,effect_43_move,high,differs,4,5,
-060EB7F8,effect_43_init,high,unknown,2,1,0x2090
+060EB7F8,effect_43_init,high,differs,2,1,0x2090
 060EB8EC,effect_44_move,high,differs,6,7,
+060EB982,effect_44_init,high,unknown,3,2,0x7f 0xffb3
 060EBAA4,effect_45_move,high,unknown,4,8,
-060EBC5E,effect_29_init,high,differs,3,3,0x1d 0x52 0x78 0x12c 0x200 0x4200
 060EBD10,effect_46_move,high,unknown,6,6,
 060EBD82,eff46_move,events,reordered,10,9,
 060EBE62,eff46_appear_check,events,same,0,0,
@@ -6770,9 +6877,9 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060EC1B4,effect_48_move,events,unknown,0,0,
 060EC1EA,eff48_0000,high,differs,3,4,
 060EC282,eff48_1000,medium,differs,9,7,
-060EC3A6,effect_48_init,medium,unknown,4,2,
+060EC3A6,effect_48_init,medium,differs,4,2,
 060EC4B8,effect_49_move,high,differs,7,8,0xffff
-060EC5BA,effect_49_init,high,unknown,2,1,0x2090
+060EC5BA,effect_49_init,high,differs,2,1,0x2090
 060EC6BC,Setup_Char_49,events,same,0,0,
 060EC718,effect_50_move,high,differs,7,8,
 060ECAF4,effect_51_move,low,differs,3,6,
@@ -6782,13 +6889,13 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060ED074,EFF52_SLIDE_IN,high,same,1,1,
 060ED152,EFF52_SLIDE_OUT,high,differs,2,3,
 060ED21A,EFF52_KILL,medium,differs,1,2,
-060ED262,effect_52_init,high,unknown,4,3,0x2090
+060ED262,effect_52_init,high,differs,4,3,0x2090
 060ED320,Setup_Char_52,events,same,1,1,
 060ED394,Setup_Pos_52,events,same,1,1,
 060ED49C,effect_53_move,high,differs,3,4,
 060ED574,effect_53_init,events,same,2,2,
 060ED5E8,effect_54_move,events,same,2,2,
-060ED62A,effect_54_init,medium,differs,3,2,0x212c
+060ED62A,effect_54_init,high,unknown,3,2,0x212c
 060ED70C,effect_55_move,high,differs,7,5,
 060ED956,effect_57_move,low,differs,2,2,0x6f86
 060ED9E8,effect_58_move,low,differs,13,2,0x10 0x11 0x12 0x222 0x480
@@ -6804,20 +6911,20 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060EF710,effect_66_move,low,differs,5,6,0x4000 0x8000 0xc004 0xc005 0xc00a 0xffff
 060EFA78,effect_67_move,medium,differs,10,5,
 060F02A8,effect_68_move,high,differs,27,23,
-060F057E,effect_68_init,medium,differs,3,2,0x212c
+060F057E,effect_68_init,high,unknown,3,2,0x212c
 060F069C,effect_69_move,high,unknown,1,1,0xffff
 060F06D0,EFF69_WAIT,events,unknown,0,0,
 060F06F0,EFF69_SLIDE_IN,events,same,2,2,
 060F084E,EFF69_SLIDE_OUT,high,differs,2,3,
 060F0920,EFF69_SUDDENLY,events,same,1,1,
-060F09EE,effect_69_init,high,unknown,2,1,0x2090
+060F09EE,effect_69_init,high,differs,2,1,0x2090
 060F0AB0,Setup_Clear_OBJ,medium,unknown,1,1,
 060F0AFC,effect_70_move,high,differs,9,8,
 060F0CE4,effect_70_init,events,same,2,2,0x50
-060F0D48,Setup_Eff70,medium,unknown,1,0,0x2090
+060F0D48,Setup_Eff70,medium,differs,1,0,0x2090
 060F0DA8,effect_71_move,high,differs,5,6,
 060F0EE8,effect_72_move,high,differs,5,6,
-060F0F76,effect_72_init,high,differs,3,2,0x212c
+060F0F76,effect_72_init,high,unknown,3,2,0x212c
 060F1070,effect_73_move,high,differs,15,14,
 060F1384,effect_74_move,medium,differs,4,11,
 060F16F8,effect_75_move,high,unknown,1,1,0xffff
@@ -6825,7 +6932,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060F174C,EFF75_SLIDE_IN,events,unknown,0,0,
 060F1750,EFF75_CHAR_CHANGE,events,same,1,1,
 060F17A4,EFF75_SUDDENLY,events,same,1,1,
-060F18CE,effect_75_init,high,unknown,2,1,
+060F18CE,effect_75_init,medium,differs,2,1,
 060F1970,effect_76_move,high,differs,3,1,0x30 0x38 0x42
 060F199E,EFF76_WAIT,high,same,1,1,
 060F1A24,EFF76_WAIT_BREAK_INTO,medium,unknown,0,0,
@@ -6841,10 +6948,9 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060F2CE4,Pause_Move,medium,unknown,1,1,
 060F2E0C,crow_fuss_check,events,same,0,0,
 060F2E98,crow_fuss_move,events,reordered,20,18,
-060F314E,effect_78_init,high,unknown,2,1,0x212c
 060F3214,effect_79_move,high,differs,25,2,0x2000 0x6000 0x8000 0xa000 0xffff 0x18000
 060F46F4,effect_80_move,high,differs,4,5,
-060F47E8,effect_80_init,high,unknown,2,1,0x3c
+060F47E8,effect_80_init,medium,differs,2,1,0x3c
 060F48EC,effect_81_move,high,differs,4,5,0x18
 060F4B38,effect_82_move,high,differs,18,13,0x300
 060F4E20,effect_83_move,high,differs,18,13,0x300
@@ -6862,9 +6968,10 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060F5794,eff85_9000,high,reordered,5,4,
 060F5890,swallow_sprize_check,events,unknown,0,0,
 060F58B2,eff85_0200,events,differs,1,2,
+060F58C8,effect_85_init,high,differs,2,1,0x212c
 060F5974,effect_86_move,high,differs,2,3,
 060F59D6,eff86_0000,events,same,2,2,
-060F5A56,effect_86_init,high,unknown,2,1,
+060F5A56,effect_86_init,medium,differs,2,1,
 060F5B30,effect_87_move,low,differs,0,7,
 060F6124,effect_90_move,low,unknown,5,7,0xff
 060F6230,effect_91_move,medium,differs,3,3,0x31 0xcd
@@ -6888,13 +6995,13 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060F6ED0,eff94_3000_0,events,same,2,2,
 060F6F2E,eff94_3000_4,events,same,0,0,
 060F6F60,eff94_4000,high,same,3,3,
-060F6FF8,effect_94_init,high,unknown,2,1,
+060F6FF8,effect_94_init,medium,differs,2,1,
 060F70EC,effect_95_move,high,differs,13,13,
-060F739E,effect_95_init,high,unknown,2,1,0x2090
+060F739E,effect_95_init,high,differs,2,1,0x2090
 060F74E4,effect_96_move,high,differs,4,5,
 060F75A8,effect_96_init,events,same,1,1,
 060F7690,effect_97_move,high,differs,12,9,
-060F7856,effect_97_init,high,differs,3,2,0x47
+060F7856,effect_97_init,high,unknown,3,2,0x47
 060F7948,effect_98_move,high,unknown,1,1,0xffff
 060F797C,EFF98_WAIT,events,unknown,0,0,
 060F799C,EFF98_SLIDE_IN,events,same,2,2,
@@ -6912,9 +7019,9 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060F94F8,effect_A7_init,high,same,1,1,
 060F95E8,effect_A8_move,medium,differs,8,5,0x11 0x16 0x19 0x44 0xffa9 0xffe9
 060F96BC,effect_A9_move,high,differs,9,10,0x62
-060F985C,effect_A9_init,high,unknown,3,2,
+060F985C,effect_A9_init,high,differs,3,2,
 060F99D4,effect_B0_move,high,differs,7,8,
-060F9AAE,effect_B0_init,high,unknown,3,2,
+060F9AAE,effect_B0_init,high,differs,3,2,
 060F9BD8,effect_B1_move,high,unknown,5,5,0x14
 060F9EB8,effB1_mark_change,events,unknown,0,0,0x14
 060FA0B0,effect_B2_move,high,differs,6,7,
@@ -6923,7 +7030,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060FA3CC,effect_B2_init,high,differs,3,4,
 060FA4F8,effect_B3_move,low,unknown,7,17,
 060FA97C,effect_B4_move,high,differs,6,7,
-060FAA5C,effect_B4_init,medium,differs,3,2,
+060FAA5C,effect_B4_init,high,unknown,3,2,
 060FAB24,effect_B5_move,high,unknown,10,15,
 060FADC4,current_name_move,events,reordered,3,2,
 060FAFB4,effect_B6_move,high,unknown,3,2,
@@ -6968,7 +7075,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060FE39C,effect_C6_move,high,differs,10,9,0x10
 060FE590,effect_C7_move,medium,unknown,5,6,
 060FE7D4,effect_C8_move,high,differs,10,10,
-060FE996,effect_C8_init,high,unknown,2,1,
+060FE996,effect_C8_init,medium,differs,2,1,
 060FEA58,effect_C9_move,high,differs,15,17,
 060FEFB4,effect_D0_move,high,differs,15,16,
 060FF19C,d0_speed_set,medium,unknown,0,0,
@@ -6996,12 +7103,12 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 06101568,effect_D7_init,events,same,2,2,
 061015EA,my_ball_live_check,events,same,2,2,
 061016A0,effect_D8_move,high,unknown,11,13,
-061018FA,effect_D8_init,high,unknown,4,3,
+061018FA,effect_D8_init,high,differs,4,3,
 06101A44,effect_D9_move,high,same,1,1,
 06101C2E,effect_D9_init,high,same,1,1,
 06101CE8,effect_E0_move,high,differs,11,11,0x7f
 06101F5E,Setup_Char_E0,events,same,0,0,
-06101F8E,effect_E0_init,high,unknown,4,3,0x2090
+06101F8E,effect_E0_init,high,differs,4,3,0x2090
 061020DC,effect_E1_move,high,unknown,2,2,0xffff
 06102138,effect_E1_init,events,same,1,1,
 06102214,effect_E3_move,low,differs,9,9,0x10 0x14 0x40 0xc0 0x200 0x50000
@@ -7044,12 +7151,12 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 061045B0,effe6_0029,high,differs,6,6,
 0610469C,effe6_0030,high,differs,6,5,0x130 0x134 0x138 0x13c 0x147 0x148
 06104748,effe6_init_common,events,same,1,1,
-06104776,effect_E6_init,high,unknown,2,1,0x4f 0x1229
+06104776,effect_E6_init,high,differs,2,1,0x4f 0x1229
 06104858,effect_E7_move,high,unknown,4,6,
 06104B5C,effect_E9_move,medium,unknown,4,6,0xff000000
 06104F10,effect_F0_move,low,differs,3,4,0x1b59 0x1b5e
 06105770,effect_F2_move,high,differs,8,9,
-061058E4,effect_F2_init,high,unknown,2,1,
+061058E4,effect_F2_init,medium,differs,2,1,
 06105BE8,effect_F4_move,low,differs,0,17,
 06105D7C,effect_F5_move,events,unknown,0,0,
 06105DD6,efff5_0000,manual,differs,0,5,
@@ -7067,7 +7174,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0610655E,effect_F5_init,medium,differs,0,1,
 06106628,effect_F6_move,low,unknown,3,8,
 061066F4,efff6_move_common,events,same,12,12,
-06106A2A,effect_F6_init,high,unknown,3,2,0x30
+06106A2A,effect_F6_init,high,differs,3,2,0x30
 06106E9C,effect_F8_move,high,differs,5,6,
 061070E8,effect_F9_move,medium,unknown,4,5,
 0610748A,efff9_wk_set,high,same,0,0,0x37
@@ -7087,7 +7194,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 06108C18,effect_G9_init,events,same,1,1,
 06108CB4,effect_H0_move,medium,unknown,3,4,0x7eea
 06108EA0,eff_h1_move,high,differs,5,7,
-06108FFE,effect_H1_init,high,unknown,2,1,
+06108FFE,effect_H1_init,high,differs,2,1,
 061090D4,effect_H2_move,high,differs,3,4,
 061091E6,effect_H2_init,events,same,1,1,
 06109AD0,effect_H6_move,high,unknown,3,4,0x1e 0x3c 0xff81 0xffff
@@ -7097,9 +7204,10 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0610B1E4,effect_I3_move,high,same,1,1,
 0610B310,effect_I3_init,events,same,1,1,
 0610B398,effect_I4_move,high,unknown,5,6,
+0610B5D2,effect_I4_init,high,differs,3,2,0x212c
 0610B8B8,effect_I6_move,medium,differs,4,4,
 0610B91E,effi6_line_move,events,same,1,1,
-0610B962,effect_I6_init,high,unknown,2,1,
+0610B962,effect_I6_init,high,differs,2,1,
 0610BA40,effect_I7_move,high,differs,7,8,
 0610BB86,effI7_pos_hosei,medium,unknown,0,0,
 0610BC80,effect_I8_move,high,differs,9,10,
@@ -7141,6 +7249,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0610DFC4,dragonfly_stop_timer,high,same,1,1,
 0610E000,dragonfly_line_set,high,same,1,1,
 0610E058,dragonfly_move_next,medium,unknown,0,0,
+0610E076,effect_J8_init,high,unknown,3,2,0x212c
 0610E17C,effect_J9_move,high,differs,9,7,0x11 0x21ff
 0610E2C0,get_c2_quake,medium,same,0,0,
 0610E2DC,effect_J9_init,high,same,1,1,
@@ -7184,7 +7293,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0611067A,EFFK6_SUDDENLY,high,same,4,4,
 06110780,EFFK6_KILL,medium,differs,1,2,
 061107EC,EFFK6_MOVE,high,differs,3,4,
-0611097E,effect_K6_init,high,unknown,4,3,0x2090
+0611097E,effect_K6_init,high,differs,4,3,0x2090
 06110A54,Setup_1st_PosK6,high,reordered,4,3,
 06110B68,Get_PosK6,high,differs,3,2,
 06110CAA,Setup_CharK6,events,same,0,0,
@@ -7222,7 +7331,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 061135B4,effect_L4_move,medium,differs,6,5,0xd0 0xffff
 061136F8,effect_L5_move,medium,differs,5,4,
 06113760,hukuromoji_move,high,same,3,3,
-0611386E,effect_L5_init,high,unknown,2,1,0x52
+0611386E,effect_L5_init,high,differs,2,1,0x52
 06113938,effect_L6_move,high,differs,5,6,
 0611398E,effl6_flont,events,same,8,8,
 06113A82,effl6_back,events,same,8,8,
@@ -7247,7 +7356,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 06114CC0,cat_run_set2,events,same,1,1,
 06114CEE,cat_walk_set,events,same,1,1,
 06114D4A,don_run_set,events,same,1,1,
-06114D78,effect_M0_init,high,unknown,2,1,0x3a
+06114D78,effect_M0_init,high,differs,2,1,0x3a
 06114E08,effect_M1_move,high,differs,4,5,
 06114E9E,effm1_move,high,same,9,9,
 06115110,effect_M2_move,high,differs,5,6,
@@ -7259,10 +7368,10 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 06115D34,effect_M6_move,high,differs,9,9,
 06115EFC,effect_M7_move,events,differs,3,4,
 06115F3E,effm7_move,high,same,9,9,
-06116114,effect_M7_init,high,unknown,2,1,
+06116114,effect_M7_init,high,differs,2,1,
 0611626C,effect_M8_move,high,unknown,4,5,
 061163AC,effm8_move_win,high,unknown,2,1,
-061163F8,effect_M8_init,high,unknown,7,4,
+061163F8,effect_M8_init,high,differs,7,4,
 0611675C,Player_control,manual,differs,11,14,0x14 0x28 0x32
 06116980,plcnt_init,events,same,1,1,
 061169C0,init_app_10000,high,unknown,2,2,
@@ -7702,7 +7811,6 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0612E0A8,Bg_On_W,medium,unknown,0,1,
 0612E118,Bg_Off_W,medium,unknown,0,1,
 0612E51C,Scrn_Move_Set,events,same,0,0,
-061376C6,suzi_offset_set,events,differs,1,0,
 06138918,Switch_Screen,medium,unknown,1,0,
 061394D0,SsRequest,medium,unknown,3,1,
 0613A182,SsRequestPan,medium,differs,3,2,0x3f 0x40

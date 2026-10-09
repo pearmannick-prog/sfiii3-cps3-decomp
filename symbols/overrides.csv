@@ -616,3 +616,92 @@ arcade_addr,name,note
 060021B4,Entry_07,"position in the Entry_Task table at 0x0613D55C (11 entries, Entry_03 at 3, 5 and 9, as PS2)"
 060022CC,Entry_08,"position in the Entry_Task table at 0x0613D55C (11 entries, Entry_03 at 3, 5 and 9, as PS2)"
 0600247E,Entry_10,"position in the Entry_Task table at 0x0613D55C (11 entries, Entry_03 at 3, 5 and 9, as PS2)"
+060BBCE4,BG000,position in the stage table at 0x06614C94 (23 entries; PS2 ta_move_tbl has 22: the arcade repeats the BG140 entry for character slot 15)
+060BC0B0,BG010,position in the stage table at 0x06614C94 (23 entries; PS2 ta_move_tbl has 22: the arcade repeats the BG140 entry for character slot 15)
+060BC58C,BG030,position in the stage table at 0x06614C94 (23 entries; PS2 ta_move_tbl has 22: the arcade repeats the BG140 entry for character slot 15)
+060BC8BC,BG050,position in the stage table at 0x06614C94 (23 entries; PS2 ta_move_tbl has 22: the arcade repeats the BG140 entry for character slot 15)
+060BCDC8,BG060,position in the stage table at 0x06614C94 (23 entries; PS2 ta_move_tbl has 22: the arcade repeats the BG140 entry for character slot 15)
+060BD064,BG070,position in the stage table at 0x06614C94 (23 entries; PS2 ta_move_tbl has 22: the arcade repeats the BG140 entry for character slot 15)
+060BD364,BG080,position in the stage table at 0x06614C94 (23 entries; PS2 ta_move_tbl has 22: the arcade repeats the BG140 entry for character slot 15)
+060BDB14,BG100,position in the stage table at 0x06614C94 (23 entries; PS2 ta_move_tbl has 22: the arcade repeats the BG140 entry for character slot 15)
+060BDE58,BG120,position in the stage table at 0x06614C94 (23 entries; PS2 ta_move_tbl has 22: the arcade repeats the BG140 entry for character slot 15)
+060BE0E4,BG130,position in the stage table at 0x06614C94 (23 entries; PS2 ta_move_tbl has 22: the arcade repeats the BG140 entry for character slot 15)
+060BE2FC,BG140,position in the stage table at 0x06614C94 (23 entries; PS2 ta_move_tbl has 22: the arcade repeats the BG140 entry for character slot 15)
+060BE5D8,BG150,position in the stage table at 0x06614C94 (23 entries; PS2 ta_move_tbl has 22: the arcade repeats the BG140 entry for character slot 15)
+060BE85C,BG160,position in the stage table at 0x06614C94 (23 entries; PS2 ta_move_tbl has 22: the arcade repeats the BG140 entry for character slot 15)
+060BCB14,BG180,position in the stage table at 0x06614C94 (23 entries; PS2 ta_move_tbl has 22: the arcade repeats the BG140 entry for character slot 15)
+060BEAB4,BG190,position in the stage table at 0x06614C94 (23 entries; PS2 ta_move_tbl has 22: the arcade repeats the BG140 entry for character slot 15)
+060BED24,Bonus_bg,position in the stage table at 0x06614C94 (23 entries; PS2 ta_move_tbl has 22: the arcade repeats the BG140 entry for character slot 15)
+060BEEA8,Bonus_bg2,position in the stage table at 0x06614C94 (23 entries; PS2 ta_move_tbl has 22: the arcade repeats the BG140 entry for character slot 15)
+060BC1AA,bg0102,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BC1D2,bg0102_init00,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BC244,bg0103,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BC3E4,bg0201_init00,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BC5EA,bg0300,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BC612,bg0300_init00,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BC650,bg0301,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BC678,bg0301_init00,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BC94C,bg0501,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BC974,bg0501_init00,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BC9AA,bg0502,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BC9D2,bg0502_init00,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BCA58,bg050_sync_common,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BCA80,bg050_sync_init,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BCAE2,bg050_sync_move,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BCEBE,bg0602,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BCF0C,bg0602_init00,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BCF90,bg0603,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BD464,bg0801_init00,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BDF46,bg1202,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BDF94,bg1202_init00,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BDFF0,bg_fam0C00,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BE15C,bg1301,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BE184,bg1301_init00,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BE1CC,bg1300,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BE1F4,bg1300_init00,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BE22A,bg1302,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BE650,bg1501,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BE678,bg1501_init00,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BE6AE,bg1502,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BE6F8,bg1502_init00,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BE77C,bg1502_sync_common,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BE8D4,bg1601,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BE8FC,bg1601_init00,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BE932,bg1602,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BE95A,bg1602_init00,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BE9FC,bg1602_sync_common,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BCBA4,bg1801,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BCBCC,bg1801_init00,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BCC02,bg1801_move,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BCC10,bg1802,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BCC68,bg1802_init00,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BCCD0,bg1802_move,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BCCE4,bg180_sync_common,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BCD0C,bg180_sync_init,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BCD6E,bg180_sync_move,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BEB2C,bg1901,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BEB54,bg1901_init00,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BEB8A,bg1902,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BEBD4,bg1902_init00,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BEC48,sync_bg14_common,position in the stage file: same number of functions as PS2 between this stage entry and the next
+060BD0DC,bg0701,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
+060BD104,bg0701_init00,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
+060BD1AE,bg0701_move00,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
+060BD218,bg0702,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
+060BD240,bg0702_init00,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
+060BE374,bg1401,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
+060BE39C,bg1401_init00,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
+060BE400,bg1400,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
+060BE428,bg1400_init00,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
+060BED7C,bns01,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
+060BEDA4,bns01_init00,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
+060BEDF0,bns01_move,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
+060BEDFE,bns02,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
+060BEE26,bns02_init00,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
+060BEE5C,bns02_move,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
+060BEF00,bns11,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
+060BEF28,bns11_init00,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
+060BEFAA,bns11_move,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
+060BEFB8,bns12,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
+060BF024,bns12_init00,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
+060BF05A,bns12_move,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
