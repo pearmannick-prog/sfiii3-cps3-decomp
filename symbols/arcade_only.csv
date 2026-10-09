@@ -624,4 +624,82 @@ arcade_addr,label,note
 0611CE6C,func_0611CE6C,player input check with no PS2 counterpart (waza_flag[13] -> routine 19)
 0611CFDE,func_0611CFDE,enters player routines 11/12 from lever_dir; no PS2 counterpart
 0611D150,func_0611D150,leaves player routines 11/12 when the lever changes; no PS2 counterpart
+0612D1FC,hw_palette_0612D1FC,system code that touches palette RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0612D2A0,hw_palette_0612D2A0,system code that touches palette RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0612D304,hw_palette_0612D304,system code that touches palette RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0612D378,hw_palette_0612D378,system code that touches palette RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0612D428,rt_divs32,compiler runtime: signed 32-bit divide (r1 / r0); 117 callers
+0612D4DC,rt_divu32,compiler runtime: unsigned 32-bit divide (r1 / r0)
 0612D584,rt_divs,compiler runtime: signed divide (r1 / r0); used by check_dm_att_guard
+0612D5D4,rt_mods32,compiler runtime: signed divide variant that keeps the sign (probably remainder); not read to the end
+0612D834,rt_shift_var,compiler runtime: shift by a variable count through a jump table
+0612DDCC,hw_video_0612DDCC,system code that touches video registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0612E610,hw_video_0612E610,"system code that touches video registers, text layer registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)"
+0612F2B0,hw_sound_0612F2B0,system code that touches sound registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0612FB28,hw_eeprom_0612FB28,system code that touches EEPROM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0612FD30,hw_eeprom_0612FD30,system code that touches EEPROM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+061301C4,hw_sprite_061301C4,system code that touches sprite RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0613025A,hw_palette_0613025A,system code that touches palette RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06130316,hw_video_06130316,"system code that touches video registers, character RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)"
+061303FE,hw_text_061303FE,system code that touches text layer RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06131144,hw_gfxflash_06131144,"system code that touches graphics flash window, video registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)"
+06131314,hw_video_06131314,"system code that touches video registers, graphics flash window (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)"
+061313B4,hw_video_061313B4,"system code that touches video registers, graphics flash window (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)"
+06131710,hw_scsi_06131710,system code that touches SCSI (CD-ROM) controller (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06131780,hw_scsi_06131780,system code that touches SCSI (CD-ROM) controller (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06132E48,hw_input_06132E48,system code that touches input ports (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06132FD8,hw_input_06132FD8,system code that touches input ports (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0613313C,hw_port0A00_0613313C,system code that touches ports at 0x05000A00 (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+061332D4,hw_input_061332D4,system code that touches input ports (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06133334,hw_input_06133334,system code that touches input ports (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+061334B0,hw_eeprom_061334B0,system code that touches EEPROM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+061335D8,hw_eeprom_061335D8,system code that touches EEPROM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06133670,hw_eeprom_06133670,system code that touches EEPROM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+061337A2,hw_eeprom_061337A2,system code that touches EEPROM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0613388A,hw_eeprom_0613388A,system code that touches EEPROM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0613391C,hw_eeprom_0613391C,system code that touches EEPROM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06133940,hw_eeprom_06133940,system code that touches EEPROM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06133974,hw_eeprom_06133974,system code that touches EEPROM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06133998,hw_eeprom_06133998,system code that touches EEPROM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+061339CC,hw_eeprom_061339CC,system code that touches EEPROM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06133A20,hw_eeprom_06133A20,system code that touches EEPROM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06133C00,hw_eeprom_06133C00,system code that touches EEPROM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06134022,hw_eeprom_06134022,system code that touches EEPROM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06134292,hw_eeprom_06134292,system code that touches EEPROM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0613456C,hw_text_0613456C,system code that touches text layer RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06134AC0,hw_text_06134AC0,system code that touches text layer RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06136782,hw_charram_06136782,system code that touches character RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+061367EE,hw_sprite_061367EE,system code that touches sprite RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0613696C,hw_video_0613696C,system code that touches video registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06136996,hw_video_06136996,system code that touches video registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06136F90,hw_sprite_06136F90,system code that touches sprite RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+061376C6,hw_sprite_061376C6,system code that touches sprite RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06137B08,hw_video_06137B08,"system code that touches video registers, interrupt/control registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)"
+06137DF0,hw_video_06137DF0,system code that touches video registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0613809A,hw_video_0613809A,system code that touches video registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+061380E4,hw_video_061380E4,system code that touches video registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06138168,hw_charram_06138168,"system code that touches character RAM, video registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)"
+061388DA,hw_palette_061388DA,"system code that touches palette RAM, text layer registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)"
+06138918,text_fill,"read by hand: fills the text layer (character, attribute; 0xFFFF keeps the old value); was misnamed Switch_Screen"
+061389D6,hw_text_061389D6,system code that touches text layer RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06138A96,hw_text_06138A96,system code that touches text layer RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06138B74,hw_text_06138B74,system code that touches text layer RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06138BA0,text_print,"read by hand: writes a string to the text layer at (x, y) with one attribute word; 87 callers"
+06138BD0,hw_text_06138BD0,system code that touches text layer RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06138D2C,hw_text_06138D2C,system code that touches text layer RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06138E90,hw_text_06138E90,system code that touches text layer RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06138FA2,hw_text_06138FA2,system code that touches text layer RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06139004,hw_text_06139004,system code that touches text layer RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06139204,hw_text_06139204,system code that touches text layer RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+061392B4,hw_text_061392B4,system code that touches text layer RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+06139316,hw_port0A00_06139316,"system code that touches ports at 0x05000A00, sound registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)"
+0613A21C,hw_sound_0613A21C,system code that touches sound registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0613A272,hw_sound_0613A272,system code that touches sound registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0613A334,hw_sound_0613A334,system code that touches sound registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0613A9C0,hw_cpu_0613A9C0,system code that touches SH-2 on-chip registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0613AA48,hw_video_0613AA48,system code that touches video registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0613AA5E,hw_video_0613AA5E,system code that touches video registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0613AAB0,hw_video_0613AAB0,system code that touches video registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0613AAF0,hw_video_0613AAF0,"system code that touches video registers, character RAM (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)"
+0613AB5C,hw_video_0613AB5C,system code that touches video registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)
+0613B3CC,hw_sound_0613B3CC,system code that touches sound registers (addresses seen through the 0x2xxxxxxx mirror; device names follow the CPS-3 memory map as I recall it from MAME)

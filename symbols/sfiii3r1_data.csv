@@ -97,7 +97,7 @@ arcade_addr,name,functions,agreement
 0201556C,Select_Status,9,1.0
 02015570,mes_already,3,1.0
 02015572,CP_No,44,0.88
-02015582,CP_Index,5288,1.0
+02015582,CP_Index,5286,1.0
 020155A2,Pattern_Index,58,1.0
 020155A6,Timer_00,43,0.98
 020155AA,Timer_01,10,1.0
@@ -114,7 +114,7 @@ arcade_addr,name,functions,agreement
 020155EE,M_No,10,1.0
 020155F6,Demo_Time_Stop,4,0.8
 020155F8,VS_Tech,21,0.95
-020155FC,Exec_Wipe,7,0.78
+020155FC,Exec_Wipe,7,0.88
 020155FE,Guard_Type,6,0.86
 02015602,Separate_Area,2,1.0
 02015610,Shell_Address,3,1.0
@@ -136,7 +136,7 @@ arcade_addr,name,functions,agreement
 02015648,Counter_Attack,15,1.0
 0201564C,Face_MV_Time,2,0.67
 0201564D,Before_Jump,4,1.0
-02015660,Stop_Combo,10,0.83
+02015660,Stop_Combo,10,0.91
 02015661,Stock_Hit_Flag,19,1.0
 02015663,Rolling_Flag,2,1.0
 02015667,Ignore_Entry,5,0.83

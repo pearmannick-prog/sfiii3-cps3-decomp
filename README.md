@@ -12,9 +12,9 @@ you must supply your own dump, and everything under `rom/` and `build/` is regen
 - about 7,820 matched to named functions from the PS2 decompilation (`symbols/sfiii3r1.csv`):
   4,480 `exact` (every call argument verified), about 1,720 `events` (same calls, field writes and bit tests as the
   PS2 C compiled for SH-2), 290 `manual` (read by hand or taken from a dispatcher or state table), about 850 high, 400 medium, 60 low
-- about 630 more are labelled as arcade-only: the CPU AI of character slot 15, a developer object and hit-box
-  tool, and operator test-menu pages (`symbols/arcade_only.csv`)
-- about 1,650 remain unnamed, listed by category in `symbols/sfiii3r1_unnamed.csv`
+- about 700 more are labelled as arcade-only: the CPU AI of character slot 15, a developer object and hit-box
+  tool, operator test-menu pages, and system code grouped by the hardware it touches (`symbols/arcade_only.csv`)
+- about 1,570 remain unnamed, listed by category in `symbols/sfiii3r1_unnamed.csv`
 - 299 global variables named (`symbols/sfiii3r1_data.csv`); these come from co-occurrence and at least one is
   known to be wrong, so treat them as hints
 - CPU-AI pattern routines (`symbols/sfiii3r1_ai_routines.csv`): 5,167 of 5,204 lifted exactly;
@@ -85,6 +85,11 @@ C in `src/arcade/` is derived from 3s-decomp and is therefore AGPL-3.0.
   7 (PS2 10), and each bonus stage has two layers (PS2 three). The stage entry functions contain their layer
   dispatchers inline, so they compare as different without differing in content; several layer set-up
   functions do differ (for example `bg0502_init00` also starts effect 12).
+- **System code** (end of the program, from 0x0612CCB8): hardware is reached through the 0x24000000/0x25000000
+  mirror of 0x04000000/0x05000000. 78 functions are labelled by device (`hw_text_*`, `hw_eeprom_*`,
+  `hw_video_*`, `hw_sound_*`, ...). `text_print` (0x06138BA0, 87 callers) writes a string to the text layer;
+  `text_fill` (0x06138918) fills it. The PS2 HUD drawing code (`sc_sub.c`) has no direct counterpart; the
+  arcade draws its HUD text through these. Divide and shift helpers of the compiler runtime sit at 0x0612D428.
 - **Developer tool left in the program** (0x060A4748-0x060B27FF, about 165 functions, labelled `dbg_*` in
   `symbols/arcade_only.csv`): a menu of 14 modes with screens titled BG SELECT, OBJECT LOOK, OBJECT EDIT,
   HIT JUDGMENT, CATCH JUDJEMENT and PARTS. No caller of its top function was found, so it may be unreachable.

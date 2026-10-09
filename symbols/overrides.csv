@@ -705,3 +705,4 @@ arcade_addr,name,note
 060BEFB8,bns12,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
 060BF024,bns12_init00,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
 060BF05A,bns12_move,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
+06138918,,arcade system function (see arcade_only.csv)

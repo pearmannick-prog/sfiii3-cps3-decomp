@@ -2352,7 +2352,6 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0603DB28,Passive11_0234,exact,same,2,2,0xffffffff
 0603DB70,Passive11_0235,exact,same,2,2,0xffffffff
 0603DBB8,Passive11_0236,exact,remapped,2,2,
-0603DBF4,Passive11_0237,high,same,4,4,0xd2
 0603DC70,Passive11_0238,exact,same,3,3,
 0603DCCA,Passive11_0239,exact,same,2,2,
 0603DD02,Passive11_0240,exact,same,3,3,
@@ -4638,7 +4637,6 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0607011C,Pattern09_0075,exact,same,2,2,
 0607015E,Pattern09_0076,exact,same,3,3,
 060701AE,Pattern09_0077,exact,same,4,4,
-06070244,Pattern09_0078,high,reordered,7,6,0xffffffff
 060702CE,Pattern09_0079,exact,same,4,4,
 0607034C,Pattern09_0080,exact,same,4,4,
 060703A2,Pattern09_0081,exact,same,3,3,
@@ -5984,20 +5982,20 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 06095388,Game00,manual,unknown,4,1,
 060954A2,Game01,manual,differs,23,13,0x1e 0x35 0x42
 06095674,Game01_Sub,manual,unknown,12,21,
-06095750,Game05,manual,differs,15,11,
-06095830,Game11,manual,differs,17,14,
+06095750,Game05,manual,unknown,15,11,
+06095830,Game11,manual,unknown,17,14,
 06095A16,Game02,manual,unknown,2,1,
 06095AA0,Game2_0,manual,differs,16,7,
 06095B24,Game2_1,manual,unknown,22,17,
 06095B8E,Game2_3,manual,same,2,2,
-06095C3C,Game2_5,high,differs,14,14,
+06095C3C,Game2_5,high,unknown,14,14,
 06095DDE,Game03,manual,differs,13,4,
 06095F5A,Game04,manual,unknown,6,3,
 0609600A,Game09,manual,differs,36,32,
 0609638C,Bonus_Sub,manual,unknown,11,15,0x15
-06096408,Game10,manual,differs,14,11,
-060964BE,Game08,manual,differs,14,11,
-06096748,Game06,manual,differs,29,21,0x14
+06096408,Game10,manual,unknown,14,11,
+060964BE,Game08,manual,unknown,14,11,
+06096748,Game06,manual,unknown,29,21,0x14
 06096A42,Check_Disp_Ranking,manual,same,2,2,
 06096AB4,Disp_Rank_Sub,manual,unknown,0,0,
 06096B98,Disp_Ranking,manual,differs,16,16,0x39
@@ -6012,9 +6010,9 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060980CA,Ranking_00_6th,events,same,1,1,
 06098118,Ranking_01,medium,unknown,0,0,
 06098152,Ranking_01_1st,high,unknown,7,4,0x39
-06098188,Ranking_01_2nd,high,differs,26,18,0x68
+06098188,Ranking_01_2nd,high,unknown,26,18,0x68
 060984E6,Ranking_01_4th,events,same,0,0,
-06098504,Ranking_01_5th,medium,differs,7,10,0x666
+06098504,Ranking_01_5th,high,differs,7,10,0x666
 06099326,Game_Manage_1st,high,differs,12,10,0x11
 060994EA,Clear_1Stage_Work,events,unknown,0,0,
 0609954E,Game_Manage_2nd,events,unknown,0,0,
@@ -6032,7 +6030,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 06099DD0,Game_Manage_5_1,high,differs,3,2,
 06099E00,Game_Manage_5_2,medium,same,0,0,
 06099E54,Game_Manage_5_3,medium,differs,5,4,0x800
-06099E8A,Game_Manage_5_4,medium,differs,3,5,0xff
+06099E8A,Game_Manage_5_4,medium,unknown,3,5,0xff
 06099EFC,Game_Manage_5_5,medium,differs,3,2,
 06099F32,Game_Manage_5_6,high,same,1,1,
 06099F64,Game_Manage_5_7,medium,differs,5,3,
@@ -6063,7 +6061,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0609AA26,Setup_Comp_Bonus,events,same,0,0,
 0609AAD0,Game_Manage_9th,medium,differs,4,5,0x800
 0609ABC8,Game_Manage_10th,medium,differs,11,11,
-0609ADC8,Game_Manage_11th,medium,differs,4,8,
+0609ADC8,Game_Manage_11th,high,unknown,4,8,
 0609AF1C,chkComWins,events,unknown,0,0,
 0609AF52,Update_Level_Control,medium,same,0,0,
 0609AFAC,Game_Manage_12_0,medium,differs,2,4,0x14
@@ -6095,13 +6093,13 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0609CC2A,Check_BI_Grade,events,unknown,0,0,
 0609CE50,Winner_Scene,manual,unknown,2,9,0xff
 0609CED4,Win_1st,manual,differs,13,11,0x37 0x7f30
-0609CFC8,Win_2nd,manual,differs,17,12,
+0609CFC8,Win_2nd,manual,unknown,17,12,
 0609D0BA,Win_3rd,manual,differs,6,8,0x1d 0x1e
 0609D1BE,Win_4th,manual,same,0,0,
 0609D1E2,Win_5th,manual,differs,1,0,0x1000
 0609D20C,Win_6th,manual,unknown,0,0,
 0609D27C,Loser_Scene,manual,unknown,2,9,0xff
-0609D3E8,Lose_2nd,manual,differs,7,7,
+0609D3E8,Lose_2nd,manual,unknown,7,7,
 0609D45E,Lose_3rd,manual,differs,4,7,
 0609DD78,Continue_Scene,manual,differs,1,10,0x18 0xff
 0609DDE4,Continue_1st,high,unknown,7,7,
@@ -6166,7 +6164,7 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 060A14AC,Check_EM_Speech,events,unknown,0,0,
 060A14EC,Next_CPU_6th,manual,unknown,0,0,
 060A14F4,After_Bonus,manual,differs,1,9,
-060A15C0,After_Bonus_1st,manual,differs,8,7,0x100
+060A15C0,After_Bonus_1st,manual,unknown,8,7,0x100
 060A1610,After_Bonus_2nd,manual,differs,11,10,
 060A1A54,Select_CPU_First,events,unknown,0,0,
 060A1AA6,Select_CPU_1st,high,differs,8,6,
@@ -7811,7 +7809,6 @@ arcade_addr,name,grade,status,ps2_calls,arcade_calls,ps2_consts_missing
 0612E0A8,Bg_On_W,medium,unknown,0,1,
 0612E118,Bg_Off_W,medium,unknown,0,1,
 0612E51C,Scrn_Move_Set,events,same,0,0,
-06138918,Switch_Screen,medium,unknown,1,0,
 061394D0,SsRequest,medium,unknown,3,1,
 0613A182,SsRequestPan,medium,differs,3,2,0x3f 0x40
 0613A2BC,SsBgmOff,medium,unknown,1,1,0x7f
