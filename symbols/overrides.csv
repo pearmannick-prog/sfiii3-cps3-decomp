@@ -716,3 +716,4 @@ arcade_addr,name,note
 060D7694,vital_cont_main,called from Game2_1; calls one per-player function for players 0 and 1
 060D67A2,sa_stock_trans,called twice at the same place in both spgauge_cont_init and spgauge_cont_demo_init
 060D6766,sa_waku_trans,called twice after sa_stock_trans in both spgauge inits
+06094D78,Game_Task,read by hand: endless loop of one game step then task_sleep(1); no PS2 catch-up loop (docs/speed.md)

@@ -196,6 +196,10 @@ and `low` rows as candidates, not facts.
 
 Function names come from crowded-street/3s-decomp (AGPL-3.0).
 
+## Game speed
+See `docs/speed.md`: the program runs one game step per frame and never catches up after an
+overrun frame, so arcade speed depends on how often a frame's work overruns.
+
 ## Findings so far (990512)
 - SH-2 big-endian, reset PC 0x06000EA0, SP 0x02008F94, work RAM at 0x02000000
 - code 0x06000400..~0x0613BDFA, data after; SIMM2 (0x06800000+) is data and identical to 990608

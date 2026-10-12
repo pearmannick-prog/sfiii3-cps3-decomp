@@ -1,4 +1,11 @@
 arcade_addr,label,note
+060004D0,irq_vector69,interrupt handler for vector 69; acknowledges at 0x05110000
+06000528,irq_vblank,"vertical blank interrupt (vector 70): frame flag and counter, inputs, sound, task_tick; see docs/speed.md"
+0600071E,irq_vector71,interrupt handler for vector 71; acknowledges at 0x05120000
+06000840,task_scheduler,idle loop that runs ready tasks; restarts at slot 0 on each new frame
+0600094C,task_tick,counts down sleeping tasks once per frame; see docs/speed.md
+06000CDC,task_resume,switches to the selected task
+06000D28,task_sleep,task_sleep(n): sleep n frames (0 = until woken) and switch away
 0604CBD8,PassiveSG,"dispatcher for character slot 15, absent from PS2; routines mirror character 14 (Akuma) with different numbers - presumably Shin Akuma"
 0604CBF0,PassiveSG_0000,slot-15 AI routine; same calls as Passive14_0000
 0604CC24,PassiveSG_0001,slot-15 AI routine; same calls as Passive14_0001
@@ -399,7 +406,8 @@ arcade_addr,label,note
 0607D560,PatternSG_0146,slot-15 AI routine; same calls as Pattern14_0146
 0607D5F8,PatternSG_0147,slot-15 AI routine; same calls as Pattern14_0147
 0607D670,PatternSG_0148,slot-15 AI routine; same calls as Pattern14_0148
-06094DD8,Main_state0_arcade,"entry 0 of the 3-entry main table at 0x06194158 (entry 1 is Game, entry 2 is an empty stub)"
+06094DAE,Game_Task_step_arcade,one game step without the loop (same table as Game_Task)
+06094DD8,Main_state0_arcade,"entry 0 of the 3-entry main table at 0x06194158 (entry 1 is Game); runs title, demo and ranking, so probably the arcade Loop_Demo"
 060953C4,Game0_0_arcade,entry 0 of the 6-entry table used by the arcade Game00 (PS2 Game00 has 3 sub-states: Game0_0..Game0_2); correspondence not settled
 0609544C,Game0_1_arcade,entry 1 of the 6-entry table used by the arcade Game00 (PS2 Game00 has 3 sub-states: Game0_0..Game0_2); correspondence not settled
 06095460,Game0_2_arcade,entries 2 and 4 of the 6-entry table used by the arcade Game00 (PS2 Game00 has 3 sub-states: Game0_0..Game0_2); correspondence not settled
