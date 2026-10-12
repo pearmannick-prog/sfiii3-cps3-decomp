@@ -88,8 +88,9 @@ C in `src/arcade/` is derived from 3s-decomp and is therefore AGPL-3.0.
 - **System code** (end of the program, from 0x0612CCB8): hardware is reached through the 0x24000000/0x25000000
   mirror of 0x04000000/0x05000000. 78 functions are labelled by device (`hw_text_*`, `hw_eeprom_*`,
   `hw_video_*`, `hw_sound_*`, ...). `text_print` (0x06138BA0, 87 callers) writes a string to the text layer;
-  `text_fill` (0x06138918) fills it. The PS2 HUD drawing code (`sc_sub.c`) has no direct counterpart; the
-  arcade draws its HUD text through these. Divide and shift helpers of the compiler runtime sit at 0x0612D428.
+  `text_fill` (0x06138918) fills it. The HUD set-up and update entry points (`vital_cont_*`,
+  `count_cont_init`, `combo_cont_*`, `spgauge_cont_*`, `stngauge_cont_init`) are named from where the game states call
+  them; most of the drawing helpers below them (`sc_sub.c`, about 70 PS2 functions) are still unnamed. Divide and shift helpers of the compiler runtime sit at 0x0612D428.
 - **Developer tool left in the program** (0x060A4748-0x060B27FF, about 165 functions, labelled `dbg_*` in
   `symbols/arcade_only.csv`): a menu of 14 modes with screens titled BG SELECT, OBJECT LOOK, OBJECT EDIT,
   HIT JUDGMENT, CATCH JUDJEMENT and PARTS. No caller of its top function was found, so it may be unreachable.

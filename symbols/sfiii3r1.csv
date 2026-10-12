@@ -2352,6 +2352,7 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 0603DB28,Passive11_0234,Source/Game/PASS11.c,content,exact,1.0,,1.0
 0603DB70,Passive11_0235,Source/Game/PASS11.c,content,exact,1.0,,1.0
 0603DBB8,Passive11_0236,Source/Game/PASS11.c,content,exact,1.0,1.0,1.0
+0603DBF4,Passive11_0237,Source/Game/PASS11.c,content,events,0.81,0.75,1.0
 0603DC70,Passive11_0238,Source/Game/PASS11.c,content,exact,0.99,,1.0
 0603DCCA,Passive11_0239,Source/Game/PASS11.c,content,exact,1.0,,1.0
 0603DD02,Passive11_0240,Source/Game/PASS11.c,content,exact,0.59,,1.0
@@ -4637,6 +4638,7 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 0607011C,Pattern09_0075,Source/Game/active09.c,content,exact,1.0,,1.0
 0607015E,Pattern09_0076,Source/Game/active09.c,content,exact,1.0,,1.0
 060701AE,Pattern09_0077,Source/Game/active09.c,content,exact,1.0,1.0,1.0
+06070244,Pattern09_0078,Source/Game/active09.c,content,events,0.61,,0.92
 060702CE,Pattern09_0079,Source/Game/active09.c,content,exact,1.0,,1.0
 0607034C,Pattern09_0080,Source/Game/active09.c,content,exact,0.98,,1.0
 060703A2,Pattern09_0081,Source/Game/active09.c,content,exact,0.99,1.0,1.0
@@ -5985,13 +5987,13 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 06095750,Game05,Source/Game/Game.c,manual,manual,0.26,,1.0
 06095830,Game11,Source/Game/Game.c,manual,manual,0.11,,1.0
 06095A16,Game02,Source/Game/Game.c,manual,manual,0.36,,1.0
-06095AA0,Game2_0,Source/Game/Game.c,manual,manual,0.02,,0.8
-06095B24,Game2_1,Source/Game/Game.c,manual,manual,0.31,,0.53
+06095AA0,Game2_0,Source/Game/Game.c,manual,manual,0.02,,0.67
+06095B24,Game2_1,Source/Game/Game.c,manual,manual,0.31,,0.63
 06095B8E,Game2_3,Source/Game/Game.c,manual,manual,1.0,,1.0
-06095C3C,Game2_5,Source/Game/Game.c,order-align,high,0.64,,0.89
+06095C3C,Game2_5,Source/Game/Game.c,order-align,high,0.64,,0.83
 06095DDE,Game03,Source/Game/Game.c,manual,manual,0.05,,0.75
 06095F5A,Game04,Source/Game/Game.c,manual,manual,0.2,,1.0
-0609600A,Game09,Source/Game/Game.c,manual,manual,0.2,1.0,0.8
+0609600A,Game09,Source/Game/Game.c,manual,manual,0.2,1.0,0.76
 0609638C,Bonus_Sub,Source/Game/Game.c,manual,manual,0.27,,0.53
 06096408,Game10,Source/Game/Game.c,manual,manual,0.3,,1.0
 060964BE,Game08,Source/Game/Game.c,manual,manual,0.07,,0.83
@@ -6020,7 +6022,7 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 060995B6,Game_Manage_2_1,Source/Game/Manage.c,manual,manual,0.12,,1.0
 060995D6,Game_Manage_2_2,Source/Game/Manage.c,table,high,0.91,,1.0
 0609965E,Game_Manage_2_3,Source/Game/Manage.c,table,high,0.96,,1.0
-06099770,Game_Manage_2_4,Source/Game/Manage.c,table,medium,0.65,,0.57
+06099770,Game_Manage_2_4,Source/Game/Manage.c,table,high,0.65,,0.8
 0609989E,Game_Manage_3rd,Source/Game/Manage.c,table-align,low,0.41,,0.0
 060998D8,Update_BI_Term,Source/Game/Manage.c,similar,events,0.01,1.0,
 060999B0,Game_Manage_4th,Source/Game/Manage.c,order-align,high,0.33,1.0,0.92
@@ -6255,7 +6257,6 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 060B6D04,hit_check_subroutine_yu,Source/Game/ta_sub.c,calls,events,0.41,,
 060B6DB0,eff_hit_flag_clear,Source/Game/ta_sub.c,order-align,events,0.96,,
 060B6E68,compel_dead_check,Source/Game/ta_sub.c,calls,events,0.92,,
-060B6EB0,win_lose_work_clear,Source/Game/ta_sub.c,calls,medium,0.39,,
 060B6FFC,cal_bg_speed_data_x,Source/Game/ta_sub.c,calls,medium,0.21,,
 060B70A2,cal_bg_speed_data_y,Source/Game/ta_sub.c,calls,medium,0.21,,
 060B71EA,ta0_init00,Source/Game/TATE00.c,table,medium,0.42,,
@@ -6298,7 +6299,6 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 060B9B18,get_center_position,Source/Game/bg_sub.c,calls,events,0.99,,
 060B9B30,get_height_position,Source/Game/bg_sub.c,calls,events,0.99,,
 060B9C06,oh_bg_blk_w,Source/Game/OPENING.c,calls,medium,0.47,,
-060BA3C0,bg_work_clear,Source/Game/bg_sub.c,calls,medium,0.98,,
 060BACB4,bg_base_move_common,Source/Game/bg_sub.c,table,medium,0.1,,0.57
 060BACE4,bg_move_common,Source/Game/bg_sub.c,table,events,0.82,,1.0
 060BB48C,akebono_initialize,Source/Game/bg_sub.c,calls,high,0.0,1.0,
@@ -6668,11 +6668,22 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 060D380C,end_2001_0004,Source/Game/end_20.c,table,medium,0.44,,0.67
 060D3832,end_2001_0005,Source/Game/end_20.c,table,medium,1.0,,
 060D5D52,effect_08_init,Source/Game/eff08.c,calls,low,0.1,,0.0
+060D6766,sa_waku_trans,Source/Game/spgauge.c,manual,manual,0.0,,
+060D67A2,sa_stock_trans,Source/Game/sc_sub.c,manual,manual,0.33,,
 060D7396,Switch_Screen_Init,Source/Game/SYS_sub.c,calls,medium,0.52,,
+060D7628,vital_cont_init,Source/Game/VITAL.c,manual,manual,0.19,,
+060D7694,vital_cont_main,Source/Game/VITAL.c,manual,manual,0.27,,
+060D7AF0,count_cont_init,Source/Game/count.c,manual,manual,0.43,,
 060D7BAE,count_cont_main,Source/Game/count.c,manual,manual,0.32,,1.0
 060D7D04,bcount_cont_init,Source/Game/count.c,order-align,medium,0.74,,
 060D7DF8,bcount_cont_main,Source/Game/count.c,calls,high,0.05,,1.0
 060D7E9A,bcounter_down,Source/Game/count.c,calls,medium,0.19,,
+060D7F34,spgauge_cont_init,Source/Game/spgauge.c,manual,manual,0.32,0.0,1.0
+060D817E,spgauge_cont_demo_init,Source/Game/spgauge.c,manual,manual,0.31,0.0,0.91
+060D8456,stngauge_cont_init,Source/Game/stun.c,manual,manual,0.12,,
+060DA26C,combo_cont_init,Source/Game/cmb_win.c,manual,manual,0.05,,0.67
+060DA32A,combo_cont_main,Source/Game/cmb_win.c,manual,manual,0.13,,0.75
+060DA41A,combo_control,Source/Game/cmb_win.c,order-align,high,0.45,,1.0
 060DA628,combo_rp_clear_check,Source/Game/cmb_win.c,calls,events,0.47,,1.0
 060DB4D0,move_effect_work,Source/Game/EFFECT.c,manual,manual,0.88,,
 060DB542,effect_work_init,Source/Game/EFFECT.c,similar,high,0.99,,1.0
@@ -7370,7 +7381,7 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 0611626C,effect_M8_move,Source/Game/effM8.c,table-align,high,1.0,,1.0
 061163AC,effm8_move_win,Source/Game/effM8.c,calls,high,0.46,,1.0
 061163F8,effect_M8_init,Source/Game/effM8.c,similar,high,0.21,1.0,0.73
-0611675C,Player_control,Source/Game/PLCNT.c,manual,manual,0.07,,0.9
+0611675C,Player_control,Source/Game/PLCNT.c,manual,manual,0.07,,0.86
 06116980,plcnt_init,Source/Game/PLCNT.c,table-align,events,0.43,,1.0
 061169C0,init_app_10000,Source/Game/PLCNT.c,order-align,high,0.0,,1.0
 06116A52,init_app_20000,Source/Game/PLCNT.c,order-align,high,0.0,,1.0
@@ -7397,7 +7408,6 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 06117F6E,set_quake,Source/Game/PLCNT.c,similar,events,0.87,,
 06117FA4,add_next_position,Source/Game/PLCNT.c,similar,medium,0.76,,
 06117FD0,setup_gouki_wins,Source/Game/PLCNT.c,order-align,medium,0.82,,
-06118226,erase_extra_plef_work,Source/Game/PLCNT.c,calls,high,0.21,1.0,0.0
 06118290,setup_base_and_other_data,Source/Game/PLCNT.c,calls,high,0.09,1.0,0.94
 06118312,setup_any_data,Source/Game/PLCNT.c,order-align,high,1.0,1.0,0.94
 061183A0,set_base_data,Source/Game/PLCNT.c,order-align,high,0.33,,0.86
@@ -7420,7 +7430,7 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 06118F3C,move_player_work_bonus,Source/Game/PLCNT2.c,calls,medium,0.0,,0.67
 06119468,plcnt_b2_move,Source/Game/PLCNT3.c,table,high,0.89,,1.0
 061194CA,plcnt_b2_die,Source/Game/PLCNT3.c,table,high,0.86,,1.0
-061197BC,player_mv_0000,Source/Game/PLMAIN.c,table,low,0.22,0.0,0.77
+061197BC,player_mv_0000,Source/Game/PLMAIN.c,table,low,0.22,0.0,0.67
 061198D6,player_mv_1000,Source/Game/PLMAIN.c,table,high,0.53,,1.0
 061199A0,plmv_1010,Source/Game/PLMAIN.c,calls,medium,1.0,,
 061199C8,plmv_1020,Source/Game/PLMAIN.c,calls,high,0.49,,1.0
@@ -7803,7 +7813,6 @@ arcade_addr,name,ps2_file,stage,grade,shape,const_sim,call_sim
 0612C926,Att_PL20_AT2,Source/Game/plpat20.c,table,events,0.89,,1.0
 0612CA7E,Att_PL20_AT3,Source/Game/plpat20.c,table,high,0.9,,1.0
 0612CBE2,Att_PL20_TOKUSHUKOUDOU,Source/Game/plpat20.c,table,events,0.85,,1.0
-0612CFDE,bbbs_com_initialize,Source/Game/BBBSCOM.c,calls,medium,0.82,,
 0612DB8C,sbcd,Source/Game/BCD.c,calls,medium,0.73,,
 0612DD48,Family_Set_W,Source/Game/bg.c,calls,events,0.76,,
 0612E0A8,Bg_On_W,Source/Game/bg.c,calls,medium,0.08,,

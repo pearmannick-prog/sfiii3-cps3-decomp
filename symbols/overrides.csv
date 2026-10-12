@@ -706,3 +706,13 @@ arcade_addr,name,note
 060BF024,bns12_init00,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
 060BF05A,bns12_move,"position by structure (dispatcher, init, move); the arcade file has a different number of functions than PS2"
 06138918,,arcade system function (see arcade_only.csv)
+060D7628,vital_cont_init,"called from the arcade Game01_Sub/Game2_1 where PS2 calls it, and the body matches (constants and callees): 0xA0 per player"
+060DA26C,combo_cont_init,"called from the arcade Game01_Sub/Game2_1 where PS2 calls it, and the body matches (constants and callees): work_init_zero x4, two memsets"
+060D7AF0,count_cont_init,called as count_cont_init(0) from Game01_Sub; tests -1 (no time limit) and divides by 10
+060D7F34,spgauge_cont_init,Demo_Flag branch of Game01_Sub; the other branch calls demo_set_sa_full
+060D817E,spgauge_cont_demo_init,"calls demo_set_sa_full twice, as PS2"
+060D8456,stngauge_cont_init,last HUD init of Game01_Sub
+060DA32A,combo_cont_main,called from Game2_1; calls combo_cont_init as PS2 does when Stop_Combo is set
+060D7694,vital_cont_main,called from Game2_1; calls one per-player function for players 0 and 1
+060D67A2,sa_stock_trans,called twice at the same place in both spgauge_cont_init and spgauge_cont_demo_init
+060D6766,sa_waku_trans,called twice after sa_stock_trans in both spgauge inits

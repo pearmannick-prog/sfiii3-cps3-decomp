@@ -14,12 +14,12 @@ Combo_Demo_Flag,02016B73,3
 Complete_Judgement,020113DC,2
 Cont_No,0201700C,4
 Control_Time,02011372,5
-Counter_hi,02011376,2
+Counter_hi,02011376,3
 Country,0201556F,5.4
 Cover_Timer,0201542A,14
 D_No,02015441,10
 D_Timer,0201543E,5.1
-Demo_Flag,020154AF,10
+Demo_Flag,020154AF,11
 Disp_Score_Buff,0206AC62,2
 EM_Rank,02016B33,2.2
 EM_id,02015504,3
@@ -31,7 +31,7 @@ Exit_Timer,02016B22,1.5
 Flash_Sign,0201545C,4
 Forbid_Break,0201138E,13
 Free_Ptr,02016D08,2
-Game_timer,0201136C,7
+Game_timer,0201136C,8
 ID,0201554C,3.8
 LOSER,020113BD,10
 Last_Player_id,02015501,4
@@ -83,6 +83,7 @@ bs2_floor,02016B90,5.2
 bs2_hosei,02016B96,3.0
 bs_scrrrl,02016B54,3
 ca_check_flag,0200EE44,3
+cmb_stock,0202883C,2
 cmd_id,02026B24,7
 cmd_tbl_ptr,02026308,2
 dead_voice_flag,02068C6B,2
@@ -102,5 +103,6 @@ opw_ptr,020281EC,14.2
 pcon_dp_flag,02068C67,6
 pcon_rno,02068C5C,26
 round_slow_flag,02068C66,2
+round_timer,02028682,2
 save_w,02011383,2
 test_flag,02000094,3
